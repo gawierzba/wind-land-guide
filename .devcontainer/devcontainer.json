@@ -1,0 +1,14 @@
+{
+  "name": "Wind Land Guide Preview",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postAttachCommand": "python3 -m http.server 8000 --bind 0.0.0.0 >/tmp/wind-guide-http.log 2>&1 &",
+  "portsAttributes": {
+    "8000": {
+      "label": "Wind Land Guide",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [
+    8000
+  ]
+}
