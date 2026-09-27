@@ -182,6 +182,66 @@
       "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
       "path": "/pl/umowa/co-usunac-po-inwestycji/",
       "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-031",
+      "title": "Czy inwestor może później zmienić turbinę, drogę albo kabel?",
+      "path": "/pl/umowa/zmiana-technologii-turbiny/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-032",
+      "title": "Repowering po 15–25 latach — czy stara umowa obejmuje nową turbinę?",
+      "path": "/pl/umowa/repowering/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-033",
+      "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
+      "path": "/pl/umowa/podwykonawcy/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-034",
+      "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+      "path": "/pl/umowa/ubezpieczenia/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-035",
+      "title": "Gwarancja rekultywacyjna — czy naprawdę wystarczy pieniędzy na usunięcie farmy?",
+      "path": "/pl/umowa/gwarancja-rekultywacyjna/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-036",
+      "title": "Bank, finansujący i step-in rights — co mogą oznaczać dla właściciela gruntu?",
+      "path": "/pl/umowa/finansujacy-step-in/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-037",
+      "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
+      "path": "/pl/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-038",
+      "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
+      "path": "/pl/umowa/kary-umowne-i-odszkodowanie/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-039",
+      "title": "Wypowiedzenie umowy pod wiatrak — co dzieje się z gruntem dzień później?",
+      "path": "/pl/umowa/wypowiedzenie-umowy/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-040",
+      "title": "Siła wyższa, zmiana prawa i brak opłacalności — kto ponosi ryzyko projektu?",
+      "path": "/pl/umowa/sila-wyzsza-zmiana-prawa/",
+      "status": "draft-live"
     }
   ]
 }
