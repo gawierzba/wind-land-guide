@@ -1,0 +1,187 @@
+{
+  "version": "0.1",
+  "language": "pl",
+  "updated": "2026-09-26",
+  "materials": [
+    {
+      "id": "GUIDE-001",
+      "title": "Inwestor chce mojego pola pod wiatrak — od czego zacząć?",
+      "path": "/pl/zanim-podpiszesz/inwestor-chce-mojego-pola/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-002",
+      "title": "Kim jest firma, która chce podpisać ze mną umowę?",
+      "path": "/pl/zanim-podpiszesz/kim-jest-inwestor/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-003",
+      "title": "Czego nie podpisywać od ręki na pierwszym spotkaniu",
+      "path": "/pl/zanim-podpiszesz/czego-nie-podpisywac/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-004",
+      "title": "30 pytań do inwestora przed podpisaniem czegokolwiek",
+      "path": "/pl/zanim-podpiszesz/30-pytan-do-inwestora/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-005",
+      "title": "Czy na mojej działce w ogóle może powstać turbina?",
+      "path": "/pl/zanim-podpiszesz/czy-moze-powstac-turbina/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-006",
+      "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
+      "path": "/pl/umowa/jak-czytac-umowe-dzierzawy/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-007",
+      "title": "Na ile lat wiążę swoją ziemię?",
+      "path": "/pl/umowa/na-ile-lat/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-008",
+      "title": "Co dokładnie oddaję inwestorowi?",
+      "path": "/pl/umowa/co-dokladnie-oddaje-inwestorowi/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-009",
+      "title": "Jak czytać mapę do umowy?",
+      "path": "/pl/umowa/jak-czytac-mape/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-010",
+      "title": "Ile ziemi naprawdę zajmie inwestycja?",
+      "path": "/pl/umowa/ile-ziemi-zajmie-inwestycja/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-011",
+      "title": "Co właściwie obejmuje roczna kwota?",
+      "path": "/pl/umowa/co-obejmuje-roczna-kwota/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-012",
+      "title": "Jak porównać dwie oferty?",
+      "path": "/pl/umowa/jak-porownac-dwie-oferty/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-013",
+      "title": "Czy za drogę, kabel i place płaci się osobno?",
+      "path": "/pl/umowa/droga-kabel-place-osobno/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-014",
+      "title": "Czy wiatrak może wpłynąć na moje dopłaty?",
+      "path": "/pl/umowa/doplaty-rolne/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-015",
+      "title": "Podatki od dzierżawy pod wiatrak — co trzeba sprawdzić?",
+      "path": "/pl/umowa/podatki/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-016",
+      "title": "Szkoda, utracony plon i dodatkowe koszty gospodarstwa — co jest czym?",
+      "path": "/pl/umowa/szkoda-plon-koszty/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-017",
+      "title": "Czy inwestor może wejść na moje pole, kiedy chce?",
+      "path": "/pl/umowa/wejscie-na-grunt/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-018",
+      "title": "Pełnomocnictwo dla inwestora — co naprawdę oznacza?",
+      "path": "/pl/umowa/pelnomocnictwo/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-019",
+      "title": "Prawo do dysponowania nieruchomością na cele budowlane — po ludzku",
+      "path": "/pl/umowa/prawo-do-dysponowania-na-cele-budowlane/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-020",
+      "title": "Co inwestor może chcieć wpisać do księgi wieczystej?",
+      "path": "/pl/umowa/ksiega-wieczysta/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-021",
+      "title": "Służebność, kabel i inne prawa do gruntu — czym się różnią?",
+      "path": "/pl/umowa/sluzebnosc-i-prawa-do-gruntu/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-022",
+      "title": "Podpisałem z firmą A, a projekt kupiła firma B — co wtedy?",
+      "path": "/pl/umowa/zmiana-inwestora/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-023",
+      "title": "Jak zabezpieczyć płatności przez kilkadziesiąt lat?",
+      "path": "/pl/umowa/zabezpieczenie-platnosci/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-024",
+      "title": "Protokół wejścia na grunt — co sfotografować przed pierwszą koparką?",
+      "path": "/pl/umowa/protokol-wejscia/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-025",
+      "title": "Powstała szkoda — co zrobić pierwszego dnia?",
+      "path": "/pl/umowa/szkoda-pierwszy-dzien/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-026",
+      "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
+      "path": "/pl/umowa/dokumentowanie-szkody/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-027",
+      "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
+      "path": "/pl/umowa/drenarka/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-028",
+      "title": "Co stanie się z umową, gdy sprzedam albo przekażę gospodarstwo?",
+      "path": "/pl/umowa/sprzedaz-dziedziczenie/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-029",
+      "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+      "path": "/pl/umowa/kto-zaplaci-za-demontaz/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-030",
+      "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+      "path": "/pl/umowa/co-usunac-po-inwestycji/",
+      "status": "draft-live"
+    }
+  ]
+}
