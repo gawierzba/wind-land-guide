@@ -54,3 +54,8 @@ Aktualna warstwa użyteczności obejmuje:
 - wspólny system nawigacji, spisów treści i mobilnego docka.
 
 Kolejne GUIDE-y są pogłębiane według tego samego standardu, bez publikowania prywatnego źródłowego wzorca umowy ani danych osobowych.
+
+
+### Wyszukiwanie v0.5
+
+Wyszukiwarka działa pełnotekstowo: przy pierwszym użyciu wczytuje treść wszystkich GUIDE-ów i przeszukuje tytuły, śródtytuły, akapity, checklisty i tabele. Ręczne słowa kluczowe są wyłącznie warstwą pomocniczą i nie ograniczają tego, co użytkownik może wpisać. Wyszukiwanie toleruje brak polskich znaków, a wyniki pokazują fragment tekstu, w którym znaleziono trafienie.
