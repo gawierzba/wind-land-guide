@@ -66,8 +66,15 @@ for (const file of htmlFiles) {
   const ids = [...html.matchAll(/\sid=[\"']([^\"']+)[\"']/gi)].map(m => m[1]);
   const duplicateIds = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))];
 
+  const hasViewport = /<meta[^>]+name=[\"']viewport[\"']/i.test(html);
+  const hasStyles = /<link[^>]+rel=[\"']stylesheet[\"']/i.test(html);
+  const hasSiteScript = /<script[^>]+src=[\"'][^\"']*assets\/site\.js[\"']/i.test(html);
+
   if (!title) errors.push(`${fileRel}: brak <title>`);
+  if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
   if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
+  if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
+  if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
   if (!isRootRedirect && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
   if (duplicateIds.length) errors.push(`${fileRel}: powtórzone id: ${duplicateIds.join(", ")}`);
 
