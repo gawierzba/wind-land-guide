@@ -1,5 +1,5 @@
 {
-  "version": "0.11",
+  "version": "0.12",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -452,7 +452,7 @@
         "zdjęcia",
         "dowody"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-026",
@@ -488,7 +488,7 @@
         "podtopienie",
         "naprawa"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-028",
@@ -504,7 +504,7 @@
         "nastepca",
         "gospodarstwo"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-029",
@@ -539,7 +539,7 @@
         "odpady",
         "rekultywacja"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-031",
@@ -576,7 +576,7 @@
         "okres",
         "aneks"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-033",
@@ -755,7 +755,7 @@
         "niebezpieczne",
         "raport"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-043",
@@ -772,7 +772,7 @@
         "prac",
         "raportowanie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-044",
