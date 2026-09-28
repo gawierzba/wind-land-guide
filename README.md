@@ -138,3 +138,35 @@ Biblioteka GUIDE-001–GUIDE-050 została doprowadzona do wspólnego standardu p
 Kontrola przekrojowa materiałów z początku, środka i końca biblioteki potwierdziła wspólny zestaw elementów redakcyjnych: przykłady sytuacyjne, macierze lub tabele kontrolne, sygnały do dodatkowego sprawdzenia oraz frazy do wyszukania we własnej umowie. GUIDE-006 pozostaje odrębnym wzorcem metody analizy i nie musi używać identycznych klas HTML jak pozostałe materiały.
 
 Dodano również `EDITORIAL_STANDARD.md`, który opisuje zasady dalszej pracy: warstwę wejściową i pogłębioną, etykiety PRAWO / UMOWA / PRAKTYKA / SYTUACJA INDYWIDUALNA, zasadę CITE-SAFE, prywatność źródła i checklistę jakości przed publikacją.
+
+
+### v1.1 — odbiór techniczny
+
+Przeprowadzono pierwszy pełny odbiór techniczny serwisu przed publikacją.
+
+Sprawdzone:
+- 69 stron HTML,
+- wewnętrzne linki i ścieżki zasobów,
+- kotwice i duplikaty `id`,
+- obecność `title`, meta description i pojedynczego H1 na stronach treści,
+- składnia `assets/site.js` i `assets/audit.js`,
+- spójność `content-index.json`,
+- zachowanie tabel na małych ekranach,
+- dostępność modalu wyszukiwarki,
+- utrzymanie `noindex` w całej wersji draftowej.
+
+Dodano własny workflow `Site QA` oraz `scripts/qa.mjs`, aby GitHub automatycznie wykonywał odbiór strukturalny po kolejnych zmianach.
+
+Wydajność wyszukiwarki:
+- wcześniejszy mechanizm pobierał treść 51 materiałów osobnymi żądaniami przy pierwszym wyszukiwaniu,
+- v1.1 używa siedmiu statycznych paczek w `search-index/`,
+- zachowano fallback do dynamicznego indeksowania stron, jeśli paczki nie załadują się prawidłowo.
+
+Poprawki UX:
+- lepsza czytelność tabel na telefonie,
+- etykieta dostępności pola wyszukiwania,
+- przywracanie fokusu do elementu, który otworzył wyszukiwarkę.
+
+Stan publikacyjny:
+- `noindex` pozostaje celowo włączony,
+- zdejmowanie blokady indeksowania nastąpi dopiero po audycie źródeł prawnych i finalnym przeglądzie SEO.
