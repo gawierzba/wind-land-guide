@@ -482,3 +482,5 @@ body.search-open{overflow:hidden}
     top:18px;
   }
 }
+
+html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
