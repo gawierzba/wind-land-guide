@@ -2,41 +2,136 @@
   const script = document.currentScript;
   const siteRoot = script ? new URL("../", script.src) : new URL("/", location.href);
   const plRoot = new URL("pl/", siteRoot);
+  let fullTextIndexPromise = null;
 
   const url = p => new URL(String(p || "").replace(/^\//, ""), siteRoot).href;
+
   const normalize = value => String(value || "")
     .toLocaleLowerCase("pl")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+  }
+
+  function extractArticle(html) {
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const article = doc.querySelector("article.article") || doc.querySelector("main") || doc.body;
+    article.querySelectorAll("script,style,nav,.mobile-dock").forEach(el => el.remove());
+    const text = (article.textContent || "").replace(/\s+/g, " ").trim();
+    const headings = [...article.querySelectorAll("h1,h2,h3")]
+      .map(h => (h.textContent || "").replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+    return { text, headings };
+  }
+
+  async function buildFullTextIndex() {
+    const metaResponse = await fetch(url("content-index.json"));
+    if (!metaResponse.ok) throw new Error("content-index");
+    const data = await metaResponse.json();
+    const materials = data.materials || [];
+
+    const loaded = await Promise.allSettled(materials.map(async material => {
+      const response = await fetch(url(material.path));
+      if (!response.ok) throw new Error(material.path);
+      const html = await response.text();
+      const extracted = extractArticle(html);
+      return {
+        ...material,
+        text: extracted.text,
+        headings: extracted.headings,
+        titleNorm: normalize(material.title),
+        categoryNorm: normalize(material.category || ""),
+        keywordsNorm: normalize((material.keywords || []).join(" ")),
+        headingsNorm: normalize(extracted.headings.join(" ")),
+        textNorm: normalize(extracted.text)
+      };
+    }));
+
+    return loaded
+      .filter(result => result.status === "fulfilled")
+      .map(result => result.value);
+  }
+
+  function getFullTextIndex() {
+    if (!fullTextIndexPromise) fullTextIndexPromise = buildFullTextIndex();
+    return fullTextIndexPromise;
+  }
 
   function scoreMaterial(material, rawQuery) {
     const query = normalize(rawQuery);
-    if (!query) return 1;
+    if (!query) return { score: 0, matched: 0, total: 0 };
 
     const tokens = query.split(/\s+/).filter(Boolean);
-    const title = normalize(material.title);
-    const keywords = normalize((material.keywords || []).join(" "));
-    const category = normalize(material.category || "");
-    const haystack = normalize([
-      material.id,
-      material.title,
-      material.category,
-      ...(material.keywords || [])
-    ].join(" "));
+    const fields = [
+      material.titleNorm,
+      material.headingsNorm,
+      material.textNorm,
+      material.categoryNorm,
+      material.keywordsNorm
+    ];
+    const matchedTokens = tokens.filter(token => fields.some(field => field.includes(token)));
 
-    if (!tokens.every(token => haystack.includes(token))) return 0;
+    if (!matchedTokens.length) return { score: 0, matched: 0, total: tokens.length };
 
-    let score = 10;
-    if (title.includes(query)) score += 30;
-    if (keywords.includes(query)) score += 18;
-    if (category.includes(query)) score += 8;
+    let score = matchedTokens.length * 20;
+    if (matchedTokens.length === tokens.length) score += 70;
+    if (material.titleNorm.includes(query)) score += 90;
+    if (material.headingsNorm.includes(query)) score += 55;
+    if (material.textNorm.includes(query)) score += 35;
+    if (material.categoryNorm.includes(query)) score += 18;
+    if (material.keywordsNorm.includes(query)) score += 12;
+
     tokens.forEach(token => {
-      if (title.includes(token)) score += 6;
-      if (keywords.includes(token)) score += 4;
+      if (material.titleNorm.includes(token)) score += 18;
+      if (material.headingsNorm.includes(token)) score += 10;
+      if (material.textNorm.includes(token)) score += 4;
     });
-    return score;
+
+    return { score, matched: matchedTokens.length, total: tokens.length };
+  }
+
+  function makeSnippet(material, rawQuery) {
+    const original = material.text || "";
+    if (!original) return "";
+
+    const query = normalize(rawQuery);
+    const tokens = query.split(/\s+/).filter(Boolean);
+    const lower = original.toLocaleLowerCase("pl");
+    const candidates = [
+      String(rawQuery || "").trim().toLocaleLowerCase("pl"),
+      ...tokens
+    ].filter(Boolean);
+
+    let position = -1;
+    for (const candidate of candidates) {
+      position = lower.indexOf(candidate);
+      if (position >= 0) break;
+    }
+
+    if (position < 0) {
+      const normalizedText = normalize(original);
+      for (const token of tokens) {
+        const normalizedPos = normalizedText.indexOf(token);
+        if (normalizedPos >= 0) {
+          const ratio = normalizedText.length ? normalizedPos / normalizedText.length : 0;
+          position = Math.floor(original.length * ratio);
+          break;
+        }
+      }
+    }
+
+    if (position < 0) position = 0;
+    const start = Math.max(0, position - 95);
+    const end = Math.min(original.length, position + 220);
+    let snippet = original.slice(start, end).trim();
+    if (start > 0) snippet = "…" + snippet;
+    if (end < original.length) snippet += "…";
+    return snippet;
   }
 
   function openSearch(initial = "") {
@@ -48,51 +143,74 @@
       panel.innerHTML = `
         <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
           <div class="search-head">
-            <div><div class="eyebrow">Przeszukaj kompendium</div><h2 id="search-title">Czego chcesz się dowiedzieć?</h2></div>
+            <div><div class="eyebrow">Przeszukaj całe kompendium</div><h2 id="search-title">Wpisz dowolne słowo lub pytanie</h2></div>
             <button class="search-close" type="button" aria-label="Zamknij wyszukiwarkę">×</button>
           </div>
-          <input class="search-input" type="search" placeholder="np. czynsz, dopłaty, kabel, księga wieczysta, demontaż…" autocomplete="off">
-          <div class="search-hint">Szukamy po tytułach, obszarach i słowach kluczowych wszystkich materiałów GUIDE.</div>
-          <div class="search-results" aria-live="polite"></div>
+          <input class="search-input" type="search" placeholder="Np. koleiny, fundament, odsetki, mokre pole albo całe pytanie…" autocomplete="off">
+          <div class="search-hint">Wyszukiwarka przegląda pełną treść wszystkich GUIDE-ów — tytuły, śródtytuły, akapity, checklisty i tabele.</div>
+          <div class="search-results" aria-live="polite"><p class="search-empty">Ładowanie pełnego indeksu treści…</p></div>
         </div>`;
       document.body.append(panel);
 
       const input = panel.querySelector(".search-input");
       const results = panel.querySelector(".search-results");
       let materials = [];
-
-      fetch(url("content-index.json"))
-        .then(r => r.ok ? r.json() : Promise.reject())
-        .then(data => { materials = data.materials || []; render(input.value); })
-        .catch(() => { results.innerHTML = '<p class="search-empty">Nie udało się wczytać indeksu materiałów.</p>'; });
+      let ready = false;
+      let debounce;
 
       function render(q) {
-        if (!materials.length) return;
-
         const query = (q || "").trim();
-        const found = materials
-          .map(x => ({...x, _score: scoreMaterial(x, query)}))
-          .filter(x => x._score > 0)
-          .sort((a, b) => b._score - a._score || a.id.localeCompare(b.id))
-          .slice(0, 14);
-
-        if (!found.length) {
-          results.innerHTML = '<p class="search-empty">Brak trafienia. Spróbuj prostszego hasła, np. „czynsz”, „kabel”, „dopłaty”, „bank” albo „demontaż”.</p>';
+        if (!ready) {
+          results.innerHTML = '<p class="search-empty">Przeszukuję i indeksuję wszystkie materiały GUIDE…</p>';
+          return;
+        }
+        if (!query) {
+          results.innerHTML = '<p class="search-empty">Wpisz dowolne słowo, fragment zdania albo całe pytanie. Nie musisz znać przygotowanych haseł.</p>';
           return;
         }
 
-        results.innerHTML = found.map(x =>
-          `<a class="search-result" href="${url(x.path)}">
+        const found = materials
+          .map(x => ({...x, _match: scoreMaterial(x, query)}))
+          .filter(x => x._match.score > 0)
+          .sort((a, b) =>
+            b._match.matched - a._match.matched ||
+            b._match.score - a._match.score ||
+            a.id.localeCompare(b.id)
+          )
+          .slice(0, 16);
+
+        if (!found.length) {
+          results.innerHTML = '<p class="search-empty">Nie znalazłem tego słowa w treści GUIDE-ów. Spróbuj innej formy wyrazu albo krótszego fragmentu pytania.</p>';
+          return;
+        }
+
+        results.innerHTML = found.map(x => `
+          <a class="search-result" href="${url(x.path)}">
             <span>${escapeHtml(x.id)}</span>
             <span class="search-result-copy">
               <strong>${escapeHtml(x.title)}</strong>
               ${x.category ? `<small>${escapeHtml(x.category)}</small>` : ""}
+              <em>${escapeHtml(makeSnippet(x, query))}</em>
             </span>
           </a>`
         ).join("");
       }
 
-      input.addEventListener("input", () => render(input.value));
+      getFullTextIndex()
+        .then(index => {
+          materials = index;
+          ready = true;
+          render(input.value);
+        })
+        .catch(() => {
+          ready = true;
+          results.innerHTML = '<p class="search-empty">Nie udało się wczytać pełnej treści kompendium.</p>';
+        });
+
+      input.addEventListener("input", () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(() => render(input.value), 80);
+      });
       panel.querySelector(".search-close").addEventListener("click", closeSearch);
       panel.addEventListener("click", e => { if (e.target === panel) closeSearch(); });
     }
@@ -109,10 +227,6 @@
     const panel = document.querySelector("#global-search-panel");
     if (panel) panel.classList.remove("open");
     document.body.classList.remove("search-open");
-  }
-
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
   }
 
   document.querySelectorAll(".navlinks").forEach(nav => {
