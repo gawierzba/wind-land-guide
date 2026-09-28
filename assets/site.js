@@ -455,3 +455,81 @@
     if (e.key === "Escape") closeSearch();
   });
 })();
+
+(() => {
+  function enhanceArticleTools() {
+    const article = document.querySelector(".article");
+    if (!article) return;
+
+    const meta = article.querySelector(".meta");
+    if (meta && !article.querySelector(".article-tools")) {
+      const tools = document.createElement("div");
+      tools.className = "article-tools";
+      tools.setAttribute("aria-label", "Narzędzia artykułu");
+      tools.innerHTML = `
+        <button type="button" data-print-article>Drukuj / PDF</button>
+        <button type="button" data-copy-page>Kopiuj link</button>
+      `;
+      meta.insertAdjacentElement("afterend", tools);
+
+      tools.querySelector("[data-print-article]").addEventListener("click", () => window.print());
+      tools.querySelector("[data-copy-page]").addEventListener("click", async event => {
+        const button = event.currentTarget;
+        const original = button.textContent;
+        try {
+          await navigator.clipboard.writeText(location.href);
+          button.textContent = "Skopiowano";
+        } catch {
+          const area = document.createElement("textarea");
+          area.value = location.href;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.opacity = "0";
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand("copy");
+          area.remove();
+          button.textContent = "Skopiowano";
+        }
+        setTimeout(() => { button.textContent = original; }, 1600);
+      });
+    }
+
+    article.querySelectorAll("h2[id]").forEach(h => {
+      if (h.querySelector(".section-link")) return;
+      const a = document.createElement("a");
+      a.className = "section-link";
+      a.href = "#" + encodeURIComponent(h.id);
+      a.setAttribute("aria-label", "Link do sekcji: " + h.textContent.trim());
+      a.title = "Kopiuj lub otwórz link do tej sekcji";
+      a.textContent = "#";
+      h.append(" ", a);
+    });
+
+    if (!document.querySelector(".reading-progress")) {
+      const bar = document.createElement("div");
+      bar.className = "reading-progress";
+      bar.setAttribute("aria-hidden", "true");
+      bar.innerHTML = "<span></span>";
+      document.body.appendChild(bar);
+      const fill = bar.firstElementChild;
+
+      const update = () => {
+        const rect = article.getBoundingClientRect();
+        const start = window.scrollY + rect.top;
+        const max = Math.max(1, article.offsetHeight - window.innerHeight * 0.55);
+        const progress = Math.min(1, Math.max(0, (window.scrollY - start + 90) / max));
+        fill.style.transform = `scaleX(${progress})`;
+      };
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update, { passive: true });
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", enhanceArticleTools, { once: true });
+  } else {
+    enhanceArticleTools();
+  }
+})();
