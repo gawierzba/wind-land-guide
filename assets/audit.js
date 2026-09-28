@@ -294,6 +294,7 @@
 
   function renderIntro() {
     const resumed = answeredCount() > 0;
+    const complete = answeredCount() === questions.length;
     root.innerHTML = `
       <section class="audit-intro">
         <div class="eyebrow">Narzędzie właściciela gruntu</div>
@@ -323,7 +324,7 @@
           ${sections.map(s => `<span><b>${s.no}</b> ${s.title}</span>`).join("")}
         </div>
         <div class="actions audit-actions">
-          <button class="button primary" type="button" data-audit-start>${resumed ? "Wznów audyt" : "Zaczynam"}</button>
+          <button class="button primary" type="button" data-audit-start>${complete ? "Wróć do Karty analizy" : resumed ? "Wznów audyt" : "Zaczynam"}</button>
           ${resumed ? '<button class="button" type="button" data-audit-reset>Rozpocznij od nowa</button>' : ""}
         </div>
         <p class="audit-privacy">Narzędzie nie wysyła odpowiedzi ani treści Twojej umowy na serwer. Stan audytu jest zapisywany wyłącznie lokalnie w przeglądarce, aby można było wrócić do niego później.</p>
@@ -337,7 +338,10 @@
     });
 
     root.querySelector("[data-audit-start]").addEventListener("click", () => {
-      started = true; saveState(); renderQuestion();
+      started = true;
+      saveState();
+      if (complete) renderResults();
+      else renderQuestion();
     });
     root.querySelector("[data-audit-reset]")?.addEventListener("click", () => {
       clearState(); renderIntro();
@@ -555,6 +559,7 @@
     root.innerHTML = `
       <section class="audit-results">
         <div class="audit-results-hero">
+          <div class="audit-print-brand">Grunt i wiatr · kompendium właściciela gruntu</div>
           <div class="eyebrow">Karta analizy umowy</div>
           <h1>Masz teraz roboczą mapę swojej umowy.</h1>
           <p>Odpowiedzi poniżej nie przesądzają, czy zapis jest prawidłowy, korzystny albo zgodny z prawem. Pokazują jedynie, które elementy udało Ci się odnaleźć w dokumentacji, a które wymagają powrotu do tekstu umowy lub dalszej analizy.</p>
@@ -566,6 +571,7 @@
           ${unanswered ? `<div class="audit-note"><strong>Uwaga:</strong> ${unanswered} pytań nie ma jeszcze odpowiedzi. W podsumowaniu traktujemy je jako „do ustalenia”.</div>` : ""}
           <div class="actions audit-actions">
             <button class="button primary" type="button" data-print>Drukuj / zapisz jako PDF</button>
+            <button class="button" type="button" data-edit-meta>Edytuj opis dokumentu</button>
             <button class="button" type="button" data-review>Wróć do pytań</button>
             <button class="button" type="button" data-reset>Wyczyść odpowiedzi</button>
           </div>
@@ -589,6 +595,7 @@
       </section>`;
 
     root.querySelector("[data-print]").addEventListener("click", () => window.print());
+    root.querySelector("[data-edit-meta]").addEventListener("click", renderIntro);
     root.querySelector("[data-review]").addEventListener("click", () => {
       const firstOpen = questions.findIndex(q => !answers[q.id] || answers[q.id] !== "yes");
       current = firstOpen >= 0 ? firstOpen : 0;
