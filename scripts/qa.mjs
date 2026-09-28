@@ -120,20 +120,31 @@ else {
     if (!item.category) warnings.push(`content-index: ${item.id} bez category`);
   }
 
-  if ((index.materials || []).length !== 50) warnings.push(`content-index: liczba GUIDE = ${(index.materials || []).length}, oczekiwano 50`);
+  if ((index.materials || []).length !== 55) warnings.push(`content-index: liczba GUIDE = ${(index.materials || []).length}, oczekiwano 55`);
 
   if (Array.isArray(index.searchIndexParts)) {
+    const searchEntries = [];
     for (const part of index.searchIndexParts) {
       if (!existing.has(part)) errors.push(`content-index: brak paczki wyszukiwarki ${part}`);
       else {
         try {
           const payload = JSON.parse(fs.readFileSync(path.join(root, part), "utf8"));
           if (!Array.isArray(payload)) errors.push(`${part}: indeks nie jest tablicą`);
+          else searchEntries.push(...payload);
         } catch (e) {
           errors.push(`${part}: nieprawidłowy JSON`);
         }
       }
     }
+    const expectedIds = new Set(entries.map(x => x.id));
+    const searchIds = searchEntries.map(x => x.id);
+    const searchIdSet = new Set(searchIds);
+    const duplicatedSearchIds = [...new Set(searchIds.filter((id, i) => searchIds.indexOf(id) !== i))];
+    const missingFromSearch = [...expectedIds].filter(id => !searchIdSet.has(id));
+    const orphanedInSearch = [...searchIdSet].filter(id => !expectedIds.has(id));
+    if (duplicatedSearchIds.length) errors.push(`search-index: powtórzone id: ${duplicatedSearchIds.join(", ")}`);
+    if (missingFromSearch.length) errors.push(`search-index: brak materiałów: ${missingFromSearch.join(", ")}`);
+    if (orphanedInSearch.length) errors.push(`search-index: materiały spoza content-index: ${orphanedInSearch.join(", ")}`);
   }
 }
 
