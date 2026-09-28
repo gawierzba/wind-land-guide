@@ -557,3 +557,64 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
   .article h1,.article h2,.article h3{break-after:avoid}
   .notice,.related,.article-toc{break-inside:avoid}
 }
+
+
+/* v1.5 — trust layer and 404 */
+.source-status{
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  gap:10px 14px;
+  align-items:center;
+  margin:0 0 32px;
+  padding:12px 14px;
+  border:1px solid #dbe4da;
+  border-radius:10px;
+  background:#f5f8f3;
+  color:#536057;
+  font-size:.78rem;
+}
+.source-status span{
+  font-size:.68rem;
+  font-weight:850;
+  letter-spacing:.08em;
+  color:#52705d;
+}
+.source-status strong{color:#304939}
+.source-status a{
+  justify-self:end;
+  font-weight:750;
+  text-decoration:none;
+}
+.site-footer-links a{white-space:nowrap}
+.error-page{
+  min-height:72vh;
+  display:grid;
+  place-items:center;
+  padding:64px 0;
+}
+.error-card{
+  width:min(720px,calc(100% - 32px));
+  background:#fff;
+  border:1px solid #dfe5dc;
+  border-radius:18px;
+  padding:clamp(28px,6vw,58px);
+  box-shadow:0 16px 50px rgba(23,32,25,.06);
+}
+.error-code{
+  font-size:.75rem;
+  font-weight:850;
+  letter-spacing:.1em;
+  color:#52705d;
+}
+.error-card h1{
+  font-size:clamp(2.2rem,6vw,4.4rem);
+  letter-spacing:-.05em;
+  line-height:1.02;
+  margin:.25em 0;
+}
+.error-card p{color:#58645b;font-size:1.05rem}
+@media(max-width:720px){
+  .source-status{grid-template-columns:1fr;gap:4px}
+  .source-status a{justify-self:start;margin-top:4px}
+}
+@media print{.source-status{display:none!important}}

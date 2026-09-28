@@ -533,3 +533,41 @@
     enhanceArticleTools();
   }
 })();
+
+
+(() => {
+  function enhanceTrustLayer() {
+    const article = document.querySelector(".article");
+    if (article && /GUIDE-\d+/i.test(article.querySelector(".eyebrow")?.textContent || "") && !article.querySelector(".source-status")) {
+      const meta = article.querySelector(".meta");
+      if (meta) {
+        const box = document.createElement("div");
+        box.className = "source-status";
+        box.innerHTML = '<span>ŹRÓDŁA I STAN PRAWNY</span><strong>Weryfikacja: 28.09.2026</strong><a href="' +
+          new URL("pl/stan-prawny/", new URL("../", document.currentScript?.src || location.href)).href +
+          '">Zobacz rejestr weryfikacji →</a>';
+        const tools = article.querySelector(".article-tools");
+        (tools || meta).insertAdjacentElement("afterend", box);
+      }
+    }
+
+    document.querySelectorAll(".footer .shell").forEach(f => {
+      if (f.querySelector(".site-footer-links")) return;
+      const root = new URL("../", document.querySelector('script[src*="assets/site.js"]')?.src || location.href);
+      const wrap = document.createElement("span");
+      wrap.className = "site-footer-links";
+      wrap.innerHTML =
+        ' · <a href="' + new URL("pl/metodologia/", root).href + '">Metodologia</a>' +
+        ' · <a href="' + new URL("pl/zrodla/", root).href + '">Źródła</a>' +
+        ' · <a href="' + new URL("pl/stan-prawny/", root).href + '">Stan prawny</a>' +
+        ' · <a href="' + new URL("pl/korekty/", root).href + '">Korekty</a>';
+      f.appendChild(wrap);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", enhanceTrustLayer, { once: true });
+  } else {
+    enhanceTrustLayer();
+  }
+})();
