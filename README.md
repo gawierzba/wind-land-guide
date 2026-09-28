@@ -85,3 +85,17 @@ Podsumowanie audytu zostało przebudowane w drukowalną „Kartę analizy umowy�
 - pełny zapis wszystkich 30 odpowiedzi dostępny na ekranie jako rozwijany aneks,
 - wydruk A4 zoptymalizowany pod rozmowę z inwestorem lub doradcą,
 - możliwość edycji opisu dokumentu po zakończeniu audytu bez utraty odpowiedzi.
+
+
+### v0.8 — pogłębianie GUIDE-ów
+
+Rozpoczęto drugi etap redakcyjny: zamiast zwiększać liczbę GUIDE-ów, pogłębiamy istniejące materiały przy zachowaniu lekkiej warstwy wejściowej.
+
+Pierwsza pogłębiona paczka:
+- GUIDE-050 — hierarchia dokumentów i wersji,
+- GUIDE-048 — dokumenty do organów i status właściciela,
+- GUIDE-036 — finansujący, direct agreement, SNDA i step-in,
+- GUIDE-034 — ubezpieczenia,
+- GUIDE-041 — ochrona gleby, upraw i melioracji.
+
+Nowy standard pogłębienia obejmuje przykłady sytuacyjne, macierze kontrolne, tabele procesu, sygnały wymagające dodatkowego sprawdzenia oraz konkretne słowa do wyszukania we własnej umowie.
