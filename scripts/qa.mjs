@@ -119,6 +119,20 @@ else {
   }
 
   if ((index.materials || []).length !== 50) warnings.push(`content-index: liczba GUIDE = ${(index.materials || []).length}, oczekiwano 50`);
+
+  if (Array.isArray(index.searchIndexParts)) {
+    for (const part of index.searchIndexParts) {
+      if (!existing.has(part)) errors.push(`content-index: brak paczki wyszukiwarki ${part}`);
+      else {
+        try {
+          const payload = JSON.parse(fs.readFileSync(path.join(root, part), "utf8"));
+          if (!Array.isArray(payload)) errors.push(`${part}: indeks nie jest tablicą`);
+        } catch (e) {
+          errors.push(`${part}: nieprawidłowy JSON`);
+        }
+      }
+    }
+  }
 }
 
 console.log(`QA: ${htmlFiles.length} stron HTML, ${existing.size} plików.`);
