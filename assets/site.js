@@ -30,27 +30,47 @@
     return { text, headings };
   }
 
+  function prepareSearchMaterial(material) {
+    return {
+      ...material,
+      titleNorm: normalize(material.title || ""),
+      categoryNorm: normalize(material.category || ""),
+      keywordsNorm: normalize((material.keywords || []).join(" ")),
+      headingsNorm: normalize((material.headings || []).join(" ")),
+      textNorm: normalize(material.text || "")
+    };
+  }
+
   async function buildFullTextIndex() {
     const metaResponse = await fetch(url("content-index.json"));
     if (!metaResponse.ok) throw new Error("content-index");
     const data = await metaResponse.json();
-    const materials = [...(data.tools || []), ...(data.materials || [])];
 
+    if (Array.isArray(data.searchIndexParts) && data.searchIndexParts.length) {
+      try {
+        const parts = await Promise.all(data.searchIndexParts.map(async part => {
+          const response = await fetch(url(part));
+          if (!response.ok) throw new Error(part);
+          return response.json();
+        }));
+        return parts.flat().map(prepareSearchMaterial);
+      } catch (_) {
+        // Bezpieczny fallback: jeśli paczka indeksu nie załaduje się,
+        // wyszukiwarka nadal może zbudować indeks z samych stron.
+      }
+    }
+
+    const materials = [...(data.tools || []), ...(data.materials || [])];
     const loaded = await Promise.allSettled(materials.map(async material => {
       const response = await fetch(url(material.path));
       if (!response.ok) throw new Error(material.path);
       const html = await response.text();
       const extracted = extractArticle(html);
-      return {
+      return prepareSearchMaterial({
         ...material,
         text: extracted.text,
-        headings: extracted.headings,
-        titleNorm: normalize(material.title),
-        categoryNorm: normalize(material.category || ""),
-        keywordsNorm: normalize((material.keywords || []).join(" ")),
-        headingsNorm: normalize(extracted.headings.join(" ")),
-        textNorm: normalize(extracted.text)
-      };
+        headings: extracted.headings
+      });
     }));
 
     return loaded
