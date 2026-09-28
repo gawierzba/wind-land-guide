@@ -59,3 +59,16 @@ Kolejne GUIDE-y są pogłębiane według tego samego standardu, bez publikowania
 ### Wyszukiwanie v0.5
 
 Wyszukiwarka działa pełnotekstowo: przy pierwszym użyciu wczytuje treść wszystkich GUIDE-ów i przeszukuje tytuły, śródtytuły, akapity, checklisty i tabele. Ręczne słowa kluczowe są wyłącznie warstwą pomocniczą i nie ograniczają tego, co użytkownik może wpisać. Wyszukiwanie toleruje brak polskich znaków, a wyniki pokazują fragment tekstu, w którym znaleziono trafienie.
+
+
+### v0.6 — audyt umowy
+
+Dodano narzędzie „Sprawdź swoją umowę w 5 minut”:
+- 30 pytań w 8 obszarach,
+- odpowiedzi TAK / NIE / NIE WIEM,
+- bez punktacji i bez automatycznej oceny „dobra / zła umowa”,
+- wynik w trzech grupach: odnalezione, sprawdź dokładniej, nie wiem / do ustalenia,
+- każde pytanie prowadzi do właściwego GUIDE-a i podaje słowa, których można szukać w umowie,
+- stan audytu zapisuje się lokalnie w przeglądarce,
+- podsumowanie można wydrukować lub zapisać do PDF,
+- narzędzie jest dostępne ze strony głównej, ze ścieżki „Umowa” i z wyszukiwarki.
