@@ -48,3 +48,8 @@ body.search-open{overflow:hidden}
 .guide-jump a{display:block;border:1px solid #dfe5dc;background:#fff;border-radius:9px;padding:12px 14px;text-decoration:none;font-weight:700}
 @media(max-width:980px){.topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.topic-grid,.analysis-strip,.guide-jump{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.search-prompts{gap:6px}.search-chip{font-size:.77rem;padding:7px 9px}.topic-card{min-height:auto}.article .audit-table td:first-child{white-space:normal}}
+
+.search-result-copy em{display:block;margin-top:5px;color:#5f6962;font-size:.82rem;font-style:normal;line-height:1.4;font-weight:450}
+.hero-search-note{max-width:680px;margin-top:9px;color:#657068;font-size:.86rem}
+.search-dialog{max-height:82vh;overflow:auto}
+.search-results{padding-bottom:2px}
