@@ -22,3 +22,5 @@ jobs:
         run: node --check assets/site.js
       - name: Check audit.js syntax
         run: node --check assets/audit.js
+      - name: Legal source trace audit
+        run: node scripts/legal-audit.mjs
