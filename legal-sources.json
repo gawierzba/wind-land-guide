@@ -155,5 +155,19 @@
         "ZPI jako szczególny rodzaj planu miejscowego dla lokalizacji elektrowni wiatrowej"
       ]
     }
+  ],
+  "watch": [
+    {
+      "date": "2026-10-02",
+      "id": "building-law-2026-1161",
+      "reason": "Zasadnicza część ustawy z 31 lipca 2026 r. zmieniającej m.in. Prawo budowlane (Dz.U. 2026 poz. 1161) wchodzi w życie.",
+      "action": "Ponownie sprawdzić wszystkie twierdzenia o procesie budowlanym i prawie do dysponowania nieruchomością."
+    },
+    {
+      "date": "2026-10-20",
+      "id": "wind-act-art-6g",
+      "reason": "Art. 6g ustawy o inwestycjach w zakresie elektrowni wiatrowych ma wejść w życie; aktualny tekst ELI oznacza ten przepis jako przyszły.",
+      "action": "Ponownie sprawdzić materiały o lokalizacji/procesie projektu i zdecydować, czy dodać osobny GUIDE o prosumencie wirtualnym mieszkańców."
+    }
   ]
 }
