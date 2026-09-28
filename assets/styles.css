@@ -146,3 +146,11 @@ body.search-open{overflow:hidden}
   .audit-result-item{break-inside:avoid;box-shadow:none}
   .audit-result-links a{color:#172019;text-decoration:none}
 }
+
+.audit-promo-section{padding-top:26px;padding-bottom:10px}
+.audit-promo-card{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:26px 28px}
+.audit-promo-card>div{max-width:760px}
+.audit-promo-card h2{font-size:clamp(1.45rem,3vw,2rem);letter-spacing:-.03em;margin:.2rem 0 .45rem}
+.audit-promo-card p{margin:0;color:#5d685f}
+.audit-promo-card .button{white-space:nowrap}
+@media(max-width:760px){.audit-promo-card{display:block}.audit-promo-card .button{margin-top:18px;white-space:normal}}
