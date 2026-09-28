@@ -1,5 +1,5 @@
 {
-  "version": "0.10",
+  "version": "0.11",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -344,7 +344,7 @@
         "budowa",
         "oswiadczenie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-020",
@@ -380,7 +380,7 @@
         "rzeczowe",
         "dzierzawa"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-022",
@@ -415,7 +415,7 @@
         "niewyplacalnosc",
         "czynsz"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-024",
@@ -557,7 +557,7 @@
         "technologia",
         "aneks"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-032",
@@ -592,7 +592,7 @@
         "ubezpieczenie",
         "wejscie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-034",
@@ -665,7 +665,7 @@
         "gwarancja",
         "protokol"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-038",
@@ -682,7 +682,7 @@
         "zastepcze",
         "roszczenie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-039",
