@@ -89,6 +89,12 @@
 
   if (document.querySelector(".article")) {
     const article = document.querySelector(".article");
+
+    // Headings in early GUIDE drafts carried manual numbers (e.g. "1. ...").
+    // Keep numbering in one place only: the generated table of contents.
+    article.querySelectorAll("h2").forEach(h => {
+      h.textContent = h.textContent.replace(/^\\s*\\d+\\.\\s+/, "");
+    });
     const headings = [...article.querySelectorAll("h2")].filter(h => !h.closest(".related"));
     if (headings.length >= 3 && !article.querySelector(".article-toc")) {
       headings.forEach((h, i) => { if (!h.id) h.id = "sekcja-" + (i + 1); });
