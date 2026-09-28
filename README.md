@@ -11,7 +11,7 @@ Robocze repozytorium neutralnego kompendium dla właścicieli gruntów dotycząc
 - `/assets/` — wspólne style
 - `content-index.json` — centralny indeks materiałów GUIDE
 
-Pierwszy rdzeń obejmuje GUIDE-001–GUIDE-030.
+Aktualny rdzeń obejmuje GUIDE-001–GUIDE-050.
 
 ## Zasady redakcyjne
 
@@ -41,3 +41,16 @@ Pierwsza wersja jest celowo statyczna: HTML + CSS, bez zewnętrznych frameworkó
 ## Status
 
 Wersja robocza. Treści i struktura są rozwijane na branchach i przeglądane przez pull requesty przed połączeniem z `main`.
+
+
+## Wersja v0.4
+
+Aktualna warstwa użyteczności obejmuje:
+
+- wyszukiwarkę globalną po tytułach, obszarach i słowach kluczowych,
+- mapę wiedzy na stronie głównej,
+- ośmioobszarową mapę analizy umowy,
+- GUIDE-006 jako wzorcowy pogłębiony przewodnik z kartą audytu, testem mapy i czerwonymi flagami,
+- wspólny system nawigacji, spisów treści i mobilnego docka.
+
+Kolejne GUIDE-y są pogłębiane według tego samego standardu, bez publikowania prywatnego źródłowego wzorca umowy ani danych osobowych.
