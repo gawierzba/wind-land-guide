@@ -4,6 +4,40 @@
   const plRoot = new URL("pl/", siteRoot);
 
   const url = p => new URL(String(p || "").replace(/^\//, ""), siteRoot).href;
+  const normalize = value => String(value || "")
+    .toLocaleLowerCase("pl")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+  function scoreMaterial(material, rawQuery) {
+    const query = normalize(rawQuery);
+    if (!query) return 1;
+
+    const tokens = query.split(/\s+/).filter(Boolean);
+    const title = normalize(material.title);
+    const keywords = normalize((material.keywords || []).join(" "));
+    const category = normalize(material.category || "");
+    const haystack = normalize([
+      material.id,
+      material.title,
+      material.category,
+      ...(material.keywords || [])
+    ].join(" "));
+
+    if (!tokens.every(token => haystack.includes(token))) return 0;
+
+    let score = 10;
+    if (title.includes(query)) score += 30;
+    if (keywords.includes(query)) score += 18;
+    if (category.includes(query)) score += 8;
+    tokens.forEach(token => {
+      if (title.includes(token)) score += 6;
+      if (keywords.includes(token)) score += 4;
+    });
+    return score;
+  }
 
   function openSearch(initial = "") {
     let panel = document.querySelector("#global-search-panel");
@@ -14,11 +48,11 @@
       panel.innerHTML = `
         <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
           <div class="search-head">
-            <div><div class="eyebrow">Przeszukaj kompendium</div><h2 id="search-title">Czego szukasz?</h2></div>
+            <div><div class="eyebrow">Przeszukaj kompendium</div><h2 id="search-title">Czego chcesz się dowiedzieć?</h2></div>
             <button class="search-close" type="button" aria-label="Zamknij wyszukiwarkę">×</button>
           </div>
-          <input class="search-input" type="search" placeholder="np. kabel, dopłaty, pełnomocnictwo…" autocomplete="off">
-          <div class="search-hint">Wyszukiwanie obejmuje tytuły wszystkich materiałów GUIDE.</div>
+          <input class="search-input" type="search" placeholder="np. czynsz, dopłaty, kabel, księga wieczysta, demontaż…" autocomplete="off">
+          <div class="search-hint">Szukamy po tytułach, obszarach i słowach kluczowych wszystkich materiałów GUIDE.</div>
           <div class="search-results" aria-live="polite"></div>
         </div>`;
       document.body.append(panel);
@@ -33,15 +67,28 @@
         .catch(() => { results.innerHTML = '<p class="search-empty">Nie udało się wczytać indeksu materiałów.</p>'; });
 
       function render(q) {
-        const query = (q || "").trim().toLocaleLowerCase("pl");
-        const found = materials.filter(x => !query || (x.id + " " + x.title).toLocaleLowerCase("pl").includes(query)).slice(0, 12);
         if (!materials.length) return;
+
+        const query = (q || "").trim();
+        const found = materials
+          .map(x => ({...x, _score: scoreMaterial(x, query)}))
+          .filter(x => x._score > 0)
+          .sort((a, b) => b._score - a._score || a.id.localeCompare(b.id))
+          .slice(0, 14);
+
         if (!found.length) {
-          results.innerHTML = '<p class="search-empty">Brak wyników. Spróbuj prostszego hasła.</p>';
+          results.innerHTML = '<p class="search-empty">Brak trafienia. Spróbuj prostszego hasła, np. „czynsz”, „kabel”, „dopłaty”, „bank” albo „demontaż”.</p>';
           return;
         }
+
         results.innerHTML = found.map(x =>
-          `<a class="search-result" href="${url(x.path)}"><span>${x.id}</span><strong>${escapeHtml(x.title)}</strong></a>`
+          `<a class="search-result" href="${url(x.path)}">
+            <span>${escapeHtml(x.id)}</span>
+            <span class="search-result-copy">
+              <strong>${escapeHtml(x.title)}</strong>
+              ${x.category ? `<small>${escapeHtml(x.category)}</small>` : ""}
+            </span>
+          </a>`
         ).join("");
       }
 
@@ -87,13 +134,18 @@
     });
   });
 
+  document.querySelectorAll("[data-search-query]").forEach(trigger => {
+    trigger.addEventListener("click", e => {
+      e.preventDefault();
+      openSearch(trigger.dataset.searchQuery || trigger.textContent || "");
+    });
+  });
+
   if (document.querySelector(".article")) {
     const article = document.querySelector(".article");
 
-    // Headings in early GUIDE drafts carried manual numbers (e.g. "1. ...").
-    // Keep numbering in one place only: the generated table of contents.
     article.querySelectorAll("h2").forEach(h => {
-      h.textContent = h.textContent.replace(/^\\s*\\d+\\.\\s+/, "");
+      h.textContent = h.textContent.replace(/^\s*\d+\.\s+/, "");
     });
     const headings = [...article.querySelectorAll("h2")].filter(h => !h.closest(".related"));
     if (headings.length >= 3 && !article.querySelector(".article-toc")) {
