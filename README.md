@@ -129,3 +129,12 @@ Nowe warstwy pogłębione obejmują m.in.:
 - pierwszy dzień szkody, drenarkę, następstwo właściciela i dokładny zakres demontażu.
 
 Standard pogłębienia pozostaje stały: przykład sytuacyjny, proces lub macierz kontrolna, tabela praktyczna, sygnały do sprawdzenia i frazy do wyszukania we własnej umowie.
+
+
+### v1.0 — pełna biblioteka w standardzie pogłębionym
+
+Biblioteka GUIDE-001–GUIDE-050 została doprowadzona do wspólnego standardu pogłębionego. W content-index wszystkie 50 materiałów ma status `depth: deep`.
+
+Kontrola przekrojowa materiałów z początku, środka i końca biblioteki potwierdziła wspólny zestaw elementów redakcyjnych: przykłady sytuacyjne, macierze lub tabele kontrolne, sygnały do dodatkowego sprawdzenia oraz frazy do wyszukania we własnej umowie. GUIDE-006 pozostaje odrębnym wzorcem metody analizy i nie musi używać identycznych klas HTML jak pozostałe materiały.
+
+Dodano również `EDITORIAL_STANDARD.md`, który opisuje zasady dalszej pracy: warstwę wejściową i pogłębioną, etykiety PRAWO / UMOWA / PRAKTYKA / SYTUACJA INDYWIDUALNA, zasadę CITE-SAFE, prywatność źródła i checklistę jakości przed publikacją.
