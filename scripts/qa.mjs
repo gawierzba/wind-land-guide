@@ -67,11 +67,13 @@ for (const file of htmlFiles) {
   const duplicateIds = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))];
 
   const hasViewport = /<meta[^>]+name=[\"']viewport[\"']/i.test(html);
+  const hasNoindex = /<meta[^>]+name=[\"']robots[\"'][^>]+content=[\"'][^\"']*noindex/i.test(html);
   const hasStyles = /<link[^>]+rel=[\"']stylesheet[\"']/i.test(html);
   const hasSiteScript = /<script[^>]+src=[\"'][^\"']*assets\/site\.js[\"']/i.test(html);
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
+  if (!hasNoindex) errors.push(`${fileRel}: brak noindex w wersji draftowej`);
   if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
   if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
