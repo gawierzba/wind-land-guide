@@ -113,3 +113,19 @@ Druga paczka pogłębionych materiałów objęła siedem kluczowych GUIDE-ów:
 - GUIDE-035 — mechanika gwarancji rekultywacyjnej.
 
 W content-index dodano pole `depth`, aby śledzić postęp redakcyjny. Po v0.9 standard pogłębiony ma 13 z 50 GUIDE-ów.
+
+
+### v0.12 — 34 z 50 GUIDE-ów pogłębionych
+
+Kolejne trzy paczki redakcyjne objęły 21 GUIDE-ów i podniosły liczbę materiałów w standardzie `depth: deep` z 13 do 34.
+
+Nowe warstwy pogłębione obejmują m.in.:
+- pełnomocnictwa, wejście na grunt, protokół wejścia i dokumentowanie szkód,
+- czas trwania i wypowiedzenie umowy,
+- szkody, plony i koszty gospodarstwa,
+- prawo do dysponowania na cele budowlane, służebności i zabezpieczenia płatności,
+- podwykonawców, dokumentację właściciela, kary i wykonanie zastępcze,
+- zmianę technologii, repowering, procedurę awaryjną i kontrolę wykonywania umowy,
+- pierwszy dzień szkody, drenarkę, następstwo właściciela i dokładny zakres demontażu.
+
+Standard pogłębienia pozostaje stały: przykład sytuacyjny, proces lub macierz kontrolna, tabela praktyczna, sygnały do sprawdzenia i frazy do wyszukania we własnej umowie.
