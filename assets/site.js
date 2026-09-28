@@ -34,7 +34,7 @@
     const metaResponse = await fetch(url("content-index.json"));
     if (!metaResponse.ok) throw new Error("content-index");
     const data = await metaResponse.json();
-    const materials = data.materials || [];
+    const materials = [...(data.tools || []), ...(data.materials || [])];
 
     const loaded = await Promise.allSettled(materials.map(async material => {
       const response = await fetch(url(material.path));
