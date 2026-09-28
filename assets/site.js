@@ -17,6 +17,31 @@
 
   const url = p => new URL(String(p || "").replace(/^\//, ""), siteRoot).href;
 
+  function configureExternalLinks() {
+    document.querySelectorAll("a[href]").forEach(a => {
+      const href = a.getAttribute("href");
+      if (!href || href.startsWith("#")) return;
+
+      let targetUrl;
+      try {
+        targetUrl = new URL(href, location.href);
+      } catch {
+        return;
+      }
+
+      if (!["http:", "https:"].includes(targetUrl.protocol)) return;
+      if (targetUrl.origin === location.origin) return;
+
+      a.target = "_blank";
+      const rel = new Set((a.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+      rel.add("noopener");
+      rel.add("noreferrer");
+      a.setAttribute("rel", [...rel].join(" "));
+    });
+  }
+
+  configureExternalLinks();
+
   const normalize = value => String(value || "")
     .toLocaleLowerCase("pl")
     .replace(/ł/g, "l")
