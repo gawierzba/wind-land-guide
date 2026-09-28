@@ -99,3 +99,17 @@ Pierwsza pogłębiona paczka:
 - GUIDE-041 — ochrona gleby, upraw i melioracji.
 
 Nowy standard pogłębienia obejmuje przykłady sytuacyjne, macierze kontrolne, tabele procesu, sygnały wymagające dodatkowego sprawdzenia oraz konkretne słowa do wyszukania we własnej umowie.
+
+
+### v0.9 — rdzeń właścicielski
+
+Druga paczka pogłębionych materiałów objęła siedem kluczowych GUIDE-ów:
+- GUIDE-008 — rzeczywisty zakres praw do gruntu,
+- GUIDE-009 — mapa jako połączenie praw, powierzchni i pieniędzy,
+- GUIDE-011 — pełna mapa świadczeń i waloryzacji,
+- GUIDE-020 — cały cykl wpisu do księgi wieczystej,
+- GUIDE-022 — ciągłość odpowiedzialności przy zmianie inwestora,
+- GUIDE-029 — proces demontażu i przywrócenia funkcji rolniczej,
+- GUIDE-035 — mechanika gwarancji rekultywacyjnej.
+
+W content-index dodano pole `depth`, aby śledzić postęp redakcyjny. Po v0.9 standard pogłębiony ma 13 z 50 GUIDE-ów.
