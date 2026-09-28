@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -927,5 +927,14 @@
   "editorial": {
     "deepGuideCoverage": "50/50",
     "deepGuideCompleted": "2026-09-28"
-  }
+  },
+  "searchIndexParts": [
+    "search-index/part-01.json",
+    "search-index/part-02.json",
+    "search-index/part-03.json",
+    "search-index/part-04.json",
+    "search-index/part-05.json",
+    "search-index/part-06.json",
+    "search-index/part-07.json"
+  ]
 }
