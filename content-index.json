@@ -1,5 +1,5 @@
 {
-  "version": "0.6",
+  "version": "0.7",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -866,7 +866,11 @@
         "30 pytań",
         "tak nie nie wiem",
         "umowa dzierżawy",
-        "karta kontrolna"
+        "karta kontrolna",
+        "karta analizy umowy",
+        "lista do rozmowy",
+        "wydruk audytu",
+        "analiza 8 obszarów"
       ]
     }
   ]
