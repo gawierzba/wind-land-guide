@@ -237,6 +237,16 @@
   let answers = {};
   let current = 0;
   let started = false;
+  let meta = { project:"", investor:"", property:"", version:"" };
+
+  function escapeHtml(value) {
+    return String(value || "").replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+  }
+
+  function todayLabel() {
+    try { return new Intl.DateTimeFormat("pl-PL", { year:"numeric", month:"2-digit", day:"2-digit" }).format(new Date()); }
+    catch (_) { return ""; }
+  }
 
   function loadState() {
     try {
@@ -245,13 +255,16 @@
         answers = saved.answers;
         current = Math.max(0, Math.min(Number(saved.current) || 0, questions.length - 1));
         started = Boolean(saved.started);
+        if (saved.meta && typeof saved.meta === "object") {
+          meta = { ...meta, ...saved.meta };
+        }
       }
     } catch (_) {}
   }
 
   function saveState() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ answers, current, started, updated: Date.now() }));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ answers, current, started, meta, updated: Date.now() }));
     } catch (_) {}
   }
 
@@ -259,6 +272,7 @@
     answers = {};
     current = 0;
     started = false;
+    meta = { project:"", investor:"", property:"", version:"" };
     try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
   }
 
@@ -291,6 +305,20 @@
           <div><strong>Prywatnie</strong><span>odpowiedzi zostają w tej przeglądarce</span></div>
         </div>
         <div class="audit-note"><strong>Jak odpowiadać?</strong> Zaznacz „TAK” tylko wtedy, gdy potrafisz odnaleźć odpowiedni zapis albo dokument. „NIE WIEM” jest pełnoprawną odpowiedzią — właśnie po to jest ten audyt.</div>
+
+        <div class="audit-meta-box">
+          <div class="audit-meta-head">
+            <div><strong>Oznacz analizowany dokument</strong><span>Opcjonalnie — dane pojawią się na wydruku Karty analizy.</span></div>
+            <span class="audit-local-badge">tylko w tej przeglądarce</span>
+          </div>
+          <div class="audit-meta-grid">
+            <label>Projekt / miejscowość<input type="text" data-meta="project" value="${escapeHtml(meta.project)}" placeholder="np. projekt wiatrowy — miejscowość"></label>
+            <label>Inwestor / spółka<input type="text" data-meta="investor" value="${escapeHtml(meta.investor)}" placeholder="opcjonalnie"></label>
+            <label>Działka / nieruchomość<input type="text" data-meta="property" value="${escapeHtml(meta.property)}" placeholder="np. nr działki lub własne oznaczenie"></label>
+            <label>Wersja umowy / data<input type="text" data-meta="version" value="${escapeHtml(meta.version)}" placeholder="np. projekt z 15.09.2026"></label>
+          </div>
+        </div>
+
         <div class="audit-sections">
           ${sections.map(s => `<span><b>${s.no}</b> ${s.title}</span>`).join("")}
         </div>
@@ -300,6 +328,13 @@
         </div>
         <p class="audit-privacy">Narzędzie nie wysyła odpowiedzi ani treści Twojej umowy na serwer. Stan audytu jest zapisywany wyłącznie lokalnie w przeglądarce, aby można było wrócić do niego później.</p>
       </section>`;
+
+    root.querySelectorAll("[data-meta]").forEach(input => {
+      input.addEventListener("input", () => {
+        meta[input.dataset.meta] = input.value;
+        saveState();
+      });
+    });
 
     root.querySelector("[data-audit-start]").addEventListener("click", () => {
       started = true; saveState(); renderQuestion();
@@ -423,6 +458,92 @@
       </section>`;
   }
 
+  function renderDocumentIdentity() {
+    const rows = [
+      ["Projekt / miejscowość", meta.project],
+      ["Inwestor / spółka", meta.investor],
+      ["Działka / nieruchomość", meta.property],
+      ["Wersja umowy / data", meta.version]
+    ];
+    const hasAny = rows.some(([, value]) => String(value || "").trim());
+    return `
+      <section class="audit-document-card">
+        <div class="audit-document-title">
+          <div><div class="eyebrow">Karta analizy umowy</div><h2>${hasAny ? "Oznaczenie analizowanego dokumentu" : "Analizowany dokument"}</h2></div>
+          <span>sporządzono: ${todayLabel()}</span>
+        </div>
+        <div class="audit-document-grid">
+          ${rows.map(([label, value]) => `<div><span>${label}</span><strong>${escapeHtml(value || "— nie podano —")}</strong></div>`).join("")}
+        </div>
+      </section>`;
+  }
+
+  function renderSectionMatrix() {
+    return `
+      <section class="audit-area-map">
+        <div class="section-head">
+          <div><div class="eyebrow">Przekrój 8 obszarów</div><h2>Gdzie wrócić do umowy?</h2></div>
+          <p>To zestawienie nie jest oceną ani rankingiem. Pokazuje wyłącznie rozkład Twoich odpowiedzi.</p>
+        </div>
+        <div class="audit-area-table-wrap">
+          <table class="audit-area-table">
+            <thead><tr><th>Obszar</th><th>Odnalezione</th><th>Sprawdź</th><th>Do ustalenia</th></tr></thead>
+            <tbody>
+              ${sections.map(section => {
+                const qs = questions.filter(q => q.section === section.id);
+                const yes = qs.filter(q => answers[q.id] === "yes").length;
+                const no = qs.filter(q => answers[q.id] === "no").length;
+                const unknown = qs.filter(q => !answers[q.id] || answers[q.id] === "unknown").length;
+                return `<tr>
+                  <td><span>${section.no}</span><strong>${section.title}</strong></td>
+                  <td>${yes}</td><td>${no}</td><td>${unknown}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      </section>`;
+  }
+
+  function renderMeetingList() {
+    const items = questions.filter(q => !answers[q.id] || answers[q.id] === "no" || answers[q.id] === "unknown");
+    if (!items.length) {
+      return `
+        <section class="audit-meeting-list">
+          <div class="section-head"><div><div class="eyebrow">Lista do rozmowy</div><h2>Nie zaznaczyłeś tematów „NIE” ani „NIE WIEM”.</h2></div></div>
+          <p class="audit-empty-result">To nie oznacza automatycznie, że zapisy są wystarczające — tylko że wszystkie 30 zagadnień udało Ci się odnaleźć w dokumentacji.</p>
+        </section>`;
+    }
+
+    return `
+      <section class="audit-meeting-list">
+        <div class="section-head">
+          <div><div class="eyebrow">${items.length} tematów</div><h2>Lista do rozmowy z inwestorem lub doradcą</h2></div>
+          <p>Na wydruku zostawiliśmy miejsce na wpisanie paragrafu, załącznika i ustalenia ze spotkania.</p>
+        </div>
+        <div class="audit-meeting-items">
+          ${items.map((q, index) => {
+            const status = answers[q.id] === "no" ? "Sprawdź dokładniej" : "Do ustalenia";
+            const section = sectionFor(q.section);
+            return `
+              <article class="audit-meeting-item">
+                <div class="audit-meeting-index">${String(index + 1).padStart(2, "0")}</div>
+                <div class="audit-meeting-copy">
+                  <div class="audit-meeting-meta"><span>${section.no} · ${section.title}</span><b>${status}</b></div>
+                  <h3>${q.text}</h3>
+                  <p>${q.why}</p>
+                  <div class="audit-meeting-guide">Szukaj w umowie: <strong>${q.terms}</strong> · <a href="${href(q.path)}">${q.guide}</a></div>
+                  <div class="audit-handwrite">
+                    <div><span>§ / załącznik / strona</span><i></i></div>
+                    <div><span>Ustalenie / odpowiedź</span><i></i><i></i></div>
+                  </div>
+                </div>
+              </article>`;
+          }).join("")}
+        </div>
+      </section>`;
+  }
+
   function renderResults() {
     started = true;
     saveState();
@@ -434,8 +555,8 @@
     root.innerHTML = `
       <section class="audit-results">
         <div class="audit-results-hero">
-          <div class="eyebrow">Twoja mapa umowy</div>
-          <h1>Nie dostajesz oceny. Dostajesz listę rzeczy do sprawdzenia.</h1>
+          <div class="eyebrow">Karta analizy umowy</div>
+          <h1>Masz teraz roboczą mapę swojej umowy.</h1>
           <p>Odpowiedzi poniżej nie przesądzają, czy zapis jest prawidłowy, korzystny albo zgodny z prawem. Pokazują jedynie, które elementy udało Ci się odnaleźć w dokumentacji, a które wymagają powrotu do tekstu umowy lub dalszej analizy.</p>
           <div class="audit-summary-cards">
             <div><strong>${yes}</strong><span>odnalezionych</span></div>
@@ -450,9 +571,16 @@
           </div>
         </div>
 
-        ${renderResultGroups("no", "Sprawdź dokładniej", "Tu zaznaczyłeś „NIE”. To nie jest automatycznie wada umowy, ale warto odnaleźć odpowiedni mechanizm albo świadomie ustalić, że go nie ma.")}
+        ${renderDocumentIdentity()}
+        ${renderSectionMatrix()}
+        ${renderMeetingList()}
+
+        <details class="audit-full-record">
+          <summary>Pełny zapis wszystkich 30 odpowiedzi</summary>
+          ${renderResultGroups("no", "Sprawdź dokładniej", "Tu zaznaczyłeś „NIE”. To nie jest automatycznie wada umowy, ale warto odnaleźć odpowiedni mechanizm albo świadomie ustalić, że go nie ma.")}
         ${renderResultGroups("unknown", "Nie wiem / do ustalenia", "To naturalna część czytania trudnej umowy. Poniżej masz słowa, których możesz szukać, i materiały pomagające zrozumieć temat.")}
         ${renderResultGroups("yes", "Elementy, które odnalazłeś", "„TAK” oznacza, że potrafisz wskazać odpowiedni zapis lub dokument. Audyt nie ocenia jednak jego jakości ani skuteczności.")}
+        </details>
 
         <div class="audit-final-note">
           <strong>Co dalej?</strong>
