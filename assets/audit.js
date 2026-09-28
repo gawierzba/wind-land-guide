@@ -473,6 +473,7 @@
     });
   }
 
-  if (started) renderQuestion();
+  if (started && answeredCount() === questions.length) renderResults();
+  else if (started) renderQuestion();
   else renderIntro();
 })();
