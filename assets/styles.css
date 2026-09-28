@@ -250,3 +250,20 @@ body.search-open{overflow:hidden}
 @media print{
   .audit-print-brand{display:block!important;font-size:7.5pt;font-weight:850;letter-spacing:.07em;text-transform:uppercase;color:#526158;margin-bottom:5mm}
 }
+
+
+/* v0.8: deeper GUIDE content blocks */
+.deep-dive{margin:34px 0;padding:24px;border:1px solid #dfe5dc;border-radius:14px;background:#fff}
+.deep-dive>.eyebrow{margin-bottom:5px}
+.deep-dive h2{margin-top:.35em}
+.case-study{margin:24px 0;padding:20px 22px;border:1px solid #d9e2d9;border-radius:12px;background:#f2f5f0}
+.case-study strong:first-child{display:block;margin-bottom:7px;color:#294635}
+.control-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 28px}
+.control-card{border:1px solid #dfe5dc;border-radius:11px;background:#fff;padding:16px}
+.control-card span{display:block;font-size:.7rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase;color:#607268;margin-bottom:5px}
+.control-card strong{display:block;line-height:1.32;margin-bottom:5px}
+.control-card p{margin:0;color:#606c64;font-size:.9rem}
+.guide-search-terms{margin:22px 0;padding:17px 18px;border-radius:10px;background:#eef3ec}
+.guide-search-terms strong{display:block;margin-bottom:5px}
+.guide-search-terms p{margin:0;color:#506057}
+@media(max-width:720px){.control-grid{grid-template-columns:1fr}.deep-dive{padding:19px 17px}}
