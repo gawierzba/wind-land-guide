@@ -543,8 +543,10 @@
       if (meta) {
         const box = document.createElement("div");
         box.className = "source-status";
+        const siteScript = document.querySelector('script[src*="assets/site.js"]');
+        const root = siteScript ? new URL("../", siteScript.src) : new URL("/", location.href);
         box.innerHTML = '<span>ŹRÓDŁA I STAN PRAWNY</span><strong>Weryfikacja: 28.09.2026</strong><a href="' +
-          new URL("pl/stan-prawny/", new URL("../", document.currentScript?.src || location.href)).href +
+          new URL("pl/stan-prawny/", root).href +
           '">Zobacz rejestr weryfikacji →</a>';
         const tools = article.querySelector(".article-tools");
         (tools || meta).insertAdjacentElement("afterend", box);
