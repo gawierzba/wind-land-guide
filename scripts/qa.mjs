@@ -1,0 +1,124 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const ignored = new Set([".git", "node_modules"]);
+const errors = [];
+const warnings = [];
+
+function walk(dir) {
+  const out = [];
+  for (const name of fs.readdirSync(dir)) {
+    if (ignored.has(name)) continue;
+    const full = path.join(dir, name);
+    const stat = fs.statSync(full);
+    if (stat.isDirectory()) out.push(...walk(full));
+    else out.push(full);
+  }
+  return out;
+}
+
+function rel(file) {
+  return path.relative(root, file).split(path.sep).join("/");
+}
+
+const files = walk(root);
+const existing = new Set(files.map(rel));
+const htmlFiles = files.filter(f => f.endsWith(".html"));
+
+function attr(html, tag, attrName) {
+  const rx = new RegExp("<" + tag + "\\b[^>]*\\b" + attrName + "=[\"']([^\"']*)[\"'][^>]*>", "gi");
+  return [...html.matchAll(rx)].map(m => m[1]);
+}
+
+function resolveInternal(from, href) {
+  if (!href || /^(https?:|mailto:|tel:|javascript:|data:)/i.test(href)) return null;
+  const [raw, hash = ""] = href.split("#");
+  if (!raw) return { file: from, hash };
+
+  const base = from.split("/");
+  base.pop();
+  const parts = raw.startsWith("/") ? [] : base;
+  for (const seg of raw.replace(/^\/+/, "").split("/")) {
+    if (!seg || seg === ".") continue;
+    if (seg === "..") parts.pop();
+    else parts.push(seg);
+  }
+  let target = parts.join("/");
+  if (!target) target = "index.html";
+  if (raw.endsWith("/")) target += "/index.html";
+  else if (!/\.[a-z0-9]+$/i.test(target)) target += "/index.html";
+  return { file: target, hash };
+}
+
+for (const file of htmlFiles) {
+  const fileRel = rel(file);
+  const html = fs.readFileSync(file, "utf8");
+  const isRootRedirect = fileRel === "index.html";
+
+  const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1]?.trim() || "";
+  const desc = (
+    html.match(/<meta[^>]+name=[\"']description[\"'][^>]+content=[\"']([^\"']*)[\"']/i) ||
+    html.match(/<meta[^>]+content=[\"']([^\"']*)[\"'][^>]+name=[\"']description[\"']/i) ||
+    []
+  )[1] || "";
+  const h1Count = (html.match(/<h1\b/gi) || []).length;
+  const ids = [...html.matchAll(/\sid=[\"']([^\"']+)[\"']/gi)].map(m => m[1]);
+  const duplicateIds = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))];
+
+  if (!title) errors.push(`${fileRel}: brak <title>`);
+  if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
+  if (!isRootRedirect && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
+  if (duplicateIds.length) errors.push(`${fileRel}: powtórzone id: ${duplicateIds.join(", ")}`);
+
+  const idsSet = new Set(ids);
+  const refs = [
+    ...attr(html, "a", "href"),
+    ...attr(html, "script", "src"),
+    ...attr(html, "img", "src"),
+    ...attr(html, "link", "href")
+  ];
+
+  for (const href of refs) {
+    const target = resolveInternal(fileRel, href);
+    if (!target) continue;
+    if (!existing.has(target.file)) {
+      errors.push(`${fileRel}: brak celu ${href} -> ${target.file}`);
+      continue;
+    }
+    if (target.file === fileRel && target.hash && !idsSet.has(target.hash)) {
+      errors.push(`${fileRel}: brak kotwicy #${target.hash}`);
+    }
+  }
+}
+
+const indexFile = path.join(root, "content-index.json");
+if (!fs.existsSync(indexFile)) errors.push("brak content-index.json");
+else {
+  const index = JSON.parse(fs.readFileSync(indexFile, "utf8"));
+  const entries = [...(index.tools || []), ...(index.materials || [])];
+  const ids = entries.map(x => x.id);
+  const paths = entries.map(x => x.path);
+  const duplicateIds = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))];
+  const duplicatePaths = [...new Set(paths.filter((p, i) => paths.indexOf(p) !== i))];
+  if (duplicateIds.length) errors.push("content-index: powtórzone id: " + duplicateIds.join(", "));
+  if (duplicatePaths.length) errors.push("content-index: powtórzone ścieżki: " + duplicatePaths.join(", "));
+
+  for (const item of entries) {
+    const target = item.path.replace(/^\//, "") + (item.path.endsWith("/") ? "index.html" : "");
+    if (!existing.has(target)) errors.push(`content-index: ${item.id} wskazuje brakujący plik ${target}`);
+    if (!item.title) errors.push(`content-index: ${item.id} bez title`);
+    if (!item.category) warnings.push(`content-index: ${item.id} bez category`);
+  }
+
+  if ((index.materials || []).length !== 50) warnings.push(`content-index: liczba GUIDE = ${(index.materials || []).length}, oczekiwano 50`);
+}
+
+console.log(`QA: ${htmlFiles.length} stron HTML, ${existing.size} plików.`);
+for (const warning of warnings) console.warn("WARNING:", warning);
+if (errors.length) {
+  for (const error of errors) console.error("ERROR:", error);
+  console.error(`QA FAILED: ${errors.length} błędów.`);
+  process.exit(1);
+}
+console.log("QA PASSED: brak błędów strukturalnych.");
