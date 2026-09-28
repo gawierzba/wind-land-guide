@@ -91,12 +91,19 @@ console.log("LEGAL QA PASSED.");
 
 const registryForWatch = JSON.parse(fs.readFileSync(path.join(root, "legal-sources.json"), "utf8"));
 const today = new Date().toISOString().slice(0, 10);
+let watchFailures = 0;
 for (const watch of registryForWatch.watch || []) {
   if (!watch.date) continue;
   if (today >= watch.date) {
-    errors.push(`SOURCE WATCH ${watch.id}: data ponownej weryfikacji ${watch.date} osiągnięta. ${watch.action || watch.reason || ""}`);
+    console.error(`ERROR: SOURCE WATCH ${watch.id}: data ponownej weryfikacji ${watch.date} osiągnięta. ${watch.action || watch.reason || ""}`);
+    watchFailures++;
   } else {
     const days = Math.ceil((Date.parse(watch.date + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
-    if (days <= 14) warnings.push(`SOURCE WATCH ${watch.id}: ${days} dni do ponownej weryfikacji (${watch.date})`);
+    if (days <= 14) console.warn(`WARNING: SOURCE WATCH ${watch.id}: ${days} dni do ponownej weryfikacji (${watch.date})`);
   }
 }
+if (watchFailures) {
+  console.error(`LEGAL QA FAILED: ${watchFailures} terminów ponownej weryfikacji osiągniętych.`);
+  process.exit(1);
+}
+console.log("SOURCE WATCH PASSED.");
