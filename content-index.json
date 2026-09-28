@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -271,6 +271,36 @@
       "id": "GUIDE-045",
       "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
       "path": "/pl/umowa/poddanie-sie-egzekucji/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-046",
+      "title": "Poręczenie spółki dominującej — czy duża grupa naprawdę odpowiada za spółkę projektową?",
+      "path": "/pl/umowa/poreczenie-spolki-dominujacej/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-047",
+      "title": "Magazyn energii, wodór, GPO i GPZ — czy pierwotna umowa obejmuje nowe technologie?",
+      "path": "/pl/umowa/magazyn-energii-wodor-gpz/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-048",
+      "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+      "path": "/pl/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-049",
+      "title": "Doręczenia przez 30 lat — kiedy e-mail, list i zmiana adresu naprawdę mają znaczenie?",
+      "path": "/pl/umowa/doreczenia-i-kontakty/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-050",
+      "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+      "path": "/pl/umowa/hierarchia-dokumentow-i-wersji/",
       "status": "draft-live"
     }
   ]
