@@ -72,11 +72,20 @@ for (const file of htmlFiles) {
   const hasNoindex = /<meta[^>]+name=[\"']robots[\"'][^>]+content=[\"'][^\"']*noindex/i.test(html);
   const hasStyles = /<link[^>]+rel=[\"']stylesheet[\"']/i.test(html);
   const hasSiteScript = /<script[^>]+src=[\"'][^\"']*assets\/site\.js[\"']/i.test(html);
+  const canonical = (html.match(/<link[^>]+rel=[\"']canonical[\"'][^>]+href=[\"']([^\"']+)[\"']/i) || html.match(/<link[^>]+href=[\"']([^\"']+)[\"'][^>]+rel=[\"']canonical[\"']/i) || [])[1] || "";
+  const hasFavicon = /<link[^>]+rel=[\"']icon[\"'][^>]+href=[\"']\/favicon\.svg[\"']/i.test(html);
+  const hasOgTitle = /<meta[^>]+property=[\"']og:title[\"']/i.test(html);
+  const hasOgDescription = /<meta[^>]+property=[\"']og:description[\"']/i.test(html);
+  const hasOgUrl = /<meta[^>]+property=[\"']og:url[\"']/i.test(html);
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
   if ((isRootRedirect || isEnglishDraft) && !hasNoindex) errors.push(`${fileRel}: brak noindex na stronie technicznej lub roboczej EN`);
   if (isPublishedPolish && hasNoindex) errors.push(`${fileRel}: noindex blokuje opublikowaną polską stronę`);
+  if (isPublishedPolish && !canonical) errors.push(`${fileRel}: brak canonical na opublikowanej polskiej stronie`);
+  if (isPublishedPolish && canonical && !canonical.startsWith("https://gruntiwiatr.pl/")) errors.push(`${fileRel}: canonical poza domeną gruntiwiatr.pl`);
+  if (isPublishedPolish && !hasFavicon) errors.push(`${fileRel}: brak favicon`);
+  if (isPublishedPolish && (!hasOgTitle || !hasOgDescription || !hasOgUrl)) errors.push(`${fileRel}: niepełne Open Graph`);
   if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
   if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
