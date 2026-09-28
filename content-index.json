@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -900,6 +900,93 @@
         "wersja"
       ],
       "depth": "deep"
+    },
+    {
+      "id": "GUIDE-051",
+      "title": "Jak sprawdzić MPZP dla planowanej turbiny?",
+      "path": "/pl/projekt/jak-sprawdzic-mpzp/",
+      "status": "draft-live",
+      "category": "Projekt i procedury",
+      "keywords": [
+        "MPZP",
+        "plan miejscowy",
+        "rysunek planu",
+        "tekst planu",
+        "10H",
+        "700 m",
+        "parametry turbiny",
+        "gmina"
+      ],
+      "depth": "standard"
+    },
+    {
+      "id": "GUIDE-052",
+      "title": "Uchwała o przystąpieniu to jeszcze nie plan — jak sprawdzić etap?",
+      "path": "/pl/projekt/uchwala-o-przystapieniu/",
+      "status": "draft-live",
+      "category": "Projekt i procedury",
+      "keywords": [
+        "uchwała o przystąpieniu",
+        "MPZP",
+        "etap planu",
+        "wnioski",
+        "procedura planistyczna",
+        "gmina"
+      ],
+      "depth": "standard"
+    },
+    {
+      "id": "GUIDE-053",
+      "title": "Wnioski, konsultacje i spotkania otwarte przy planie pod wiatraki — jak wygląda procedura?",
+      "path": "/pl/projekt/konsultacje-planu-wiatraki/",
+      "status": "draft-live",
+      "category": "Projekt i procedury",
+      "keywords": [
+        "konsultacje",
+        "spotkanie otwarte",
+        "wnioski",
+        "uwagi",
+        "gmina pobliska",
+        "art. 6a",
+        "MPZP"
+      ],
+      "depth": "standard"
+    },
+    {
+      "id": "GUIDE-054",
+      "title": "Decyzja środowiskowa — co właściwie rozstrzyga?",
+      "path": "/pl/projekt/decyzja-srodowiskowa/",
+      "status": "draft-live",
+      "category": "Projekt i procedury",
+      "keywords": [
+        "DŚU",
+        "decyzja środowiskowa",
+        "OOŚ",
+        "KIP",
+        "100 MW",
+        "30 m",
+        "monitoring",
+        "środowisko"
+      ],
+      "depth": "standard"
+    },
+    {
+      "id": "GUIDE-055",
+      "title": "Raport OOŚ — jak go czytać bez 500 stron od deski do deski?",
+      "path": "/pl/projekt/jak-czytac-raport-oos/",
+      "status": "draft-live",
+      "category": "Projekt i procedury",
+      "keywords": [
+        "raport OOŚ",
+        "art. 66",
+        "warianty",
+        "hałas",
+        "ptaki",
+        "nietoperze",
+        "inwentaryzacja",
+        "oddziaływania skumulowane"
+      ],
+      "depth": "standard"
     }
   ],
   "tools": [
@@ -935,6 +1022,7 @@
     "search-index/part-04.json",
     "search-index/part-05.json",
     "search-index/part-06.json",
-    "search-index/part-07.json"
+    "search-index/part-07.json",
+    "search-index/part-08.json"
   ]
 }
