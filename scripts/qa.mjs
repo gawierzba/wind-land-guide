@@ -55,6 +55,8 @@ for (const file of htmlFiles) {
   const fileRel = rel(file);
   const html = fs.readFileSync(file, "utf8");
   const isRootRedirect = fileRel === "index.html";
+  const isEnglishDraft = fileRel.startsWith("en/");
+  const isPublishedPolish = fileRel.startsWith("pl/");
 
   const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1]?.trim() || "";
   const desc = (
@@ -73,7 +75,8 @@ for (const file of htmlFiles) {
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
-  if (!hasNoindex) errors.push(`${fileRel}: brak noindex w wersji draftowej`);
+  if ((isRootRedirect || isEnglishDraft) && !hasNoindex) errors.push(`${fileRel}: brak noindex na stronie technicznej lub roboczej EN`);
+  if (isPublishedPolish && hasNoindex) errors.push(`${fileRel}: noindex blokuje opublikowaną polską stronę`);
   if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
   if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
