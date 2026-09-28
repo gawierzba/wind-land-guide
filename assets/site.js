@@ -135,7 +135,8 @@
     return snippet;
   }
 
-  function openSearch(initial = "") {
+  function openSearch(initial = "", trigger = document.activeElement) {
+    if (trigger && trigger !== document.body) lastSearchTrigger = trigger;
     let panel = document.querySelector("#global-search-panel");
     if (!panel) {
       panel = document.createElement("div");
@@ -147,7 +148,7 @@
             <div><div class="eyebrow">Przeszukaj całe kompendium</div><h2 id="search-title">Wpisz dowolne słowo lub pytanie</h2></div>
             <button class="search-close" type="button" aria-label="Zamknij wyszukiwarkę">×</button>
           </div>
-          <input class="search-input" type="search" placeholder="Np. koleiny, fundament, odsetki, mokre pole albo całe pytanie…" autocomplete="off">
+          <input class="search-input" type="search" aria-label="Szukaj w całym kompendium" placeholder="Np. koleiny, fundament, odsetki, mokre pole albo całe pytanie…" autocomplete="off">
           <div class="search-hint">Wyszukiwarka przegląda pełną treść wszystkich GUIDE-ów — tytuły, śródtytuły, akapity, checklisty i tabele.</div>
           <div class="search-results" aria-live="polite"><p class="search-empty">Ładowanie pełnego indeksu treści…</p></div>
         </div>`;
@@ -228,6 +229,9 @@
     const panel = document.querySelector("#global-search-panel");
     if (panel) panel.classList.remove("open");
     document.body.classList.remove("search-open");
+    if (lastSearchTrigger && typeof lastSearchTrigger.focus === "function") {
+      setTimeout(() => lastSearchTrigger.focus(), 0);
+    }
   }
 
   document.querySelectorAll(".navlinks").forEach(nav => {
@@ -245,14 +249,14 @@
     form.addEventListener("submit", e => {
       e.preventDefault();
       const q = form.querySelector("input")?.value || "";
-      openSearch(q);
+      openSearch(q, e.currentTarget);
     });
   });
 
   document.querySelectorAll("[data-search-query]").forEach(trigger => {
     trigger.addEventListener("click", e => {
       e.preventDefault();
-      openSearch(trigger.dataset.searchQuery || trigger.textContent || "");
+      openSearch(trigger.dataset.searchQuery || trigger.textContent || "", trigger);
     });
   });
 
@@ -300,7 +304,7 @@
 
   document.addEventListener("keydown", e => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
-      e.preventDefault(); openSearch();
+      e.preventDefault(); openSearch("", document.activeElement);
     }
     if (e.key === "Escape") closeSearch();
   });
