@@ -11,7 +11,7 @@ Robocze repozytorium neutralnego kompendium dla właścicieli gruntów dotycząc
 - `/assets/` — wspólne style
 - `content-index.json` — centralny indeks materiałów GUIDE
 
-Aktualny rdzeń obejmuje GUIDE-001–GUIDE-050.
+Aktualny rdzeń obejmuje GUIDE-001–GUIDE-055.
 
 ## Zasady redakcyjne
 
@@ -170,3 +170,28 @@ Poprawki UX:
 Stan publikacyjny:
 - `noindex` pozostaje celowo włączony,
 - zdejmowanie blokady indeksowania nastąpi dopiero po audycie źródeł prawnych i finalnym przeglądzie SEO.
+
+
+### v1.2 — audyt prawa i źródeł
+
+Przeprowadzono przekrojowy audyt aktualnego stanu prawnego i źródeł urzędowych na dzień 28.09.2026.
+
+Zweryfikowane zostały m.in.:
+- ustawa wiatrowa: 10H, minimum 700 m i odróżnienie zawetowanej propozycji 500 m od obowiązującego prawa,
+- ustawa planistyczna i ZPI, w tym NSA II OSK 7/26,
+- nowe rozporządzenie o przygotowaniu MPZP — Dz.U. 2026 poz. 1192 od 24.09.2026,
+- ustawa OOŚ i rozporządzenie kwalifikacyjne wraz z Dz.U. 2026 poz. 706 oraz poz. 1185,
+- Kodeks cywilny 2026: dzierżawa, pełnomocnictwo, służebność przesyłu, sprzedaż i dziedziczenie,
+- KPC 2026 — art. 777,
+- ustawa o księgach wieczystych i hipotece — Dz.U. 2026 poz. 1066,
+- ustawa o kształtowaniu ustroju rolnego — Dz.U. 2026 poz. 941,
+- ARiMR — zasady płatności 2026,
+- PIT / ryczałt prywatnej dzierżawy oraz podatek od nieruchomości.
+
+Korekty merytoryczne i źródłowe trafiły do GUIDE-014, GUIDE-015, GUIDE-020, GUIDE-051 i GUIDE-054 oraz do centralnego rejestru `/pl/stan-prawny/`.
+
+Dodano `LEGAL_SOURCES_AUDIT.md`.
+
+Stan biblioteki po dodaniu sekcji „Projekt”: 55 GUIDE-ów — 50 `depth: deep` i 5 nowych materiałów projektowo-proceduralnych `depth: standard`. Statyczny indeks wyszukiwarki został uzupełniony o GUIDE-051–055.
+
+Serwis pozostaje na `noindex`. Przed publikacją wymagane są ponowne kontrole po 02.10.2026 (Prawo budowlane) oraz 20.10.2026 (art. 6g ustawy wiatrowej).
