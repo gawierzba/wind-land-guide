@@ -245,3 +245,8 @@ body.search-open{overflow:hidden}
   .audit-full-record,.audit-final-note{display:none!important}
   .audit-result-group{break-before:auto}
 }
+
+.audit-print-brand{display:none}
+@media print{
+  .audit-print-brand{display:block!important;font-size:7.5pt;font-weight:850;letter-spacing:.07em;text-transform:uppercase;color:#526158;margin-bottom:5mm}
+}
