@@ -1,4 +1,15 @@
 (() => {
+  // Cloudflare Web Analytics — privacy-friendly, cookie-free pageview analytics.
+  if (!document.querySelector('script[data-cf-beacon]')) {
+    const beacon = document.createElement('script');
+    beacon.type = 'module';
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.dataset.cfBeacon = JSON.stringify({ token: 'e045c3b1dd2b4fcc8bccfca023400ae0' });
+    document.head.appendChild(beacon);
+  }
+})();
+
+(() => {
   const script = document.currentScript;
   const siteRoot = script ? new URL("../", script.src) : new URL("/", location.href);
   const plRoot = new URL("pl/", siteRoot);
