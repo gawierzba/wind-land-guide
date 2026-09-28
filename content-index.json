@@ -1,5 +1,5 @@
 {
-  "version": "0.4",
+  "version": "0.6",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -849,6 +849,24 @@
         "protokół",
         "pierwszeństwo",
         "wersja"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "NARZEDZIE-001",
+      "title": "Sprawdź swoją umowę w 5 minut",
+      "path": "/pl/sprawdz-umowe/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "audyt",
+        "sprawdź umowę",
+        "checklista",
+        "30 pytań",
+        "tak nie nie wiem",
+        "umowa dzierżawy",
+        "karta kontrolna"
       ]
     }
   ]
