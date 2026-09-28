@@ -1,7 +1,7 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "language": "pl",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "materials": [
     {
       "id": "GUIDE-001",
@@ -241,6 +241,36 @@
       "id": "GUIDE-040",
       "title": "Siła wyższa, zmiana prawa i brak opłacalności — kto ponosi ryzyko projektu?",
       "path": "/pl/umowa/sila-wyzsza-zmiana-prawa/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-041",
+      "title": "Standard ochrony gleby, upraw i melioracji — czego wymagać od ekip na polu?",
+      "path": "/pl/umowa/ochrona-gleby-upraw-melioracji/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-042",
+      "title": "Awaria na polu — kto dzwoni, kto zabezpiecza i co musi wydarzyć się w pierwszych 24 godzinach?",
+      "path": "/pl/umowa/procedura-awaryjna/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-043",
+      "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+      "path": "/pl/umowa/kontrola-wykonywania-umowy/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-044",
+      "title": "Gwarancja czynszowa — co daje więcej niż zapis „inwestor zapłaci”?",
+      "path": "/pl/umowa/gwarancja-czynszowa/",
+      "status": "draft-live"
+    },
+    {
+      "id": "GUIDE-045",
+      "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
+      "path": "/pl/umowa/poddanie-sie-egzekucji/",
       "status": "draft-live"
     }
   ]
