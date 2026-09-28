@@ -488,3 +488,72 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
 
 /* v1.3.1 — hide unfinished English switch */
 .navlinks .lang{display:none!important}
+
+
+/* v1.4 — article utility layer */
+.article-tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:-14px 0 30px;
+}
+.article-tools button{
+  border:1px solid #d5ded5;
+  border-radius:8px;
+  background:#fff;
+  color:#285b3d;
+  padding:8px 11px;
+  font:inherit;
+  font-size:.82rem;
+  font-weight:750;
+  cursor:pointer;
+}
+.article-tools button:hover{
+  border-color:#8da290;
+  background:#f3f6f1;
+}
+.section-link{
+  color:#91a096;
+  text-decoration:none;
+  font-size:.72em;
+  font-weight:650;
+  opacity:0;
+  transition:opacity .15s ease,color .15s ease;
+}
+.article h2:hover .section-link,
+.section-link:focus-visible{
+  opacity:1;
+  color:#285b3d;
+}
+.reading-progress{
+  position:fixed;
+  z-index:95;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  pointer-events:none;
+}
+.reading-progress span{
+  display:block;
+  width:100%;
+  height:100%;
+  background:#285b3d;
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform .06s linear;
+}
+@media(max-width:720px){
+  .article-tools{margin-top:-12px;margin-bottom:24px}
+  .article-tools button{font-size:.79rem;padding:8px 10px}
+  .section-link{opacity:.72}
+}
+@media print{
+  .topbar,.mobile-dock,.article-tools,.reading-progress,.section-link,.footer{display:none!important}
+  body{background:#fff!important;padding-bottom:0!important}
+  .article{width:auto;max-width:none;margin:0;padding:0;color:#111}
+  .article a{color:#111;text-decoration:none}
+  .article table{break-inside:auto}
+  .article h1,.article h2,.article h3{break-after:avoid}
+  .notice,.related,.article-toc{break-inside:avoid}
+}
