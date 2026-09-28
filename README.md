@@ -72,3 +72,16 @@ Dodano narzędzie „Sprawdź swoją umowę w 5 minut”:
 - stan audytu zapisuje się lokalnie w przeglądarce,
 - podsumowanie można wydrukować lub zapisać do PDF,
 - narzędzie jest dostępne ze strony głównej, ze ścieżki „Umowa” i z wyszukiwarki.
+
+
+### v0.7 — Karta analizy umowy
+
+Podsumowanie audytu zostało przebudowane w drukowalną „Kartę analizy umowy”:
+- opcjonalne oznaczenie projektu, inwestora, działki i wersji umowy,
+- dane przechowywane wyłącznie lokalnie w przeglądarce,
+- przekrój wszystkich 8 obszarów bez tworzenia punktacji lub rankingu,
+- automatyczna „Lista do rozmowy” z odpowiedzi NIE / NIE WIEM / pominiętych,
+- przy każdym punkcie miejsce na paragraf, załącznik i ustalenie ze spotkania,
+- pełny zapis wszystkich 30 odpowiedzi dostępny na ekranie jako rozwijany aneks,
+- wydruk A4 zoptymalizowany pod rozmowę z inwestorem lub doradcą,
+- możliwość edycji opisu dokumentu po zakończeniu audytu bez utraty odpowiedzi.
