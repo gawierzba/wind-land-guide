@@ -1,5 +1,5 @@
 {
-  "version": "0.12",
+  "version": "0.13",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -19,7 +19,7 @@
         "inwestor",
         "dokumenty"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-002",
@@ -38,7 +38,7 @@
         "SPV",
         "grupa"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-003",
@@ -57,7 +57,7 @@
         "pierwsze",
         "spotkanie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-004",
@@ -73,7 +73,7 @@
         "oferta",
         "dokumenty"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-005",
@@ -92,7 +92,7 @@
         "mozliwosc",
         "budowy"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-006",
@@ -187,7 +187,7 @@
         "kabel",
         "rotor"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-011",
@@ -222,7 +222,7 @@
         "ryzyka",
         "zabezpieczenia"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-013",
@@ -240,7 +240,7 @@
         "wynagrodzenie",
         "infrastruktura"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-014",
@@ -258,7 +258,7 @@
         "powierzchnia",
         "kwalifikowana"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-015",
@@ -275,7 +275,7 @@
         "publicznoprawne",
         "koszt"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-016",
@@ -719,7 +719,7 @@
         "finansowanie",
         "ryzyko"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-041",
@@ -788,7 +788,7 @@
         "płatność",
         "odnowienie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-045",
@@ -807,7 +807,7 @@
         "egzekucji",
         "należność"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-046",
@@ -826,7 +826,7 @@
         "guarantee",
         "SPV"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-047",
@@ -845,7 +845,7 @@
         "technologie",
         "aneks"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-048",
@@ -881,7 +881,7 @@
         "awaria",
         "oświadczenie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-050",
@@ -923,5 +923,9 @@
         "analiza 8 obszarów"
       ]
     }
-  ]
+  ],
+  "editorial": {
+    "deepGuideCoverage": "50/50",
+    "deepGuideCompleted": "2026-09-28"
+  }
 }
