@@ -75,7 +75,7 @@
       "id": "environment",
       "title": "Ustawa OOŚ",
       "url": "https://eli.gov.pl/eli/DU/2026/670/ogl",
-      "reference": "Dz.U. 2026 poz. 670",
+      "reference": "tekst jednolity: Dz.U. 2026 poz. 670; po tekście jednolitym ogłoszono dalsze nowelizacje — przy cytowaniu sprawdzany jest tekst ujednolicony ELI",
       "scope": [
         "decyzja środowiskowa",
         "raport OOŚ",
@@ -86,11 +86,12 @@
       "id": "environment-regulation",
       "title": "Rozporządzenie w sprawie przedsięwzięć mogących znacząco oddziaływać na środowisko",
       "url": "https://eli.gov.pl/eli/DU/2019/1839/ogl",
-      "reference": "Dz.U. 2019 poz. 1839, z późn. zm.",
+      "reference": "Dz.U. 2019 poz. 1839, z późn. zm.; istotna nowelizacja: Dz.U. 2026 poz. 706 (obowiązuje od 13.06.2026)",
       "scope": [
         "wiatr ≥100 MW",
         "wiatr ≥30 m",
-        "formy ochrony przyrody"
+        "formy ochrony przyrody",
+        "szczególny wyjątek dla części modernizacji/repoweringu od 13.06.2026"
       ]
     },
     {
@@ -128,7 +129,7 @@
       "id": "agri-land-protection",
       "title": "Ustawa o ochronie gruntów rolnych i leśnych",
       "url": "https://eli.gov.pl/eli/DU/2024/82/ogl",
-      "reference": "Dz.U. 2024 poz. 82, z późn. zm.",
+      "reference": "tekst jednolity: Dz.U. 2024 poz. 82; późniejsze nowelizacje m.in. Dz.U. 2026 poz. 781 i 1155; sprawdzono tekst ujednolicony",
       "scope": [
         "wyłączenie z produkcji",
         "należność",
@@ -168,6 +169,12 @@
       "id": "wind-act-art-6g",
       "reason": "Art. 6g ustawy o inwestycjach w zakresie elektrowni wiatrowych ma wejść w życie; aktualny tekst ELI oznacza ten przepis jako przyszły.",
       "action": "Ponownie sprawdzić materiały o lokalizacji/procesie projektu i zdecydować, czy dodać osobny GUIDE o prosumencie wirtualnym mieszkańców."
+    },
+    {
+      "date": "2027-01-01",
+      "id": "agri-land-2027-875",
+      "reason": "Dz.U. 2026 poz. 875 zmienia m.in. ustawę o ochronie gruntów rolnych i leśnych.",
+      "action": "Ponownie sprawdzić GUIDE o podatkach, wyłączeniu z produkcji, glebie i rekultywacji."
     }
   ]
 }
