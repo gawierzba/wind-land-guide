@@ -1,0 +1,24 @@
+name: Site QA
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - migration/wind-guide-v0
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Structural audit
+        run: node scripts/qa.mjs
+      - name: Check site.js syntax
+        run: node --check assets/site.js
+      - name: Check audit.js syntax
+        run: node --check assets/audit.js
