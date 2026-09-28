@@ -1,5 +1,5 @@
 {
-  "version": "0.9",
+  "version": "0.10",
   "language": "pl",
   "updated": "2026-09-28",
   "materials": [
@@ -129,7 +129,7 @@
         "przedluzenie",
         "koniec"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-008",
@@ -292,7 +292,7 @@
         "gospodarstwa",
         "odszkodowanie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-017",
@@ -310,7 +310,7 @@
         "geodeta",
         "serwis"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-018",
@@ -326,7 +326,7 @@
         "pelnomocnictwo",
         "podpis"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-019",
@@ -434,7 +434,7 @@
         "droga",
         "uprawa"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-025",
@@ -470,7 +470,7 @@
         "dren",
         "melioracja"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-027",
@@ -700,7 +700,7 @@
         "po",
         "umowie"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-040",
