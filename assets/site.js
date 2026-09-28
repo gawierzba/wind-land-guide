@@ -1,3 +1,93 @@
+
+(() => {
+  function injectStructuredData() {
+    if (!location.pathname.startsWith("/pl/")) return;
+    if (document.querySelector('script[data-structured-data="grunt-i-wiatr"]')) return;
+
+    const canonical = document.querySelector('link[rel="canonical"]')?.href || location.href.split("#")[0];
+    const description = document.querySelector('meta[name="description"]')?.content || "";
+    const h1 = document.querySelector("h1")?.textContent?.replace(/\s+/g, " ").trim() || document.title;
+    const path = new URL(canonical).pathname;
+    const siteUrl = "https://gruntiwiatr.pl/pl/";
+    const siteId = "https://gruntiwiatr.pl/#website";
+    const isGuide = /GUIDE-\d+/i.test(document.querySelector(".eyebrow")?.textContent || "");
+
+    const sectionMap = [
+      ["/pl/zanim-podpiszesz/", "Zanim podpiszesz"],
+      ["/pl/umowa/", "Umowa"],
+      ["/pl/realizacja/", "Realizacja"],
+      ["/pl/koniec-inwestycji/", "Koniec inwestycji"],
+      ["/pl/projekt/", "Projekt"]
+    ];
+
+    const crumbs = [{ "@type": "ListItem", position: 1, name: "Grunt i wiatr", item: siteUrl }];
+    const section = sectionMap.find(([prefix]) => path.startsWith(prefix));
+
+    if (section && path !== "/pl/") {
+      crumbs.push({
+        "@type": "ListItem",
+        position: crumbs.length + 1,
+        name: section[1],
+        item: "https://gruntiwiatr.pl" + section[0]
+      });
+    }
+
+    const currentAlreadyListed = crumbs.some(item => item.item === canonical);
+    if (path !== "/pl/" && !currentAlreadyListed) {
+      crumbs.push({
+        "@type": "ListItem",
+        position: crumbs.length + 1,
+        name: h1,
+        item: canonical
+      });
+    }
+
+    const page = {
+      "@type": isGuide ? "Article" : "WebPage",
+      "@id": canonical + "#page",
+      url: canonical,
+      name: h1,
+      headline: isGuide ? h1 : undefined,
+      description,
+      inLanguage: "pl-PL",
+      isPartOf: { "@id": siteId }
+    };
+    Object.keys(page).forEach(key => page[key] === undefined && delete page[key]);
+
+    const graph = [
+      {
+        "@type": "WebSite",
+        "@id": siteId,
+        url: siteUrl,
+        name: "Grunt i wiatr",
+        description: "Niezależne kompendium dla właścicieli gruntów zainteresowanych energetyką wiatrową.",
+        inLanguage: "pl-PL"
+      },
+      page
+    ];
+
+    if (crumbs.length > 1) {
+      graph.push({
+        "@type": "BreadcrumbList",
+        "@id": canonical + "#breadcrumbs",
+        itemListElement: crumbs
+      });
+    }
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.dataset.structuredData = "grunt-i-wiatr";
+    script.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
+    document.head.appendChild(script);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", injectStructuredData, { once: true });
+  } else {
+    injectStructuredData();
+  }
+})();
+
 (() => {
   // Cloudflare Web Analytics — privacy-friendly, cookie-free pageview analytics.
   if (!document.querySelector('script[data-cf-beacon]')) {
