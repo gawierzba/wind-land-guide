@@ -450,8 +450,8 @@
       const sep = document.createTextNode(" · ");
       const a = document.createElement("a");
       a.className = "contact-link";
-      a.href = "mailto:kontakt@gruntiwiatr.pl";
-      a.textContent = "kontakt@gruntiwiatr.pl";
+      a.href = new URL("pl/kontakt/", siteRoot).href;
+      a.textContent = "Kontakt";
       a.dataset.contact = "contact@grunt-i-wiatr-marker";
       f.append(sep, a);
     }
@@ -580,5 +580,65 @@
     document.addEventListener("DOMContentLoaded", enhanceTrustLayer, { once: true });
   } else {
     enhanceTrustLayer();
+  }
+})();
+
+
+(() => {
+  function initContactPage() {
+    const form = document.querySelector("[data-contact-form]");
+    if (!form) return;
+
+    const copy = document.querySelector("[data-copy-contact-email]");
+    if (copy) {
+      copy.addEventListener("click", async () => {
+        const original = copy.textContent;
+        try {
+          await navigator.clipboard.writeText("kontakt@gruntiwiatr.pl");
+          copy.textContent = "Skopiowano adres";
+        } catch {
+          copy.textContent = "kontakt@gruntiwiatr.pl";
+        }
+        setTimeout(() => { copy.textContent = original; }, 1800);
+      });
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+      const category = String(data.get("category") || "Inna sprawa");
+      const name = String(data.get("name") || "").trim();
+      const reply = String(data.get("reply") || "").trim();
+      const page = String(data.get("page") || "").trim();
+      const message = String(data.get("message") || "").trim();
+
+      if (!message) {
+        form.querySelector("[name='message']")?.focus();
+        return;
+      }
+
+      const subject = "[Grunt i wiatr] " + category;
+      const body = [
+        "Dzień dobry,",
+        "",
+        message,
+        "",
+        page ? "Dotyczy strony: " + page : "",
+        name ? "Imię / nazwa: " + name : "",
+        reply ? "Adres do odpowiedzi: " + reply : "",
+        "",
+        "Wiadomość przygotowana przez formularz kontaktowy gruntiwiatr.pl"
+      ].filter((line, i, arr) => line !== "" || (i > 0 && arr[i - 1] !== "")).join("\n");
+
+      location.href = "mailto:kontakt@gruntiwiatr.pl?subject=" +
+        encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initContactPage, { once: true });
+  } else {
+    initContactPage();
   }
 })();

@@ -618,3 +618,138 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
   .source-status a{justify-self:start;margin-top:4px}
 }
 @media print{.source-status{display:none!important}}
+
+
+/* v1.6 — contact page */
+.contact-hero{
+  padding:62px 0 34px;
+  background:
+    radial-gradient(circle at 85% 10%,rgba(86,124,95,.13),transparent 30%),
+    linear-gradient(180deg,#edf3eb 0,#f7f8f5 92%);
+  border-bottom:1px solid #e1e6df;
+}
+.contact-hero h1{
+  max-width:760px;
+  margin:.18em 0 .28em;
+  font-size:clamp(2.35rem,6vw,4.7rem);
+  letter-spacing:-.052em;
+  line-height:1;
+}
+.contact-hero p{
+  max-width:760px;
+  color:#4b584f;
+  font-size:1.08rem;
+}
+.contact-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);
+  gap:30px;
+  align-items:start;
+  padding:42px 0 66px;
+}
+.contact-card,
+.contact-side{
+  border:1px solid #dfe5dc;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 12px 38px rgba(23,32,25,.045);
+}
+.contact-card{padding:clamp(22px,4vw,38px)}
+.contact-side{padding:24px;position:sticky;top:112px}
+.contact-card h2,.contact-side h2{margin-top:0}
+.contact-form{
+  display:grid;
+  gap:18px;
+}
+.contact-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.contact-field{
+  display:grid;
+  gap:7px;
+}
+.contact-field label{
+  font-size:.82rem;
+  font-weight:780;
+  color:#3b4a40;
+}
+.contact-field input,
+.contact-field select,
+.contact-field textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #cfd8cf;
+  border-radius:10px;
+  background:#fbfcfa;
+  color:#172019;
+  padding:11px 12px;
+  font:inherit;
+}
+.contact-field textarea{
+  min-height:180px;
+  resize:vertical;
+}
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus{
+  outline:3px solid rgba(40,91,61,.12);
+  border-color:#6f8b77;
+}
+.contact-note{
+  margin:0;
+  color:#667168;
+  font-size:.84rem;
+  line-height:1.55;
+}
+.contact-submit{
+  justify-self:start;
+  border:1px solid #285b3d;
+  border-radius:9px;
+  background:#285b3d;
+  color:#fff;
+  padding:11px 15px;
+  font:inherit;
+  font-weight:780;
+  cursor:pointer;
+}
+.contact-submit:hover{background:#1f4b33}
+.contact-email{
+  display:block;
+  margin:8px 0 12px;
+  color:#285b3d;
+  font-weight:850;
+  font-size:1.05rem;
+  word-break:break-word;
+}
+.contact-copy{
+  border:1px solid #d5ded5;
+  border-radius:8px;
+  background:#f7f9f6;
+  padding:8px 10px;
+  font:inherit;
+  font-size:.8rem;
+  font-weight:750;
+  color:#285b3d;
+  cursor:pointer;
+}
+.contact-topics{
+  display:grid;
+  gap:10px;
+  margin-top:22px;
+}
+.contact-topic{
+  padding:12px 0 0;
+  border-top:1px solid #e5e9e4;
+}
+.contact-topic strong{display:block;margin-bottom:3px}
+.contact-topic p{margin:0;color:#68736b;font-size:.86rem;line-height:1.5}
+@media(max-width:820px){
+  .contact-layout{grid-template-columns:1fr}
+  .contact-side{position:static}
+}
+@media(max-width:620px){
+  .contact-row{grid-template-columns:1fr}
+  .contact-hero{padding-top:42px}
+}
