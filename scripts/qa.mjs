@@ -77,6 +77,7 @@ for (const file of htmlFiles) {
   const hasOgTitle = /<meta[^>]+property=[\"']og:title[\"']/i.test(html);
   const hasOgDescription = /<meta[^>]+property=[\"']og:description[\"']/i.test(html);
   const hasOgUrl = /<meta[^>]+property=[\"']og:url[\"']/i.test(html);
+  const ogImage = (html.match(/<meta[^>]+property=[\"']og:image[\"'][^>]+content=[\"']([^\"']+)[\"']/i) || html.match(/<meta[^>]+content=[\"']([^\"']+)[\"'][^>]+property=[\"']og:image[\"']/i) || [])[1] || "";
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
@@ -86,6 +87,7 @@ for (const file of htmlFiles) {
   if (isPublishedPolish && canonical && !canonical.startsWith("https://gruntiwiatr.pl/")) errors.push(`${fileRel}: canonical poza domeną gruntiwiatr.pl`);
   if (isPublishedPolish && !hasFavicon) errors.push(`${fileRel}: brak favicon`);
   if (isPublishedPolish && (!hasOgTitle || !hasOgDescription || !hasOgUrl)) errors.push(`${fileRel}: niepełne Open Graph`);
+  if (isPublishedPolish && ogImage !== "https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg") errors.push(`${fileRel}: og:image wskazuje niewlasciwy obraz`);
   if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
   if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
@@ -168,3 +170,5 @@ if (errors.length) {
   process.exit(1);
 }
 console.log("QA PASSED: brak błędów strukturalnych.");
+
+if (!existing.has("assets/og-grunt-i-wiatr.jpg")) errors.push("brak assets/og-grunt-i-wiatr.jpg");
