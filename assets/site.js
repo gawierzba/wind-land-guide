@@ -446,6 +446,15 @@
       a.textContent = "Prywatność i cookies";
       f.append(sep, a);
     }
+    if (!f.querySelector(".contact-link")) {
+      const sep = document.createTextNode(" · ");
+      const a = document.createElement("a");
+      a.className = "contact-link";
+      a.href = "mailto:kontakt@gruntiwiatr.pl";
+      a.textContent = "kontakt@gruntiwiatr.pl";
+      a.dataset.contact = "contact@grunt-i-wiatr-marker";
+      f.append(sep, a);
+    }
   });
 
   document.addEventListener("keydown", e => {
