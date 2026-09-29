@@ -100,8 +100,7 @@
 })();
 
 (() => {
-  const script = document.currentScript;
-  const siteRoot = script ? new URL("../", script.src) : new URL("/", location.href);
+  const siteRoot = new URL("/", location.href);
   const plRoot = new URL("pl/", siteRoot);
   let fullTextIndexPromise = null;
 
@@ -552,8 +551,7 @@
       if (meta) {
         const box = document.createElement("div");
         box.className = "source-status";
-        const siteScript = document.querySelector('script[src*="assets/site.js"]');
-        const root = siteScript ? new URL("../", siteScript.src) : new URL("/", location.href);
+        const root = new URL("/", location.href);
         box.innerHTML = '<span>ŹRÓDŁA I STAN PRAWNY</span><strong>Weryfikacja: 28.09.2026</strong><a href="' +
           new URL("pl/stan-prawny/", root).href +
           '">Zobacz rejestr weryfikacji →</a>';
@@ -564,7 +562,7 @@
 
     document.querySelectorAll(".footer .shell").forEach(f => {
       if (f.querySelector(".site-footer-links")) return;
-      const root = new URL("../", document.querySelector('script[src*="assets/site.js"]')?.src || location.href);
+      const root = new URL("/", location.href);
       const wrap = document.createElement("span");
       wrap.className = "site-footer-links";
       wrap.innerHTML =
