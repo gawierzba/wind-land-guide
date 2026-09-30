@@ -323,3 +323,10 @@ Dodano `/moj-projekt/` — lokalny segregator aktywnego projektu właściciela. 
 Integracja z narzędziami działa jako bezpieczne źródło wartości domyślnych: uzupełniane są wyłącznie puste pola. Protokoły mogą pobrać nazwę projektu, działki, KW, właściciela i inwestora; kalkulator i porównywarka otrzymują kontekst projektu; audyt i pozostałe narzędzia pokazują pasek aktywnego projektu.
 
 Dodano eksport pełnej lokalnej kopii warsztatu do JSON oraz import własnego formatu kopii. Kopia obejmuje profil, audyt, porównywarkę, protokoły i kalkulator, jeśli są zapisane w danej przeglądarce. Nie obejmuje zdjęć ani plików użytkownika.
+
+
+### v2.5 — mapa § umowy ↔ GUIDE
+
+Dodano /mapa-paragrafow/ — dwukierunkowy indeks krzyżowy analizowanego wzorca i biblioteki GUIDE. Widok § → GUIDE pokazuje §1–§65, nazwę obszaru źródłowego, stronę PDF, przypisane materiały i krótkie uzasadnienie audytowe. Widok GUIDE → § pokazuje, z których pozycji macierzy wyrasta konkretny materiał.
+
+Mapa jest generowana z ustrukturyzowanego contract-guide-map.json, opartego na _audit/MACIERZ_POKRYCIA_UMOWY.md. Sekcje zapisane wcześniej zbiorczo jako Projekt/Realizacja/Koniec inwestycji zostały rozpisane na konkretne GUIDE-y. GUIDE-y bez bezpośredniego przypisania pozostają jawnie oznaczone jako materiały przekrojowe zamiast otrzymywać sztuczne przypisania.
