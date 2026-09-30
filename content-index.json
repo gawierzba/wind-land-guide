@@ -1,5 +1,5 @@
 {
-  "version": "2.3-dev",
+  "version": "2.4-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1262,6 +1262,29 @@
         "opłaty dodatkowe",
         "scenariusz płatności",
         "30 lat"
+      ]
+    },
+    {
+      "id": "NARZEDZIE-005",
+      "title": "Mój projekt — lokalny segregator właściciela",
+      "path": "/moj-projekt/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "mój projekt",
+        "segregator projektu",
+        "inwestor",
+        "działki",
+        "księga wieczysta",
+        "umowa",
+        "terminy",
+        "notatki",
+        "lokalny profil",
+        "kopia danych",
+        "eksport",
+        "import",
+        "warsztat właściciela",
+        "backup"
       ]
     }
   ],

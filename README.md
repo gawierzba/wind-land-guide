@@ -314,3 +314,12 @@ Obsługiwane elementy:
 - wydruk / PDF i lokalny zapis danych.
 
 Strona główna została uporządkowana do jednego modułu „Narzędzia właściciela” z czterema kartami: audyt, porównywarka, protokoły i kalkulator.
+
+
+### v2.4 — Mój projekt
+
+Dodano `/moj-projekt/` — lokalny segregator aktywnego projektu właściciela. Profil przechowuje podstawowe dane projektu, inwestora, nieruchomości, umowy, terminów, dokumentów i notatek.
+
+Integracja z narzędziami działa jako bezpieczne źródło wartości domyślnych: uzupełniane są wyłącznie puste pola. Protokoły mogą pobrać nazwę projektu, działki, KW, właściciela i inwestora; kalkulator i porównywarka otrzymują kontekst projektu; audyt i pozostałe narzędzia pokazują pasek aktywnego projektu.
+
+Dodano eksport pełnej lokalnej kopii warsztatu do JSON oraz import własnego formatu kopii. Kopia obejmuje profil, audyt, porównywarkę, protokoły i kalkulator, jeśli są zapisane w danej przeglądarce. Nie obejmuje zdjęć ani plików użytkownika.
