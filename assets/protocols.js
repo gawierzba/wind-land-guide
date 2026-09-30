@@ -490,6 +490,26 @@
     return state.data[id];
   }
 
+  function applyProjectDefaults(d) {
+    const shared = window.GruntWiatrProject?.defaultsForTools?.();
+    if (!shared) return;
+    const values = {
+      project:shared.project,
+      plot:shared.plot,
+      kw:shared.kw,
+      owner:shared.owner,
+      investor:shared.investor
+    };
+    let changed = false;
+    Object.entries(values).forEach(([key,value]) => {
+      if (!String(d.fields[key] || "").trim() && String(value || "").trim()) {
+        d.fields[key] = value;
+        changed = true;
+      }
+    });
+    if (changed) save();
+  }
+
   function allFieldIds(template) {
     return template.sections.flatMap(s => [
       ...(s.fields || []).map(f => f.id),
@@ -567,6 +587,7 @@
     const t = currentTemplate();
     if (!t) return renderStart();
     const d = protocolData(t.id);
+    applyProjectDefaults(d);
     const stats = filledStats(t);
 
     root.innerHTML = `
