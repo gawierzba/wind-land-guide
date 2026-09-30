@@ -431,6 +431,7 @@
         </div>
         <div class="actions audit-actions">
           <button class="button primary" type="button" data-audit-start>${complete ? "Wróć do Karty analizy" : resumed ? "Wznów audyt" : "Zaczynam"}</button>
+          <a class="button" href="${href("/guide/")}">Otwórz katalog GUIDE</a>
           ${resumed ? '<button class="button" type="button" data-audit-reset>Rozpocznij od nowa</button>' : ""}
         </div>
         <p class="audit-privacy">Narzędzie nie wysyła odpowiedzi ani treści Twojej umowy na serwer. Stan audytu jest zapisywany wyłącznie lokalnie w przeglądarce, aby można było wrócić do niego później.</p>
