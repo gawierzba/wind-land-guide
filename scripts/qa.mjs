@@ -46,7 +46,7 @@ function resolveInternal(from, href) {
   }
   let target = parts.join("/");
   if (!target) target = "index.html";
-  if (raw.endsWith("/")) target += "/index.html";
+  else if (raw.endsWith("/")) target += "/index.html";
   else if (!/\.[a-z0-9]+$/i.test(target)) target += "/index.html";
   return { file: target, hash };
 }
