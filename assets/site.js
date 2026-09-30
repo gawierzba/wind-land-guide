@@ -787,3 +787,85 @@
     initGuideCatalog();
   }
 })();
+
+
+(() => {
+  const KEY = "grunt-i-wiatr:project-profile:v1";
+  const defaults = {
+    projectName:"",
+    stage:"",
+    location:"",
+    municipality:"",
+    cadastralDistrict:"",
+    plots:"",
+    landRegisters:"",
+    area:"",
+    ownerName:"",
+    farmName:"",
+    ownerContact:"",
+    investorName:"",
+    investorKrs:"",
+    investorContact:"",
+    contractNumber:"",
+    contractDate:"",
+    reservationUntil:"",
+    mainRentFrom:"",
+    constructionStart:"",
+    plannedOperationEnd:"",
+    documents:"",
+    notes:""
+  };
+
+  function read() {
+    try {
+      const value = JSON.parse(localStorage.getItem(KEY) || "null");
+      return value && typeof value === "object" ? {...defaults,...value} : {...defaults};
+    } catch {
+      return {...defaults};
+    }
+  }
+
+  function write(profile) {
+    const clean = {...defaults,...(profile || {})};
+    try {
+      localStorage.setItem(KEY,JSON.stringify(clean));
+      document.dispatchEvent(new CustomEvent("gruntwiatr:project-updated",{detail:clean}));
+    } catch {}
+    return clean;
+  }
+
+  function clear() {
+    try { localStorage.removeItem(KEY); } catch {}
+    document.dispatchEvent(new CustomEvent("gruntwiatr:project-updated",{detail:{...defaults}}));
+  }
+
+  function projectLabel(profile = read()) {
+    const parts = [
+      profile.projectName,
+      profile.location,
+      profile.plots ? "dz. " + profile.plots.replace(/\n+/g,", ") : ""
+    ].map(v => String(v || "").trim()).filter(Boolean);
+    return parts.join(" · ");
+  }
+
+  function defaultsForTools(profile = read()) {
+    const plots = String(profile.plots || "").replace(/\n+/g,", ").trim();
+    const district = String(profile.cadastralDistrict || "").trim();
+    const plotLabel = [plots, district ? "obręb " + district : ""].filter(Boolean).join(", ");
+    const kw = String(profile.landRegisters || "").replace(/\n+/g,", ").trim();
+    return {
+      project: projectLabel(profile),
+      projectName: String(profile.projectName || "").trim(),
+      plot: plotLabel,
+      kw,
+      owner: String(profile.ownerName || "").trim(),
+      investor: String(profile.investorName || "").trim(),
+      location: String(profile.location || "").trim(),
+      municipality: String(profile.municipality || "").trim(),
+      contractNumber: String(profile.contractNumber || "").trim(),
+      contractDate: String(profile.contractDate || "").trim()
+    };
+  }
+
+  window.GruntWiatrProject = {KEY,defaults:{...defaults},read,write,clear,projectLabel,defaultsForTools};
+})();
