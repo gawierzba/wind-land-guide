@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **59**
-- POGŁĘBIĆ: **6**
+- POKRYTE: **61**
+- POGŁĘBIĆ: **4**
 - BRAK: **0**
 - Łącznie: **65/65 paragrafów**
 - Priorytet A: **0** pozycji
-- Priorytet B: **5** pozycji
-- Priorytet C: **60** pozycji
+- Priorytet B: **4** pozycji
+- Priorytet C: **61** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -66,9 +66,9 @@ Statusy:
 | 34 | Siła Wyższa, zmiana prawa i ryzyka inwestycyjne | 138 | /pl/umowa/sila-wyzsza-zmiana-prawa/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 35 | Prawo właściwe, rozstrzyganie sporów, doręczenia i postanowienia końcowe | 143 | /pl/umowa/spor-z-inwestorem/ + /pl/umowa/doreczenia-i-kontakty/ | **POKRYTE** | **C** | GUIDE o sporze obejmuje sąd, arbitraż, mediację, część bezsporną i ciągłość płatności, zabezpieczeń, napraw, demontażu i rekultywacji. |
 | 36 | Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów | 148 | /pl/umowa/hierarchia-dokumentow-i-wersji/ + /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POKRYTE** | **C** | Dodano kontrolę kompletności pakietu, pola „DO UZUPEŁNIENIA”, blokadę działania przy brakującym załączniku oraz zasady identyfikacji wersji. |
-| 37 | Załącznik nr 1 — oznaczenie Nieruchomości | 151 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ksiega-wieczysta/ | **POGŁĘBIĆ** | **C** | Dodać krótką kontrolę identyfikacji działek: numery, obręb, KW, powierzchnia, współwłasność i zgodność z mapą. |
+| 37 | Załącznik nr 1 — oznaczenie Nieruchomości | 151 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ksiega-wieczysta/ | **POKRYTE** | **C** | Dodano kartę identyfikacji działki: właściciel/współwłasność, KW, działka, obręb, powierzchnia, użytki, dopłaty, melioracja oraz test zgodności dokumentów. |
 | 38 | Załącznik nr 2 — mapa Nieruchomości i zakres korzystania | 154 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ile-ziemi-zajmie-inwestycja/ | **POKRYTE** | **C** | Jeden z najlepiej pokrytych załączników. |
-| 39 | Załącznik nr 3 — opis Inwestycji | 159 | /pl/umowa/zmiana-technologii-turbiny/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POGŁĘBIĆ** | **B** | Przyda się „karta parametrów inwestycji”: typ/moc/średnica rotora/wysokość/fundament/infrastruktura dodatkowa, z zasadą porównania wersji. |
+| 39 | Załącznik nr 3 — opis Inwestycji | 159 | /pl/umowa/zmiana-technologii-turbiny/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POKRYTE** | **C** | Dodano kartę parametrów inwestycji: liczba turbin, moc, wysokość, rotor, łopaty, fundament, drogi, place, kable, infrastruktura dodatkowa i wersjonowanie. |
 | 40 | Załącznik nr 4 — lokalizacja Turbiny, Fundamentu, Dróg, Placów i Kabli | 164 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/co-dokladnie-oddaje-inwestorowi/ | **POKRYTE** | **C** | Pokryte mapą praw i powierzchni. |
 | 41 | Załącznik nr 5 — harmonogram Inwestycji | 171 | /pl/umowa/na-ile-lat/ | **POKRYTE** | **C** | Dodano daty graniczne, warunki przejścia etapów, test bezczynności, konsekwencje opóźnień, warianty harmonogramu oraz kalkulację pesymistycznego maksymalnego czasu związania gruntu. |
 | 42 | Załącznik nr 6 — stawki czynszu, opłat i ograniczeń | 177 | /pl/umowa/co-obejmuje-roczna-kwota/ + /pl/umowa/droga-kabel-place-osobno/ | **POKRYTE** | **C** | Rozwinięto minimum czynszowe, model zależny od MW, moc referencyjną, wzrost przy repoweringu oraz rozdzielenie stawek za różne sposoby korzystania. |
@@ -107,7 +107,6 @@ Brak. Wszystkie pozycje oznaczone wcześniej jako **BRAK** lub priorytet **A** m
 - **Definicje (§1):** słownik pojęć i pokazanie, jak definicja potrafi rozszerzyć późniejszy obowiązek.
 - **Ubezpieczenia (§22 i §50):** regres, OC osób trzecich, transport, roboty ziemne i demontaż.
 - **Podwykonawcy (§23):** roszczenia wykonawców wobec właściciela i mechanizmy ochronne.
-- **Karta parametrów inwestycji (§39):** moc, wysokość, rotor, fundament i wersjonowanie parametrów.
 - **Protokół Demontażu (§46):** checklista element po elemencie, odpady, zdjęcia przed zasypaniem i mapy powykonawcze.
 - **Zgody incydentalne (§52):** zgoda vs aneks vs pełnomocnictwo.
 

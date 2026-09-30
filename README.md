@@ -240,3 +240,12 @@ Pogłębiono GUIDE-007 o pełny audyt czasu związania nieruchomości:
 - audyt 10 pytań do harmonogramu.
 
 W materiale jawnie wskazano także wewnętrzną rozbieżność analizowanego wzorca między definicją Etapu Przygotowawczego w §1 a mechanizmem §6, zamiast sztucznie ją ujednolicać. Stan macierzy po v1.6: 59 POKRYTE, 6 POGŁĘBIĆ, 0 BRAK.
+
+
+### v1.7 — nieruchomość i parametry inwestycji
+
+Pogłębiono dwa obszary pozwalające porównać dokumenty „po jednej linijce”:
+- GUIDE-009 — karta identyfikacji każdej działki: właściciel/współwłasność, KW, działka, obręb, jednostka, powierzchnia, użytki, dopłaty, melioracja, drogi i zgodność z mapą,
+- GUIDE-031 — karta parametrów inwestycji: liczba turbin, moc, wysokość, rotor, łopaty, fundament, drogi, place, kable, infrastruktura dodatkowa oraz wersjonowanie parametrów.
+
+Stan macierzy po v1.7: 61 POKRYTE, 4 POGŁĘBIĆ, 0 BRAK.
