@@ -986,3 +986,91 @@
     initCredibilityLayer();
   }
 })();
+
+
+(() => {
+  async function injectSemanticGuideLinks() {
+    const article = document.querySelector("article.article");
+    if (!article || article.querySelector(".guide-related-network")) return;
+
+    const guideId = (article.querySelector(".eyebrow")?.textContent || "").match(/GUIDE-\d+/i)?.[0]?.toUpperCase();
+    if (!guideId) return;
+
+    try {
+      const root = new URL("/", location.href);
+      const [indexResponse,mapResponse] = await Promise.all([
+        fetch(new URL("content-index.json",root)),
+        fetch(new URL("contract-guide-map.json",root))
+      ]);
+      if (!indexResponse.ok || !mapResponse.ok) return;
+
+      const index = await indexResponse.json();
+      const map = await mapResponse.json();
+      const guides = (index.materials || []).filter(g => /^GUIDE-\d+$/i.test(g.id || ""));
+      const current = guides.find(g => String(g.id).toUpperCase() === guideId);
+      const currentMap = (map.guides || []).find(g => String(g.id).toUpperCase() === guideId);
+      if (!current) return;
+
+      const currentParagraphs = new Set((currentMap?.paragraphs || []).map(p => Number(p.paragraph)));
+      const existingPaths = new Set([...article.querySelectorAll('a[href]')].map(a => {
+        try { return new URL(a.getAttribute("href"),location.href).pathname; } catch { return ""; }
+      }));
+
+      const score = candidate => {
+        const candidateMap = (map.guides || []).find(g => g.id === candidate.id);
+        const candidateParagraphs = (candidateMap?.paragraphs || []).map(p => Number(p.paragraph));
+        const shared = candidateParagraphs.filter(p => currentParagraphs.has(p)).length;
+        let points = shared * 100;
+        if (candidate.category && candidate.category === current.category) points += 24;
+        const n1 = Number((guideId.match(/\d+/)||[])[0]);
+        const n2 = Number((String(candidate.id).match(/\d+/)||[])[0]);
+        if (Number.isFinite(n1) && Number.isFinite(n2)) {
+          const distance = Math.abs(n1-n2);
+          if (distance === 1) points += 5;
+          else if (distance === 2) points += 2;
+        }
+        if (existingPaths.has(candidate.path)) points -= 18;
+        return {points,shared};
+      };
+
+      let ranked = guides
+        .filter(g => g.id !== guideId)
+        .map(g => ({...g,...score(g)}))
+        .filter(g => g.points > 0)
+        .sort((a,b) => b.points-a.points || b.shared-a.shared || a.id.localeCompare(b.id,"pl"))
+        .slice(0,4);
+
+      if (ranked.length < 3) {
+        const used = new Set(ranked.map(g => g.id));
+        const fillers = guides
+          .filter(g => g.id !== guideId && !used.has(g.id) && g.category === current.category)
+          .slice(0,3-ranked.length)
+          .map(g => ({...g,points:1,shared:0}));
+        ranked = ranked.concat(fillers);
+      }
+      if (!ranked.length) return;
+
+      const section = document.createElement("section");
+      section.className = "guide-related-network";
+      section.innerHTML = `
+        <div>
+          <div class="eyebrow">Powiązane GUIDE-y</div>
+          <h2>Jeśli analizujesz ten problem, sprawdź też</h2>
+          <p>Tematy dobrane na podstawie wspólnych obszarów wzorca i struktury kompendium.</p>
+        </div>
+        <div class="guide-related-links">
+          ${ranked.map(g => `<a href="${g.path}"><span>${g.id}</span><strong>${g.title}</strong></a>`).join("")}
+        </div>`;
+
+      const existingRelated = article.querySelector(".related");
+      if (existingRelated) existingRelated.insertAdjacentElement("beforebegin",section);
+      else article.appendChild(section);
+    } catch (_) {}
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded",injectSemanticGuideLinks,{once:true});
+  } else {
+    injectSemanticGuideLinks();
+  }
+})();
