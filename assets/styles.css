@@ -1164,3 +1164,317 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
   }
   .compare-row label>span{font-size:6pt}
 }
+
+
+/* v2.2 — protokoły właściciela */
+.protocol-hero{padding-bottom:38px}
+.protocol-privacy{max-width:900px;margin-top:22px}
+.protocol-shell{max-width:1180px;margin:0 auto}
+.protocol-start-head{align-items:end}
+.protocol-picker{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin:24px 0 30px;
+}
+.protocol-pick{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-height:210px;
+  border:1px solid #dce4dc;
+  border-radius:14px;
+  background:#fff;
+  padding:20px;
+  text-align:left;
+  color:#172019;
+  font:inherit;
+  cursor:pointer;
+  transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease;
+}
+.protocol-pick:hover{
+  transform:translateY(-2px);
+  border-color:#b8c9ba;
+  box-shadow:0 10px 28px rgba(23,32,25,.06)
+}
+.protocol-pick strong{
+  margin:.65rem 0 .35rem;
+  font-size:1.16rem;
+  line-height:1.2;
+}
+.protocol-pick p{
+  margin:0;
+  color:#667169;
+  font-size:.86rem;
+  line-height:1.45;
+}
+.protocol-pick small{
+  display:block;
+  margin-top:auto;
+  padding-top:14px;
+  color:#758078;
+  font-size:.72rem;
+}
+.protocol-pick b{
+  display:block;
+  margin-top:8px;
+  color:#285b3d;
+  font-size:.76rem;
+}
+.protocol-source{
+  display:inline-block;
+  padding:5px 8px;
+  border-radius:999px;
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:.07em;
+  white-space:nowrap;
+}
+.protocol-source.source{
+  background:#dfece0;
+  color:#285b3d;
+}
+.protocol-source.practice{
+  background:#eef0eb;
+  color:#626b64;
+}
+.protocol-method{max-width:900px}
+.protocol-toolbar{
+  position:sticky;
+  top:58px;
+  z-index:16;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:14px;
+  align-items:center;
+  padding:11px 0;
+  margin-bottom:22px;
+  background:#f4f6f2;
+  border-bottom:1px solid #dce3db;
+}
+.protocol-toolbar .button{font:inherit;cursor:pointer}
+.protocol-progress{
+  justify-self:center;
+  color:#657168;
+  font-size:.75rem;
+  text-align:center;
+}
+.protocol-progress strong{color:#285b3d}
+.protocol-progress span{color:#879087}
+.protocol-actions{
+  display:flex;
+  gap:7px;
+  justify-content:flex-end;
+}
+.protocol-print-head{display:none}
+.protocol-title-card{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:center;
+  padding:22px 24px;
+  margin-bottom:18px;
+  border:1px solid #d9e2d9;
+  border-radius:15px;
+  background:#eef4ec;
+}
+.protocol-title-card h1{
+  margin:.35rem 0 .3rem;
+  font-size:clamp(1.8rem,4vw,3rem);
+  letter-spacing:-.045em;
+}
+.protocol-title-card p{
+  margin:0;
+  color:#667169;
+  font-size:.82rem;
+}
+.protocol-section{
+  margin:12px 0;
+  border:1px solid #dfe5dc;
+  border-radius:14px;
+  background:#fff;
+  padding:20px;
+  box-shadow:0 8px 24px rgba(23,32,25,.035);
+}
+.protocol-section-title{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:16px;
+}
+.protocol-section-title>span{
+  display:grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  border-radius:999px;
+  background:#e4ece2;
+  color:#285b3d;
+  font-size:.68rem;
+  font-weight:900;
+}
+.protocol-section-title h2{
+  margin:0;
+  font-size:1.22rem;
+  letter-spacing:-.025em;
+}
+.protocol-fields{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.protocol-field{
+  display:grid;
+  gap:6px;
+}
+.protocol-field.wide{grid-column:1/-1}
+.protocol-field>span{
+  font-size:.72rem;
+  font-weight:820;
+  color:#536158;
+}
+.protocol-field input,
+.protocol-field textarea,
+.protocol-field select,
+.protocol-check-row>input{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #d1dad2;
+  border-radius:9px;
+  background:#fbfcfa;
+  padding:10px 11px;
+  color:#172019;
+  font:inherit;
+  font-size:.86rem;
+}
+.protocol-field textarea{resize:vertical;min-height:80px;line-height:1.45}
+.protocol-field input:focus,
+.protocol-field textarea:focus,
+.protocol-field select:focus,
+.protocol-check-row>input:focus{
+  outline:3px solid rgba(40,91,61,.1);
+  border-color:#6f8b77;
+}
+.protocol-checklist{
+  display:grid;
+  gap:8px;
+}
+.protocol-check-row{
+  display:grid;
+  grid-template-columns:minmax(260px,.9fr) minmax(220px,1fr);
+  gap:10px;
+  align-items:center;
+  padding:9px;
+  border:1px solid #e1e6df;
+  border-radius:10px;
+  background:#fafbf9;
+}
+.protocol-check{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:.83rem;
+  font-weight:720;
+  color:#3f4d43;
+  cursor:pointer;
+}
+.protocol-check input{
+  width:20px;
+  height:20px;
+  margin:0;
+  flex:0 0 auto;
+  accent-color:#285b3d;
+}
+.protocol-footer-note{
+  margin:28px 0 10px;
+  padding:16px 18px;
+  border-left:4px solid #91a08f;
+  background:#f1f4ef;
+  color:#5c675f;
+  font-size:.83rem;
+  line-height:1.55;
+}
+@media(max-width:900px){
+  .protocol-picker{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .protocol-toolbar{grid-template-columns:1fr auto}
+  .protocol-progress{grid-column:1/-1;grid-row:2;justify-self:start;text-align:left}
+}
+@media(max-width:680px){
+  .protocol-picker{grid-template-columns:1fr;gap:9px}
+  .protocol-pick{min-height:0;padding:16px}
+  .protocol-pick small{margin-top:9px;padding-top:0}
+  .protocol-toolbar{
+    top:50px;
+    grid-template-columns:1fr;
+    gap:7px;
+    padding:8px 0 10px;
+  }
+  .protocol-toolbar>[data-back]{justify-self:start}
+  .protocol-progress{grid-row:auto}
+  .protocol-actions{
+    width:100%;
+    justify-content:flex-start;
+  }
+  .protocol-actions .button{flex:1;text-align:center;padding-left:8px;padding-right:8px}
+  .protocol-title-card{
+    display:block;
+    padding:17px;
+  }
+  .protocol-title-card .button{display:inline-block;margin-top:14px}
+  .protocol-section{padding:15px}
+  .protocol-fields{grid-template-columns:1fr}
+  .protocol-field.wide{grid-column:auto}
+  .protocol-check-row{grid-template-columns:1fr}
+  .protocol-check-row>input{font-size:.82rem}
+}
+@media print{
+  .protocol-hero,.protocol-toolbar,.topbar,.mobile-dock,.footer{display:none!important}
+  .protocol-print-head{
+    display:flex;
+    justify-content:space-between;
+    gap:15mm;
+    margin-bottom:5mm;
+    font-size:8pt;
+    color:#657168;
+  }
+  .protocol-title-card{
+    border:0;
+    border-radius:0;
+    background:#fff;
+    padding:0 0 4mm;
+    margin:0 0 3mm;
+  }
+  .protocol-title-card .button{display:none}
+  .protocol-title-card h1{font-size:18pt;margin:1mm 0}
+  .protocol-section{
+    box-shadow:none;
+    border-radius:0;
+    margin:2.5mm 0;
+    padding:3mm;
+    break-inside:avoid;
+  }
+  .protocol-section-title{margin-bottom:2mm}
+  .protocol-section-title h2{font-size:11pt}
+  .protocol-section-title>span{width:7mm;height:7mm;font-size:6pt}
+  .protocol-fields{gap:2mm 3mm}
+  .protocol-field>span{font-size:6.5pt}
+  .protocol-field input,
+  .protocol-field textarea,
+  .protocol-field select,
+  .protocol-check-row>input{
+    border:0;
+    background:#fff;
+    padding:1mm 0;
+    min-height:7mm;
+    font-size:7pt;
+    overflow:visible;
+  }
+  .protocol-check-row{
+    grid-template-columns:1fr 1fr;
+    padding:1.5mm;
+    border-radius:0;
+    break-inside:avoid;
+  }
+  .protocol-check{font-size:7pt}
+  .protocol-footer-note{font-size:7pt;background:#fff;border:1px solid #bbb}
+}
