@@ -1,5 +1,5 @@
 {
-  "version": "1.9-dev",
+  "version": "2.0-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1177,7 +1177,7 @@
   "tools": [
     {
       "id": "NARZEDZIE-001",
-      "title": "Sprawdź swoją umowę w 5 minut",
+      "title": "Sprawdź swoją umowę — 30 pytań + kontrola pogłębiona",
       "path": "/sprawdz-umowe/",
       "status": "draft-live",
       "category": "Narzędzia",
@@ -1192,7 +1192,13 @@
         "karta analizy umowy",
         "lista do rozmowy",
         "wydruk audytu",
-        "analiza 8 obszarów"
+        "analiza 8 obszarów",
+        "8 pytań pogłębionych",
+        "notatki do umowy",
+        "paragraf i załącznik",
+        "kontrola pogłębiona",
+        "65 obszarów",
+        "katalog GUIDE"
       ]
     }
   ],

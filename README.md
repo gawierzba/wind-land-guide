@@ -267,3 +267,12 @@ Domknięto dwa ostatnie obszary drugiego audytu:
 - GUIDE-018 — zgoda jednorazowa vs aneks vs pełnomocnictwo, karta zgody, granice jej zakresu, przykłady czynności niewynikających z danej zgody oraz test dokumentu przed podpisem.
 
 Macierz 65 obszarów źródłowego wzorca po v1.9: **65 POKRYTE, 0 POGŁĘBIĆ, 0 BRAK**. Oznacza to domknięcie audytu pokrycia, nie koniec rozwoju serwisu. Następny etap koncentruje się na jakości, narzędziach właściciela, nawigacji między materiałami i praktycznym porównywaniu własnych umów z mapą problemów.
+
+
+### v2.0 — narzędzia właściciela
+
+Rozpoczęto Etap III po domknięciu macierzy 65/65.
+
+Narzędzie „Sprawdź swoją umowę” zachowuje szybki audyt 30 pytań i otrzymuje opcjonalną kontrolę pogłębioną 8 pytań wynikających z pełnego audytu wzorca. Przy każdym pytaniu można lokalnie zapisać paragraf / załącznik / stronę oraz własną notatkę, które trafiają później do Karty analizy i wydruku.
+
+Dodano także osobny katalog GUIDE pod ścieżką /guide/ — bezpośrednią listę wszystkich materiałów z wyszukiwaniem po temacie i filtrowaniem według kategorii. Wejście „GUIDE-y” jest dostępne z głównej nawigacji, strony startowej, ścieżki „Mam umowę” oraz narzędzia audytowego.

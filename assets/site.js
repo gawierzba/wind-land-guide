@@ -380,6 +380,13 @@
   }
 
   document.querySelectorAll(".navlinks").forEach(nav => {
+    if (!nav.querySelector(".nav-guides")) {
+      const a = document.createElement("a");
+      a.className = "nav-guides";
+      a.href = new URL("guide/", siteRoot).href;
+      a.textContent = "GUIDE-y";
+      nav.insertBefore(a, nav.querySelector(".lang"));
+    }
     if (!nav.querySelector(".nav-search")) {
       const b = document.createElement("button");
       b.type = "button";
@@ -638,5 +645,80 @@
     document.addEventListener("DOMContentLoaded", initContactPage, { once: true });
   } else {
     initContactPage();
+  }
+})();
+
+
+(() => {
+  async function initGuideCatalog() {
+    const root = document.querySelector("[data-guide-catalog]");
+    if (!root) return;
+
+    const siteRoot = new URL("../", document.currentScript?.src || location.href);
+    const escapeHtml = value => String(value || "").replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+
+    try {
+      const response = await fetch(new URL("content-index.json", siteRoot));
+      if (!response.ok) throw new Error("index");
+      const data = await response.json();
+      const guides = (data.materials || []).filter(item => /^GUIDE-\d+$/i.test(item.id || ""));
+      const categories = [...new Set(guides.map(g => g.category).filter(Boolean))].sort((a,b) => a.localeCompare(b, "pl"));
+
+      root.innerHTML = `
+        <div class="guide-catalog-controls">
+          <label class="guide-catalog-search">
+            <span>Szukaj po temacie lub słowie</span>
+            <input type="search" data-guide-filter placeholder="np. czynsz, kabel, pełnomocnictwo, demontaż…">
+          </label>
+          <div class="guide-catalog-chips" data-guide-categories>
+            <button type="button" class="selected" data-category="">Wszystkie</button>
+            ${categories.map(c => `<button type="button" data-category="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join("")}
+          </div>
+          <div class="guide-catalog-count" data-guide-count></div>
+        </div>
+        <div class="guide-catalog-grid" data-guide-list></div>`;
+
+      const input = root.querySelector("[data-guide-filter]");
+      const list = root.querySelector("[data-guide-list]");
+      const count = root.querySelector("[data-guide-count]");
+      let activeCategory = "";
+
+      const normalize = v => String(v || "").toLocaleLowerCase("pl").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const render = () => {
+        const query = normalize(input.value);
+        const filtered = guides.filter(g => {
+          const catOk = !activeCategory || g.category === activeCategory;
+          const haystack = normalize([g.id,g.title,g.category,...(g.keywords || [])].join(" "));
+          return catOk && (!query || haystack.includes(query));
+        });
+
+        count.textContent = `${filtered.length} z ${guides.length} materiałów`;
+        list.innerHTML = filtered.length ? filtered.map(g => `
+          <a class="guide-catalog-card" href="${escapeHtml(g.path)}">
+            <div class="guide-catalog-meta"><span>${escapeHtml(g.id)}</span><span>${escapeHtml(g.category || "GUIDE")}</span></div>
+            <h2>${escapeHtml(g.title)}</h2>
+            <p>${escapeHtml((g.keywords || []).slice(0,6).join(" · "))}</p>
+            <strong>Otwórz GUIDE →</strong>
+          </a>`).join("") : '<div class="guide-catalog-empty">Nie znaleziono materiału dla tego hasła. Spróbuj innego słowa albo wybierz „Wszystkie”.</div>';
+      };
+
+      input.addEventListener("input", render);
+      root.querySelectorAll("[data-category]").forEach(button => {
+        button.addEventListener("click", () => {
+          activeCategory = button.dataset.category || "";
+          root.querySelectorAll("[data-category]").forEach(b => b.classList.toggle("selected", b === button));
+          render();
+        });
+      });
+      render();
+    } catch (_) {
+      root.innerHTML = '<div class="notice">Nie udało się wczytać katalogu. Skorzystaj z wyszukiwarki w górnym menu.</div>';
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGuideCatalog, { once:true });
+  } else {
+    initGuideCatalog();
   }
 })();

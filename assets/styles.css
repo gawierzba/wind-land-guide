@@ -202,6 +202,29 @@ body.search-open{overflow:hidden}
 .audit-handwrite span{font-size:.67rem;text-transform:uppercase;letter-spacing:.055em;color:#818982}
 .audit-handwrite i{display:block;height:15px;border-bottom:1px solid #cfd6cf}
 
+
+.audit-evidence{margin-top:20px;padding-top:16px;border-top:1px dashed #d8dfd8}
+.audit-evidence-head{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:10px}
+.audit-evidence-head strong{font-size:.86rem;color:#405248}
+.audit-evidence-head span{font-size:.72rem;color:#7a837c}
+.audit-evidence-grid{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(280px,1.4fr);gap:10px}
+.audit-evidence-grid label{display:grid;gap:5px;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#69756d}
+.audit-evidence-grid input,.audit-evidence-grid textarea{width:100%;border:1px solid #d3dcd3;border-radius:9px;background:#fbfcfa;padding:10px 11px;font:inherit;color:#172019;text-transform:none;letter-spacing:normal;resize:vertical}
+.audit-evidence-grid input:focus,.audit-evidence-grid textarea:focus{outline:3px solid rgba(40,91,61,.1);border-color:#52705d}
+.audit-result-evidence{display:grid;gap:4px;margin-top:11px;padding:10px 12px;border-radius:8px;background:#f6f8f5;font-size:.78rem;color:#56635b}
+.audit-result-evidence span{display:block}
+.audit-question-deep{border-color:#c9d6c9}
+.audit-progress-deep span{background:#40684f}
+.audit-deep-promo{display:flex;align-items:center;justify-content:space-between;gap:28px;margin:48px 0;padding:24px 26px;background:#eaf1e9;border:1px solid #d3dfd2;border-radius:14px}
+.audit-deep-promo>div{max-width:680px}
+.audit-deep-promo h2,.audit-deep-summary h2{font-size:clamp(1.55rem,3vw,2.2rem);letter-spacing:-.03em;margin:.2rem 0 .5rem}
+.audit-deep-promo p,.audit-deep-summary .section-head p{margin:0;color:#5f6c63}
+.audit-deep-promo .button{white-space:nowrap;font:inherit;cursor:pointer}
+.audit-deep-summary{margin:50px 0}
+.audit-deep-summary .audit-result-list{margin-top:18px}
+@media(max-width:760px){.audit-evidence-head,.audit-deep-promo{display:block}.audit-evidence-head span{display:block;margin-top:4px}.audit-evidence-grid{grid-template-columns:1fr}.audit-deep-promo .button{margin-top:18px;white-space:normal}}
+@media print{.audit-evidence{display:none!important}.audit-deep-promo{display:none!important}.audit-deep-summary{break-before:page}.audit-result-evidence{background:#fff;border:1px solid #e1e5e0}}
+
 .audit-full-record{margin:44px 0}
 .audit-full-record>summary{cursor:pointer;border:1px solid #dfe5dc;background:#fff;border-radius:10px;padding:14px 16px;font-weight:800;color:#294635}
 .audit-full-record[open]>summary{margin-bottom:24px}
@@ -752,4 +775,29 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
 @media(max-width:620px){
   .contact-row{grid-template-columns:1fr}
   .contact-hero{padding-top:42px}
+}
+
+.guide-catalog-hero{padding-bottom:30px}
+.guide-catalog-controls{position:sticky;top:58px;z-index:8;background:#f4f6f2;padding:14px 0 18px;border-bottom:1px solid #dfe5dc;margin-bottom:22px}
+.guide-catalog-search{display:grid;gap:7px;max-width:760px}
+.guide-catalog-search span{font-size:.76rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;color:#526158}
+.guide-catalog-search input{width:100%;font:inherit;font-size:1rem;border:1px solid #cbd6cd;border-radius:12px;background:#fff;padding:14px 16px;color:#172019}
+.guide-catalog-search input:focus{outline:3px solid rgba(40,91,61,.12);border-color:#52705d}
+.guide-catalog-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.guide-catalog-chips button{font:inherit;font-size:.76rem;border:1px solid #d2dbd3;border-radius:999px;padding:7px 10px;background:#fff;color:#526158;cursor:pointer}
+.guide-catalog-chips button:hover,.guide-catalog-chips button.selected{background:#285b3d;color:#fff;border-color:#285b3d}
+.guide-catalog-count{margin-top:11px;font-size:.78rem;color:#748078}
+.guide-catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.guide-catalog-card{display:block;background:#fff;border:1px solid #dfe5dc;border-radius:14px;padding:20px;text-decoration:none;color:#172019;transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease}
+.guide-catalog-card:hover{transform:translateY(-2px);border-color:#b9c9bc;box-shadow:0 10px 26px rgba(25,45,30,.06)}
+.guide-catalog-meta{display:flex;justify-content:space-between;gap:12px;font-size:.68rem;font-weight:850;letter-spacing:.055em;text-transform:uppercase;color:#6d796f}
+.guide-catalog-card h2{font-size:1.15rem;line-height:1.25;letter-spacing:-.02em;margin:.55rem 0 .65rem}
+.guide-catalog-card p{font-size:.8rem;line-height:1.45;color:#6b756e;margin:0 0 14px}
+.guide-catalog-card strong{font-size:.8rem;color:#285b3d}
+.guide-catalog-empty,.guide-catalog-loading{grid-column:1/-1;padding:26px;border:1px dashed #cfd8cf;border-radius:12px;color:#69746c;background:#fff}
+@media(max-width:760px){
+  .guide-catalog-controls{top:50px}
+  .guide-catalog-grid{grid-template-columns:1fr}
+  .guide-catalog-meta{display:block}
+  .guide-catalog-meta span+span{display:block;margin-top:4px}
 }

@@ -234,7 +234,70 @@
     }
   ];
 
+  const deepQuestions = [
+    {
+      id:"d01", section:"gospodarstwo",
+      text:"Czy umowa opisuje, jak właściciel może reagować na uciążliwości i zdarzenia podczas wieloletniej eksploatacji — np. hałas, cień, oblodzenie, awarie i potrzebę pomiarów?",
+      why:"Budowa trwa krótko w porównaniu z eksploatacją. Warto wiedzieć, kto bada problem, kto płaci za pomiar i co dzieje się po potwierdzeniu oddziaływania.",
+      terms:"eksploatacja, hałas, migotanie cienia, oblodzenie, pomiary, awaria, serwis",
+      guide:"GUIDE-056", path:"/umowa/uciazliwosci-eksploatacji/"
+    },
+    {
+      id:"d02", section:"zabezpieczenia",
+      text:"Czy umowa daje praktyczną procedurę działania, gdy inwestor narusza obowiązek: dowód, wezwanie, termin, plan naprawczy, kontrolę i ewentualne wykonanie zastępcze?",
+      why:"Sam katalog obowiązków jest mniej użyteczny, jeśli umowa nie pokazuje, jak właściciel ma doprowadzić do usunięcia naruszenia.",
+      terms:"naruszenie, wezwanie, termin naprawczy, plan naprawczy, wykonanie zastępcze, monitoring",
+      guide:"GUIDE-057", path:"/umowa/inwestor-naruszyl-umowe/"
+    },
+    {
+      id:"d03", section:"zabezpieczenia",
+      text:"Czy umowa rozstrzyga, kto broni właściciela i ponosi koszty, gdy roszczenie kieruje sąsiad, urząd, wykonawca, ubezpieczyciel albo inna osoba trzecia?",
+      why:"Adresatem pisma może być właściciel gruntu, choć źródłem problemu są działania inwestora lub jego wykonawców.",
+      terms:"roszczenia osób trzecich, koszty obrony, zwolnienie z odpowiedzialności, urząd, sąsiad, wykonawca, regres",
+      guide:"GUIDE-058", path:"/umowa/roszczenia-osob-trzecich/"
+    },
+    {
+      id:"d04", section:"prawa",
+      text:"Czy zasady prywatności i komunikacji ograniczają używanie zdjęć, dronów, danych gospodarstwa, nazwiska właściciela i wizyt medialnych albo inwestorskich?",
+      why:"Dokumentacja techniczna potrzebna do wykonania umowy to coś innego niż marketing, social media, materiały dla funduszu czy publiczne przedstawianie właściciela jako partnera projektu.",
+      terms:"poufność, prywatność, zdjęcia, nagrania, dron, wizerunek, komunikacja publiczna, wizyty inwestorskie",
+      guide:"GUIDE-059", path:"/umowa/prywatnosc-zdjecia-dron-komunikacja/"
+    },
+    {
+      id:"d05", section:"prawa",
+      text:"Czy spór z inwestorem nie pozwala mu automatycznie zatrzymać części bezspornej płatności, napraw szkód, zabezpieczeń, demontażu albo rekultywacji?",
+      why:"Spór o jeden fragment umowy nie powinien z założenia zamrażać wszystkich pozostałych obowiązków.",
+      terms:"spór, część bezsporna, wstrzymanie płatności, sąd, arbitraż, mediacja, zabezpieczenia",
+      guide:"GUIDE-060", path:"/umowa/spor-z-inwestorem/"
+    },
+    {
+      id:"d06", section:"grunt",
+      text:"Czy potrafisz wskazać, jakie prawa właściciel zachowuje mimo umowy — w szczególności rolnicze korzystanie z pozostałego gruntu, przejazdy, kontrolę i granice rozszerzania projektu?",
+      why:"Umowę łatwo czytać wyłącznie jako listę praw inwestora. Równie ważne jest ustalenie, czego właściciel nie oddaje.",
+      terms:"prawa właściciela, działalność rolnicza, przejazd, część nieruchomości, kontrola, zgoda właściciela",
+      guide:"GUIDE-061", path:"/umowa/czego-wlasciciel-nie-oddaje/"
+    },
+    {
+      id:"d07", section:"pakiet",
+      text:"Czy inwestor ma przez cały projekt przekazywać właścicielowi uporządkowane raporty, w tym informację o braku zdarzeń, planowanych pracach oraz zdarzeniach nadzwyczajnych?",
+      why:"Po kilkunastu latach pamięć osób nie wystarczy. Raportowanie pozwala odtworzyć historię projektu, zmian, szkód, polis, gwarancji i wykonawców.",
+      terms:"raport okresowy, raport zerowy, raport nadzwyczajny, dokumenty, planowane czynności, archiwum",
+      guide:"GUIDE-037", path:"/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/"
+    },
+    {
+      id:"d08", section:"prawa",
+      text:"Czy umowa wyraźnie odróżnia zgodę na jedną czynność od aneksu zmieniającego umowę i od pełnomocnictwa do działania w imieniu właściciela?",
+      why:"Krótka „zgoda” może być bezpiecznym dokumentem incydentalnym albo próbą trwałej zmiany praw. Znaczenie ma skutek, nie tytuł dokumentu.",
+      terms:"zgoda, aneks, zmiana umowy, pełnomocnictwo, zakres zgody, milczenie, osoba kontaktowa",
+      guide:"GUIDE-018", path:"/umowa/pelnomocnictwo/"
+    }
+  ];
+
   let answers = {};
+  let deepAnswers = {};
+  let evidence = {};
+  let deepCurrent = 0;
+  let deepStarted = false;
   let current = 0;
   let started = false;
   let meta = { project:"", investor:"", property:"", version:"" };
@@ -253,8 +316,12 @@
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
       if (saved && saved.answers && typeof saved.answers === "object") {
         answers = saved.answers;
+        deepAnswers = saved.deepAnswers && typeof saved.deepAnswers === "object" ? saved.deepAnswers : {};
+        evidence = saved.evidence && typeof saved.evidence === "object" ? saved.evidence : {};
         current = Math.max(0, Math.min(Number(saved.current) || 0, questions.length - 1));
+        deepCurrent = Math.max(0, Math.min(Number(saved.deepCurrent) || 0, deepQuestions.length - 1));
         started = Boolean(saved.started);
+        deepStarted = Boolean(saved.deepStarted);
         if (saved.meta && typeof saved.meta === "object") {
           meta = { ...meta, ...saved.meta };
         }
@@ -264,14 +331,18 @@
 
   function saveState() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ answers, current, started, meta, updated: Date.now() }));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ answers, deepAnswers, evidence, current, deepCurrent, started, deepStarted, meta, updated: Date.now() }));
     } catch (_) {}
   }
 
   function clearState() {
     answers = {};
+    deepAnswers = {};
+    evidence = {};
     current = 0;
+    deepCurrent = 0;
     started = false;
+    deepStarted = false;
     meta = { project:"", investor:"", property:"", version:"" };
     try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
   }
@@ -292,6 +363,41 @@
     return questions.filter(q => answers[q.id]).length;
   }
 
+  function deepAnsweredCount() {
+    return deepQuestions.filter(q => deepAnswers[q.id]).length;
+  }
+
+  function evidenceFor(id) {
+    return evidence[id] || { ref:"", note:"" };
+  }
+
+  function bindEvidence(q) {
+    const currentEvidence = evidenceFor(q.id);
+    root.querySelectorAll("[data-evidence]").forEach(field => {
+      field.addEventListener("input", () => {
+        evidence[q.id] = {
+          ...currentEvidence,
+          [field.dataset.evidence]: field.value
+        };
+        Object.assign(currentEvidence, evidence[q.id]);
+        saveState();
+      });
+    });
+  }
+
+  function evidenceFields(q) {
+    const ev = evidenceFor(q.id);
+    return `
+      <div class="audit-evidence">
+        <div class="audit-evidence-head"><strong>Ślad w Twojej umowie</strong><span>opcjonalnie · zapisuje się tylko lokalnie</span></div>
+        <div class="audit-evidence-grid">
+          <label>§ / załącznik / strona<input type="text" data-evidence="ref" value="${escapeHtml(ev.ref)}" placeholder="np. § 12 ust. 4 / zał. 6 / s. 18"></label>
+          <label>Własna notatka<textarea data-evidence="note" rows="2" placeholder="np. dopytać o minimalny czynsz">${escapeHtml(ev.note)}</textarea></label>
+        </div>
+      </div>`;
+  }
+
+
   function renderIntro() {
     const resumed = answeredCount() > 0;
     const complete = answeredCount() === questions.length;
@@ -299,9 +405,9 @@
       <section class="audit-intro">
         <div class="eyebrow">Narzędzie właściciela gruntu</div>
         <h1>Sprawdź swoją umowę w 5 minut</h1>
-        <p class="audit-lead">30 prostych pytań pomaga przejść przez najważniejsze obszary umowy dotyczącej projektu wiatrowego. To nie jest automat oceniający umowę i nie daje wyniku „dobra / zła”. Pokazuje, co już odnalazłeś, czego nie widzisz i które tematy warto sprawdzić dokładniej.</p>
+        <p class="audit-lead">30 prostych pytań pomaga przejść przez najważniejsze obszary umowy dotyczącej projektu wiatrowego. Po nich możesz uruchomić opcjonalną kontrolę pogłębioną: 8 dodatkowych pytań wynikających z pełnego audytu 65 obszarów wzorca. To nie jest automat oceniający umowę i nie daje wyniku „dobra / zła”.</p>
         <div class="audit-principles">
-          <div><strong>30 pytań</strong><span>TAK · NIE · NIE WIEM</span></div>
+          <div><strong>30 + 8</strong><span>30 podstawowych · 8 opcjonalnych</span></div>
           <div><strong>Bez punktacji</strong><span>zamiast oceny — mapa zagadnień</span></div>
           <div><strong>Prywatnie</strong><span>odpowiedzi zostają w tej przeglądarce</span></div>
         </div>
@@ -325,6 +431,7 @@
         </div>
         <div class="actions audit-actions">
           <button class="button primary" type="button" data-audit-start>${complete ? "Wróć do Karty analizy" : resumed ? "Wznów audyt" : "Zaczynam"}</button>
+          <a class="button" href="${href("/guide/")}">Otwórz katalog GUIDE</a>
           ${resumed ? '<button class="button" type="button" data-audit-reset>Rozpocznij od nowa</button>' : ""}
         </div>
         <p class="audit-privacy">Narzędzie nie wysyła odpowiedzi ani treści Twojej umowy na serwer. Stan audytu jest zapisywany wyłącznie lokalnie w przeglądarce, aby można było wrócić do niego później.</p>
@@ -379,6 +486,7 @@
             <p><strong>Słówka, których możesz szukać w umowie:</strong> ${q.terms}.</p>
             <a href="${href(q.path)}">${q.guide}: przeczytaj powiązany GUIDE →</a>
           </details>
+          ${evidenceFields(q)}
         </div>
 
         <div class="audit-nav">
@@ -389,17 +497,12 @@
         <div class="audit-section-note"><strong>${section.title}</strong> — ${section.desc}</div>
       </section>`;
 
+    bindEvidence(q);
     root.querySelectorAll("[data-answer]").forEach(button => {
       button.addEventListener("click", () => {
         answers[q.id] = button.dataset.answer;
+        root.querySelectorAll("[data-answer]").forEach(b => b.classList.toggle("selected", b === button));
         saveState();
-        if (current < questions.length - 1) {
-          current += 1;
-          saveState();
-          renderQuestion();
-        } else {
-          renderResults();
-        }
       });
     });
 
@@ -414,6 +517,104 @@
       }
     });
     root.querySelector("[data-audit-home]").addEventListener("click", renderIntro);
+  }
+
+
+  function renderDeepQuestion() {
+    deepStarted = true;
+    const q = deepQuestions[deepCurrent];
+    const section = sectionFor(q.section);
+    const selected = deepAnswers[q.id] || "";
+    const progress = Math.round((deepAnsweredCount() / deepQuestions.length) * 100);
+    saveState();
+
+    root.innerHTML = `
+      <section class="audit-shell">
+        <div class="audit-topline">
+          <button class="audit-text-button" type="button" data-deep-results>← Wróć do Karty analizy</button>
+          <span>${deepAnsweredCount()} / ${deepQuestions.length} pytań pogłębionych</span>
+        </div>
+        <div class="audit-progress audit-progress-deep" aria-label="Postęp kontroli pogłębionej"><span style="width:${progress}%"></span></div>
+        <div class="audit-question-card audit-question-deep">
+          <div class="audit-section-label"><span>+</span> Kontrola pogłębiona · ${section.title}</div>
+          <div class="audit-question-no">Pytanie pogłębione ${deepCurrent + 1} z ${deepQuestions.length}</div>
+          <h2>${q.text}</h2>
+          <div class="audit-answer-grid" role="group" aria-label="Odpowiedź">
+            <button type="button" class="audit-answer ${selected === "yes" ? "selected" : ""}" data-deep-answer="yes"><b>TAK</b><span>Mam taki zapis lub dokument</span></button>
+            <button type="button" class="audit-answer ${selected === "no" ? "selected" : ""}" data-deep-answer="no"><b>NIE</b><span>Nie widzę tego w umowie</span></button>
+            <button type="button" class="audit-answer ${selected === "unknown" ? "selected" : ""}" data-deep-answer="unknown"><b>NIE WIEM</b><span>Nie potrafię tego odnaleźć lub ocenić</span></button>
+          </div>
+          <details class="audit-help">
+            <summary>Dlaczego o to pytamy?</summary>
+            <p>${q.why}</p>
+            <p><strong>Słówka, których możesz szukać w umowie:</strong> ${q.terms}.</p>
+            <a href="${href(q.path)}">${q.guide}: przeczytaj powiązany GUIDE →</a>
+          </details>
+          ${evidenceFields(q)}
+        </div>
+        <div class="audit-nav">
+          <button class="button" type="button" data-deep-prev ${deepCurrent === 0 ? "disabled" : ""}>← Poprzednie</button>
+          <button class="button primary" type="button" data-deep-next>${deepCurrent === deepQuestions.length - 1 ? "Zapisz i wróć do podsumowania" : "Następne →"}</button>
+        </div>
+        <div class="audit-section-note">Kontrola pogłębiona jest opcjonalna i nie zmienia audytu podstawowego w punktację ani ocenę.</div>
+      </section>`;
+
+    bindEvidence(q);
+    root.querySelectorAll("[data-deep-answer]").forEach(button => {
+      button.addEventListener("click", () => {
+        deepAnswers[q.id] = button.dataset.deepAnswer;
+        root.querySelectorAll("[data-deep-answer]").forEach(b => b.classList.toggle("selected", b === button));
+        saveState();
+      });
+    });
+    root.querySelector("[data-deep-prev]").addEventListener("click", () => {
+      if (deepCurrent > 0) { deepCurrent -= 1; saveState(); renderDeepQuestion(); }
+    });
+    root.querySelector("[data-deep-next]").addEventListener("click", () => {
+      if (deepCurrent < deepQuestions.length - 1) {
+        deepCurrent += 1; saveState(); renderDeepQuestion();
+      } else {
+        renderResults();
+      }
+    });
+    root.querySelector("[data-deep-results]").addEventListener("click", renderResults);
+  }
+
+  function renderDeepSummary() {
+    if (!deepStarted) {
+      return `
+        <section class="audit-deep-promo">
+          <div>
+            <div class="eyebrow">Opcjonalnie · 8 dodatkowych pytań</div>
+            <h2>Kontrola pogłębiona po audycie 65 obszarów</h2>
+            <p>Sprawdź jeszcze eksploatację, naruszenia, roszczenia osób trzecich, prywatność, spory, prawa pozostające przy właścicielu, raportowanie oraz granice zgód.</p>
+          </div>
+          <button class="button primary" type="button" data-deep-start>Uruchom kontrolę pogłębioną</button>
+        </section>`;
+    }
+
+    const yes = deepQuestions.filter(q => deepAnswers[q.id] === "yes").length;
+    const no = deepQuestions.filter(q => deepAnswers[q.id] === "no").length;
+    const unknown = deepQuestions.filter(q => !deepAnswers[q.id] || deepAnswers[q.id] === "unknown").length;
+    return `
+      <section class="audit-deep-summary">
+        <div class="section-head">
+          <div><div class="eyebrow">Kontrola pogłębiona · ${deepAnsweredCount()} / ${deepQuestions.length}</div><h2>Osiem tematów z pełnego audytu wzorca</h2></div>
+          <p>To nadal mapa zagadnień, nie ocena jakości umowy.</p>
+        </div>
+        <div class="audit-summary-cards">
+          <div><strong>${yes}</strong><span>odnalezionych</span></div>
+          <div><strong>${no}</strong><span>do sprawdzenia</span></div>
+          <div><strong>${unknown}</strong><span>do ustalenia</span></div>
+        </div>
+        <div class="audit-result-list">
+          ${deepQuestions.map(q => {
+            const status = deepAnswers[q.id] || "unknown";
+            return resultCard(q, status);
+          }).join("")}
+        </div>
+        <div class="actions audit-actions"><button class="button" type="button" data-deep-review>Wróć do pytań pogłębionych</button></div>
+      </section>`;
   }
 
   function groupResults(status) {
@@ -438,6 +639,7 @@
           : status === "no"
             ? q.why
             : "Nie udało Ci się potwierdzić tego elementu. Wróć do umowy i załączników albo zaznacz ten temat do rozmowy ze specjalistą."}</p>
+        ${(() => { const ev = evidenceFor(q.id); return (ev.ref || ev.note) ? `<div class="audit-result-evidence">${ev.ref ? `<span><b>Ślad:</b> ${escapeHtml(ev.ref)}</span>` : ""}${ev.note ? `<span><b>Notatka:</b> ${escapeHtml(ev.note)}</span>` : ""}</div>` : ""; })()}
         <div class="audit-result-links">
           <span>Szukaj: ${q.terms}</span>
           <a href="${href(q.path)}">${q.guide} →</a>
@@ -510,7 +712,9 @@
   }
 
   function renderMeetingList() {
-    const items = questions.filter(q => !answers[q.id] || answers[q.id] === "no" || answers[q.id] === "unknown");
+    const meetingQuestions = deepStarted ? [...questions, ...deepQuestions] : questions;
+    const answerFor = q => q.id.startsWith("d") ? deepAnswers[q.id] : answers[q.id];
+    const items = meetingQuestions.filter(q => !answerFor(q) || answerFor(q) === "no" || answerFor(q) === "unknown");
     if (!items.length) {
       return `
         <section class="audit-meeting-list">
@@ -527,7 +731,8 @@
         </div>
         <div class="audit-meeting-items">
           ${items.map((q, index) => {
-            const status = answers[q.id] === "no" ? "Sprawdź dokładniej" : "Do ustalenia";
+            const status = answerFor(q) === "no" ? "Sprawdź dokładniej" : "Do ustalenia";
+             const ev = evidenceFor(q.id);
             const section = sectionFor(q.section);
             return `
               <article class="audit-meeting-item">
@@ -582,7 +787,7 @@
         ${renderMeetingList()}
 
         <details class="audit-full-record">
-          <summary>Pełny zapis wszystkich 30 odpowiedzi</summary>
+          <summary>Pełny zapis 30 odpowiedzi podstawowych</summary>
           ${renderResultGroups("no", "Sprawdź dokładniej", "Tu zaznaczyłeś „NIE”. To nie jest automatycznie wada umowy, ale warto odnaleźć odpowiedni mechanizm albo świadomie ustalić, że go nie ma.")}
         ${renderResultGroups("unknown", "Nie wiem / do ustalenia", "To naturalna część czytania trudnej umowy. Poniżej masz słowa, których możesz szukać, i materiały pomagające zrozumieć temat.")}
         ${renderResultGroups("yes", "Elementy, które odnalazłeś", "„TAK” oznacza, że potrafisz wskazać odpowiedni zapis lub dokument. Audyt nie ocenia jednak jego jakości ani skuteczności.")}
@@ -594,7 +799,20 @@
         </div>
       </section>`;
 
-    root.querySelector("[data-print]").addEventListener("click", () => window.print());
+    root.querySelector("[data-deep-start]")?.addEventListener("click", () => {
+      deepStarted = true;
+      deepCurrent = Math.max(0, deepQuestions.findIndex(q => !deepAnswers[q.id]));
+      if (deepCurrent < 0) deepCurrent = 0;
+      saveState();
+      renderDeepQuestion();
+    });
+    root.querySelector("[data-deep-review]")?.addEventListener("click", () => {
+      deepCurrent = Math.max(0, deepQuestions.findIndex(q => !deepAnswers[q.id] || deepAnswers[q.id] !== "yes"));
+      if (deepCurrent < 0) deepCurrent = 0;
+      saveState();
+      renderDeepQuestion();
+    });
+        root.querySelector("[data-print]").addEventListener("click", () => window.print());
     root.querySelector("[data-edit-meta]").addEventListener("click", renderIntro);
     root.querySelector("[data-review]").addEventListener("click", () => {
       const firstOpen = questions.findIndex(q => !answers[q.id] || answers[q.id] !== "yes");
