@@ -18,6 +18,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Structural audit
         run: node scripts/qa.mjs
+      - name: Check crawlable GUIDE catalog
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const html = fs.readFileSync('guide/index.html','utf8');
+          const links = new Set([...html.matchAll(/href=["'](\/umowa\/[^"'#?]+\/?)["']/g)].map(m => m[1]));
+          if (links.size < 61) {
+            console.error('Expected at least 61 static GUIDE links, found', links.size);
+            process.exit(1);
+          }
+          console.log('Static GUIDE links:', links.size);
+          NODE
       - name: Check search index freshness
         run: node scripts/build-search-index.mjs --check
       - name: Check site.js syntax
