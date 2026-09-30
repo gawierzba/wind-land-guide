@@ -368,3 +368,15 @@ Pakiet utrzymaniowy i semantyczny po wdrożeniu Google discovery.
 - katalog GUIDE i hub Umowa linkują bezpośrednio do słownika,
 - uporządkowano podwójną warstwę linków jakościowych w stopce; pozostaje jedna stopka z metodologią, źródłami, stanem prawnym, korektami, słownikiem i prywatnością,
 - QA liczy rzeczywiste wpisy GUIDE osobno od materiałów referencyjnych.
+
+
+### v2.9 — prawa autorskie i korzystanie z treści
+
+Dodano `/prawa-autorskie/` z prostymi zasadami korzystania z materiałów serwisu.
+
+- wspólna stopka pokazuje `© 2026 Grunt i wiatr` (w kolejnych latach zakres lat aktualizuje się automatycznie),
+- znak © prowadzi do strony wyjaśniającej autorstwo i zasady korzystania,
+- zwykłe linkowanie do publicznych materiałów nie wymaga zgody,
+- krótkie cytowanie z oznaczeniem źródła jest opisane jako normalny sposób korzystania w granicach obowiązującego prawa,
+- serwis nie przypisuje sobie praw do faktów, aktów prawnych, dokumentów urzędowych ani cudzych materiałów źródłowych,
+- szersze przedruki i ponowne wykorzystanie większych części opracowań kierują do kontaktu redakcyjnego.

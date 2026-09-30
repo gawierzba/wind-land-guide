@@ -953,6 +953,12 @@
     const nav = document.createElement("nav");
     nav.className = "footer-trust";
     nav.setAttribute("aria-label","Informacje o jakości i prywatności serwisu");
+    const year = new Date().getFullYear();
+    const years = year > 2026 ? `2026–${year}` : "2026";
+    const copyright = document.createElement("div");
+    copyright.className = "footer-copyright";
+    copyright.innerHTML = `© ${years} Grunt i wiatr · <a href="/prawa-autorskie/">Prawa autorskie i korzystanie z treści</a>`;
+
     nav.innerHTML = `
       <span>Standard serwisu:</span>
       <a href="/metodologia/">Metodologia</a>
@@ -961,7 +967,7 @@
       <a href="/korekty/">Korekty</a>
       <a href="/slownik/">Słownik</a>
       <a href="/prywatnosc/">Prywatność</a>`;
-    footerShell.appendChild(nav);
+    footerShell.append(copyright,nav);
   }
 
   function initCredibilityLayer() {
