@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **41**
-- POGŁĘBIĆ: **21**
-- BRAK: **3**
+- POKRYTE: **48**
+- POGŁĘBIĆ: **17**
+- BRAK: **0**
 - Łącznie: **65/65 paragrafów**
-- Priorytet A: **10** pozycji
-- Priorytet B: **13** pozycji
-- Priorytet C: **42** pozycji
+- Priorytet A: **4** pozycji
+- Priorytet B: **12** pozycji
+- Priorytet C: **49** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -103,20 +103,8 @@ Statusy:
 1. **Czy czynsz powinien rosnąć wraz z mocą turbiny?**  
    Źródło: §13 i §42. Czynsz bazowy, MW, stawka minimalna, fundament na jednej działce i rotor na drugiej, wzrost mocy, repowering, niższa produkcja energii.
 
-2. **Uciążliwości podczas eksploatacji turbiny — hałas, migotanie cienia, lód i pomiary**  
-   Źródło: §9. Rozdzielić normy prawne od umownego mechanizmu kontroli, pomiarów i odpowiedzialności.
-
 3. **Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?**  
    Źródło: §35. Prawo właściwe, sąd, arbitraż, mediacja, obowiązki niesporne i ciągłość zabezpieczeń.
-
-4. **Inwestor naruszył umowę — co dalej?**  
-   Źródło: §60. Dowód → wezwanie → zabezpieczenie → plan naprawczy → termin → kontrola → wykonanie zastępcze → roszczenia.
-
-5. **Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu**  
-   Źródło: §62. Roszczenia osób trzecich, koszty obrony, odpowiedzialność osób działających na rzecz inwestora, relacja z ubezpieczeniem.
-
-6. **Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?**  
-   Źródło: §30 i §63. Dane gospodarstwa, mapy, fotografie, monitoring, PR/ESG, media społecznościowe i publiczne przedstawianie właściciela.
 
 ### B. Najważniejsze pogłębienia istniejących GUIDE’ów
 

@@ -11,7 +11,7 @@ Robocze repozytorium neutralnego kompendium dla właścicieli gruntów dotycząc
 - `/assets/` — wspólne style
 - `content-index.json` — centralny indeks materiałów GUIDE
 
-Aktualny rdzeń obejmuje GUIDE-001–GUIDE-055.
+Aktualny rdzeń obejmuje GUIDE-001–GUIDE-061.
 
 ## Zasady redakcyjne
 
@@ -195,3 +195,16 @@ Dodano `LEGAL_SOURCES_AUDIT.md`.
 Stan biblioteki po dodaniu sekcji „Projekt”: 55 GUIDE-ów — 50 `depth: deep` i 5 nowych materiałów projektowo-proceduralnych `depth: standard`. Statyczny indeks wyszukiwarki został uzupełniony o GUIDE-051–055.
 
 Serwis pozostaje na `noindex`. Przed publikacją wymagane są ponowne kontrole po 02.10.2026 (Prawo budowlane) oraz 20.10.2026 (art. 6g ustawy wiatrowej).
+
+
+### v1.3 — domknięcie luk krytycznych
+
+Dodano sześć GUIDE-ów wynikających z audytu pokrycia 360-stronicowego wzorca umowy:
+- GUIDE-056 — uciążliwości eksploatacji: hałas, cień, lód, pomiary i serwis,
+- GUIDE-057 — procedura po naruszeniu umowy, plan naprawczy i wykonanie zastępcze,
+- GUIDE-058 — roszczenia osób trzecich, organów i wykonawców wobec właściciela,
+- GUIDE-059 — prywatność gospodarstwa, zdjęcia, drony i komunikacja publiczna,
+- GUIDE-060 — spór z inwestorem i ciągłość obowiązków niespornych,
+- GUIDE-061 — prawa, których właściciel nie oddaje inwestorowi.
+
+Po tej paczce macierz źródłowa nie zawiera już pozycji **BRAK**. Dalszy etap to pogłębienie pozostałych pozycji oznaczonych jako POGŁĘBIĆ, w pierwszej kolejności mechaniki czynszu i raportowania właścicielskiego.

@@ -1,7 +1,7 @@
 {
-  "version": "1.2",
+  "version": "1.3-dev",
   "language": "pl",
-  "updated": "2026-09-28",
+  "updated": "2026-09-30",
   "materials": [
     {
       "id": "GUIDE-001",
@@ -987,6 +987,121 @@
         "oddziaływania skumulowane"
       ],
       "depth": "standard"
+    },
+    {
+      "id": "GUIDE-056",
+      "title": "Uciążliwości podczas pracy turbiny — hałas, cień, lód i pomiary",
+      "path": "/umowa/uciazliwosci-eksploatacji/",
+      "status": "draft-live",
+      "category": "Eksploatacja i uciążliwości",
+      "keywords": [
+        "eksploatacja",
+        "hałas",
+        "drgania",
+        "migotanie cienia",
+        "oblodzenie",
+        "lód",
+        "pomiary",
+        "awaria",
+        "serwis",
+        "uciążliwości"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-057",
+      "title": "Inwestor naruszył umowę — co dalej?",
+      "path": "/umowa/inwestor-naruszyl-umowe/",
+      "status": "draft-live",
+      "category": "Naruszenia i odpowiedzialność",
+      "keywords": [
+        "naruszenie",
+        "wezwanie",
+        "plan naprawczy",
+        "termin naprawczy",
+        "wykonanie zastępcze",
+        "monitoring",
+        "kontrola",
+        "kara umowna",
+        "odszkodowanie"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-058",
+      "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+      "path": "/umowa/roszczenia-osob-trzecich/",
+      "status": "draft-live",
+      "category": "Naruszenia i odpowiedzialność",
+      "keywords": [
+        "roszczenia osób trzecich",
+        "sąsiad",
+        "urząd",
+        "wykonawca",
+        "koszty obrony",
+        "zwolnienie z odpowiedzialności",
+        "regres",
+        "ugoda",
+        "ubezpieczenie"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-059",
+      "title": "Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?",
+      "path": "/umowa/prywatnosc-zdjecia-dron-komunikacja/",
+      "status": "draft-live",
+      "category": "Prywatność i komunikacja",
+      "keywords": [
+        "poufność",
+        "prywatność",
+        "dron",
+        "zdjęcia",
+        "nagrania",
+        "wizerunek",
+        "media społecznościowe",
+        "komunikacja publiczna",
+        "wizyty inwestorskie",
+        "dane gospodarstwa"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-060",
+      "title": "Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?",
+      "path": "/umowa/spor-z-inwestorem/",
+      "status": "draft-live",
+      "category": "Spory i egzekwowanie",
+      "keywords": [
+        "spór",
+        "sąd",
+        "arbitraż",
+        "mediacja",
+        "część bezsporna",
+        "wstrzymanie płatności",
+        "zabezpieczenia",
+        "demontaż",
+        "rekultywacja"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-061",
+      "title": "Podpisuję umowę pod wiatrak — czego NIE oddaję inwestorowi?",
+      "path": "/umowa/czego-wlasciciel-nie-oddaje/",
+      "status": "draft-live",
+      "category": "Prawa właściciela",
+      "keywords": [
+        "prawa właściciela",
+        "własność",
+        "działalność rolnicza",
+        "przejazd",
+        "dopłaty rolne",
+        "kontrola",
+        "rozporządzanie",
+        "część nieruchomości"
+      ],
+      "depth": "deep"
     }
   ],
   "tools": [
@@ -1022,6 +1137,7 @@
     "search-index/part-04.json",
     "search-index/part-05.json",
     "search-index/part-06.json",
-    "search-index/part-07.json"
+    "search-index/part-07.json",
+    "search-index/part-08.json"
   ]
 }
