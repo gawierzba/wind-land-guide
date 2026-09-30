@@ -2412,3 +2412,34 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
     font-size:7pt;
   }
 }
+
+.credibility-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin:18px 0 20px;
+}
+.credibility-grid>div{
+  padding:15px;
+  border:1px solid #dfe5dc;
+  border-radius:11px;
+  background:#fafbf9;
+}
+.credibility-grid strong{
+  display:block;
+  color:#31513b;
+  font-size:.82rem;
+  margin-bottom:5px;
+}
+.credibility-grid p{
+  margin:0;
+  color:#68746c;
+  font-size:.76rem;
+  line-height:1.5;
+}
+@media(max-width:900px){
+  .credibility-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .credibility-grid{grid-template-columns:1fr}
+}
