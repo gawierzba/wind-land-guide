@@ -208,3 +208,12 @@ Dodano sześć GUIDE-ów wynikających z audytu pokrycia 360-stronicowego wzorca
 - GUIDE-061 — prawa, których właściciel nie oddaje inwestorowi.
 
 Po tej paczce macierz źródłowa nie zawiera już pozycji **BRAK**. Dalszy etap to pogłębienie pozostałych pozycji oznaczonych jako POGŁĘBIĆ, w pierwszej kolejności mechaniki czynszu i raportowania właścicielskiego.
+
+
+### v1.4 — pieniądze i kontrola przez 30 lat
+
+Pogłębiono dwa materiały kluczowe dla długoterminowej ochrony właściciela:
+- GUIDE-011 — czynsz wejściowy, rezerwacyjny i zasadniczy; minimum gwarantowane; model zależny od MW; fundament i obszar rotora na różnych działkach; wzrost mocy i repowering; ryzyko produkcji po stronie inwestora,
+- GUIDE-037 — raport zerowy, raportowanie zależne od etapu, planowane czynności, raport nadzwyczajny oraz praktyczny wzór raportu właścicielskiego.
+
+Naprawiono również techniczną niespójność macierzy pokrycia po v1.3. Po ponownym przeliczeniu rzeczywistych statusów: 53 obszary są pokryte, 12 pozostaje do pogłębienia, 0 ma status BRAK i 0 pozostaje w priorytecie A.
