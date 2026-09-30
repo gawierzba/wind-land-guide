@@ -71,7 +71,8 @@
         "@type": "Organization",
         "@id": editorialId,
         name: "Grunt i wiatr",
-        url: "https://gruntiwiatr.pl/metodologia/",
+        url: "https://gruntiwiatr.pl/",
+        publishingPrinciples: "https://gruntiwiatr.pl/metodologia/",
         description: "Projekt redakcyjny kompendium dla właścicieli gruntów dotyczącego inwestycji wiatrowych."
       },
       page
