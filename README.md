@@ -249,3 +249,12 @@ Pogłębiono dwa obszary pozwalające porównać dokumenty „po jednej linijce�
 - GUIDE-031 — karta parametrów inwestycji: liczba turbin, moc, wysokość, rotor, łopaty, fundament, drogi, place, kable, infrastruktura dodatkowa oraz wersjonowanie parametrów.
 
 Stan macierzy po v1.7: 61 POKRYTE, 4 POGŁĘBIĆ, 0 BRAK.
+
+
+### v1.8 — definicje i podwykonawcy
+
+Pogłębiono dwa kolejne obszary:
+- GUIDE-006 — audyt definicji jako „silnika umowy”, z przykładami Inwestycji, Szkody, Podwykonawcy, Finansującego, Zabezpieczenia, Zgody Wydzierżawiającego i Siły Wyższej,
+- GUIDE-033 — roszczenia podwykonawców wobec właściciela i nieruchomości, koszty obrony, zakaz tworzenia praw do gruntu oraz procedura po otrzymaniu wezwania od wykonawcy.
+
+Stan macierzy po v1.8: 63 POKRYTE, 2 POGŁĘBIĆ, 0 BRAK.
