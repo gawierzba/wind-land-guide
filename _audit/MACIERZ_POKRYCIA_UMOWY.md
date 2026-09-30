@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **42**
-- POGŁĘBIĆ: **20**
-- BRAK: **3**
+- POKRYTE: **44**
+- POGŁĘBIĆ: **19**
+- BRAK: **2**
 - Łącznie: **65/65 paragrafów**
-- Priorytet A: **9** pozycji
+- Priorytet A: **7** pozycji
 - Priorytet B: **13** pozycji
-- Priorytet C: **43** pozycji
+- Priorytet C: **45** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -105,12 +105,6 @@ Statusy:
 
 3. **Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?**  
    Źródło: §35. Prawo właściwe, sąd, arbitraż, mediacja, obowiązki niesporne i ciągłość zabezpieczeń.
-
-4. **Inwestor naruszył umowę — co dalej?**  
-   Źródło: §60. Dowód → wezwanie → zabezpieczenie → plan naprawczy → termin → kontrola → wykonanie zastępcze → roszczenia.
-
-5. **Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu**  
-   Źródło: §62. Roszczenia osób trzecich, koszty obrony, odpowiedzialność osób działających na rzecz inwestora, relacja z ubezpieczeniem.
 
 6. **Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?**  
    Źródło: §30 i §63. Dane gospodarstwa, mapy, fotografie, monitoring, PR/ESG, media społecznościowe i publiczne przedstawianie właściciela.
