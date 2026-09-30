@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **61**
-- POGŁĘBIĆ: **4**
+- POKRYTE: **63**
+- POGŁĘBIĆ: **2**
 - BRAK: **0**
 - Łącznie: **65/65 paragrafów**
 - Priorytet A: **0** pozycji
-- Priorytet B: **4** pozycji
-- Priorytet C: **61** pozycji
+- Priorytet B: **2** pozycji
+- Priorytet C: **63** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -30,7 +30,7 @@ Statusy:
 
 | § | Obszar źródłowy | Str. PDF | Obecne pokrycie | Status | Priorytet | Co zrobić |
 |---:|---|---:|---|---|:---:|---|
-| 1 | Definicje | 1 | /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POGŁĘBIĆ** | **B** | Dodać słownik pojęć umownych: Inwestycja, Etapy, Szkoda, Zabezpieczenia, Finansujący, Repowering, Zgoda Wydzierżawiającego. Pokazać, że definicja potrafi rozszerzyć obowiązek bardziej niż sam paragraf. |
+| 1 | Definicje | 1 | /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POKRYTE** | **C** | Dodano audyt definicji pokazujący wpływ pojęć „Inwestycja”, „Szkoda”, „Podwykonawca”, „Finansujący”, „Zabezpieczenie”, „Zgoda Wydzierżawiającego” i „Siła Wyższa” na późniejsze prawa i ryzyka. |
 | 2 | Przedmiot Umowy | 4 | /pl/umowa/co-dokladnie-oddaje-inwestorowi/ | **POKRYTE** | **C** | Zakres udostępnienia i rozdzielenie własności od prawa korzystania są rozwinięte. |
 | 3 | Zakres Inwestycji | 5 | /pl/umowa/co-dokladnie-oddaje-inwestorowi/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POKRYTE** | **C** | Zakres fizyczny i możliwość dokładania nowych funkcji projektu są opisane. |
 | 4 | Ograniczony zakres praw Dzierżawcy | 8 | /pl/umowa/co-dokladnie-oddaje-inwestorowi/ + /pl/umowa/zmiana-technologii-turbiny/ | **POKRYTE** | **C** | Dobrze rozwinięte: mapa, funkcja, powierzchnia, czas i zakaz rozszerzania praw bokiem. |
@@ -52,7 +52,7 @@ Statusy:
 | 20 | Gwarancja Rekultywacyjna | 67 | /pl/umowa/gwarancja-rekultywacyjna/ + /pl/umowa/kto-zaplaci-za-demontaz/ | **POKRYTE** | **C** | Dedykowany GUIDE i połączenie z końcem inwestycji. |
 | 21 | Poręczenie podmiotu dominującego / beneficjenta ekonomicznego | 72 | /pl/umowa/poreczenie-spolki-dominujacej/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 22 | Ubezpieczenia | 77 | /pl/umowa/ubezpieczenia/ + /pl/umowa/roszczenia-osob-trzecich/ | **POKRYTE** | **C** | GUIDE obejmuje OC osób trzecich i sąsiadów, regres, odmowę wypłaty, transport, roboty ziemne, podwykonawców, ciągłość ochrony oraz demontaż i rekultywację. |
-| 23 | Odpowiedzialność za Podwykonawców | 80 | /pl/umowa/podwykonawcy/ | **POGŁĘBIĆ** | **B** | Mocniej wyciągnąć ryzyko roszczeń podwykonawców wobec właściciela i mechanizm zwolnienia właściciela z odpowiedzialności. |
+| 23 | Odpowiedzialność za Podwykonawców i osoby działające na rzecz Dzierżawcy | 81 | /pl/umowa/podwykonawcy/ + /pl/umowa/roszczenia-osob-trzecich/ | **POKRYTE** | **C** | Rozwinięto roszczenia wykonawców wobec właściciela i nieruchomości, zwolnienie z odpowiedzialności, koszty obrony, zakaz tworzenia praw do gruntu i procedurę po otrzymaniu wezwania. |
 | 24 | Przeniesienie praw i obowiązków, zmiana kontroli, sprzedaż projektu | 86 | /pl/umowa/zmiana-inwestora/ + /pl/umowa/finansujacy-step-in/ | **POKRYTE** | **C** | Cesja, przejęcie obowiązków, zmiana kontroli i ciągłość zabezpieczeń są rozbudowane. |
 | 25 | Księga wieczysta, służebności i prawa rzeczowe | 91 | /pl/umowa/ksiega-wieczysta/ + /pl/umowa/sluzebnosc-i-prawa-do-gruntu/ | **POKRYTE** | **C** | Dwa dedykowane GUIDE’y. |
 | 26 | Pełnomocnictwa, zgody i oświadczenia Wydzierżawiającego | 96 | /pl/umowa/pelnomocnictwo/ + /pl/umowa/dokumenty-do-organow-i-status-wlasciciela/ | **POKRYTE** | **C** | Pełnomocnictwo i podpisywanie dokumentów w imieniu właściciela są dobrze omówione. |
@@ -104,9 +104,7 @@ Brak. Wszystkie pozycje oznaczone wcześniej jako **BRAK** lub priorytet **A** m
 
 ### B. Najważniejsze dalsze pogłębienia
 
-- **Definicje (§1):** słownik pojęć i pokazanie, jak definicja potrafi rozszerzyć późniejszy obowiązek.
 - **Ubezpieczenia (§22 i §50):** regres, OC osób trzecich, transport, roboty ziemne i demontaż.
-- **Podwykonawcy (§23):** roszczenia wykonawców wobec właściciela i mechanizmy ochronne.
 - **Protokół Demontażu (§46):** checklista element po elemencie, odpady, zdjęcia przed zasypaniem i mapy powykonawcze.
 - **Zgody incydentalne (§52):** zgoda vs aneks vs pełnomocnictwo.
 
