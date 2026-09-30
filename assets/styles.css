@@ -1478,3 +1478,247 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
   .protocol-check{font-size:7pt}
   .protocol-footer-note{font-size:7pt;background:#fff;border:1px solid #bbb}
 }
+
+
+/* v2.3 — kalkulator czynszu i waloryzacji */
+.money-hero{padding-bottom:38px}
+.money-warning{max-width:900px;margin-top:22px}
+.money-shell{max-width:1180px;margin:0 auto}
+.money-toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:10px 0 16px;
+  margin-bottom:18px;
+  border-bottom:1px solid #dfe5dc;
+}
+.money-save-note{font-size:.78rem;color:#6f7a72}
+.money-toolbar-actions{display:flex;gap:8px}
+.money-toolbar .button{font:inherit;cursor:pointer}
+.money-input-card{
+  margin:12px 0;
+  padding:20px;
+  border:1px solid #dfe5dc;
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(23,32,25,.035);
+}
+.money-section-title{
+  display:flex;
+  gap:11px;
+  align-items:flex-start;
+  margin-bottom:17px;
+}
+.money-section-title>span{
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  width:31px;height:31px;
+  border-radius:999px;
+  background:#e4ece2;
+  color:#285b3d;
+  font-size:.68rem;
+  font-weight:900;
+}
+.money-section-title h2{
+  margin:0 0 3px;
+  font-size:1.28rem;
+  letter-spacing:-.025em;
+}
+.money-section-title p{margin:0;color:#69756d;font-size:.82rem}
+.money-fields{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:11px;
+}
+.money-field{display:grid;gap:6px}
+.money-field>span{
+  font-size:.71rem;
+  font-weight:820;
+  color:#536158;
+}
+.money-field input,
+.money-field select{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #d1dad2;
+  border-radius:9px;
+  background:#fbfcfa;
+  padding:10px 11px;
+  color:#172019;
+  font:inherit;
+  font-size:.88rem;
+}
+.money-field input:focus,.money-field select:focus{
+  outline:3px solid rgba(40,91,61,.1);
+  border-color:#6f8b77;
+}
+.money-toggle{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  margin-top:14px;
+  color:#4f5c53;
+  font-size:.82rem;
+  cursor:pointer;
+}
+.money-toggle input{
+  width:19px;height:19px;
+  margin:0;
+  accent-color:#285b3d;
+}
+.money-formula,.money-hint{
+  margin-top:14px;
+  padding:11px 13px;
+  border-radius:9px;
+  background:#f3f6f1;
+  color:#627067;
+  font-size:.78rem;
+  line-height:1.5;
+}
+.money-formula strong{color:#34493b}
+.money-results{
+  margin-top:42px;
+  padding-top:6px;
+}
+.money-summary{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+  margin:18px 0;
+}
+.money-summary>div,
+.money-index-impact>div{
+  padding:15px;
+  border:1px solid #dfe5dc;
+  border-radius:12px;
+  background:#fff;
+}
+.money-summary span,
+.money-index-impact span{
+  display:block;
+  color:#6b766e;
+  font-size:.72rem;
+  margin-bottom:5px;
+}
+.money-summary strong,
+.money-index-impact strong{
+  display:block;
+  font-size:1.12rem;
+  letter-spacing:-.02em;
+}
+.money-summary-total{
+  background:#eaf2e8!important;
+  border-color:#cfddce!important;
+}
+.money-summary-total strong{color:#285b3d}
+.money-index-impact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:10px 0 24px;
+}
+.money-chart{
+  display:grid;
+  gap:6px;
+  padding:16px;
+  border:1px solid #e0e6df;
+  border-radius:12px;
+  background:#fff;
+  margin:18px 0;
+  max-height:420px;
+  overflow:auto;
+}
+.money-bar-row{
+  display:grid;
+  grid-template-columns:54px 1fr 125px;
+  gap:9px;
+  align-items:center;
+  font-size:.73rem;
+}
+.money-bar-row>span{color:#6f7a72;font-weight:800}
+.money-bar-row>strong{text-align:right;color:#34493b}
+.money-bar-track{
+  height:8px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#edf0eb;
+}
+.money-bar-track i{
+  display:block;
+  height:100%;
+  border-radius:inherit;
+  background:#5c8066;
+}
+.money-table-wrap{
+  overflow:auto;
+  border:1px solid #dfe5dc;
+  border-radius:12px;
+  background:#fff;
+}
+.money-table{
+  width:100%;
+  min-width:760px;
+  border-collapse:collapse;
+  font-size:.78rem;
+}
+.money-table th,.money-table td{
+  padding:9px 10px;
+  border-bottom:1px solid #e6eae5;
+  text-align:left;
+  vertical-align:top;
+}
+.money-table th{
+  position:sticky;
+  top:0;
+  background:#f5f7f3;
+  color:#526158;
+  font-size:.68rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.money-table td:nth-child(3),
+.money-table td:nth-child(4),
+.money-table td:nth-child(5){white-space:nowrap}
+.money-notes{
+  margin:20px 0;
+  padding:15px 17px;
+  border-left:4px solid #91a08f;
+  background:#f1f4ef;
+  color:#5c675f;
+  font-size:.8rem;
+  line-height:1.55;
+}
+.money-notes p{margin:.35rem 0}
+.money-links{margin-top:16px}
+@media(max-width:900px){
+  .money-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .money-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .money-summary-total{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .money-toolbar{display:block}
+  .money-toolbar-actions{margin-top:10px}
+  .money-toolbar-actions .button{flex:1;text-align:center}
+  .money-fields{grid-template-columns:1fr}
+  .money-summary{grid-template-columns:1fr 1fr}
+  .money-index-impact{grid-template-columns:1fr}
+  .money-bar-row{grid-template-columns:42px 1fr 98px;gap:7px}
+  .money-bar-row>strong{font-size:.68rem}
+}
+@media print{
+  .money-hero,.money-toolbar,.topbar,.mobile-dock,.footer,.money-links{display:none!important}
+  .money-input-card{box-shadow:none;border-radius:0;break-inside:avoid;padding:3mm;margin:2mm 0}
+  .money-fields{grid-template-columns:repeat(3,1fr);gap:2mm}
+  .money-field input,.money-field select{border:0;background:#fff;padding:1mm 0;font-size:7pt}
+  .money-toggle,.money-formula,.money-hint{font-size:7pt}
+  .money-results{margin-top:5mm}
+  .money-summary{grid-template-columns:repeat(5,1fr);gap:2mm}
+  .money-summary>div,.money-index-impact>div{padding:2mm;border-radius:0}
+  .money-summary strong,.money-index-impact strong{font-size:9pt}
+  .money-chart{display:none}
+  .money-table{font-size:7pt;min-width:0}
+  .money-table th,.money-table td{padding:1.5mm}
+  .money-notes{font-size:7pt;background:#fff}
+}
