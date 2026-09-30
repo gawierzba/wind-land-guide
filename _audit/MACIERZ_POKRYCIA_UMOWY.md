@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **53**
-- POGŁĘBIĆ: **12**
+- POKRYTE: **57**
+- POGŁĘBIĆ: **8**
 - BRAK: **0**
 - Łącznie: **65/65 paragrafów**
 - Priorytet A: **0** pozycji
-- Priorytet B: **11** pozycji
-- Priorytet C: **54** pozycji
+- Priorytet B: **7** pozycji
+- Priorytet C: **58** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -51,7 +51,7 @@ Statusy:
 | 19 | Zabezpieczenia płatności | 62 | /pl/umowa/zabezpieczenie-platnosci/ + /pl/umowa/gwarancja-czynszowa/ + /pl/umowa/poddanie-sie-egzekucji/ | **POKRYTE** | **C** | System zabezpieczeń jest dobrze rozłożony na instrumenty. |
 | 20 | Gwarancja Rekultywacyjna | 67 | /pl/umowa/gwarancja-rekultywacyjna/ + /pl/umowa/kto-zaplaci-za-demontaz/ | **POKRYTE** | **C** | Dedykowany GUIDE i połączenie z końcem inwestycji. |
 | 21 | Poręczenie podmiotu dominującego / beneficjenta ekonomicznego | 72 | /pl/umowa/poreczenie-spolki-dominujacej/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
-| 22 | Ubezpieczenia | 77 | /pl/umowa/ubezpieczenia/ | **POGŁĘBIĆ** | **B** | Dodać wyraźnie OC za szkody sąsiadów i osób trzecich, regres ubezpieczyciela, transport oraz zasadę, że odmowa ubezpieczyciela nie kończy odpowiedzialności inwestora. |
+| 22 | Ubezpieczenia | 77 | /pl/umowa/ubezpieczenia/ + /pl/umowa/roszczenia-osob-trzecich/ | **POKRYTE** | **C** | GUIDE obejmuje OC osób trzecich i sąsiadów, regres, odmowę wypłaty, transport, roboty ziemne, podwykonawców, ciągłość ochrony oraz demontaż i rekultywację. |
 | 23 | Odpowiedzialność za Podwykonawców | 80 | /pl/umowa/podwykonawcy/ | **POGŁĘBIĆ** | **B** | Mocniej wyciągnąć ryzyko roszczeń podwykonawców wobec właściciela i mechanizm zwolnienia właściciela z odpowiedzialności. |
 | 24 | Przeniesienie praw i obowiązków, zmiana kontroli, sprzedaż projektu | 86 | /pl/umowa/zmiana-inwestora/ + /pl/umowa/finansujacy-step-in/ | **POKRYTE** | **C** | Cesja, przejęcie obowiązków, zmiana kontroli i ciągłość zabezpieczeń są rozbudowane. |
 | 25 | Księga wieczysta, służebności i prawa rzeczowe | 91 | /pl/umowa/ksiega-wieczysta/ + /pl/umowa/sluzebnosc-i-prawa-do-gruntu/ | **POKRYTE** | **C** | Dwa dedykowane GUIDE’y. |
@@ -65,7 +65,7 @@ Statusy:
 | 33 | Demontaż, usunięcie Inwestycji i Rekultywacja | 132 | /pl/umowa/co-usunac-po-inwestycji/ + /pl/umowa/kto-zaplaci-za-demontaz/ | **POKRYTE** | **C** | Bardzo szerokie pokrycie. |
 | 34 | Siła Wyższa, zmiana prawa i ryzyka inwestycyjne | 138 | /pl/umowa/sila-wyzsza-zmiana-prawa/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 35 | Prawo właściwe, rozstrzyganie sporów, doręczenia i postanowienia końcowe | 143 | /pl/umowa/spor-z-inwestorem/ + /pl/umowa/doreczenia-i-kontakty/ | **POKRYTE** | **C** | GUIDE o sporze obejmuje sąd, arbitraż, mediację, część bezsporną i ciągłość płatności, zabezpieczeń, napraw, demontażu i rekultywacji. |
-| 36 | Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów | 148 | /pl/umowa/hierarchia-dokumentow-i-wersji/ + /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POGŁĘBIĆ** | **B** | Dodać problem brakujących i nieuzupełnionych załączników oraz zasadę „nie wykonuj czynności, jeśli wymagany załącznik nie jest gotowy” jako rozwiązanie wzorcowe. |
+| 36 | Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów | 148 | /pl/umowa/hierarchia-dokumentow-i-wersji/ + /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POKRYTE** | **C** | Dodano kontrolę kompletności pakietu, pola „DO UZUPEŁNIENIA”, blokadę działania przy brakującym załączniku oraz zasady identyfikacji wersji. |
 | 37 | Załącznik nr 1 — oznaczenie Nieruchomości | 151 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ksiega-wieczysta/ | **POGŁĘBIĆ** | **C** | Dodać krótką kontrolę identyfikacji działek: numery, obręb, KW, powierzchnia, współwłasność i zgodność z mapą. |
 | 38 | Załącznik nr 2 — mapa Nieruchomości i zakres korzystania | 154 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ile-ziemi-zajmie-inwestycja/ | **POKRYTE** | **C** | Jeden z najlepiej pokrytych załączników. |
 | 39 | Załącznik nr 3 — opis Inwestycji | 159 | /pl/umowa/zmiana-technologii-turbiny/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POGŁĘBIĆ** | **B** | Przyda się „karta parametrów inwestycji”: typ/moc/średnica rotora/wysokość/fundament/infrastruktura dodatkowa, z zasadą porównania wersji. |
@@ -79,7 +79,7 @@ Statusy:
 | 47 | Załącznik nr 11 — wzór protokołu końcowego Rekultywacji | 223 | /pl/umowa/co-usunac-po-inwestycji/ + /pl/umowa/kto-zaplaci-za-demontaz/ | **POKRYTE** | **C** | Obecne materiały mocno podkreślają funkcję gruntu, szkody ukryte i brak automatycznego zrzeczenia się roszczeń. |
 | 48 | Załącznik nr 12 — wymagania Gwarancji Czynszowej | 234 | /pl/umowa/gwarancja-czynszowa/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 49 | Załącznik nr 13 — wymagania Gwarancji Rekultywacyjnej | 241 | /pl/umowa/gwarancja-rekultywacyjna/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
-| 50 | Załącznik nr 14 — wymagania dotyczące ubezpieczeń | 248 | /pl/umowa/ubezpieczenia/ | **POGŁĘBIĆ** | **B** | Rozbudować o regres, OC osób trzecich, szkody sąsiednie, transport, roboty ziemne i ochronę etapu demontażu. |
+| 50 | Załącznik nr 14 — wymagania dotyczące ubezpieczeń | 248 | /pl/umowa/ubezpieczenia/ | **POKRYTE** | **C** | Rozwinięto regres, dodatkowego ubezpieczonego, OC osób trzecich, transport, roboty ziemne, likwidację szkody, odmowę ubezpieczyciela i ochronę do końca ryzyka. |
 | 51 | Załącznik nr 15 — wzór poddania się egzekucji | 256 | /pl/umowa/poddanie-sie-egzekucji/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 52 | Załącznik nr 16 — wzór zgody na określone czynności | 261 | /pl/umowa/pelnomocnictwo/ + /pl/umowa/co-dokladnie-oddaje-inwestorowi/ | **POGŁĘBIĆ** | **B** | Brakuje osobnego rozróżnienia „zgoda incydentalna” vs aneks vs pełnomocnictwo. Warto zrobić sekcję z kartą zgody: czynność, mapa, okres, warunki, brak rozszerzenia umowy. |
 | 53 | Załącznik nr 17 — wykaz osób kontaktowych | 268 | /pl/umowa/doreczenia-i-kontakty/ + /pl/umowa/procedura-awaryjna/ | **POKRYTE** | **C** | Bieżący, formalny i awaryjny kanał kontaktu są omówione. |
@@ -94,7 +94,7 @@ Statusy:
 | 62 | Załącznik nr 26 — odpowiedzialność odszkodowawcza, roszczenia osób trzecich i zwolnienie właściciela | 336 | /pl/umowa/roszczenia-osob-trzecich/ + /pl/umowa/podwykonawcy/ + /pl/umowa/ubezpieczenia/ | **POKRYTE** | **C** | Dedykowany GUIDE obejmuje sąsiadów, wykonawców, organy, ubezpieczycieli, koszty obrony, dokumenty, ugody i skutki publicznoprawne. |
 | 63 | Załącznik nr 27 — poufność, komunikacja publiczna i ochrona danych | 345 | /pl/umowa/prywatnosc-zdjecia-dron-komunikacja/ | **POKRYTE** | **C** | GUIDE obejmuje fotografie, nagrania, drony, wizyty osób trzecich, publikacje, social media, materiały inwestorskie i działania po naruszeniu. |
 | 64 | Załącznik nr 28 — hierarchia dokumentów i klauzule interpretacyjne | 352 | /pl/umowa/hierarchia-dokumentow-i-wersji/ | **POKRYTE** | **C** | Dedykowany GUIDE jest bardzo szeroki. |
-| 65 | Postanowienia końcowe, kompletność dokumentacji i lista załączników | 356 | /pl/umowa/jak-czytac-umowe-dzierzawy/ + /pl/umowa/hierarchia-dokumentow-i-wersji/ | **POGŁĘBIĆ** | **B** | Dodać checklistę podpisania: komplet załączników, status pól DO UZUPEŁNIENIA, podpisane wersje map i tabel, brak załączników „do później” bez mechanizmu blokującego korzystanie. |
+| 65 | Postanowienia końcowe, kompletność dokumentacji i lista załączników | 356 | /pl/umowa/hierarchia-dokumentow-i-wersji/ + /pl/umowa/jak-czytac-umowe-dzierzawy/ | **POKRYTE** | **C** | GUIDE zawiera checklistę pakietu podpisu, obsługę pól i załączników „DO UZUPEŁNIENIA” oraz zasadę blokady czynności do czasu uzupełnienia i akceptacji. |
 
 ## Backlog wynikający z macierzy
 
@@ -108,7 +108,6 @@ Brak. Wszystkie pozycje oznaczone wcześniej jako **BRAK** lub priorytet **A** m
 - **Etap przygotowawczy (§6):** co wolno przed budową, jak długo grunt może pozostawać związany i jak kończy się etap.
 - **Ubezpieczenia (§22 i §50):** regres, OC osób trzecich, transport, roboty ziemne i demontaż.
 - **Podwykonawcy (§23):** roszczenia wykonawców wobec właściciela i mechanizmy ochronne.
-- **Załączniki i podpis (§36 i §65):** kompletność pakietu, pola „DO UZUPEŁNIENIA” i blokada działania bez gotowego załącznika.
 - **Karta parametrów inwestycji (§39):** moc, wysokość, rotor, fundament i wersjonowanie parametrów.
 - **Harmonogram (§41):** maksymalny czas związania gruntu, kamienie milowe i konsekwencje opóźnień.
 - **Protokół Demontażu (§46):** checklista element po elemencie, odpady, zdjęcia przed zasypaniem i mapy powykonawcze.

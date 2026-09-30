@@ -1,5 +1,5 @@
 {
-  "version": "1.4-dev",
+  "version": "1.5-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -616,7 +616,15 @@
         "suma",
         "gwarancyjna",
         "wyłączenia",
-        "składka"
+        "składka",
+        "osoby trzecie",
+        "sąsiedzi",
+        "regres",
+        "subrogacja",
+        "transport",
+        "roboty ziemne",
+        "demontaż",
+        "dodatkowo ubezpieczony"
       ],
       "depth": "deep"
     },
@@ -909,7 +917,13 @@
         "email",
         "protokół",
         "pierwszeństwo",
-        "wersja"
+        "wersja",
+        "brak załącznika",
+        "DO UZUPEŁNIENIA",
+        "pakiet podpisu",
+        "kompletność",
+        "blokada działania",
+        "wersja podpisana"
       ],
       "depth": "deep"
     },
