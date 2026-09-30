@@ -83,17 +83,23 @@ for (const file of htmlFiles) {
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
-  if (isEnglishDraft && !hasNoindex) errors.push(`${fileRel}: brak noindex na roboczej wersji EN`);
+  if ((isEnglishDraft || isLegacyPolish) && !hasNoindex) errors.push(`${fileRel}: brak noindex na stronie roboczej EN lub legacy /pl`);
   if (isPublishedPolish && hasNoindex) errors.push(`${fileRel}: noindex blokuje opublikowaną polską stronę`);
   if (isPublishedPolish && !canonical) errors.push(`${fileRel}: brak canonical na opublikowanej polskiej stronie`);
   if (isPublishedPolish && canonical && !canonical.startsWith("https://gruntiwiatr.pl/")) errors.push(`${fileRel}: canonical poza domeną gruntiwiatr.pl`);
   if (isPublishedPolish && !hasFavicon) errors.push(`${fileRel}: brak favicon`);
   if (isPublishedPolish && (!hasOgTitle || !hasOgDescription || !hasOgUrl)) errors.push(`${fileRel}: niepełne Open Graph`);
   if (isPublishedPolish && ogImage !== "https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg") errors.push(`${fileRel}: og:image wskazuje niewlasciwy obraz`);
-  if (!isRootRedirect && !desc) errors.push(`${fileRel}: brak meta description`);
-  if (!isRootRedirect && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
-  if (!isRootRedirect && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
-  if (!isRootRedirect && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
+  if (isLegacyPolish) {
+    const legacyCanonical = fileRel === "pl/index.html"
+      ? "https://gruntiwiatr.pl/"
+      : "https://gruntiwiatr.pl/" + fileRel.slice(3).replace(/index\.html$/, "");
+    if (canonical !== legacyCanonical) errors.push(`${fileRel}: nieprawidlowy canonical przekierowania legacy`);
+  }
+  if (!isLegacyPolish && !desc) errors.push(`${fileRel}: brak meta description`);
+  if (!isLegacyPolish && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
+  if (!isLegacyPolish && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
+  if (!isLegacyPolish && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
   if (duplicateIds.length) errors.push(`${fileRel}: powtórzone id: ${duplicateIds.join(", ")}`);
 
   const idsSet = new Set(ids);
