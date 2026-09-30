@@ -1,5 +1,5 @@
 {
-  "version": "2.1-dev",
+  "version": "2.2-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1220,6 +1220,27 @@
         "rekultywacja",
         "różnice",
         "checklista"
+      ]
+    },
+    {
+      "id": "NARZEDZIE-003",
+      "title": "Protokoły właściciela gruntu",
+      "path": "/protokoly/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "protokół wejścia",
+        "protokół szkody",
+        "naprawa szkody",
+        "czasowe zajęcie",
+        "protokół demontażu",
+        "rekultywacja",
+        "zdjęcia",
+        "dokumentacja terenowa",
+        "gleba",
+        "melioracja",
+        "drogi",
+        "odbiór"
       ]
     }
   ],
