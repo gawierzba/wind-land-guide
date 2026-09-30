@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **57**
-- POGŁĘBIĆ: **8**
+- POKRYTE: **59**
+- POGŁĘBIĆ: **6**
 - BRAK: **0**
 - Łącznie: **65/65 paragrafów**
 - Priorytet A: **0** pozycji
-- Priorytet B: **7** pozycji
-- Priorytet C: **58** pozycji
+- Priorytet B: **5** pozycji
+- Priorytet C: **60** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -35,7 +35,7 @@ Statusy:
 | 3 | Zakres Inwestycji | 5 | /pl/umowa/co-dokladnie-oddaje-inwestorowi/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POKRYTE** | **C** | Zakres fizyczny i możliwość dokładania nowych funkcji projektu są opisane. |
 | 4 | Ograniczony zakres praw Dzierżawcy | 8 | /pl/umowa/co-dokladnie-oddaje-inwestorowi/ + /pl/umowa/zmiana-technologii-turbiny/ | **POKRYTE** | **C** | Dobrze rozwinięte: mapa, funkcja, powierzchnia, czas i zakaz rozszerzania praw bokiem. |
 | 5 | Prawa zachowane przez Wydzierżawiającego | 11 | /pl/umowa/czego-wlasciciel-nie-oddaje/ + /pl/umowa/co-dokladnie-oddaje-inwestorowi/ + /pl/umowa/kontrola-wykonywania-umowy/ | **POKRYTE** | **C** | Dedykowany GUIDE zbiera własność, rolnictwo, przejazdy, dopłaty, kontrolę i granice praw inwestora. |
-| 6 | Etap Przygotowawczy | 13 | /pl/zanim-podpiszesz/ + /pl/umowa/na-ile-lat/ | **POGŁĘBIĆ** | **B** | Dodać wyraźny model etapu przygotowawczego: co inwestor może robić, za co płaci, jak długo może rezerwować grunt i kiedy etap powinien się skończyć. |
+| 6 | Etap Przygotowawczy | 13 | /pl/umowa/na-ile-lat/ + /pl/umowa/co-obejmuje-roczna-kwota/ | **POKRYTE** | **C** | GUIDE pokazuje zakres czynności bez fizycznej ingerencji, maksymalny czas jako pole do świadomego uzupełnienia, warunki przejścia dalej, bezczynność i wynagrodzenie za związanie gruntu. |
 | 7 | Etap Projektowo-Administracyjny | 16 | /pl/projekt/ + /pl/umowa/dokumenty-do-organow-i-status-wlasciciela/ | **POKRYTE** | **C** | Planowanie, decyzje, dokumenty i status właściciela mają osobne materiały. |
 | 8 | Etap Budowy | 21 | /pl/realizacja/ + wejście/protokół/gleba/drenarka/szkody | **POKRYTE** | **C** | Budowa jest jednym z najlepiej pokrytych obszarów. |
 | 9 | Etap Eksploatacji | 26 | /pl/umowa/uciazliwosci-eksploatacji/ + /pl/umowa/ubezpieczenia/ + /pl/umowa/kontrola-wykonywania-umowy/ | **POKRYTE** | **C** | Samodzielny GUIDE obejmuje hałas, drgania, cień, oblodzenie, awarie, pomiary, serwis i reakcję na potwierdzone oddziaływania. |
@@ -70,7 +70,7 @@ Statusy:
 | 38 | Załącznik nr 2 — mapa Nieruchomości i zakres korzystania | 154 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/ile-ziemi-zajmie-inwestycja/ | **POKRYTE** | **C** | Jeden z najlepiej pokrytych załączników. |
 | 39 | Załącznik nr 3 — opis Inwestycji | 159 | /pl/umowa/zmiana-technologii-turbiny/ + /pl/umowa/magazyn-energii-wodor-gpz/ | **POGŁĘBIĆ** | **B** | Przyda się „karta parametrów inwestycji”: typ/moc/średnica rotora/wysokość/fundament/infrastruktura dodatkowa, z zasadą porównania wersji. |
 | 40 | Załącznik nr 4 — lokalizacja Turbiny, Fundamentu, Dróg, Placów i Kabli | 164 | /pl/umowa/jak-czytac-mape/ + /pl/umowa/co-dokladnie-oddaje-inwestorowi/ | **POKRYTE** | **C** | Pokryte mapą praw i powierzchni. |
-| 41 | Załącznik nr 5 — harmonogram Inwestycji | 171 | /pl/umowa/na-ile-lat/ | **POGŁĘBIĆ** | **B** | Dodać audyt harmonogramu: daty maksymalne, kamienie milowe, konsekwencje opóźnień, przejście między etapami i „pesymistyczny maksymalny czas związania gruntu”. |
+| 41 | Załącznik nr 5 — harmonogram Inwestycji | 171 | /pl/umowa/na-ile-lat/ | **POKRYTE** | **C** | Dodano daty graniczne, warunki przejścia etapów, test bezczynności, konsekwencje opóźnień, warianty harmonogramu oraz kalkulację pesymistycznego maksymalnego czasu związania gruntu. |
 | 42 | Załącznik nr 6 — stawki czynszu, opłat i ograniczeń | 177 | /pl/umowa/co-obejmuje-roczna-kwota/ + /pl/umowa/droga-kabel-place-osobno/ | **POKRYTE** | **C** | Rozwinięto minimum czynszowe, model zależny od MW, moc referencyjną, wzrost przy repoweringu oraz rozdzielenie stawek za różne sposoby korzystania. |
 | 43 | Załącznik nr 7 — standard ochrony gleby, upraw, melioracji i dróg | 185 | /pl/umowa/ochrona-gleby-upraw-melioracji/ + /pl/umowa/drenarka/ | **POKRYTE** | **C** | Dedykowane materiały są bardzo rozbudowane. |
 | 44 | Załącznik nr 8 — wzór protokołu wejścia | 191 | /pl/umowa/protokol-wejscia/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
@@ -105,11 +105,9 @@ Brak. Wszystkie pozycje oznaczone wcześniej jako **BRAK** lub priorytet **A** m
 ### B. Najważniejsze dalsze pogłębienia
 
 - **Definicje (§1):** słownik pojęć i pokazanie, jak definicja potrafi rozszerzyć późniejszy obowiązek.
-- **Etap przygotowawczy (§6):** co wolno przed budową, jak długo grunt może pozostawać związany i jak kończy się etap.
 - **Ubezpieczenia (§22 i §50):** regres, OC osób trzecich, transport, roboty ziemne i demontaż.
 - **Podwykonawcy (§23):** roszczenia wykonawców wobec właściciela i mechanizmy ochronne.
 - **Karta parametrów inwestycji (§39):** moc, wysokość, rotor, fundament i wersjonowanie parametrów.
-- **Harmonogram (§41):** maksymalny czas związania gruntu, kamienie milowe i konsekwencje opóźnień.
 - **Protokół Demontażu (§46):** checklista element po elemencie, odpady, zdjęcia przed zasypaniem i mapy powykonawcze.
 - **Zgody incydentalne (§52):** zgoda vs aneks vs pełnomocnictwo.
 
