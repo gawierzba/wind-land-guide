@@ -33,7 +33,7 @@
 
   const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
   const parse = value => {
-    const n = Number(String(value ?? "").replace(/\\s/g,"").replace(",","."));
+    const n = Number(String(value ?? "").replace(/\s/g,"").replace(",","."));
     return Number.isFinite(n) ? n : 0;
   };
   const clamp = (n,min,max) => Math.min(max,Math.max(min,n));
