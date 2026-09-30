@@ -868,4 +868,34 @@
   }
 
   window.GruntWiatrProject = {KEY,defaults:{...defaults},read,write,clear,projectLabel,defaultsForTools};
+
+  function injectProjectContext() {
+    const supported = ["/sprawdz-umowe/","/porownaj-oferty/","/protokoly/","/kalkulator-czynszu/"];
+    if (!supported.some(path => location.pathname.startsWith(path))) return;
+    if (document.querySelector(".project-context-bar")) return;
+
+    const profile = read();
+    const label = projectLabel(profile);
+    if (!label) return;
+
+    const target = document.querySelector("main .section .shell") || document.querySelector("main");
+    if (!target) return;
+
+    const bar = document.createElement("div");
+    bar.className = "project-context-bar";
+    bar.innerHTML = `<span>Pracujesz na projekcie: <strong></strong></span><a href="/moj-projekt/">Mój projekt →</a>`;
+    bar.querySelector("strong").textContent = label;
+    target.prepend(bar);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded",injectProjectContext,{once:true});
+  } else {
+    injectProjectContext();
+  }
+
+  document.addEventListener("gruntwiatr:project-updated",() => {
+    document.querySelector(".project-context-bar")?.remove();
+    injectProjectContext();
+  });
 })();
