@@ -54,9 +54,11 @@ function resolveInternal(from, href) {
 for (const file of htmlFiles) {
   const fileRel = rel(file);
   const html = fs.readFileSync(file, "utf8");
-  const isRootRedirect = fileRel === "index.html";
+  const isRootRedirect = false;
   const isEnglishDraft = fileRel.startsWith("en/");
-  const isPublishedPolish = fileRel.startsWith("pl/");
+  const isLegacyPolish = fileRel.startsWith("pl/");
+  const isErrorPage = fileRel === "404.html";
+  const isPublishedPolish = !isEnglishDraft && !isLegacyPolish && !isErrorPage && fileRel.endsWith(".html");
 
   const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1]?.trim() || "";
   const desc = (
@@ -81,7 +83,7 @@ for (const file of htmlFiles) {
 
   if (!title) errors.push(`${fileRel}: brak <title>`);
   if (!hasViewport) errors.push(`${fileRel}: brak meta viewport`);
-  if ((isRootRedirect || isEnglishDraft) && !hasNoindex) errors.push(`${fileRel}: brak noindex na stronie technicznej lub roboczej EN`);
+  if (isEnglishDraft && !hasNoindex) errors.push(`${fileRel}: brak noindex na roboczej wersji EN`);
   if (isPublishedPolish && hasNoindex) errors.push(`${fileRel}: noindex blokuje opublikowaną polską stronę`);
   if (isPublishedPolish && !canonical) errors.push(`${fileRel}: brak canonical na opublikowanej polskiej stronie`);
   if (isPublishedPolish && canonical && !canonical.startsWith("https://gruntiwiatr.pl/")) errors.push(`${fileRel}: canonical poza domeną gruntiwiatr.pl`);

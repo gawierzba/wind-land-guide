@@ -20,28 +20,28 @@
       text:"Czy masz kompletny pakiet: umowę, wszystkie załączniki, mapy, tabele wynagrodzeń i dokumenty, do których umowa odsyła?",
       why:"Brakujący załącznik może zawierać zakres gruntu, opłaty, zabezpieczenia albo obowiązki, których nie widać w głównym tekście.",
       terms:"załącznik, integralna część umowy, mapa, tabela, harmonogram",
-      guide:"GUIDE-006", path:"/pl/umowa/jak-czytac-umowe-dzierzawy/"
+      guide:"GUIDE-006", path:"/umowa/jak-czytac-umowe-dzierzawy/"
     },
     {
       id:"q02", section:"pakiet",
       text:"Czy wiesz dokładnie, która spółka podpisuje umowę i kto jest uprawniony do jej reprezentowania?",
       why:"Marka grupy i spółka projektowa to nie zawsze ten sam podmiot. Warto wiedzieć, kto faktycznie bierze na siebie obowiązki.",
       terms:"Dzierżawca, spółka, KRS, reprezentacja, pełnomocnik",
-      guide:"GUIDE-002", path:"/pl/zanim-podpiszesz/kim-jest-inwestor/"
+      guide:"GUIDE-002", path:"/zanim-podpiszesz/kim-jest-inwestor/"
     },
     {
       id:"q03", section:"pakiet",
       text:"Czy umowa jasno wskazuje, które dokumenty mają pierwszeństwo, gdy tekst, mapa, aneks albo późniejsze pismo są ze sobą sprzeczne?",
       why:"Przy wieloletniej umowie wersji dokumentów będzie przybywać. Hierarchia pomaga ustalić, który zapis ma rozstrzygać konflikt.",
       terms:"pierwszeństwo, sprzeczność, hierarchia, aneks, załącznik",
-      guide:"GUIDE-050", path:"/pl/umowa/hierarchia-dokumentow-i-wersji/"
+      guide:"GUIDE-050", path:"/umowa/hierarchia-dokumentow-i-wersji/"
     },
     {
       id:"q04", section:"pakiet",
       text:"Czy dokumenty, które masz podpisać później, są opisane co do celu i zakresu zamiast pozostawiać ogólne zobowiązanie do podpisania wszystkiego, czego zażąda inwestor?",
       why:"Wieloletnie projekty generują kolejne zgody i oświadczenia. Dobrze wiedzieć z góry, do czego właściciel ma być zobowiązany.",
       terms:"dalsze dokumenty, zgoda, oświadczenie, zobowiązuje się podpisać",
-      guide:"GUIDE-048", path:"/pl/umowa/dokumenty-do-organow-i-status-wlasciciela/"
+      guide:"GUIDE-048", path:"/umowa/dokumenty-do-organow-i-status-wlasciciela/"
     },
 
     {
@@ -49,28 +49,28 @@
       text:"Czy umowa precyzyjnie określa, jaka część nieruchomości jest faktycznie oddawana inwestorowi do korzystania?",
       why:"Numer całej działki nie mówi jeszcze, czy inwestor dostaje prawo do całej nieruchomości, czy tylko do wyznaczonych fragmentów.",
       terms:"Przedmiot Dzierżawy, część nieruchomości, powierzchnia, granice",
-      guide:"GUIDE-008", path:"/pl/umowa/co-dokladnie-oddaje-inwestorowi/"
+      guide:"GUIDE-008", path:"/umowa/co-dokladnie-oddaje-inwestorowi/"
     },
     {
       id:"q06", section:"grunt",
       text:"Czy mapa rozróżnia zajęcie trwałe i czasowe?",
       why:"Plac używany przez kilka miesięcy i teren zajęty na dziesięciolecia to różne sposoby korzystania z gruntu i mogą wymagać różnych zasad.",
       terms:"trwałe zajęcie, czasowe zajęcie, etap budowy, powierzchnia",
-      guide:"GUIDE-009", path:"/pl/umowa/jak-czytac-mape/"
+      guide:"GUIDE-009", path:"/umowa/jak-czytac-mape/"
     },
     {
       id:"q07", section:"grunt",
       text:"Czy na mapie można osobno odnaleźć turbinę lub fundament, drogę, kable, place, zjazdy oraz inne strefy ograniczające korzystanie z gruntu?",
       why:"Każde fizyczne prawo inwestora powinno mieć możliwie czytelny ślad w dokumentacji przestrzennej.",
       terms:"fundament, droga technologiczna, korytarz kablowy, plac, zjazd, rotor",
-      guide:"GUIDE-010", path:"/pl/umowa/ile-ziemi-zajmie-inwestycja/"
+      guide:"GUIDE-010", path:"/umowa/ile-ziemi-zajmie-inwestycja/"
     },
     {
       id:"q08", section:"grunt",
       text:"Czy dodatkowe zajęcie gruntu poza wskazanym zakresem wymaga odrębnego uzgodnienia, a jego skutki finansowe są opisane?",
       why:"Projekt w toku może potrzebować nowych tras, placów albo powierzchni. Warto wiedzieć, czy zakres może rozszerzyć się jednostronnie.",
       terms:"dodatkowe zajęcie, zgoda właściciela, aneks, dodatkowe wynagrodzenie",
-      guide:"GUIDE-013", path:"/pl/umowa/droga-kabel-place-osobno/"
+      guide:"GUIDE-013", path:"/umowa/droga-kabel-place-osobno/"
     },
 
     {
@@ -78,21 +78,21 @@
       text:"Czy umowa podaje maksymalny czas etapu przygotowawczego lub rezerwacyjnego, zanim inwestycja rzeczywiście ruszy?",
       why:"Właściciel powinien wiedzieć, jak długo grunt może pozostawać związany projektem, który jeszcze nie wszedł w budowę.",
       terms:"etap przygotowawczy, okres rezerwacyjny, termin, przedłużenie",
-      guide:"GUIDE-007", path:"/pl/umowa/na-ile-lat/"
+      guide:"GUIDE-007", path:"/umowa/na-ile-lat/"
     },
     {
       id:"q10", section:"czas",
       text:"Czy potrafisz wskazać, od jakiego zdarzenia zaczynają się poszczególne etapy i kiedy kończy się cała umowa?",
       why:"Samo podanie liczby lat nie zawsze odpowiada na pytanie, od kiedy ten okres jest liczony.",
       terms:"wejście w życie, rozpoczęcie budowy, eksploatacja, okres obowiązywania, wygaśnięcie",
-      guide:"GUIDE-007", path:"/pl/umowa/na-ile-lat/"
+      guide:"GUIDE-007", path:"/umowa/na-ile-lat/"
     },
     {
       id:"q11", section:"czas",
       text:"Czy umowa opisuje, co dzieje się z gruntem i prawami inwestora, gdy projekt nie powstanie, zostanie porzucony albo umowa zostanie wcześniej zakończona?",
       why:"Koniec projektu przed budową też powinien mieć procedurę: zwrot gruntu, dokumenty, wpisy i nierozliczone należności.",
       terms:"wypowiedzenie, rozwiązanie, wygaśnięcie, rezygnacja z projektu",
-      guide:"GUIDE-039", path:"/pl/umowa/wypowiedzenie-umowy/"
+      guide:"GUIDE-039", path:"/umowa/wypowiedzenie-umowy/"
     },
 
     {
@@ -100,28 +100,28 @@
       text:"Czy z umowy wynika dokładnie, za co płacona jest główna roczna kwota?",
       why:"Jedna liczba może obejmować bardzo różny zakres praw. Porównywanie ofert ma sens dopiero po rozłożeniu kwoty na to, co faktycznie kupuje inwestor.",
       terms:"czynsz, wynagrodzenie roczne, obejmuje, należność",
-      guide:"GUIDE-011", path:"/pl/umowa/co-obejmuje-roczna-kwota/"
+      guide:"GUIDE-011", path:"/umowa/co-obejmuje-roczna-kwota/"
     },
     {
       id:"q13", section:"pieniadze",
       text:"Czy zasady waloryzacji są kompletne: wskaźnik, data bazowa, częstotliwość i sposób obliczenia?",
       why:"Sformułowanie „czynsz będzie waloryzowany” bez mechanizmu może pozostawiać ważne pytania bez odpowiedzi.",
       terms:"waloryzacja, wskaźnik, GUS, rok bazowy, indeksacja",
-      guide:"GUIDE-011", path:"/pl/umowa/co-obejmuje-roczna-kwota/"
+      guide:"GUIDE-011", path:"/umowa/co-obejmuje-roczna-kwota/"
     },
     {
       id:"q14", section:"pieniadze",
       text:"Czy umowa rozdziela wynagrodzenie za turbinę od korzystania z drogi, kabla, placów, powierzchni czasowych albo dodatkowego zajęcia gruntu?",
       why:"Różne elementy infrastruktury mogą obciążać grunt w inny sposób i przez inny czas.",
       terms:"droga, kabel, plac, zajęcie czasowe, dodatkowe wynagrodzenie",
-      guide:"GUIDE-013", path:"/pl/umowa/droga-kabel-place-osobno/"
+      guide:"GUIDE-013", path:"/umowa/droga-kabel-place-osobno/"
     },
     {
       id:"q15", section:"pieniadze",
       text:"Czy odszkodowania za szkody, utracone plony, dopłaty, dodatkowe podatki i koszty gospodarstwa są rozliczane niezależnie od zwykłego czynszu?",
       why:"Czynsz za korzystanie z gruntu i wyrównanie konkretnej szkody pełnią inne funkcje. Warto sprawdzić, czy umowa ich nie zlewa.",
       terms:"szkoda, plon, dopłaty, podatek, koszty, odszkodowanie",
-      guide:"GUIDE-016", path:"/pl/umowa/szkoda-plon-koszty/"
+      guide:"GUIDE-016", path:"/umowa/szkoda-plon-koszty/"
     },
 
     {
@@ -129,35 +129,35 @@
       text:"Czy zasady wejścia na grunt określają powiadomienie, cel, trasę, czas i sytuacje awaryjne?",
       why:"Prawo wejścia na nieruchomość może być potrzebne, ale jego zakres i tryb mogą mieć duże znaczenie dla normalnej pracy gospodarstwa.",
       terms:"wejście na grunt, zawiadomienie, dojazd, dostęp, awaria",
-      guide:"GUIDE-017", path:"/pl/umowa/wejscie-na-grunt/"
+      guide:"GUIDE-017", path:"/umowa/wejscie-na-grunt/"
     },
     {
       id:"q17", section:"gospodarstwo",
       text:"Czy przed robotami ma powstać protokół i dokumentacja stanu gruntu, upraw, dróg, drenów i innych elementów gospodarstwa?",
       why:"Im lepiej udokumentowany stan wyjściowy, tym łatwiej później rozmawiać o tym, co zostało uszkodzone.",
       terms:"protokół wejścia, stan początkowy, zdjęcia, drenarka, gleba",
-      guide:"GUIDE-024", path:"/pl/umowa/protokol-wejscia/"
+      guide:"GUIDE-024", path:"/umowa/protokol-wejscia/"
     },
     {
       id:"q18", section:"gospodarstwo",
       text:"Czy procedura szkody obejmuje także szkody ujawnione później, np. w glebie, drenach albo stosunkach wodnych?",
       why:"Nie każdy skutek robót jest widoczny w dniu odbioru. Część problemów może pojawić się dopiero po opadach albo w kolejnym sezonie.",
       terms:"szkoda ukryta, szkoda późniejsza, drenarka, stosunki wodne, gleba",
-      guide:"GUIDE-026", path:"/pl/umowa/dokumentowanie-szkody/"
+      guide:"GUIDE-026", path:"/umowa/dokumentowanie-szkody/"
     },
     {
       id:"q19", section:"gospodarstwo",
       text:"Czy odpowiedzialność za uszkodzenie drenarki, zmianę stosunków wodnych, zagęszczenie gleby i odtworzenie warstwy ornej jest wyraźnie opisana?",
       why:"Przy ciężkim transporcie i robotach ziemnych właśnie te skutki mogą najbardziej wpływać na dalszą produkcję rolną.",
       terms:"drenarka, melioracja, zagęszczenie gleby, humus, stosunki wodne",
-      guide:"GUIDE-041", path:"/pl/umowa/ochrona-gleby-upraw-melioracji/"
+      guide:"GUIDE-041", path:"/umowa/ochrona-gleby-upraw-melioracji/"
     },
     {
       id:"q20", section:"gospodarstwo",
       text:"Czy umowa opisuje odpowiedzialność za utratę albo ograniczenie dopłat rolnych i obowiązek przekazywania danych potrzebnych właścicielowi?",
       why:"Inwestycja może zmieniać sposób wykorzystania części działki. Właściciel powinien wiedzieć, kto odpowiada za skutki i dokumentację.",
       terms:"dopłaty, ARiMR, płatności rolne, powierzchnia kwalifikowana",
-      guide:"GUIDE-014", path:"/pl/umowa/doplaty-rolne/"
+      guide:"GUIDE-014", path:"/umowa/doplaty-rolne/"
     },
 
     {
@@ -165,35 +165,35 @@
       text:"Czy każde pełnomocnictwo ma określony cel, zakres, czas obowiązywania i zasady jego wykorzystania?",
       why:"Pełnomocnictwo jest osobnym narzędziem prawnym. Warto czytać je równie uważnie jak samą umowę.",
       terms:"pełnomocnictwo, umocowanie, odwołanie, zakres, substytucja",
-      guide:"GUIDE-018", path:"/pl/umowa/pelnomocnictwo/"
+      guide:"GUIDE-018", path:"/umowa/pelnomocnictwo/"
     },
     {
       id:"q22", section:"prawa",
       text:"Czy wiesz, jakie prawa lub roszczenia mają zostać wpisane do księgi wieczystej i jak zostaną usunięte po zakończeniu umowy?",
       why:"Wpis w księdze wieczystej może oddziaływać na nieruchomość również wobec kolejnych właścicieli i finansujących.",
       terms:"księga wieczysta, dział III, wpis, roszczenie, wykreślenie",
-      guide:"GUIDE-020", path:"/pl/umowa/ksiega-wieczysta/"
+      guide:"GUIDE-020", path:"/umowa/ksiega-wieczysta/"
     },
     {
       id:"q23", section:"prawa",
       text:"Czy sprzedaż projektu lub przeniesienie umowy na inną spółkę wymaga zachowania obowiązków i zabezpieczeń wobec właściciela?",
       why:"Przy projekcie trwającym dziesięciolecia zmiana podmiotu jest realnym scenariuszem. Ważne jest, co przechodzi razem z projektem.",
       terms:"cesja, przeniesienie praw i obowiązków, następca, zmiana inwestora",
-      guide:"GUIDE-022", path:"/pl/umowa/zmiana-inwestora/"
+      guide:"GUIDE-022", path:"/umowa/zmiana-inwestora/"
     },
     {
       id:"q24", section:"prawa",
       text:"Czy prawa banku lub finansującego są opisane tak, aby było wiadomo, kiedy może wejść w miejsce inwestora i jakie obowiązki wtedy przejmuje?",
       why:"Finansowanie projektu może wymagać dodatkowych praw dla banku. Właściciel powinien rozumieć ich zakres i skutki.",
       terms:"finansujący, bank, step-in, przejęcie, zawiadomienie",
-      guide:"GUIDE-036", path:"/pl/umowa/finansujacy-step-in/"
+      guide:"GUIDE-036", path:"/umowa/finansujacy-step-in/"
     },
     {
       id:"q25", section:"prawa",
       text:"Czy zmiana turbiny, przebiegu drogi lub kabla, repowering albo dodanie nowej technologii wymaga jasno określonej procedury i rozliczenia?",
       why:"Projekt po kilkunastu latach może wyglądać inaczej niż w dniu podpisania umowy. Warto wiedzieć, które zmiany mieszczą się w umowie, a które wymagają nowych ustaleń.",
       terms:"zmiana technologii, repowering, magazyn energii, GPZ, aneks",
-      guide:"GUIDE-031", path:"/pl/umowa/zmiana-technologii-turbiny/"
+      guide:"GUIDE-031", path:"/umowa/zmiana-technologii-turbiny/"
     },
 
     {
@@ -201,21 +201,21 @@
       text:"Czy zapłata czynszu jest zabezpieczona czymś więcej niż samym zobowiązaniem spółki projektowej do zapłaty?",
       why:"Zabezpieczenie ma największe znaczenie wtedy, gdy spółka nie płaci dobrowolnie albo jej sytuacja finansowa się pogarsza.",
       terms:"gwarancja czynszowa, gwarancja bankowa, egzekucja, poręczenie",
-      guide:"GUIDE-023", path:"/pl/umowa/zabezpieczenie-platnosci/"
+      guide:"GUIDE-023", path:"/umowa/zabezpieczenie-platnosci/"
     },
     {
       id:"q27", section:"zabezpieczenia",
       text:"Czy umowa wymaga utrzymywania odpowiednich ubezpieczeń i przekazywania właścicielowi dokumentów potwierdzających ich obowiązywanie?",
       why:"Samo zdanie „inwestor jest ubezpieczony” nie mówi jeszcze, jaki jest zakres, suma, wyłączenia i okres ochrony.",
       terms:"ubezpieczenie, polisa, OC, suma ubezpieczenia, certyfikat",
-      guide:"GUIDE-034", path:"/pl/umowa/ubezpieczenia/"
+      guide:"GUIDE-034", path:"/umowa/ubezpieczenia/"
     },
     {
       id:"q28", section:"zabezpieczenia",
       text:"Czy istnieje odrębne, aktualizowane zabezpieczenie finansowe na demontaż i rekultywację, niezależne od bieżącego czynszu?",
       why:"Koszty końca inwestycji pojawiają się po wielu latach. Warto sprawdzić nie tylko obowiązek demontażu, ale również realne źródło jego finansowania.",
       terms:"gwarancja rekultywacyjna, demontaż, kosztorys, aktualizacja zabezpieczenia",
-      guide:"GUIDE-035", path:"/pl/umowa/gwarancja-rekultywacyjna/"
+      guide:"GUIDE-035", path:"/umowa/gwarancja-rekultywacyjna/"
     },
 
     {
@@ -223,14 +223,14 @@
       text:"Czy umowa dokładnie wskazuje, co po zakończeniu ma zostać usunięte: turbina, fundament, kable, drogi, place, zjazdy i pozostałości techniczne?",
       why:"Samo słowo „demontaż” nie rozstrzyga, co dzieje się z fundamentem, infrastrukturą podziemną czy drogami.",
       terms:"demontaż, fundament, kable, drogi, place, usunięcie",
-      guide:"GUIDE-030", path:"/pl/umowa/co-usunac-po-inwestycji/"
+      guide:"GUIDE-030", path:"/umowa/co-usunac-po-inwestycji/"
     },
     {
       id:"q30", section:"koniec",
       text:"Czy po zakończeniu są określone terminy rekultywacji, możliwość wykonania zastępczego oraz zasady rozliczenia szkód ujawnionych już po odbiorze?",
       why:"Odbiór prac nie powinien pozostawiać niejasności co do opóźnień, niewykonania obowiązków i skutków, które ujawnią się później.",
       terms:"rekultywacja, termin, wykonanie zastępcze, szkoda ukryta, protokół końcowy",
-      guide:"GUIDE-029", path:"/pl/umowa/kto-zaplaci-za-demontaz/"
+      guide:"GUIDE-029", path:"/umowa/kto-zaplaci-za-demontaz/"
     }
   ];
 

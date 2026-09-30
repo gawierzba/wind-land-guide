@@ -6,7 +6,7 @@
     {
       "id": "GUIDE-001",
       "title": "Inwestor chce mojego pola pod wiatrak — od czego zacząć?",
-      "path": "/pl/zanim-podpiszesz/inwestor-chce-mojego-pola/",
+      "path": "/zanim-podpiszesz/inwestor-chce-mojego-pola/",
       "status": "draft-live",
       "category": "Start i pierwszy kontakt",
       "keywords": [
@@ -24,7 +24,7 @@
     {
       "id": "GUIDE-002",
       "title": "Kim jest firma, która chce podpisać ze mną umowę?",
-      "path": "/pl/zanim-podpiszesz/kim-jest-inwestor/",
+      "path": "/zanim-podpiszesz/kim-jest-inwestor/",
       "status": "draft-live",
       "category": "Start i pierwszy kontakt",
       "keywords": [
@@ -43,7 +43,7 @@
     {
       "id": "GUIDE-003",
       "title": "Czego nie podpisywać od ręki na pierwszym spotkaniu",
-      "path": "/pl/zanim-podpiszesz/czego-nie-podpisywac/",
+      "path": "/zanim-podpiszesz/czego-nie-podpisywac/",
       "status": "draft-live",
       "category": "Start i pierwszy kontakt",
       "keywords": [
@@ -62,7 +62,7 @@
     {
       "id": "GUIDE-004",
       "title": "30 pytań do inwestora przed podpisaniem czegokolwiek",
-      "path": "/pl/zanim-podpiszesz/30-pytan-do-inwestora/",
+      "path": "/zanim-podpiszesz/30-pytan-do-inwestora/",
       "status": "draft-live",
       "category": "Start i pierwszy kontakt",
       "keywords": [
@@ -78,7 +78,7 @@
     {
       "id": "GUIDE-005",
       "title": "Czy na mojej działce w ogóle może powstać turbina?",
-      "path": "/pl/zanim-podpiszesz/czy-moze-powstac-turbina/",
+      "path": "/zanim-podpiszesz/czy-moze-powstac-turbina/",
       "status": "draft-live",
       "category": "Start i pierwszy kontakt",
       "keywords": [
@@ -97,7 +97,7 @@
     {
       "id": "GUIDE-006",
       "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
-      "path": "/pl/umowa/jak-czytac-umowe-dzierzawy/",
+      "path": "/umowa/jak-czytac-umowe-dzierzawy/",
       "status": "draft-live",
       "category": "Mapa całej umowy",
       "keywords": [
@@ -116,7 +116,7 @@
     {
       "id": "GUIDE-007",
       "title": "Na ile lat wiążę swoją ziemię?",
-      "path": "/pl/umowa/na-ile-lat/",
+      "path": "/umowa/na-ile-lat/",
       "status": "draft-live",
       "category": "Czas i etapy projektu",
       "keywords": [
@@ -134,7 +134,7 @@
     {
       "id": "GUIDE-008",
       "title": "Co dokładnie oddaję inwestorowi?",
-      "path": "/pl/umowa/co-dokladnie-oddaje-inwestorowi/",
+      "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
       "status": "draft-live",
       "category": "Zakres gruntu i infrastruktura",
       "keywords": [
@@ -154,7 +154,7 @@
     {
       "id": "GUIDE-009",
       "title": "Jak czytać mapę do umowy?",
-      "path": "/pl/umowa/jak-czytac-mape/",
+      "path": "/umowa/jak-czytac-mape/",
       "status": "draft-live",
       "category": "Zakres gruntu i infrastruktura",
       "keywords": [
@@ -172,7 +172,7 @@
     {
       "id": "GUIDE-010",
       "title": "Ile ziemi naprawdę zajmie inwestycja?",
-      "path": "/pl/umowa/ile-ziemi-zajmie-inwestycja/",
+      "path": "/umowa/ile-ziemi-zajmie-inwestycja/",
       "status": "draft-live",
       "category": "Zakres gruntu i infrastruktura",
       "keywords": [
@@ -192,7 +192,7 @@
     {
       "id": "GUIDE-011",
       "title": "Co właściwie obejmuje roczna kwota?",
-      "path": "/pl/umowa/co-obejmuje-roczna-kwota/",
+      "path": "/umowa/co-obejmuje-roczna-kwota/",
       "status": "draft-live",
       "category": "Pieniądze i rozliczenia",
       "keywords": [
@@ -210,7 +210,7 @@
     {
       "id": "GUIDE-012",
       "title": "Jak porównać dwie oferty?",
-      "path": "/pl/umowa/jak-porownac-dwie-oferty/",
+      "path": "/umowa/jak-porownac-dwie-oferty/",
       "status": "draft-live",
       "category": "Pieniądze i rozliczenia",
       "keywords": [
@@ -227,7 +227,7 @@
     {
       "id": "GUIDE-013",
       "title": "Czy za drogę, kabel i place płaci się osobno?",
-      "path": "/pl/umowa/droga-kabel-place-osobno/",
+      "path": "/umowa/droga-kabel-place-osobno/",
       "status": "draft-live",
       "category": "Pieniądze i rozliczenia",
       "keywords": [
@@ -245,7 +245,7 @@
     {
       "id": "GUIDE-014",
       "title": "Czy wiatrak może wpłynąć na moje dopłaty?",
-      "path": "/pl/umowa/doplaty-rolne/",
+      "path": "/umowa/doplaty-rolne/",
       "status": "draft-live",
       "category": "Gospodarstwo rolne",
       "keywords": [
@@ -263,7 +263,7 @@
     {
       "id": "GUIDE-015",
       "title": "Podatki od dzierżawy pod wiatrak — co trzeba sprawdzić?",
-      "path": "/pl/umowa/podatki/",
+      "path": "/umowa/podatki/",
       "status": "draft-live",
       "category": "Pieniądze i rozliczenia",
       "keywords": [
@@ -280,7 +280,7 @@
     {
       "id": "GUIDE-016",
       "title": "Szkoda, utracony plon i dodatkowe koszty gospodarstwa — co jest czym?",
-      "path": "/pl/umowa/szkoda-plon-koszty/",
+      "path": "/umowa/szkoda-plon-koszty/",
       "status": "draft-live",
       "category": "Gospodarstwo rolne",
       "keywords": [
@@ -297,7 +297,7 @@
     {
       "id": "GUIDE-017",
       "title": "Czy inwestor może wejść na moje pole, kiedy chce?",
-      "path": "/pl/umowa/wejscie-na-grunt/",
+      "path": "/umowa/wejscie-na-grunt/",
       "status": "draft-live",
       "category": "Wejście na grunt i dokumentacja",
       "keywords": [
@@ -315,7 +315,7 @@
     {
       "id": "GUIDE-018",
       "title": "Pełnomocnictwo dla inwestora — co naprawdę oznacza?",
-      "path": "/pl/umowa/pelnomocnictwo/",
+      "path": "/umowa/pelnomocnictwo/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -331,7 +331,7 @@
     {
       "id": "GUIDE-019",
       "title": "Prawo do dysponowania nieruchomością na cele budowlane — po ludzku",
-      "path": "/pl/umowa/prawo-do-dysponowania-na-cele-budowlane/",
+      "path": "/umowa/prawo-do-dysponowania-na-cele-budowlane/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -349,7 +349,7 @@
     {
       "id": "GUIDE-020",
       "title": "Co inwestor może chcieć wpisać do księgi wieczystej?",
-      "path": "/pl/umowa/ksiega-wieczysta/",
+      "path": "/umowa/ksiega-wieczysta/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -368,7 +368,7 @@
     {
       "id": "GUIDE-021",
       "title": "Służebność, kabel i inne prawa do gruntu — czym się różnią?",
-      "path": "/pl/umowa/sluzebnosc-i-prawa-do-gruntu/",
+      "path": "/umowa/sluzebnosc-i-prawa-do-gruntu/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -385,7 +385,7 @@
     {
       "id": "GUIDE-022",
       "title": "Podpisałem z firmą A, a projekt kupiła firma B — co wtedy?",
-      "path": "/pl/umowa/zmiana-inwestora/",
+      "path": "/umowa/zmiana-inwestora/",
       "status": "draft-live",
       "category": "Zmiana inwestora i finansowanie",
       "keywords": [
@@ -404,7 +404,7 @@
     {
       "id": "GUIDE-023",
       "title": "Jak zabezpieczyć płatności przez kilkadziesiąt lat?",
-      "path": "/pl/umowa/zabezpieczenie-platnosci/",
+      "path": "/umowa/zabezpieczenie-platnosci/",
       "status": "draft-live",
       "category": "Zabezpieczenia finansowe",
       "keywords": [
@@ -420,7 +420,7 @@
     {
       "id": "GUIDE-024",
       "title": "Protokół wejścia na grunt — co sfotografować przed pierwszą koparką?",
-      "path": "/pl/umowa/protokol-wejscia/",
+      "path": "/umowa/protokol-wejscia/",
       "status": "draft-live",
       "category": "Szkody i dowody",
       "keywords": [
@@ -439,7 +439,7 @@
     {
       "id": "GUIDE-025",
       "title": "Powstała szkoda — co zrobić pierwszego dnia?",
-      "path": "/pl/umowa/szkoda-pierwszy-dzien/",
+      "path": "/umowa/szkoda-pierwszy-dzien/",
       "status": "draft-live",
       "category": "Szkody i dowody",
       "keywords": [
@@ -457,7 +457,7 @@
     {
       "id": "GUIDE-026",
       "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
-      "path": "/pl/umowa/dokumentowanie-szkody/",
+      "path": "/umowa/dokumentowanie-szkody/",
       "status": "draft-live",
       "category": "Szkody i dowody",
       "keywords": [
@@ -475,7 +475,7 @@
     {
       "id": "GUIDE-027",
       "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
-      "path": "/pl/umowa/drenarka/",
+      "path": "/umowa/drenarka/",
       "status": "draft-live",
       "category": "Gospodarstwo rolne",
       "keywords": [
@@ -493,7 +493,7 @@
     {
       "id": "GUIDE-028",
       "title": "Co stanie się z umową, gdy sprzedam albo przekażę gospodarstwo?",
-      "path": "/pl/umowa/sprzedaz-dziedziczenie/",
+      "path": "/umowa/sprzedaz-dziedziczenie/",
       "status": "draft-live",
       "category": "Własność i następstwo",
       "keywords": [
@@ -509,7 +509,7 @@
     {
       "id": "GUIDE-029",
       "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
-      "path": "/pl/umowa/kto-zaplaci-za-demontaz/",
+      "path": "/umowa/kto-zaplaci-za-demontaz/",
       "status": "draft-live",
       "category": "Koniec inwestycji",
       "keywords": [
@@ -526,7 +526,7 @@
     {
       "id": "GUIDE-030",
       "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
-      "path": "/pl/umowa/co-usunac-po-inwestycji/",
+      "path": "/umowa/co-usunac-po-inwestycji/",
       "status": "draft-live",
       "category": "Koniec inwestycji",
       "keywords": [
@@ -544,7 +544,7 @@
     {
       "id": "GUIDE-031",
       "title": "Czy inwestor może później zmienić turbinę, drogę albo kabel?",
-      "path": "/pl/umowa/zmiana-technologii-turbiny/",
+      "path": "/umowa/zmiana-technologii-turbiny/",
       "status": "draft-live",
       "category": "Zmiany projektu",
       "keywords": [
@@ -562,7 +562,7 @@
     {
       "id": "GUIDE-032",
       "title": "Repowering po 15–25 latach — czy stara umowa obejmuje nową turbinę?",
-      "path": "/pl/umowa/repowering/",
+      "path": "/umowa/repowering/",
       "status": "draft-live",
       "category": "Zmiany projektu",
       "keywords": [
@@ -581,7 +581,7 @@
     {
       "id": "GUIDE-033",
       "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
-      "path": "/pl/umowa/podwykonawcy/",
+      "path": "/umowa/podwykonawcy/",
       "status": "draft-live",
       "category": "Budowa i podwykonawcy",
       "keywords": [
@@ -597,7 +597,7 @@
     {
       "id": "GUIDE-034",
       "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
-      "path": "/pl/umowa/ubezpieczenia/",
+      "path": "/umowa/ubezpieczenia/",
       "status": "draft-live",
       "category": "Zabezpieczenia finansowe",
       "keywords": [
@@ -616,7 +616,7 @@
     {
       "id": "GUIDE-035",
       "title": "Gwarancja rekultywacyjna — czy naprawdę wystarczy pieniędzy na usunięcie farmy?",
-      "path": "/pl/umowa/gwarancja-rekultywacyjna/",
+      "path": "/umowa/gwarancja-rekultywacyjna/",
       "status": "draft-live",
       "category": "Koniec inwestycji",
       "keywords": [
@@ -633,7 +633,7 @@
     {
       "id": "GUIDE-036",
       "title": "Bank, finansujący i step-in rights — co mogą oznaczać dla właściciela gruntu?",
-      "path": "/pl/umowa/finansujacy-step-in/",
+      "path": "/umowa/finansujacy-step-in/",
       "status": "draft-live",
       "category": "Zmiana inwestora i finansowanie",
       "keywords": [
@@ -652,7 +652,7 @@
     {
       "id": "GUIDE-037",
       "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
-      "path": "/pl/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+      "path": "/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
       "status": "draft-live",
       "category": "Kontrola i dokumentacja",
       "keywords": [
@@ -670,7 +670,7 @@
     {
       "id": "GUIDE-038",
       "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
-      "path": "/pl/umowa/kary-umowne-i-odszkodowanie/",
+      "path": "/umowa/kary-umowne-i-odszkodowanie/",
       "status": "draft-live",
       "category": "Szkody i odpowiedzialność",
       "keywords": [
@@ -687,7 +687,7 @@
     {
       "id": "GUIDE-039",
       "title": "Wypowiedzenie umowy pod wiatrak — co dzieje się z gruntem dzień później?",
-      "path": "/pl/umowa/wypowiedzenie-umowy/",
+      "path": "/umowa/wypowiedzenie-umowy/",
       "status": "draft-live",
       "category": "Koniec inwestycji",
       "keywords": [
@@ -705,7 +705,7 @@
     {
       "id": "GUIDE-040",
       "title": "Siła wyższa, zmiana prawa i brak opłacalności — kto ponosi ryzyko projektu?",
-      "path": "/pl/umowa/sila-wyzsza-zmiana-prawa/",
+      "path": "/umowa/sila-wyzsza-zmiana-prawa/",
       "status": "draft-live",
       "category": "Ryzyka projektu",
       "keywords": [
@@ -724,7 +724,7 @@
     {
       "id": "GUIDE-041",
       "title": "Standard ochrony gleby, upraw i melioracji — czego wymagać od ekip na polu?",
-      "path": "/pl/umowa/ochrona-gleby-upraw-melioracji/",
+      "path": "/umowa/ochrona-gleby-upraw-melioracji/",
       "status": "draft-live",
       "category": "Gospodarstwo rolne",
       "keywords": [
@@ -742,7 +742,7 @@
     {
       "id": "GUIDE-042",
       "title": "Awaria na polu — kto dzwoni, kto zabezpiecza i co musi wydarzyć się w pierwszych 24 godzinach?",
-      "path": "/pl/umowa/procedura-awaryjna/",
+      "path": "/umowa/procedura-awaryjna/",
       "status": "draft-live",
       "category": "Szkody i odpowiedzialność",
       "keywords": [
@@ -760,7 +760,7 @@
     {
       "id": "GUIDE-043",
       "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
-      "path": "/pl/umowa/kontrola-wykonywania-umowy/",
+      "path": "/umowa/kontrola-wykonywania-umowy/",
       "status": "draft-live",
       "category": "Kontrola i dokumentacja",
       "keywords": [
@@ -777,7 +777,7 @@
     {
       "id": "GUIDE-044",
       "title": "Gwarancja czynszowa — co daje więcej niż zapis „inwestor zapłaci”?",
-      "path": "/pl/umowa/gwarancja-czynszowa/",
+      "path": "/umowa/gwarancja-czynszowa/",
       "status": "draft-live",
       "category": "Zabezpieczenia finansowe",
       "keywords": [
@@ -793,7 +793,7 @@
     {
       "id": "GUIDE-045",
       "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
-      "path": "/pl/umowa/poddanie-sie-egzekucji/",
+      "path": "/umowa/poddanie-sie-egzekucji/",
       "status": "draft-live",
       "category": "Zabezpieczenia finansowe",
       "keywords": [
@@ -812,7 +812,7 @@
     {
       "id": "GUIDE-046",
       "title": "Poręczenie spółki dominującej — czy duża grupa naprawdę odpowiada za spółkę projektową?",
-      "path": "/pl/umowa/poreczenie-spolki-dominujacej/",
+      "path": "/umowa/poreczenie-spolki-dominujacej/",
       "status": "draft-live",
       "category": "Zmiana inwestora i finansowanie",
       "keywords": [
@@ -831,7 +831,7 @@
     {
       "id": "GUIDE-047",
       "title": "Magazyn energii, wodór, GPO i GPZ — czy pierwotna umowa obejmuje nowe technologie?",
-      "path": "/pl/umowa/magazyn-energii-wodor-gpz/",
+      "path": "/umowa/magazyn-energii-wodor-gpz/",
       "status": "draft-live",
       "category": "Zmiany projektu",
       "keywords": [
@@ -850,7 +850,7 @@
     {
       "id": "GUIDE-048",
       "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
-      "path": "/pl/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+      "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -868,7 +868,7 @@
     {
       "id": "GUIDE-049",
       "title": "Doręczenia przez 30 lat — kiedy e-mail, list i zmiana adresu naprawdę mają znaczenie?",
-      "path": "/pl/umowa/doreczenia-i-kontakty/",
+      "path": "/umowa/doreczenia-i-kontakty/",
       "status": "draft-live",
       "category": "Kontrola i dokumentacja",
       "keywords": [
@@ -886,7 +886,7 @@
     {
       "id": "GUIDE-050",
       "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
-      "path": "/pl/umowa/hierarchia-dokumentow-i-wersji/",
+      "path": "/umowa/hierarchia-dokumentow-i-wersji/",
       "status": "draft-live",
       "category": "Prawa i dokumenty",
       "keywords": [
@@ -904,7 +904,7 @@
     {
       "id": "GUIDE-051",
       "title": "Jak sprawdzić MPZP dla planowanej turbiny?",
-      "path": "/pl/projekt/jak-sprawdzic-mpzp/",
+      "path": "/projekt/jak-sprawdzic-mpzp/",
       "status": "draft-live",
       "category": "Projekt i procedury",
       "keywords": [
@@ -922,7 +922,7 @@
     {
       "id": "GUIDE-052",
       "title": "Uchwała o przystąpieniu to jeszcze nie plan — jak sprawdzić etap?",
-      "path": "/pl/projekt/uchwala-o-przystapieniu/",
+      "path": "/projekt/uchwala-o-przystapieniu/",
       "status": "draft-live",
       "category": "Projekt i procedury",
       "keywords": [
@@ -938,7 +938,7 @@
     {
       "id": "GUIDE-053",
       "title": "Wnioski, konsultacje i spotkania otwarte przy planie pod wiatraki — jak wygląda procedura?",
-      "path": "/pl/projekt/konsultacje-planu-wiatraki/",
+      "path": "/projekt/konsultacje-planu-wiatraki/",
       "status": "draft-live",
       "category": "Projekt i procedury",
       "keywords": [
@@ -955,7 +955,7 @@
     {
       "id": "GUIDE-054",
       "title": "Decyzja środowiskowa — co właściwie rozstrzyga?",
-      "path": "/pl/projekt/decyzja-srodowiskowa/",
+      "path": "/projekt/decyzja-srodowiskowa/",
       "status": "draft-live",
       "category": "Projekt i procedury",
       "keywords": [
@@ -973,7 +973,7 @@
     {
       "id": "GUIDE-055",
       "title": "Raport OOŚ — jak go czytać bez 500 stron od deski do deski?",
-      "path": "/pl/projekt/jak-czytac-raport-oos/",
+      "path": "/projekt/jak-czytac-raport-oos/",
       "status": "draft-live",
       "category": "Projekt i procedury",
       "keywords": [
@@ -993,7 +993,7 @@
     {
       "id": "NARZEDZIE-001",
       "title": "Sprawdź swoją umowę w 5 minut",
-      "path": "/pl/sprawdz-umowe/",
+      "path": "/sprawdz-umowe/",
       "status": "draft-live",
       "category": "Narzędzia",
       "keywords": [

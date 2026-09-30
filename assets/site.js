@@ -1,29 +1,29 @@
 
 (() => {
   function injectStructuredData() {
-    if (!location.pathname.startsWith("/pl/")) return;
+    if (location.pathname.startsWith("/pl/") || location.pathname.startsWith("/en/")) return;
     if (document.querySelector('script[data-structured-data="grunt-i-wiatr"]')) return;
 
     const canonical = document.querySelector('link[rel="canonical"]')?.href || location.href.split("#")[0];
     const description = document.querySelector('meta[name="description"]')?.content || "";
     const h1 = document.querySelector("h1")?.textContent?.replace(/\s+/g, " ").trim() || document.title;
     const path = new URL(canonical).pathname;
-    const siteUrl = "https://gruntiwiatr.pl/pl/";
+    const siteUrl = "https://gruntiwiatr.pl/";
     const siteId = "https://gruntiwiatr.pl/#website";
     const isGuide = /GUIDE-\d+/i.test(document.querySelector(".eyebrow")?.textContent || "");
 
     const sectionMap = [
-      ["/pl/zanim-podpiszesz/", "Zanim podpiszesz"],
-      ["/pl/umowa/", "Umowa"],
-      ["/pl/realizacja/", "Realizacja"],
-      ["/pl/koniec-inwestycji/", "Koniec inwestycji"],
-      ["/pl/projekt/", "Projekt"]
+      ["/zanim-podpiszesz/", "Zanim podpiszesz"],
+      ["/umowa/", "Umowa"],
+      ["/realizacja/", "Realizacja"],
+      ["/koniec-inwestycji/", "Koniec inwestycji"],
+      ["/projekt/", "Projekt"]
     ];
 
     const crumbs = [{ "@type": "ListItem", position: 1, name: "Grunt i wiatr", item: siteUrl }];
     const section = sectionMap.find(([prefix]) => path.startsWith(prefix));
 
-    if (section && path !== "/pl/") {
+    if (section && path !== "/") {
       crumbs.push({
         "@type": "ListItem",
         position: crumbs.length + 1,
@@ -33,7 +33,7 @@
     }
 
     const currentAlreadyListed = crumbs.some(item => item.item === canonical);
-    if (path !== "/pl/" && !currentAlreadyListed) {
+    if (path !== "/" && !currentAlreadyListed) {
       crumbs.push({
         "@type": "ListItem",
         position: crumbs.length + 1,
@@ -101,7 +101,7 @@
 
 (() => {
   const siteRoot = new URL("/", location.href);
-  const plRoot = new URL("pl/", siteRoot);
+  const plRoot = siteRoot;
   let fullTextIndexPromise = null;
 
   const url = p => new URL(String(p || "").replace(/^\//, ""), siteRoot).href;
@@ -430,9 +430,9 @@
   dock.setAttribute("aria-label", "Nawigacja mobilna");
   dock.innerHTML = `
     <a href="${plRoot.href}">Start</a>
-    <a href="${new URL("pl/#sciezki", siteRoot).href}">Ścieżki</a>
+    <a href="${new URL("#sciezki", siteRoot).href}">Ścieżki</a>
     <button type="button" data-mobile-search>Szukaj</button>
-    <a href="${new URL("pl/zrodla/", siteRoot).href}">Źródła</a>`;
+    <a href="${new URL("zrodla/", siteRoot).href}">Źródła</a>`;
   document.body.append(dock);
   dock.querySelector("[data-mobile-search]").addEventListener("click", () => openSearch());
 
@@ -441,7 +441,7 @@
       const sep = document.createTextNode(" · ");
       const a = document.createElement("a");
       a.className = "privacy-link";
-      a.href = new URL("pl/prywatnosc/", siteRoot).href;
+      a.href = new URL("prywatnosc/", siteRoot).href;
       a.textContent = "Prywatność i cookies";
       f.append(sep, a);
     }
@@ -449,7 +449,7 @@
       const sep = document.createTextNode(" · ");
       const a = document.createElement("a");
       a.className = "contact-link";
-      a.href = new URL("pl/kontakt/", siteRoot).href;
+      a.href = new URL("kontakt/", siteRoot).href;
       a.textContent = "Kontakt";
       a.dataset.contact = "contact@grunt-i-wiatr-marker";
       f.append(sep, a);
@@ -553,7 +553,7 @@
         box.className = "source-status";
         const root = new URL("/", location.href);
         box.innerHTML = '<span>ŹRÓDŁA I STAN PRAWNY</span><strong>Weryfikacja: 28.09.2026</strong><a href="' +
-          new URL("pl/stan-prawny/", root).href +
+          new URL("stan-prawny/", root).href +
           '">Zobacz rejestr weryfikacji →</a>';
         const tools = article.querySelector(".article-tools");
         (tools || meta).insertAdjacentElement("afterend", box);
@@ -566,10 +566,10 @@
       const wrap = document.createElement("span");
       wrap.className = "site-footer-links";
       wrap.innerHTML =
-        ' · <a href="' + new URL("pl/metodologia/", root).href + '">Metodologia</a>' +
-        ' · <a href="' + new URL("pl/zrodla/", root).href + '">Źródła</a>' +
-        ' · <a href="' + new URL("pl/stan-prawny/", root).href + '">Stan prawny</a>' +
-        ' · <a href="' + new URL("pl/korekty/", root).href + '">Korekty</a>';
+        ' · <a href="' + new URL("metodologia/", root).href + '">Metodologia</a>' +
+        ' · <a href="' + new URL("zrodla/", root).href + '">Źródła</a>' +
+        ' · <a href="' + new URL("stan-prawny/", root).href + '">Stan prawny</a>' +
+        ' · <a href="' + new URL("korekty/", root).href + '">Korekty</a>';
       f.appendChild(wrap);
     });
   }
