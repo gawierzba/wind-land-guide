@@ -343,3 +343,15 @@ Pakiet redakcyjno-techniczny wzmacniający transparentność całego serwisu bez
 - stopka całego serwisu otrzymuje stały zestaw linków jakościowych: metodologia, źródła, stan prawny, korekty, prywatność,
 - strona prywatności została zaktualizowana o localStorage używany przez narzędzia właściciela oraz eksport/import kopii,
 - strona główna pokazuje cztery filary standardu kompendium.
+
+
+### v2.7 — Google discovery
+
+Pakiet indeksowania i linkowania wewnętrznego przygotowany pod wyszukiwarki bez keyword-stuffingu.
+
+- Katalog GUIDE zawiera teraz statyczne, crawlable linki HTML do wszystkich 61 materiałów jeszcze przed wykonaniem JavaScriptu; interaktywny filtr przejmuje widok po załadowaniu skryptu.
+- Strona główna oraz główne huby Umowa / Zanim podpiszesz / Realizacja / Koniec inwestycji mają bardziej opisowe title i H1 odpowiadające naturalnym zapytaniom właścicieli gruntów.
+- og:title został zsynchronizowany z title na głównych stronach wejściowych.
+- GUIDE-y otrzymują automatyczną sieć 3–4 materiałów powiązanych na podstawie wspólnych paragrafów wzorca i kategorii problemu; linki mają pełne, opisowe teksty kotwic.
+- Dodano _audit/GOOGLE_DISCOVERY_CHECKLIST.md z procedurą Search Console po publikacji.
+- QA pilnuje, aby pełny statyczny katalog GUIDE nie zniknął przy kolejnych zmianach.
