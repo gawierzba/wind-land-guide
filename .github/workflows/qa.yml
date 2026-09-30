@@ -52,3 +52,5 @@ jobs:
         run: node --check assets/paragraph-map.js
       - name: Legal source trace audit
         run: node scripts/legal-audit.mjs
+      - name: Security audit
+        run: node scripts/security-audit.mjs
