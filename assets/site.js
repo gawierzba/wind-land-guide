@@ -50,6 +50,7 @@
       name: h1,
       headline: isGuide ? h1 : undefined,
       description,
+      image: isGuide ? "https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg" : undefined,
       inLanguage: "pl-PL",
       isPartOf: { "@id": siteId },
       author: isGuide ? { "@id": editorialId } : undefined,
