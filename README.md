@@ -330,3 +330,16 @@ Dodano eksport pełnej lokalnej kopii warsztatu do JSON oraz import własnego fo
 Dodano /mapa-paragrafow/ — dwukierunkowy indeks krzyżowy analizowanego wzorca i biblioteki GUIDE. Widok § → GUIDE pokazuje §1–§65, nazwę obszaru źródłowego, stronę PDF, przypisane materiały i krótkie uzasadnienie audytowe. Widok GUIDE → § pokazuje, z których pozycji macierzy wyrasta konkretny materiał.
 
 Mapa jest generowana z ustrukturyzowanego contract-guide-map.json, opartego na _audit/MACIERZ_POKRYCIA_UMOWY.md. Sekcje zapisane wcześniej zbiorczo jako Projekt/Realizacja/Koniec inwestycji zostały rozpisane na konkretne GUIDE-y. GUIDE-y bez bezpośredniego przypisania pozostają jawnie oznaczone jako materiały przekrojowe zamiast otrzymywać sztuczne przypisania.
+
+
+### v2.6 — wiarygodność i odnajdywalność
+
+Pakiet redakcyjno-techniczny wzmacniający transparentność całego serwisu bez dokładania nowych GUIDE-ów.
+
+- metodologia opisuje pełny cykl powstawania GUIDE-a: problem właściciela → źródło → warstwy PRAWO/UMOWA/PRAKTYKA → łączenie paragrafów → pytania kontrolne → weryfikacja → linkowanie,
+- źródła wyjaśniają rolę właścicielsko-ochronnego wzorca jako mapy problemów, a nie dowodu standardu rynku,
+- każdy GUIDE automatycznie pokazuje faktycznie występujące w nim warstwy treści i linki do metodologii, stanu prawnego oraz mapy § ↔ GUIDE,
+- dane strukturalne Article wskazują projekt redakcyjny Grunt i wiatr jako autora/wydawcę oraz obraz materiału,
+- stopka całego serwisu otrzymuje stały zestaw linków jakościowych: metodologia, źródła, stan prawny, korekty, prywatność,
+- strona prywatności została zaktualizowana o localStorage używany przez narzędzia właściciela oraz eksport/import kopii,
+- strona główna pokazuje cztery filary standardu kompendium.

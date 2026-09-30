@@ -10,6 +10,7 @@
     const path = new URL(canonical).pathname;
     const siteUrl = "https://gruntiwiatr.pl/";
     const siteId = "https://gruntiwiatr.pl/#website";
+    const editorialId = "https://gruntiwiatr.pl/#editorial-project";
     const isGuide = /GUIDE-\d+/i.test(document.querySelector(".eyebrow")?.textContent || "");
 
     const sectionMap = [
@@ -49,8 +50,11 @@
       name: h1,
       headline: isGuide ? h1 : undefined,
       description,
+      image: isGuide ? "https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg" : undefined,
       inLanguage: "pl-PL",
-      isPartOf: { "@id": siteId }
+      isPartOf: { "@id": siteId },
+      author: isGuide ? { "@id": editorialId } : undefined,
+      publisher: isGuide ? { "@id": editorialId } : undefined
     };
     Object.keys(page).forEach(key => page[key] === undefined && delete page[key]);
 
@@ -62,6 +66,14 @@
         name: "Grunt i wiatr",
         description: "Niezależne kompendium dla właścicieli gruntów zainteresowanych energetyką wiatrową.",
         inLanguage: "pl-PL"
+      },
+      {
+        "@type": "Organization",
+        "@id": editorialId,
+        name: "Grunt i wiatr",
+        url: "https://gruntiwiatr.pl/",
+        publishingPrinciples: "https://gruntiwiatr.pl/metodologia/",
+        description: "Projekt redakcyjny kompendium dla właścicieli gruntów dotyczącego inwestycji wiatrowych."
       },
       page
     ];
@@ -898,4 +910,79 @@
     document.querySelector(".project-context-bar")?.remove();
     injectProjectContext();
   });
+})();
+
+
+(() => {
+  function injectGuideProvenance() {
+    const article = document.querySelector("article.article");
+    if (!article) return;
+
+    const eyebrow = article.querySelector(".eyebrow");
+    const guideMatch = eyebrow?.textContent?.match(/GUIDE-\d+/i);
+    if (!guideMatch || article.querySelector(".guide-provenance")) return;
+
+    const present = new Set(
+      [...article.querySelectorAll(".label")]
+        .map(el => (el.textContent || "").replace(/\s+/g," ").trim().toUpperCase())
+        .filter(Boolean)
+    );
+
+    const ordered = ["PRAWO","UMOWA","PRAKTYKA","SYTUACJA INDYWIDUALNA"].filter(x => present.has(x));
+    const box = document.createElement("aside");
+    box.className = "guide-provenance";
+    box.setAttribute("aria-label","Pochodzenie i warstwy materiału");
+
+    const chips = ordered.length
+      ? ordered.map(label => `<span class="guide-provenance-chip">${label}</span>`).join("")
+      : '<span class="guide-provenance-chip muted">MATERIAŁ PRZEKROJOWY</span>';
+
+    const lawLink = present.has("PRAWO")
+      ? '<a href="/stan-prawny/">Stan prawny</a>'
+      : "";
+
+    box.innerHTML = `
+      <div class="guide-provenance-main">
+        <strong>Warstwy tego GUIDE-a</strong>
+        <div class="guide-provenance-chips">${chips}</div>
+      </div>
+      <nav class="guide-provenance-links" aria-label="Weryfikacja materiału">
+        <a href="/metodologia/">Jak powstają GUIDE-y</a>
+        ${lawLink}
+        <a href="/mapa-paragrafow/">§ ↔ GUIDE</a>
+      </nav>`;
+
+    const meta = article.querySelector(".meta");
+    const h1 = article.querySelector("h1");
+    (meta || h1)?.insertAdjacentElement("afterend",box);
+  }
+
+  function injectTrustFooter() {
+    if (location.pathname.startsWith("/en/")) return;
+    const footerShell = document.querySelector(".footer .shell");
+    if (!footerShell || footerShell.querySelector(".footer-trust")) return;
+
+    const nav = document.createElement("nav");
+    nav.className = "footer-trust";
+    nav.setAttribute("aria-label","Informacje o jakości i prywatności serwisu");
+    nav.innerHTML = `
+      <span>Standard serwisu:</span>
+      <a href="/metodologia/">Metodologia</a>
+      <a href="/zrodla/">Źródła</a>
+      <a href="/stan-prawny/">Stan prawny</a>
+      <a href="/korekty/">Korekty</a>
+      <a href="/prywatnosc/">Prywatność</a>`;
+    footerShell.appendChild(nav);
+  }
+
+  function initCredibilityLayer() {
+    injectGuideProvenance();
+    injectTrustFooter();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded",initCredibilityLayer,{once:true});
+  } else {
+    initCredibilityLayer();
+  }
 })();
