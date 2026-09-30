@@ -1007,6 +1007,44 @@
         "uciążliwości"
       ],
       "depth": "deep"
+    },
+    {
+      "id": "GUIDE-057",
+      "title": "Inwestor naruszył umowę — co dalej?",
+      "path": "/umowa/inwestor-naruszyl-umowe/",
+      "status": "draft-live",
+      "category": "Naruszenia i odpowiedzialność",
+      "keywords": [
+        "naruszenie",
+        "wezwanie",
+        "plan naprawczy",
+        "termin naprawczy",
+        "wykonanie zastępcze",
+        "monitoring",
+        "kontrola",
+        "kara umowna",
+        "odszkodowanie"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-058",
+      "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+      "path": "/umowa/roszczenia-osob-trzecich/",
+      "status": "draft-live",
+      "category": "Naruszenia i odpowiedzialność",
+      "keywords": [
+        "roszczenia osób trzecich",
+        "sąsiad",
+        "urząd",
+        "wykonawca",
+        "koszty obrony",
+        "zwolnienie z odpowiedzialności",
+        "regres",
+        "ugoda",
+        "ubezpieczenie"
+      ],
+      "depth": "deep"
     }
   ],
   "tools": [
