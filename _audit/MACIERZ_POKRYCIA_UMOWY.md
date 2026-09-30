@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **44**
-- POGŁĘBIĆ: **19**
-- BRAK: **2**
+- POKRYTE: **48**
+- POGŁĘBIĆ: **17**
+- BRAK: **0**
 - Łącznie: **65/65 paragrafów**
-- Priorytet A: **7** pozycji
-- Priorytet B: **13** pozycji
-- Priorytet C: **45** pozycji
+- Priorytet A: **4** pozycji
+- Priorytet B: **12** pozycji
+- Priorytet C: **49** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -105,9 +105,6 @@ Statusy:
 
 3. **Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?**  
    Źródło: §35. Prawo właściwe, sąd, arbitraż, mediacja, obowiązki niesporne i ciągłość zabezpieczeń.
-
-6. **Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?**  
-   Źródło: §30 i §63. Dane gospodarstwa, mapy, fotografie, monitoring, PR/ESG, media społecznościowe i publiczne przedstawianie właściciela.
 
 ### B. Najważniejsze pogłębienia istniejących GUIDE’ów
 
