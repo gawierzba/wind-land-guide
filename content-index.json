@@ -1,5 +1,5 @@
 {
-  "version": "1.3-dev",
+  "version": "1.4-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -203,7 +203,14 @@
         "kwota",
         "waloryzacja",
         "inflacja",
-        "wynagrodzenie"
+        "wynagrodzenie",
+        "czynsz wejściowy",
+        "czynsz rezerwacyjny",
+        "czynsz zasadniczy",
+        "MW",
+        "moc turbiny",
+        "minimum gwarantowane",
+        "repowering"
       ],
       "depth": "deep"
     },
@@ -663,7 +670,12 @@
         "decyzja",
         "polisa",
         "gwarancja",
-        "protokol"
+        "protokol",
+        "raport zerowy",
+        "raport okresowy",
+        "raport nadzwyczajny",
+        "24 godziny",
+        "archiwum właściciela"
       ],
       "depth": "deep"
     },
