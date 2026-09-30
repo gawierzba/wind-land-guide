@@ -1,5 +1,5 @@
 {
-  "version": "1.8-dev",
+  "version": "1.9-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -351,8 +351,13 @@
         "umocowanie",
         "odwolanie",
         "dalsze",
-        "pelnomocnictwo",
-        "podpis"
+        "podpis",
+        "zgoda jednorazowa",
+        "aneks",
+        "zgoda vs pełnomocnictwo",
+        "zakres zgody",
+        "milczenie",
+        "osoba kontaktowa"
       ],
       "depth": "deep"
     },
@@ -565,7 +570,12 @@
         "droga",
         "plac",
         "odpady",
-        "rekultywacja"
+        "rekultywacja",
+        "Protokół Demontażu",
+        "zdjęcia przed zasypaniem",
+        "dokumentacja geodezyjna",
+        "wykopy",
+        "elementy pozostawione"
       ],
       "depth": "deep"
     },
