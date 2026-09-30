@@ -1,5 +1,5 @@
 {
-  "version": "1.7-dev",
+  "version": "1.8-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -109,7 +109,14 @@
         "mapa",
         "zabezpieczenia",
         "czerwone",
-        "flagi"
+        "flagi",
+        "Inwestycja",
+        "Szkoda",
+        "Podwykonawca",
+        "Finansujący",
+        "Siła Wyższa",
+        "Zgoda Wydzierżawiającego",
+        "definicja umowna"
       ],
       "depth": "deep"
     },
@@ -618,7 +625,13 @@
         "odpowiedzialnosc",
         "szkoda",
         "ubezpieczenie",
-        "wejscie"
+        "wejscie",
+        "roszczenie podwykonawcy",
+        "wynagrodzenie wykonawcy",
+        "obciążenie nieruchomości",
+        "zwolnienie właściciela",
+        "koszty obrony",
+        "dalszy podwykonawca"
       ],
       "depth": "deep"
     },
