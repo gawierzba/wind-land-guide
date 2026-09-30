@@ -1,5 +1,5 @@
 {
-  "version": "2.7-dev",
+  "version": "2.8-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1172,6 +1172,30 @@
         "część nieruchomości"
       ],
       "depth": "deep"
+    },
+    {
+      "id": "SLOWNIK-001",
+      "title": "Umowa pod wiatrak po ludzku — słownik najważniejszych pojęć",
+      "path": "/slownik/",
+      "status": "draft-live",
+      "category": "Słownik",
+      "keywords": [
+        "słownik",
+        "pojęcia",
+        "umowa pod wiatrak",
+        "dzierżawa gruntu",
+        "repowering",
+        "korytarz kablowy",
+        "gwarancja rekultywacyjna",
+        "step-in rights",
+        "czynsz",
+        "rekultywacja",
+        "demontaż",
+        "pełnomocnictwo",
+        "służebność",
+        "księga wieczysta"
+      ],
+      "depth": "reference"
     }
   ],
   "tools": [

@@ -355,3 +355,16 @@ Pakiet indeksowania i linkowania wewnętrznego przygotowany pod wyszukiwarki bez
 - GUIDE-y otrzymują automatyczną sieć 3–4 materiałów powiązanych na podstawie wspólnych paragrafów wzorca i kategorii problemu; linki mają pełne, opisowe teksty kotwic.
 - Dodano _audit/GOOGLE_DISCOVERY_CHECKLIST.md z procedurą Search Console po publikacji.
 - QA pilnuje, aby pełny statyczny katalog GUIDE nie zniknął przy kolejnych zmianach.
+
+
+### v2.8 — SEO guardrails i słownik
+
+Pakiet utrzymaniowy i semantyczny po wdrożeniu Google discovery.
+
+- dodano `scripts/seo-audit.mjs`, który sprawdza opublikowane strony PL pod kątem title, meta description, H1, canonical, noindex, Open Graph, duplikatów, sitemap i robots.txt,
+- audyt SEO działa automatycznie w GitHub Actions przy każdym PR i pushu na gałąź integracyjną,
+- dodano `/slownik/` z 30 najważniejszymi pojęciami z umów i inwestycji wiatrowych, każde z linkiem do właściwego GUIDE-a,
+- słownik został dodany do pełnotekstowej wyszukiwarki, content-index i sitemap.xml,
+- katalog GUIDE i hub Umowa linkują bezpośrednio do słownika,
+- uporządkowano podwójną warstwę linków jakościowych w stopce; pozostaje jedna stopka z metodologią, źródłami, stanem prawnym, korektami, słownikiem i prywatnością,
+- QA liczy rzeczywiste wpisy GUIDE osobno od materiałów referencyjnych.

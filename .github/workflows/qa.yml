@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Structural audit
         run: node scripts/qa.mjs
+      - name: SEO integrity audit
+        run: node scripts/seo-audit.mjs
       - name: Check crawlable GUIDE catalog
         run: |
           node - <<'NODE'

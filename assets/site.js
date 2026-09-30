@@ -579,18 +579,6 @@
       }
     }
 
-    document.querySelectorAll(".footer .shell").forEach(f => {
-      if (f.querySelector(".site-footer-links")) return;
-      const root = new URL("/", location.href);
-      const wrap = document.createElement("span");
-      wrap.className = "site-footer-links";
-      wrap.innerHTML =
-        ' · <a href="' + new URL("metodologia/", root).href + '">Metodologia</a>' +
-        ' · <a href="' + new URL("zrodla/", root).href + '">Źródła</a>' +
-        ' · <a href="' + new URL("stan-prawny/", root).href + '">Stan prawny</a>' +
-        ' · <a href="' + new URL("korekty/", root).href + '">Korekty</a>';
-      f.appendChild(wrap);
-    });
   }
 
   if (document.readyState === "loading") {
@@ -971,6 +959,7 @@
       <a href="/zrodla/">Źródła</a>
       <a href="/stan-prawny/">Stan prawny</a>
       <a href="/korekty/">Korekty</a>
+      <a href="/slownik/">Słownik</a>
       <a href="/prywatnosc/">Prywatność</a>`;
     footerShell.appendChild(nav);
   }

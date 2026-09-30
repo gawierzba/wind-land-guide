@@ -2537,3 +2537,67 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
 @media(max-width:620px){
   .guide-static-links,.guide-related-links{grid-template-columns:1fr}
 }
+
+
+/* v2.8 — słownik właściciela gruntu */
+.glossary-shell{max-width:980px}
+.glossary-letters{
+  position:sticky;
+  top:58px;
+  z-index:8;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  padding:10px 0 13px;
+  margin-bottom:18px;
+  background:#f4f6f2;
+  border-bottom:1px solid #dfe5dc;
+}
+.glossary-letters a{
+  display:grid;
+  place-items:center;
+  min-width:31px;
+  height:31px;
+  padding:0 7px;
+  border:1px solid #d8e1d7;
+  border-radius:999px;
+  background:#fff;
+  color:#31563e;
+  font-size:.72rem;
+  font-weight:900;
+  text-decoration:none;
+}
+.glossary-letters a:hover{background:#e8efe5}
+.glossary-list{display:grid;gap:28px}
+.glossary-letter>h2{
+  margin:0 0 8px;
+  padding-bottom:7px;
+  border-bottom:2px solid #dfe7dc;
+  color:#285b3d;
+  font-size:1.35rem;
+}
+.glossary-entry{
+  padding:15px 0;
+  border-bottom:1px solid #e6ebe5;
+}
+.glossary-entry:last-child{border-bottom:0}
+.glossary-entry h3{
+  margin:0 0 6px;
+  font-size:1.03rem;
+}
+.glossary-entry p{
+  margin:0 0 7px;
+  color:#56645b;
+  line-height:1.58;
+}
+.glossary-entry>a{
+  color:#285b3d;
+  font-size:.75rem;
+  font-weight:800;
+  text-decoration:none;
+}
+.glossary-entry>a:hover{text-decoration:underline}
+.glossary-end{margin-top:30px}
+@media(max-width:700px){
+  .glossary-letters{top:50px}
+}

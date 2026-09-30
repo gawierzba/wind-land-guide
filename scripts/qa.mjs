@@ -142,7 +142,8 @@ else {
     if (!item.category) warnings.push(`content-index: ${item.id} bez category`);
   }
 
-  if ((index.materials || []).length !== 55) warnings.push(`content-index: liczba GUIDE = ${(index.materials || []).length}, oczekiwano 55`);
+  const guideCount = (index.materials || []).filter(x => /^GUIDE-\d+$/i.test(x.id || "")).length;
+  if (guideCount !== 61) warnings.push(`content-index: liczba GUIDE = ${guideCount}, oczekiwano 61`);
 
   if (Array.isArray(index.searchIndexParts)) {
     const searchEntries = [];
