@@ -1,5 +1,5 @@
 {
-  "version": "1.6-dev",
+  "version": "1.7-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -173,7 +173,13 @@
         "kabel",
         "droga",
         "plac",
-        "powierzchnia"
+        "powierzchnia",
+        "księga wieczysta",
+        "obręb",
+        "współwłasność",
+        "identyfikacja działki",
+        "klasa bonitacyjna",
+        "zgodność dokumentów"
       ],
       "depth": "deep"
     },
@@ -570,7 +576,14 @@
         "lokalizacja",
         "parametry",
         "technologia",
-        "aneks"
+        "aneks",
+        "karta parametrów",
+        "moc",
+        "wysokość wieży",
+        "średnica rotora",
+        "długość łopat",
+        "fundament",
+        "wersja projektu"
       ],
       "depth": "deep"
     },
