@@ -58,14 +58,15 @@
 
   function indexed(base,ratePct,yearNo) {
     if (!base) return 0;
-    const rate = effectiveRate(ratePct) / 100;
+    const rate = Math.max(-99.9,effectiveRate(ratePct)) / 100;
     return base * Math.pow(1 + rate, Math.max(0,yearNo - 1));
   }
 
   function mainBaseFor(yearNo) {
     const base = parse(state.baseAnnual);
     const minimum = parse(state.minAnnual);
-    const share = clamp(parse(state.sharePct) || 100,0,1000) / 100;
+    const shareRaw = String(state.sharePct ?? "").trim() === "" ? 100 : parse(state.sharePct);
+    const share = clamp(shareRaw,0,1000) / 100;
 
     let current = base;
     let mw = parse(state.actualMW);
