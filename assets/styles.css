@@ -2443,3 +2443,97 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
 @media(max-width:560px){
   .credibility-grid{grid-template-columns:1fr}
 }
+
+
+/* v2.7 — statyczny katalog dla robotów i trybu bez JS */
+.guide-catalog-static{display:grid;gap:24px}
+.guide-static-group{
+  border-top:1px solid #dfe5dc;
+  padding-top:16px;
+}
+.guide-static-group h2{
+  margin:0 0 10px;
+  font-size:1.05rem;
+  letter-spacing:-.02em;
+}
+.guide-static-links{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:8px;
+}
+.guide-static-links a{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  padding:11px 12px;
+  border:1px solid #e0e6df;
+  border-radius:10px;
+  background:#fafbf9;
+  color:#172019;
+  text-decoration:none;
+}
+.guide-static-links a:hover{
+  border-color:#b8c9ba;
+  background:#f5f8f3;
+}
+.guide-static-links span{
+  flex:0 0 auto;
+  color:#2f6744;
+  font-size:.65rem;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.guide-static-links strong{
+  font-size:.79rem;
+  line-height:1.35;
+}
+.guide-related-network{
+  margin:32px 0 12px;
+  padding:20px;
+  border:1px solid #dbe4da;
+  border-radius:14px;
+  background:#f5f8f3;
+}
+.guide-related-network>div:first-child{
+  margin-bottom:12px;
+}
+.guide-related-network h2{
+  margin:.2rem 0 .3rem;
+  font-size:1.16rem;
+}
+.guide-related-network p{
+  margin:0;
+  color:#68746c;
+  font-size:.79rem;
+}
+.guide-related-links{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:8px;
+}
+.guide-related-links a{
+  display:block;
+  padding:12px;
+  border:1px solid #dfe6dd;
+  border-radius:10px;
+  background:#fff;
+  color:#172019;
+  text-decoration:none;
+}
+.guide-related-links a:hover{border-color:#b8c9ba}
+.guide-related-links span{
+  display:block;
+  color:#2f6744;
+  font-size:.64rem;
+  font-weight:900;
+  letter-spacing:.05em;
+}
+.guide-related-links strong{
+  display:block;
+  margin-top:4px;
+  font-size:.82rem;
+  line-height:1.35;
+}
+@media(max-width:620px){
+  .guide-static-links,.guide-related-links{grid-template-columns:1fr}
+}
