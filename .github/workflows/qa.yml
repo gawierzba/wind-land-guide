@@ -32,5 +32,7 @@ jobs:
         run: node --check assets/money-calculator.js
       - name: Check my-project.js syntax
         run: node --check assets/my-project.js
+      - name: Check paragraph-map.js syntax
+        run: node --check assets/paragraph-map.js
       - name: Legal source trace audit
         run: node scripts/legal-audit.mjs

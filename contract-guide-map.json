@@ -1,0 +1,2417 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-30",
+  "source": "Umowa_dzierzawy_gruntu_pod_elektrownie_wiatrowa_wersja_wlascicielsko_ochronna_061239.pdf",
+  "methodology": "Mapa oparta na wewnętrznej macierzy pokrycia §1–§65. Rozwinięcia sekcji Projekt/Realizacja rozpisano na konkretne GUIDE-y składające się na te sekcje. Brak przypisania przy GUIDE oznacza brak bezpośredniego wskazania w macierzy, a nie brak związku tematycznego.",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "kind": "Część główna umowy",
+      "title": "Definicje",
+      "pdfPage": 1,
+      "guides": [
+        {
+          "id": "GUIDE-006",
+          "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
+          "path": "/umowa/jak-czytac-umowe-dzierzawy/",
+          "category": "Mapa całej umowy"
+        }
+      ],
+      "auditNote": "Dodano audyt definicji pokazujący wpływ pojęć „Inwestycja”, „Szkoda”, „Podwykonawca”, „Finansujący”, „Zabezpieczenie”, „Zgoda Wydzierżawiającego” i „Siła Wyższa” na późniejsze prawa i ryzyka."
+    },
+    {
+      "paragraph": 2,
+      "kind": "Część główna umowy",
+      "title": "Przedmiot Umowy",
+      "pdfPage": 4,
+      "guides": [
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        }
+      ],
+      "auditNote": "Zakres udostępnienia i rozdzielenie własności od prawa korzystania są rozwinięte."
+    },
+    {
+      "paragraph": 3,
+      "kind": "Część główna umowy",
+      "title": "Zakres Inwestycji",
+      "pdfPage": 5,
+      "guides": [
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-047",
+          "title": "Magazyn energii, wodór, GPO i GPZ — czy pierwotna umowa obejmuje nowe technologie?",
+          "path": "/umowa/magazyn-energii-wodor-gpz/",
+          "category": "Zmiany projektu"
+        }
+      ],
+      "auditNote": "Zakres fizyczny i możliwość dokładania nowych funkcji projektu są opisane."
+    },
+    {
+      "paragraph": 4,
+      "kind": "Część główna umowy",
+      "title": "Ograniczony zakres praw Dzierżawcy",
+      "pdfPage": 8,
+      "guides": [
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-031",
+          "title": "Czy inwestor może później zmienić turbinę, drogę albo kabel?",
+          "path": "/umowa/zmiana-technologii-turbiny/",
+          "category": "Zmiany projektu"
+        }
+      ],
+      "auditNote": "Dobrze rozwinięte: mapa, funkcja, powierzchnia, czas i zakaz rozszerzania praw bokiem."
+    },
+    {
+      "paragraph": 5,
+      "kind": "Część główna umowy",
+      "title": "Prawa zachowane przez Wydzierżawiającego",
+      "pdfPage": 11,
+      "guides": [
+        {
+          "id": "GUIDE-061",
+          "title": "Podpisuję umowę pod wiatrak — czego NIE oddaję inwestorowi?",
+          "path": "/umowa/czego-wlasciciel-nie-oddaje/",
+          "category": "Prawa właściciela"
+        },
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-043",
+          "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+          "path": "/umowa/kontrola-wykonywania-umowy/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE zbiera własność, rolnictwo, przejazdy, dopłaty, kontrolę i granice praw inwestora."
+    },
+    {
+      "paragraph": 6,
+      "kind": "Część główna umowy",
+      "title": "Etap Przygotowawczy",
+      "pdfPage": 13,
+      "guides": [
+        {
+          "id": "GUIDE-007",
+          "title": "Na ile lat wiążę swoją ziemię?",
+          "path": "/umowa/na-ile-lat/",
+          "category": "Czas i etapy projektu"
+        },
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "GUIDE pokazuje zakres czynności bez fizycznej ingerencji, maksymalny czas jako pole do świadomego uzupełnienia, warunki przejścia dalej, bezczynność i wynagrodzenie za związanie gruntu."
+    },
+    {
+      "paragraph": 7,
+      "kind": "Część główna umowy",
+      "title": "Etap Projektowo-Administracyjny",
+      "pdfPage": 16,
+      "guides": [
+        {
+          "id": "GUIDE-048",
+          "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+          "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-051",
+          "title": "Jak sprawdzić MPZP dla planowanej turbiny?",
+          "path": "/projekt/jak-sprawdzic-mpzp/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-052",
+          "title": "Uchwała o przystąpieniu to jeszcze nie plan — jak sprawdzić etap?",
+          "path": "/projekt/uchwala-o-przystapieniu/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-053",
+          "title": "Wnioski, konsultacje i spotkania otwarte przy planie pod wiatraki — jak wygląda procedura?",
+          "path": "/projekt/konsultacje-planu-wiatraki/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-054",
+          "title": "Decyzja środowiskowa — co właściwie rozstrzyga?",
+          "path": "/projekt/decyzja-srodowiskowa/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-055",
+          "title": "Raport OOŚ — jak go czytać bez 500 stron od deski do deski?",
+          "path": "/projekt/jak-czytac-raport-oos/",
+          "category": "Projekt i procedury"
+        }
+      ],
+      "auditNote": "Planowanie, decyzje, dokumenty i status właściciela mają osobne materiały."
+    },
+    {
+      "paragraph": 8,
+      "kind": "Część główna umowy",
+      "title": "Etap Budowy",
+      "pdfPage": 21,
+      "guides": [
+        {
+          "id": "GUIDE-017",
+          "title": "Czy inwestor może wejść na moje pole, kiedy chce?",
+          "path": "/umowa/wejscie-na-grunt/",
+          "category": "Wejście na grunt i dokumentacja"
+        },
+        {
+          "id": "GUIDE-024",
+          "title": "Protokół wejścia na grunt — co sfotografować przed pierwszą koparką?",
+          "path": "/umowa/protokol-wejscia/",
+          "category": "Szkody i dowody"
+        },
+        {
+          "id": "GUIDE-025",
+          "title": "Powstała szkoda — co zrobić pierwszego dnia?",
+          "path": "/umowa/szkoda-pierwszy-dzien/",
+          "category": "Szkody i dowody"
+        },
+        {
+          "id": "GUIDE-026",
+          "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
+          "path": "/umowa/dokumentowanie-szkody/",
+          "category": "Szkody i dowody"
+        },
+        {
+          "id": "GUIDE-027",
+          "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
+          "path": "/umowa/drenarka/",
+          "category": "Gospodarstwo rolne"
+        },
+        {
+          "id": "GUIDE-041",
+          "title": "Standard ochrony gleby, upraw i melioracji — czego wymagać od ekip na polu?",
+          "path": "/umowa/ochrona-gleby-upraw-melioracji/",
+          "category": "Gospodarstwo rolne"
+        }
+      ],
+      "auditNote": "Budowa jest jednym z najlepiej pokrytych obszarów."
+    },
+    {
+      "paragraph": 9,
+      "kind": "Część główna umowy",
+      "title": "Etap Eksploatacji",
+      "pdfPage": 26,
+      "guides": [
+        {
+          "id": "GUIDE-056",
+          "title": "Uciążliwości podczas pracy turbiny — hałas, cień, lód i pomiary",
+          "path": "/umowa/uciazliwosci-eksploatacji/",
+          "category": "Eksploatacja i uciążliwości"
+        },
+        {
+          "id": "GUIDE-034",
+          "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+          "path": "/umowa/ubezpieczenia/",
+          "category": "Zabezpieczenia finansowe"
+        },
+        {
+          "id": "GUIDE-043",
+          "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+          "path": "/umowa/kontrola-wykonywania-umowy/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "Samodzielny GUIDE obejmuje hałas, drgania, cień, oblodzenie, awarie, pomiary, serwis i reakcję na potwierdzone oddziaływania."
+    },
+    {
+      "paragraph": 10,
+      "kind": "Część główna umowy",
+      "title": "Etap Demontażu i Rekultywacji",
+      "pdfPage": 30,
+      "guides": [
+        {
+          "id": "GUIDE-030",
+          "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+          "path": "/umowa/co-usunac-po-inwestycji/",
+          "category": "Koniec inwestycji"
+        },
+        {
+          "id": "GUIDE-029",
+          "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+          "path": "/umowa/kto-zaplaci-za-demontaz/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Bardzo szerokie pokrycie zakresu, finansowania, dokumentowania i szkód ukrytych."
+    },
+    {
+      "paragraph": 11,
+      "kind": "Część główna umowy",
+      "title": "Czynsz wejściowy",
+      "pdfPage": 35,
+      "guides": [
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "GUIDE wyodrębnia jednorazowy czynsz wejściowy i odróżnia go od rezerwacyjnego, zasadniczego oraz opłat dodatkowych."
+    },
+    {
+      "paragraph": 12,
+      "kind": "Część główna umowy",
+      "title": "Czynsz rezerwacyjny",
+      "pdfPage": 37,
+      "guides": [
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "Rozwinięto sens związania nieruchomości projektem, rezerwację bez wejścia na grunt, wiele wariantów i rozszerzenie zakresu."
+    },
+    {
+      "paragraph": 13,
+      "kind": "Część główna umowy",
+      "title": "Czynsz zasadniczy",
+      "pdfPage": 39,
+      "guides": [
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "Dodano moment uruchomienia, minimum gwarantowane, zależność od MW, fundament/rotor na różnych działkach, wzrost mocy i brak redukcji przy niższej produkcji."
+    },
+    {
+      "paragraph": 14,
+      "kind": "Część główna umowy",
+      "title": "Opłaty dodatkowe",
+      "pdfPage": 42,
+      "guides": [
+        {
+          "id": "GUIDE-013",
+          "title": "Czy za drogę, kabel i place płaci się osobno?",
+          "path": "/umowa/droga-kabel-place-osobno/",
+          "category": "Pieniądze i rozliczenia"
+        },
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "Drogi, kable, place, składowanie i zajęcie czasowe są dobrze rozdzielone."
+    },
+    {
+      "paragraph": 15,
+      "kind": "Część główna umowy",
+      "title": "Opłaty za ograniczenia Nieruchomości",
+      "pdfPage": 46,
+      "guides": [
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        },
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        }
+      ],
+      "auditNote": "Pokryte jako osobna wartość ekonomiczna ograniczeń bez fizycznego zajęcia."
+    },
+    {
+      "paragraph": 16,
+      "kind": "Część główna umowy",
+      "title": "Podatki i Należności Publicznoprawne",
+      "pdfPage": 50,
+      "guides": [
+        {
+          "id": "GUIDE-015",
+          "title": "Podatki od dzierżawy pod wiatrak — co trzeba sprawdzić?",
+          "path": "/umowa/podatki/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "Dedykowany, rozbudowany GUIDE."
+    },
+    {
+      "paragraph": 17,
+      "kind": "Część główna umowy",
+      "title": "Dopłaty Rolne i utracone korzyści",
+      "pdfPage": 53,
+      "guides": [
+        {
+          "id": "GUIDE-014",
+          "title": "Czy wiatrak może wpłynąć na moje dopłaty?",
+          "path": "/umowa/doplaty-rolne/",
+          "category": "Gospodarstwo rolne"
+        },
+        {
+          "id": "GUIDE-016",
+          "title": "Szkoda, utracony plon i dodatkowe koszty gospodarstwa — co jest czym?",
+          "path": "/umowa/szkoda-plon-koszty/",
+          "category": "Gospodarstwo rolne"
+        }
+      ],
+      "auditNote": "Dedykowane materiały obejmują kwalifikowalną powierzchnię, dokumenty, utratę płatności i skutki wieloletnie."
+    },
+    {
+      "paragraph": 18,
+      "kind": "Część główna umowy",
+      "title": "Szkody w uprawach, glebie, melioracji, drogach i Gospodarstwie",
+      "pdfPage": 57,
+      "guides": [
+        {
+          "id": "GUIDE-016",
+          "title": "Szkoda, utracony plon i dodatkowe koszty gospodarstwa — co jest czym?",
+          "path": "/umowa/szkoda-plon-koszty/",
+          "category": "Gospodarstwo rolne"
+        },
+        {
+          "id": "GUIDE-026",
+          "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
+          "path": "/umowa/dokumentowanie-szkody/",
+          "category": "Szkody i dowody"
+        },
+        {
+          "id": "GUIDE-027",
+          "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
+          "path": "/umowa/drenarka/",
+          "category": "Gospodarstwo rolne"
+        }
+      ],
+      "auditNote": "Bardzo szerokie pokrycie."
+    },
+    {
+      "paragraph": 19,
+      "kind": "Część główna umowy",
+      "title": "Zabezpieczenia płatności",
+      "pdfPage": 62,
+      "guides": [
+        {
+          "id": "GUIDE-023",
+          "title": "Jak zabezpieczyć płatności przez kilkadziesiąt lat?",
+          "path": "/umowa/zabezpieczenie-platnosci/",
+          "category": "Zabezpieczenia finansowe"
+        },
+        {
+          "id": "GUIDE-044",
+          "title": "Gwarancja czynszowa — co daje więcej niż zapis „inwestor zapłaci”?",
+          "path": "/umowa/gwarancja-czynszowa/",
+          "category": "Zabezpieczenia finansowe"
+        },
+        {
+          "id": "GUIDE-045",
+          "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
+          "path": "/umowa/poddanie-sie-egzekucji/",
+          "category": "Zabezpieczenia finansowe"
+        }
+      ],
+      "auditNote": "System zabezpieczeń jest dobrze rozłożony na instrumenty."
+    },
+    {
+      "paragraph": 20,
+      "kind": "Część główna umowy",
+      "title": "Gwarancja Rekultywacyjna",
+      "pdfPage": 67,
+      "guides": [
+        {
+          "id": "GUIDE-035",
+          "title": "Gwarancja rekultywacyjna — czy naprawdę wystarczy pieniędzy na usunięcie farmy?",
+          "path": "/umowa/gwarancja-rekultywacyjna/",
+          "category": "Koniec inwestycji"
+        },
+        {
+          "id": "GUIDE-029",
+          "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+          "path": "/umowa/kto-zaplaci-za-demontaz/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE i połączenie z końcem inwestycji."
+    },
+    {
+      "paragraph": 21,
+      "kind": "Część główna umowy",
+      "title": "Poręczenie podmiotu dominującego / beneficjenta ekonomicznego",
+      "pdfPage": 72,
+      "guides": [
+        {
+          "id": "GUIDE-046",
+          "title": "Poręczenie spółki dominującej — czy duża grupa naprawdę odpowiada za spółkę projektową?",
+          "path": "/umowa/poreczenie-spolki-dominujacej/",
+          "category": "Zmiana inwestora i finansowanie"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 22,
+      "kind": "Część główna umowy",
+      "title": "Ubezpieczenia",
+      "pdfPage": 77,
+      "guides": [
+        {
+          "id": "GUIDE-034",
+          "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+          "path": "/umowa/ubezpieczenia/",
+          "category": "Zabezpieczenia finansowe"
+        },
+        {
+          "id": "GUIDE-058",
+          "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+          "path": "/umowa/roszczenia-osob-trzecich/",
+          "category": "Naruszenia i odpowiedzialność"
+        }
+      ],
+      "auditNote": "GUIDE obejmuje OC osób trzecich i sąsiadów, regres, odmowę wypłaty, transport, roboty ziemne, podwykonawców, ciągłość ochrony oraz demontaż i rekultywację."
+    },
+    {
+      "paragraph": 23,
+      "kind": "Część główna umowy",
+      "title": "Odpowiedzialność za Podwykonawców i osoby działające na rzecz Dzierżawcy",
+      "pdfPage": 81,
+      "guides": [
+        {
+          "id": "GUIDE-033",
+          "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
+          "path": "/umowa/podwykonawcy/",
+          "category": "Budowa i podwykonawcy"
+        },
+        {
+          "id": "GUIDE-058",
+          "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+          "path": "/umowa/roszczenia-osob-trzecich/",
+          "category": "Naruszenia i odpowiedzialność"
+        }
+      ],
+      "auditNote": "Rozwinięto roszczenia wykonawców wobec właściciela i nieruchomości, zwolnienie z odpowiedzialności, koszty obrony, zakaz tworzenia praw do gruntu i procedurę po otrzymaniu wezwania."
+    },
+    {
+      "paragraph": 24,
+      "kind": "Część główna umowy",
+      "title": "Przeniesienie praw i obowiązków, zmiana kontroli, sprzedaż projektu",
+      "pdfPage": 86,
+      "guides": [
+        {
+          "id": "GUIDE-022",
+          "title": "Podpisałem z firmą A, a projekt kupiła firma B — co wtedy?",
+          "path": "/umowa/zmiana-inwestora/",
+          "category": "Zmiana inwestora i finansowanie"
+        },
+        {
+          "id": "GUIDE-036",
+          "title": "Bank, finansujący i step-in rights — co mogą oznaczać dla właściciela gruntu?",
+          "path": "/umowa/finansujacy-step-in/",
+          "category": "Zmiana inwestora i finansowanie"
+        }
+      ],
+      "auditNote": "Cesja, przejęcie obowiązków, zmiana kontroli i ciągłość zabezpieczeń są rozbudowane."
+    },
+    {
+      "paragraph": 25,
+      "kind": "Część główna umowy",
+      "title": "Księga wieczysta, służebności i prawa rzeczowe",
+      "pdfPage": 91,
+      "guides": [
+        {
+          "id": "GUIDE-020",
+          "title": "Co inwestor może chcieć wpisać do księgi wieczystej?",
+          "path": "/umowa/ksiega-wieczysta/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-021",
+          "title": "Służebność, kabel i inne prawa do gruntu — czym się różnią?",
+          "path": "/umowa/sluzebnosc-i-prawa-do-gruntu/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dwa dedykowane GUIDE’y."
+    },
+    {
+      "paragraph": 26,
+      "kind": "Część główna umowy",
+      "title": "Pełnomocnictwa, zgody i oświadczenia Wydzierżawiającego",
+      "pdfPage": 96,
+      "guides": [
+        {
+          "id": "GUIDE-018",
+          "title": "Pełnomocnictwo dla inwestora — co naprawdę oznacza?",
+          "path": "/umowa/pelnomocnictwo/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-048",
+          "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+          "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Pełnomocnictwo i podpisywanie dokumentów w imieniu właściciela są dobrze omówione."
+    },
+    {
+      "paragraph": 27,
+      "kind": "Część główna umowy",
+      "title": "Prawo do dysponowania Nieruchomością na cele budowlane",
+      "pdfPage": 101,
+      "guides": [
+        {
+          "id": "GUIDE-019",
+          "title": "Prawo do dysponowania nieruchomością na cele budowlane — po ludzku",
+          "path": "/umowa/prawo-do-dysponowania-na-cele-budowlane/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 28,
+      "kind": "Część główna umowy",
+      "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+      "pdfPage": 105,
+      "guides": [
+        {
+          "id": "GUIDE-048",
+          "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+          "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-051",
+          "title": "Jak sprawdzić MPZP dla planowanej turbiny?",
+          "path": "/projekt/jak-sprawdzic-mpzp/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-052",
+          "title": "Uchwała o przystąpieniu to jeszcze nie plan — jak sprawdzić etap?",
+          "path": "/projekt/uchwala-o-przystapieniu/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-053",
+          "title": "Wnioski, konsultacje i spotkania otwarte przy planie pod wiatraki — jak wygląda procedura?",
+          "path": "/projekt/konsultacje-planu-wiatraki/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-054",
+          "title": "Decyzja środowiskowa — co właściwie rozstrzyga?",
+          "path": "/projekt/decyzja-srodowiskowa/",
+          "category": "Projekt i procedury"
+        },
+        {
+          "id": "GUIDE-055",
+          "title": "Raport OOŚ — jak go czytać bez 500 stron od deski do deski?",
+          "path": "/projekt/jak-czytac-raport-oos/",
+          "category": "Projekt i procedury"
+        }
+      ],
+      "auditNote": "Pokryte zarówno proceduralnie, jak i właścicielsko."
+    },
+    {
+      "paragraph": 29,
+      "kind": "Część główna umowy",
+      "title": "Obowiązki informacyjne, dokumentacyjne i kontrolne",
+      "pdfPage": 110,
+      "guides": [
+        {
+          "id": "GUIDE-037",
+          "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
+          "path": "/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+          "category": "Kontrola i dokumentacja"
+        },
+        {
+          "id": "GUIDE-043",
+          "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+          "path": "/umowa/kontrola-wykonywania-umowy/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "Główne idee są rozwinięte; szczegół raportowania wraca przy §56."
+    },
+    {
+      "paragraph": 30,
+      "kind": "Część główna umowy",
+      "title": "Poufność, ochrona informacji, dane Nieruchomości i komunikacja zewnętrzna",
+      "pdfPage": 117,
+      "guides": [
+        {
+          "id": "GUIDE-059",
+          "title": "Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?",
+          "path": "/umowa/prywatnosc-zdjecia-dron-komunikacja/",
+          "category": "Prywatność i komunikacja"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE obejmuje zdjęcia, drony, dane gospodarstwa, wizyty medialne i inwestorskie oraz komunikację publiczną."
+    },
+    {
+      "paragraph": 31,
+      "kind": "Część główna umowy",
+      "title": "Kary umowne i odszkodowanie uzupełniające",
+      "pdfPage": 121,
+      "guides": [
+        {
+          "id": "GUIDE-038",
+          "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
+          "path": "/umowa/kary-umowne-i-odszkodowanie/",
+          "category": "Szkody i odpowiedzialność"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 32,
+      "kind": "Część główna umowy",
+      "title": "Wypowiedzenie, rozwiązanie Umowy i skutki zakończenia",
+      "pdfPage": 126,
+      "guides": [
+        {
+          "id": "GUIDE-039",
+          "title": "Wypowiedzenie umowy pod wiatrak — co dzieje się z gruntem dzień później?",
+          "path": "/umowa/wypowiedzenie-umowy/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE obejmuje także okres po zakończeniu."
+    },
+    {
+      "paragraph": 33,
+      "kind": "Część główna umowy",
+      "title": "Demontaż, usunięcie Inwestycji i Rekultywacja",
+      "pdfPage": 132,
+      "guides": [
+        {
+          "id": "GUIDE-030",
+          "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+          "path": "/umowa/co-usunac-po-inwestycji/",
+          "category": "Koniec inwestycji"
+        },
+        {
+          "id": "GUIDE-029",
+          "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+          "path": "/umowa/kto-zaplaci-za-demontaz/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Bardzo szerokie pokrycie."
+    },
+    {
+      "paragraph": 34,
+      "kind": "Część główna umowy",
+      "title": "Siła Wyższa, zmiana prawa i ryzyka inwestycyjne",
+      "pdfPage": 138,
+      "guides": [
+        {
+          "id": "GUIDE-040",
+          "title": "Siła wyższa, zmiana prawa i brak opłacalności — kto ponosi ryzyko projektu?",
+          "path": "/umowa/sila-wyzsza-zmiana-prawa/",
+          "category": "Ryzyka projektu"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 35,
+      "kind": "Część główna umowy",
+      "title": "Prawo właściwe, rozstrzyganie sporów, doręczenia i postanowienia końcowe",
+      "pdfPage": 143,
+      "guides": [
+        {
+          "id": "GUIDE-060",
+          "title": "Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?",
+          "path": "/umowa/spor-z-inwestorem/",
+          "category": "Spory i egzekwowanie"
+        },
+        {
+          "id": "GUIDE-049",
+          "title": "Doręczenia przez 30 lat — kiedy e-mail, list i zmiana adresu naprawdę mają znaczenie?",
+          "path": "/umowa/doreczenia-i-kontakty/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "GUIDE o sporze obejmuje sąd, arbitraż, mediację, część bezsporną i ciągłość płatności, zabezpieczeń, napraw, demontażu i rekultywacji."
+    },
+    {
+      "paragraph": 36,
+      "kind": "Część główna umowy",
+      "title": "Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów",
+      "pdfPage": 148,
+      "guides": [
+        {
+          "id": "GUIDE-050",
+          "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+          "path": "/umowa/hierarchia-dokumentow-i-wersji/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-006",
+          "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
+          "path": "/umowa/jak-czytac-umowe-dzierzawy/",
+          "category": "Mapa całej umowy"
+        }
+      ],
+      "auditNote": "Dodano kontrolę kompletności pakietu, pola „DO UZUPEŁNIENIA”, blokadę działania przy brakującym załączniku oraz zasady identyfikacji wersji."
+    },
+    {
+      "paragraph": 37,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 1 — oznaczenie Nieruchomości",
+      "pdfPage": 151,
+      "guides": [
+        {
+          "id": "GUIDE-009",
+          "title": "Jak czytać mapę do umowy?",
+          "path": "/umowa/jak-czytac-mape/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-020",
+          "title": "Co inwestor może chcieć wpisać do księgi wieczystej?",
+          "path": "/umowa/ksiega-wieczysta/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dodano kartę identyfikacji działki: właściciel/współwłasność, KW, działka, obręb, powierzchnia, użytki, dopłaty, melioracja oraz test zgodności dokumentów."
+    },
+    {
+      "paragraph": 38,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 2 — mapa Nieruchomości i zakres korzystania",
+      "pdfPage": 154,
+      "guides": [
+        {
+          "id": "GUIDE-009",
+          "title": "Jak czytać mapę do umowy?",
+          "path": "/umowa/jak-czytac-mape/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-010",
+          "title": "Ile ziemi naprawdę zajmie inwestycja?",
+          "path": "/umowa/ile-ziemi-zajmie-inwestycja/",
+          "category": "Zakres gruntu i infrastruktura"
+        }
+      ],
+      "auditNote": "Jeden z najlepiej pokrytych załączników."
+    },
+    {
+      "paragraph": 39,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 3 — opis Inwestycji",
+      "pdfPage": 159,
+      "guides": [
+        {
+          "id": "GUIDE-031",
+          "title": "Czy inwestor może później zmienić turbinę, drogę albo kabel?",
+          "path": "/umowa/zmiana-technologii-turbiny/",
+          "category": "Zmiany projektu"
+        },
+        {
+          "id": "GUIDE-047",
+          "title": "Magazyn energii, wodór, GPO i GPZ — czy pierwotna umowa obejmuje nowe technologie?",
+          "path": "/umowa/magazyn-energii-wodor-gpz/",
+          "category": "Zmiany projektu"
+        }
+      ],
+      "auditNote": "Dodano kartę parametrów inwestycji: liczba turbin, moc, wysokość, rotor, łopaty, fundament, drogi, place, kable, infrastruktura dodatkowa i wersjonowanie."
+    },
+    {
+      "paragraph": 40,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 4 — lokalizacja Turbiny, Fundamentu, Dróg, Placów i Kabli",
+      "pdfPage": 164,
+      "guides": [
+        {
+          "id": "GUIDE-009",
+          "title": "Jak czytać mapę do umowy?",
+          "path": "/umowa/jak-czytac-mape/",
+          "category": "Zakres gruntu i infrastruktura"
+        },
+        {
+          "id": "GUIDE-008",
+          "title": "Co dokładnie oddaję inwestorowi?",
+          "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+          "category": "Zakres gruntu i infrastruktura"
+        }
+      ],
+      "auditNote": "Pokryte mapą praw i powierzchni."
+    },
+    {
+      "paragraph": 41,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 5 — harmonogram Inwestycji",
+      "pdfPage": 171,
+      "guides": [
+        {
+          "id": "GUIDE-007",
+          "title": "Na ile lat wiążę swoją ziemię?",
+          "path": "/umowa/na-ile-lat/",
+          "category": "Czas i etapy projektu"
+        }
+      ],
+      "auditNote": "Dodano daty graniczne, warunki przejścia etapów, test bezczynności, konsekwencje opóźnień, warianty harmonogramu oraz kalkulację pesymistycznego maksymalnego czasu związania gruntu."
+    },
+    {
+      "paragraph": 42,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 6 — stawki czynszu, opłat i ograniczeń",
+      "pdfPage": 177,
+      "guides": [
+        {
+          "id": "GUIDE-011",
+          "title": "Co właściwie obejmuje roczna kwota?",
+          "path": "/umowa/co-obejmuje-roczna-kwota/",
+          "category": "Pieniądze i rozliczenia"
+        },
+        {
+          "id": "GUIDE-013",
+          "title": "Czy za drogę, kabel i place płaci się osobno?",
+          "path": "/umowa/droga-kabel-place-osobno/",
+          "category": "Pieniądze i rozliczenia"
+        }
+      ],
+      "auditNote": "Rozwinięto minimum czynszowe, model zależny od MW, moc referencyjną, wzrost przy repoweringu oraz rozdzielenie stawek za różne sposoby korzystania."
+    },
+    {
+      "paragraph": 43,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 7 — standard ochrony gleby, upraw, melioracji i dróg",
+      "pdfPage": 185,
+      "guides": [
+        {
+          "id": "GUIDE-041",
+          "title": "Standard ochrony gleby, upraw i melioracji — czego wymagać od ekip na polu?",
+          "path": "/umowa/ochrona-gleby-upraw-melioracji/",
+          "category": "Gospodarstwo rolne"
+        },
+        {
+          "id": "GUIDE-027",
+          "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
+          "path": "/umowa/drenarka/",
+          "category": "Gospodarstwo rolne"
+        }
+      ],
+      "auditNote": "Dedykowane materiały są bardzo rozbudowane."
+    },
+    {
+      "paragraph": 44,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 8 — wzór protokołu wejścia",
+      "pdfPage": 191,
+      "guides": [
+        {
+          "id": "GUIDE-024",
+          "title": "Protokół wejścia na grunt — co sfotografować przed pierwszą koparką?",
+          "path": "/umowa/protokol-wejscia/",
+          "category": "Szkody i dowody"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 45,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 9 — wzór protokołu szkody",
+      "pdfPage": 201,
+      "guides": [
+        {
+          "id": "GUIDE-026",
+          "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
+          "path": "/umowa/dokumentowanie-szkody/",
+          "category": "Szkody i dowody"
+        },
+        {
+          "id": "GUIDE-025",
+          "title": "Powstała szkoda — co zrobić pierwszego dnia?",
+          "path": "/umowa/szkoda-pierwszy-dzien/",
+          "category": "Szkody i dowody"
+        }
+      ],
+      "auditNote": "Pokryte praktycznie i dowodowo."
+    },
+    {
+      "paragraph": 46,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 10 — wzór protokołu Demontażu",
+      "pdfPage": 212,
+      "guides": [
+        {
+          "id": "GUIDE-030",
+          "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+          "path": "/umowa/co-usunac-po-inwestycji/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Dodano pełny audyt protokołu: rozdzielenie Demontażu od Rekultywacji, status każdego elementu, fundament i kable przed zasypaniem, geodezja, odpady, szkody, elementy pozostawione oraz lista obowiązków po Demontażu."
+    },
+    {
+      "paragraph": 47,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 11 — wzór protokołu końcowego Rekultywacji",
+      "pdfPage": 223,
+      "guides": [
+        {
+          "id": "GUIDE-030",
+          "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+          "path": "/umowa/co-usunac-po-inwestycji/",
+          "category": "Koniec inwestycji"
+        },
+        {
+          "id": "GUIDE-029",
+          "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+          "path": "/umowa/kto-zaplaci-za-demontaz/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Obecne materiały mocno podkreślają funkcję gruntu, szkody ukryte i brak automatycznego zrzeczenia się roszczeń."
+    },
+    {
+      "paragraph": 48,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 12 — wymagania Gwarancji Czynszowej",
+      "pdfPage": 234,
+      "guides": [
+        {
+          "id": "GUIDE-044",
+          "title": "Gwarancja czynszowa — co daje więcej niż zapis „inwestor zapłaci”?",
+          "path": "/umowa/gwarancja-czynszowa/",
+          "category": "Zabezpieczenia finansowe"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 49,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 13 — wymagania Gwarancji Rekultywacyjnej",
+      "pdfPage": 241,
+      "guides": [
+        {
+          "id": "GUIDE-035",
+          "title": "Gwarancja rekultywacyjna — czy naprawdę wystarczy pieniędzy na usunięcie farmy?",
+          "path": "/umowa/gwarancja-rekultywacyjna/",
+          "category": "Koniec inwestycji"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 50,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 14 — wymagania dotyczące ubezpieczeń",
+      "pdfPage": 248,
+      "guides": [
+        {
+          "id": "GUIDE-034",
+          "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+          "path": "/umowa/ubezpieczenia/",
+          "category": "Zabezpieczenia finansowe"
+        }
+      ],
+      "auditNote": "Rozwinięto regres, dodatkowego ubezpieczonego, OC osób trzecich, transport, roboty ziemne, likwidację szkody, odmowę ubezpieczyciela i ochronę do końca ryzyka."
+    },
+    {
+      "paragraph": 51,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 15 — wzór poddania się egzekucji",
+      "pdfPage": 256,
+      "guides": [
+        {
+          "id": "GUIDE-045",
+          "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
+          "path": "/umowa/poddanie-sie-egzekucji/",
+          "category": "Zabezpieczenia finansowe"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 52,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 16 — wzór zgody na określone czynności",
+      "pdfPage": 262,
+      "guides": [
+        {
+          "id": "GUIDE-018",
+          "title": "Pełnomocnictwo dla inwestora — co naprawdę oznacza?",
+          "path": "/umowa/pelnomocnictwo/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-050",
+          "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+          "path": "/umowa/hierarchia-dokumentow-i-wersji/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dodano porównanie zgoda–aneks–pełnomocnictwo, kartę zgody jednorazowej, granice interpretacji, przykłady czego zgoda nie obejmuje i test dokumentu przed podpisem."
+    },
+    {
+      "paragraph": 53,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 17 — wykaz osób kontaktowych",
+      "pdfPage": 268,
+      "guides": [
+        {
+          "id": "GUIDE-049",
+          "title": "Doręczenia przez 30 lat — kiedy e-mail, list i zmiana adresu naprawdę mają znaczenie?",
+          "path": "/umowa/doreczenia-i-kontakty/",
+          "category": "Kontrola i dokumentacja"
+        },
+        {
+          "id": "GUIDE-042",
+          "title": "Awaria na polu — kto dzwoni, kto zabezpiecza i co musi wydarzyć się w pierwszych 24 godzinach?",
+          "path": "/umowa/procedura-awaryjna/",
+          "category": "Szkody i odpowiedzialność"
+        }
+      ],
+      "auditNote": "Bieżący, formalny i awaryjny kanał kontaktu są omówione."
+    },
+    {
+      "paragraph": 54,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 18 — wykaz Podwykonawców i osób działających na rzecz Dzierżawcy",
+      "pdfPage": 273,
+      "guides": [
+        {
+          "id": "GUIDE-033",
+          "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
+          "path": "/umowa/podwykonawcy/",
+          "category": "Budowa i podwykonawcy"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE wraz z kartą ekipy."
+    },
+    {
+      "paragraph": 55,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 19 — wykaz dokumentów, decyzji, zgód, pozwoleń i uzgodnień",
+      "pdfPage": 280,
+      "guides": [
+        {
+          "id": "GUIDE-037",
+          "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
+          "path": "/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+          "category": "Kontrola i dokumentacja"
+        },
+        {
+          "id": "GUIDE-048",
+          "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+          "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dobrze pokryte przez teczkę właściciela i obieg dokumentów."
+    },
+    {
+      "paragraph": 56,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 20 — raport okresowy Dzierżawcy",
+      "pdfPage": 286,
+      "guides": [
+        {
+          "id": "GUIDE-037",
+          "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
+          "path": "/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "Dodano raport zerowy, częstotliwość zależną od etapu, czynności planowane, raport nadzwyczajny oraz wzór raportu właścicielskiego."
+    },
+    {
+      "paragraph": 57,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 21 — procedura awaryjna i interwencyjna",
+      "pdfPage": 297,
+      "guides": [
+        {
+          "id": "GUIDE-042",
+          "title": "Awaria na polu — kto dzwoni, kto zabezpiecza i co musi wydarzyć się w pierwszych 24 godzinach?",
+          "path": "/umowa/procedura-awaryjna/",
+          "category": "Szkody i odpowiedzialność"
+        },
+        {
+          "id": "GUIDE-025",
+          "title": "Powstała szkoda — co zrobić pierwszego dnia?",
+          "path": "/umowa/szkoda-pierwszy-dzien/",
+          "category": "Szkody i dowody"
+        }
+      ],
+      "auditNote": "Dedykowane materiały."
+    },
+    {
+      "paragraph": 58,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 22 — zmiana Dzierżawcy, finansowanie, cesja i Finansujący",
+      "pdfPage": 306,
+      "guides": [
+        {
+          "id": "GUIDE-022",
+          "title": "Podpisałem z firmą A, a projekt kupiła firma B — co wtedy?",
+          "path": "/umowa/zmiana-inwestora/",
+          "category": "Zmiana inwestora i finansowanie"
+        },
+        {
+          "id": "GUIDE-036",
+          "title": "Bank, finansujący i step-in rights — co mogą oznaczać dla właściciela gruntu?",
+          "path": "/umowa/finansujacy-step-in/",
+          "category": "Zmiana inwestora i finansowanie"
+        }
+      ],
+      "auditNote": "Bardzo dobre pokrycie."
+    },
+    {
+      "paragraph": 59,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 23 — kontrola wykonywania Umowy",
+      "pdfPage": 314,
+      "guides": [
+        {
+          "id": "GUIDE-043",
+          "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+          "path": "/umowa/kontrola-wykonywania-umowy/",
+          "category": "Kontrola i dokumentacja"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 60,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 24 — usuwanie naruszeń, plan naprawczy i wykonanie zastępcze",
+      "pdfPage": 322,
+      "guides": [
+        {
+          "id": "GUIDE-057",
+          "title": "Inwestor naruszył umowę — co dalej?",
+          "path": "/umowa/inwestor-naruszyl-umowe/",
+          "category": "Naruszenia i odpowiedzialność"
+        },
+        {
+          "id": "GUIDE-038",
+          "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
+          "path": "/umowa/kary-umowne-i-odszkodowanie/",
+          "category": "Szkody i odpowiedzialność"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE prowadzi od dowodu i wezwania przez plan naprawczy i kontrolę do wykonania zastępczego, monitoringu i rozliczenia skutków."
+    },
+    {
+      "paragraph": 61,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 25 — katalog kar umownych",
+      "pdfPage": 330,
+      "guides": [
+        {
+          "id": "GUIDE-038",
+          "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
+          "path": "/umowa/kary-umowne-i-odszkodowanie/",
+          "category": "Szkody i odpowiedzialność"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE."
+    },
+    {
+      "paragraph": 62,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 26 — odpowiedzialność odszkodowawcza, roszczenia osób trzecich i zwolnienie właściciela",
+      "pdfPage": 336,
+      "guides": [
+        {
+          "id": "GUIDE-058",
+          "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+          "path": "/umowa/roszczenia-osob-trzecich/",
+          "category": "Naruszenia i odpowiedzialność"
+        },
+        {
+          "id": "GUIDE-033",
+          "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
+          "path": "/umowa/podwykonawcy/",
+          "category": "Budowa i podwykonawcy"
+        },
+        {
+          "id": "GUIDE-034",
+          "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+          "path": "/umowa/ubezpieczenia/",
+          "category": "Zabezpieczenia finansowe"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE obejmuje sąsiadów, wykonawców, organy, ubezpieczycieli, koszty obrony, dokumenty, ugody i skutki publicznoprawne."
+    },
+    {
+      "paragraph": 63,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 27 — poufność, komunikacja publiczna i ochrona danych",
+      "pdfPage": 345,
+      "guides": [
+        {
+          "id": "GUIDE-059",
+          "title": "Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?",
+          "path": "/umowa/prywatnosc-zdjecia-dron-komunikacja/",
+          "category": "Prywatność i komunikacja"
+        }
+      ],
+      "auditNote": "GUIDE obejmuje fotografie, nagrania, drony, wizyty osób trzecich, publikacje, social media, materiały inwestorskie i działania po naruszeniu."
+    },
+    {
+      "paragraph": 64,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Załącznik nr 28 — hierarchia dokumentów i klauzule interpretacyjne",
+      "pdfPage": 352,
+      "guides": [
+        {
+          "id": "GUIDE-050",
+          "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+          "path": "/umowa/hierarchia-dokumentow-i-wersji/",
+          "category": "Prawa i dokumenty"
+        }
+      ],
+      "auditNote": "Dedykowany GUIDE jest bardzo szeroki."
+    },
+    {
+      "paragraph": 65,
+      "kind": "Załączniki i dokumenty wykonawcze",
+      "title": "Postanowienia końcowe, kompletność dokumentacji i lista załączników",
+      "pdfPage": 356,
+      "guides": [
+        {
+          "id": "GUIDE-050",
+          "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+          "path": "/umowa/hierarchia-dokumentow-i-wersji/",
+          "category": "Prawa i dokumenty"
+        },
+        {
+          "id": "GUIDE-006",
+          "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
+          "path": "/umowa/jak-czytac-umowe-dzierzawy/",
+          "category": "Mapa całej umowy"
+        }
+      ],
+      "auditNote": "GUIDE zawiera checklistę pakietu podpisu, obsługę pól i załączników „DO UZUPEŁNIENIA” oraz zasadę blokady czynności do czasu uzupełnienia i akceptacji."
+    }
+  ],
+  "guides": [
+    {
+      "id": "GUIDE-001",
+      "title": "Inwestor chce mojego pola pod wiatrak — od czego zacząć?",
+      "path": "/zanim-podpiszesz/inwestor-chce-mojego-pola/",
+      "category": "Start i pierwszy kontakt",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-002",
+      "title": "Kim jest firma, która chce podpisać ze mną umowę?",
+      "path": "/zanim-podpiszesz/kim-jest-inwestor/",
+      "category": "Start i pierwszy kontakt",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-003",
+      "title": "Czego nie podpisywać od ręki na pierwszym spotkaniu",
+      "path": "/zanim-podpiszesz/czego-nie-podpisywac/",
+      "category": "Start i pierwszy kontakt",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-004",
+      "title": "30 pytań do inwestora przed podpisaniem czegokolwiek",
+      "path": "/zanim-podpiszesz/30-pytan-do-inwestora/",
+      "category": "Start i pierwszy kontakt",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-005",
+      "title": "Czy na mojej działce w ogóle może powstać turbina?",
+      "path": "/zanim-podpiszesz/czy-moze-powstac-turbina/",
+      "category": "Start i pierwszy kontakt",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-006",
+      "title": "Jak czytać umowę dzierżawy pod elektrownię wiatrową?",
+      "path": "/umowa/jak-czytac-umowe-dzierzawy/",
+      "category": "Mapa całej umowy",
+      "paragraphs": [
+        {
+          "paragraph": 1,
+          "title": "Definicje",
+          "pdfPage": 1
+        },
+        {
+          "paragraph": 36,
+          "title": "Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów",
+          "pdfPage": 148
+        },
+        {
+          "paragraph": 65,
+          "title": "Postanowienia końcowe, kompletność dokumentacji i lista załączników",
+          "pdfPage": 356
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-007",
+      "title": "Na ile lat wiążę swoją ziemię?",
+      "path": "/umowa/na-ile-lat/",
+      "category": "Czas i etapy projektu",
+      "paragraphs": [
+        {
+          "paragraph": 6,
+          "title": "Etap Przygotowawczy",
+          "pdfPage": 13
+        },
+        {
+          "paragraph": 41,
+          "title": "Załącznik nr 5 — harmonogram Inwestycji",
+          "pdfPage": 171
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-008",
+      "title": "Co dokładnie oddaję inwestorowi?",
+      "path": "/umowa/co-dokladnie-oddaje-inwestorowi/",
+      "category": "Zakres gruntu i infrastruktura",
+      "paragraphs": [
+        {
+          "paragraph": 2,
+          "title": "Przedmiot Umowy",
+          "pdfPage": 4
+        },
+        {
+          "paragraph": 3,
+          "title": "Zakres Inwestycji",
+          "pdfPage": 5
+        },
+        {
+          "paragraph": 4,
+          "title": "Ograniczony zakres praw Dzierżawcy",
+          "pdfPage": 8
+        },
+        {
+          "paragraph": 5,
+          "title": "Prawa zachowane przez Wydzierżawiającego",
+          "pdfPage": 11
+        },
+        {
+          "paragraph": 15,
+          "title": "Opłaty za ograniczenia Nieruchomości",
+          "pdfPage": 46
+        },
+        {
+          "paragraph": 40,
+          "title": "Załącznik nr 4 — lokalizacja Turbiny, Fundamentu, Dróg, Placów i Kabli",
+          "pdfPage": 164
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-009",
+      "title": "Jak czytać mapę do umowy?",
+      "path": "/umowa/jak-czytac-mape/",
+      "category": "Zakres gruntu i infrastruktura",
+      "paragraphs": [
+        {
+          "paragraph": 37,
+          "title": "Załącznik nr 1 — oznaczenie Nieruchomości",
+          "pdfPage": 151
+        },
+        {
+          "paragraph": 38,
+          "title": "Załącznik nr 2 — mapa Nieruchomości i zakres korzystania",
+          "pdfPage": 154
+        },
+        {
+          "paragraph": 40,
+          "title": "Załącznik nr 4 — lokalizacja Turbiny, Fundamentu, Dróg, Placów i Kabli",
+          "pdfPage": 164
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-010",
+      "title": "Ile ziemi naprawdę zajmie inwestycja?",
+      "path": "/umowa/ile-ziemi-zajmie-inwestycja/",
+      "category": "Zakres gruntu i infrastruktura",
+      "paragraphs": [
+        {
+          "paragraph": 38,
+          "title": "Załącznik nr 2 — mapa Nieruchomości i zakres korzystania",
+          "pdfPage": 154
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-011",
+      "title": "Co właściwie obejmuje roczna kwota?",
+      "path": "/umowa/co-obejmuje-roczna-kwota/",
+      "category": "Pieniądze i rozliczenia",
+      "paragraphs": [
+        {
+          "paragraph": 6,
+          "title": "Etap Przygotowawczy",
+          "pdfPage": 13
+        },
+        {
+          "paragraph": 11,
+          "title": "Czynsz wejściowy",
+          "pdfPage": 35
+        },
+        {
+          "paragraph": 12,
+          "title": "Czynsz rezerwacyjny",
+          "pdfPage": 37
+        },
+        {
+          "paragraph": 13,
+          "title": "Czynsz zasadniczy",
+          "pdfPage": 39
+        },
+        {
+          "paragraph": 14,
+          "title": "Opłaty dodatkowe",
+          "pdfPage": 42
+        },
+        {
+          "paragraph": 15,
+          "title": "Opłaty za ograniczenia Nieruchomości",
+          "pdfPage": 46
+        },
+        {
+          "paragraph": 42,
+          "title": "Załącznik nr 6 — stawki czynszu, opłat i ograniczeń",
+          "pdfPage": 177
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-012",
+      "title": "Jak porównać dwie oferty?",
+      "path": "/umowa/jak-porownac-dwie-oferty/",
+      "category": "Pieniądze i rozliczenia",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-013",
+      "title": "Czy za drogę, kabel i place płaci się osobno?",
+      "path": "/umowa/droga-kabel-place-osobno/",
+      "category": "Pieniądze i rozliczenia",
+      "paragraphs": [
+        {
+          "paragraph": 14,
+          "title": "Opłaty dodatkowe",
+          "pdfPage": 42
+        },
+        {
+          "paragraph": 42,
+          "title": "Załącznik nr 6 — stawki czynszu, opłat i ograniczeń",
+          "pdfPage": 177
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-014",
+      "title": "Czy wiatrak może wpłynąć na moje dopłaty?",
+      "path": "/umowa/doplaty-rolne/",
+      "category": "Gospodarstwo rolne",
+      "paragraphs": [
+        {
+          "paragraph": 17,
+          "title": "Dopłaty Rolne i utracone korzyści",
+          "pdfPage": 53
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-015",
+      "title": "Podatki od dzierżawy pod wiatrak — co trzeba sprawdzić?",
+      "path": "/umowa/podatki/",
+      "category": "Pieniądze i rozliczenia",
+      "paragraphs": [
+        {
+          "paragraph": 16,
+          "title": "Podatki i Należności Publicznoprawne",
+          "pdfPage": 50
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-016",
+      "title": "Szkoda, utracony plon i dodatkowe koszty gospodarstwa — co jest czym?",
+      "path": "/umowa/szkoda-plon-koszty/",
+      "category": "Gospodarstwo rolne",
+      "paragraphs": [
+        {
+          "paragraph": 17,
+          "title": "Dopłaty Rolne i utracone korzyści",
+          "pdfPage": 53
+        },
+        {
+          "paragraph": 18,
+          "title": "Szkody w uprawach, glebie, melioracji, drogach i Gospodarstwie",
+          "pdfPage": 57
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-017",
+      "title": "Czy inwestor może wejść na moje pole, kiedy chce?",
+      "path": "/umowa/wejscie-na-grunt/",
+      "category": "Wejście na grunt i dokumentacja",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-018",
+      "title": "Pełnomocnictwo dla inwestora — co naprawdę oznacza?",
+      "path": "/umowa/pelnomocnictwo/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 26,
+          "title": "Pełnomocnictwa, zgody i oświadczenia Wydzierżawiającego",
+          "pdfPage": 96
+        },
+        {
+          "paragraph": 52,
+          "title": "Załącznik nr 16 — wzór zgody na określone czynności",
+          "pdfPage": 262
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-019",
+      "title": "Prawo do dysponowania nieruchomością na cele budowlane — po ludzku",
+      "path": "/umowa/prawo-do-dysponowania-na-cele-budowlane/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 27,
+          "title": "Prawo do dysponowania Nieruchomością na cele budowlane",
+          "pdfPage": 101
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-020",
+      "title": "Co inwestor może chcieć wpisać do księgi wieczystej?",
+      "path": "/umowa/ksiega-wieczysta/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 25,
+          "title": "Księga wieczysta, służebności i prawa rzeczowe",
+          "pdfPage": 91
+        },
+        {
+          "paragraph": 37,
+          "title": "Załącznik nr 1 — oznaczenie Nieruchomości",
+          "pdfPage": 151
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-021",
+      "title": "Służebność, kabel i inne prawa do gruntu — czym się różnią?",
+      "path": "/umowa/sluzebnosc-i-prawa-do-gruntu/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 25,
+          "title": "Księga wieczysta, służebności i prawa rzeczowe",
+          "pdfPage": 91
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-022",
+      "title": "Podpisałem z firmą A, a projekt kupiła firma B — co wtedy?",
+      "path": "/umowa/zmiana-inwestora/",
+      "category": "Zmiana inwestora i finansowanie",
+      "paragraphs": [
+        {
+          "paragraph": 24,
+          "title": "Przeniesienie praw i obowiązków, zmiana kontroli, sprzedaż projektu",
+          "pdfPage": 86
+        },
+        {
+          "paragraph": 58,
+          "title": "Załącznik nr 22 — zmiana Dzierżawcy, finansowanie, cesja i Finansujący",
+          "pdfPage": 306
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-023",
+      "title": "Jak zabezpieczyć płatności przez kilkadziesiąt lat?",
+      "path": "/umowa/zabezpieczenie-platnosci/",
+      "category": "Zabezpieczenia finansowe",
+      "paragraphs": [
+        {
+          "paragraph": 19,
+          "title": "Zabezpieczenia płatności",
+          "pdfPage": 62
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-024",
+      "title": "Protokół wejścia na grunt — co sfotografować przed pierwszą koparką?",
+      "path": "/umowa/protokol-wejscia/",
+      "category": "Szkody i dowody",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        },
+        {
+          "paragraph": 44,
+          "title": "Załącznik nr 8 — wzór protokołu wejścia",
+          "pdfPage": 191
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-025",
+      "title": "Powstała szkoda — co zrobić pierwszego dnia?",
+      "path": "/umowa/szkoda-pierwszy-dzien/",
+      "category": "Szkody i dowody",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        },
+        {
+          "paragraph": 45,
+          "title": "Załącznik nr 9 — wzór protokołu szkody",
+          "pdfPage": 201
+        },
+        {
+          "paragraph": 57,
+          "title": "Załącznik nr 21 — procedura awaryjna i interwencyjna",
+          "pdfPage": 297
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-026",
+      "title": "Jak udokumentować szkodę w uprawie, glebie albo drenach?",
+      "path": "/umowa/dokumentowanie-szkody/",
+      "category": "Szkody i dowody",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        },
+        {
+          "paragraph": 18,
+          "title": "Szkody w uprawach, glebie, melioracji, drogach i Gospodarstwie",
+          "pdfPage": 57
+        },
+        {
+          "paragraph": 45,
+          "title": "Załącznik nr 9 — wzór protokołu szkody",
+          "pdfPage": 201
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-027",
+      "title": "Kabel lub droga uszkodziły drenarkę — co dalej?",
+      "path": "/umowa/drenarka/",
+      "category": "Gospodarstwo rolne",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        },
+        {
+          "paragraph": 18,
+          "title": "Szkody w uprawach, glebie, melioracji, drogach i Gospodarstwie",
+          "pdfPage": 57
+        },
+        {
+          "paragraph": 43,
+          "title": "Załącznik nr 7 — standard ochrony gleby, upraw, melioracji i dróg",
+          "pdfPage": 185
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-028",
+      "title": "Co stanie się z umową, gdy sprzedam albo przekażę gospodarstwo?",
+      "path": "/umowa/sprzedaz-dziedziczenie/",
+      "category": "Własność i następstwo",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-029",
+      "title": "Kto zapłaci za demontaż, jeśli spółka kiedyś zniknie?",
+      "path": "/umowa/kto-zaplaci-za-demontaz/",
+      "category": "Koniec inwestycji",
+      "paragraphs": [
+        {
+          "paragraph": 10,
+          "title": "Etap Demontażu i Rekultywacji",
+          "pdfPage": 30
+        },
+        {
+          "paragraph": 20,
+          "title": "Gwarancja Rekultywacyjna",
+          "pdfPage": 67
+        },
+        {
+          "paragraph": 33,
+          "title": "Demontaż, usunięcie Inwestycji i Rekultywacja",
+          "pdfPage": 132
+        },
+        {
+          "paragraph": 47,
+          "title": "Załącznik nr 11 — wzór protokołu końcowego Rekultywacji",
+          "pdfPage": 223
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-030",
+      "title": "Co naprawdę powinno zostać usunięte po zakończeniu farmy?",
+      "path": "/umowa/co-usunac-po-inwestycji/",
+      "category": "Koniec inwestycji",
+      "paragraphs": [
+        {
+          "paragraph": 10,
+          "title": "Etap Demontażu i Rekultywacji",
+          "pdfPage": 30
+        },
+        {
+          "paragraph": 33,
+          "title": "Demontaż, usunięcie Inwestycji i Rekultywacja",
+          "pdfPage": 132
+        },
+        {
+          "paragraph": 46,
+          "title": "Załącznik nr 10 — wzór protokołu Demontażu",
+          "pdfPage": 212
+        },
+        {
+          "paragraph": 47,
+          "title": "Załącznik nr 11 — wzór protokołu końcowego Rekultywacji",
+          "pdfPage": 223
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-031",
+      "title": "Czy inwestor może później zmienić turbinę, drogę albo kabel?",
+      "path": "/umowa/zmiana-technologii-turbiny/",
+      "category": "Zmiany projektu",
+      "paragraphs": [
+        {
+          "paragraph": 4,
+          "title": "Ograniczony zakres praw Dzierżawcy",
+          "pdfPage": 8
+        },
+        {
+          "paragraph": 39,
+          "title": "Załącznik nr 3 — opis Inwestycji",
+          "pdfPage": 159
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-032",
+      "title": "Repowering po 15–25 latach — czy stara umowa obejmuje nową turbinę?",
+      "path": "/umowa/repowering/",
+      "category": "Zmiany projektu",
+      "paragraphs": []
+    },
+    {
+      "id": "GUIDE-033",
+      "title": "Podwykonawcy na Twoim polu — kto naprawdę odpowiada za ich działania?",
+      "path": "/umowa/podwykonawcy/",
+      "category": "Budowa i podwykonawcy",
+      "paragraphs": [
+        {
+          "paragraph": 23,
+          "title": "Odpowiedzialność za Podwykonawców i osoby działające na rzecz Dzierżawcy",
+          "pdfPage": 81
+        },
+        {
+          "paragraph": 54,
+          "title": "Załącznik nr 18 — wykaz Podwykonawców i osób działających na rzecz Dzierżawcy",
+          "pdfPage": 273
+        },
+        {
+          "paragraph": 62,
+          "title": "Załącznik nr 26 — odpowiedzialność odszkodowawcza, roszczenia osób trzecich i zwolnienie właściciela",
+          "pdfPage": 336
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-034",
+      "title": "„Inwestor jest ubezpieczony” — ale od czego, na ile i na jak długo?",
+      "path": "/umowa/ubezpieczenia/",
+      "category": "Zabezpieczenia finansowe",
+      "paragraphs": [
+        {
+          "paragraph": 9,
+          "title": "Etap Eksploatacji",
+          "pdfPage": 26
+        },
+        {
+          "paragraph": 22,
+          "title": "Ubezpieczenia",
+          "pdfPage": 77
+        },
+        {
+          "paragraph": 50,
+          "title": "Załącznik nr 14 — wymagania dotyczące ubezpieczeń",
+          "pdfPage": 248
+        },
+        {
+          "paragraph": 62,
+          "title": "Załącznik nr 26 — odpowiedzialność odszkodowawcza, roszczenia osób trzecich i zwolnienie właściciela",
+          "pdfPage": 336
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-035",
+      "title": "Gwarancja rekultywacyjna — czy naprawdę wystarczy pieniędzy na usunięcie farmy?",
+      "path": "/umowa/gwarancja-rekultywacyjna/",
+      "category": "Koniec inwestycji",
+      "paragraphs": [
+        {
+          "paragraph": 20,
+          "title": "Gwarancja Rekultywacyjna",
+          "pdfPage": 67
+        },
+        {
+          "paragraph": 49,
+          "title": "Załącznik nr 13 — wymagania Gwarancji Rekultywacyjnej",
+          "pdfPage": 241
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-036",
+      "title": "Bank, finansujący i step-in rights — co mogą oznaczać dla właściciela gruntu?",
+      "path": "/umowa/finansujacy-step-in/",
+      "category": "Zmiana inwestora i finansowanie",
+      "paragraphs": [
+        {
+          "paragraph": 24,
+          "title": "Przeniesienie praw i obowiązków, zmiana kontroli, sprzedaż projektu",
+          "pdfPage": 86
+        },
+        {
+          "paragraph": 58,
+          "title": "Załącznik nr 22 — zmiana Dzierżawcy, finansowanie, cesja i Finansujący",
+          "pdfPage": 306
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-037",
+      "title": "Jakie dokumenty właściciel powinien dostawać przez 30 lat trwania projektu?",
+      "path": "/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/",
+      "category": "Kontrola i dokumentacja",
+      "paragraphs": [
+        {
+          "paragraph": 29,
+          "title": "Obowiązki informacyjne, dokumentacyjne i kontrolne",
+          "pdfPage": 110
+        },
+        {
+          "paragraph": 55,
+          "title": "Załącznik nr 19 — wykaz dokumentów, decyzji, zgód, pozwoleń i uzgodnień",
+          "pdfPage": 280
+        },
+        {
+          "paragraph": 56,
+          "title": "Załącznik nr 20 — raport okresowy Dzierżawcy",
+          "pdfPage": 286
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-038",
+      "title": "Kara umowna, odszkodowanie i naprawienie naruszenia — trzy różne rzeczy",
+      "path": "/umowa/kary-umowne-i-odszkodowanie/",
+      "category": "Szkody i odpowiedzialność",
+      "paragraphs": [
+        {
+          "paragraph": 31,
+          "title": "Kary umowne i odszkodowanie uzupełniające",
+          "pdfPage": 121
+        },
+        {
+          "paragraph": 60,
+          "title": "Załącznik nr 24 — usuwanie naruszeń, plan naprawczy i wykonanie zastępcze",
+          "pdfPage": 322
+        },
+        {
+          "paragraph": 61,
+          "title": "Załącznik nr 25 — katalog kar umownych",
+          "pdfPage": 330
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-039",
+      "title": "Wypowiedzenie umowy pod wiatrak — co dzieje się z gruntem dzień później?",
+      "path": "/umowa/wypowiedzenie-umowy/",
+      "category": "Koniec inwestycji",
+      "paragraphs": [
+        {
+          "paragraph": 32,
+          "title": "Wypowiedzenie, rozwiązanie Umowy i skutki zakończenia",
+          "pdfPage": 126
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-040",
+      "title": "Siła wyższa, zmiana prawa i brak opłacalności — kto ponosi ryzyko projektu?",
+      "path": "/umowa/sila-wyzsza-zmiana-prawa/",
+      "category": "Ryzyka projektu",
+      "paragraphs": [
+        {
+          "paragraph": 34,
+          "title": "Siła Wyższa, zmiana prawa i ryzyka inwestycyjne",
+          "pdfPage": 138
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-041",
+      "title": "Standard ochrony gleby, upraw i melioracji — czego wymagać od ekip na polu?",
+      "path": "/umowa/ochrona-gleby-upraw-melioracji/",
+      "category": "Gospodarstwo rolne",
+      "paragraphs": [
+        {
+          "paragraph": 8,
+          "title": "Etap Budowy",
+          "pdfPage": 21
+        },
+        {
+          "paragraph": 43,
+          "title": "Załącznik nr 7 — standard ochrony gleby, upraw, melioracji i dróg",
+          "pdfPage": 185
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-042",
+      "title": "Awaria na polu — kto dzwoni, kto zabezpiecza i co musi wydarzyć się w pierwszych 24 godzinach?",
+      "path": "/umowa/procedura-awaryjna/",
+      "category": "Szkody i odpowiedzialność",
+      "paragraphs": [
+        {
+          "paragraph": 53,
+          "title": "Załącznik nr 17 — wykaz osób kontaktowych",
+          "pdfPage": 268
+        },
+        {
+          "paragraph": 57,
+          "title": "Załącznik nr 21 — procedura awaryjna i interwencyjna",
+          "pdfPage": 297
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-043",
+      "title": "Czy właściciel może kontrolować, co inwestor robi na jego nieruchomości?",
+      "path": "/umowa/kontrola-wykonywania-umowy/",
+      "category": "Kontrola i dokumentacja",
+      "paragraphs": [
+        {
+          "paragraph": 5,
+          "title": "Prawa zachowane przez Wydzierżawiającego",
+          "pdfPage": 11
+        },
+        {
+          "paragraph": 9,
+          "title": "Etap Eksploatacji",
+          "pdfPage": 26
+        },
+        {
+          "paragraph": 29,
+          "title": "Obowiązki informacyjne, dokumentacyjne i kontrolne",
+          "pdfPage": 110
+        },
+        {
+          "paragraph": 59,
+          "title": "Załącznik nr 23 — kontrola wykonywania Umowy",
+          "pdfPage": 314
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-044",
+      "title": "Gwarancja czynszowa — co daje więcej niż zapis „inwestor zapłaci”?",
+      "path": "/umowa/gwarancja-czynszowa/",
+      "category": "Zabezpieczenia finansowe",
+      "paragraphs": [
+        {
+          "paragraph": 19,
+          "title": "Zabezpieczenia płatności",
+          "pdfPage": 62
+        },
+        {
+          "paragraph": 48,
+          "title": "Załącznik nr 12 — wymagania Gwarancji Czynszowej",
+          "pdfPage": 234
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-045",
+      "title": "Akt notarialny o poddaniu się egzekucji — co właściwie zabezpiecza?",
+      "path": "/umowa/poddanie-sie-egzekucji/",
+      "category": "Zabezpieczenia finansowe",
+      "paragraphs": [
+        {
+          "paragraph": 19,
+          "title": "Zabezpieczenia płatności",
+          "pdfPage": 62
+        },
+        {
+          "paragraph": 51,
+          "title": "Załącznik nr 15 — wzór poddania się egzekucji",
+          "pdfPage": 256
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-046",
+      "title": "Poręczenie spółki dominującej — czy duża grupa naprawdę odpowiada za spółkę projektową?",
+      "path": "/umowa/poreczenie-spolki-dominujacej/",
+      "category": "Zmiana inwestora i finansowanie",
+      "paragraphs": [
+        {
+          "paragraph": 21,
+          "title": "Poręczenie podmiotu dominującego / beneficjenta ekonomicznego",
+          "pdfPage": 72
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-047",
+      "title": "Magazyn energii, wodór, GPO i GPZ — czy pierwotna umowa obejmuje nowe technologie?",
+      "path": "/umowa/magazyn-energii-wodor-gpz/",
+      "category": "Zmiany projektu",
+      "paragraphs": [
+        {
+          "paragraph": 3,
+          "title": "Zakres Inwestycji",
+          "pdfPage": 5
+        },
+        {
+          "paragraph": 39,
+          "title": "Załącznik nr 3 — opis Inwestycji",
+          "pdfPage": 159
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-048",
+      "title": "Dokumenty do urzędów — jak nie zrobić z właściciela inwestora?",
+      "path": "/umowa/dokumenty-do-organow-i-status-wlasciciela/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 26,
+          "title": "Pełnomocnictwa, zgody i oświadczenia Wydzierżawiającego",
+          "pdfPage": 96
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        },
+        {
+          "paragraph": 55,
+          "title": "Załącznik nr 19 — wykaz dokumentów, decyzji, zgód, pozwoleń i uzgodnień",
+          "pdfPage": 280
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-049",
+      "title": "Doręczenia przez 30 lat — kiedy e-mail, list i zmiana adresu naprawdę mają znaczenie?",
+      "path": "/umowa/doreczenia-i-kontakty/",
+      "category": "Kontrola i dokumentacja",
+      "paragraphs": [
+        {
+          "paragraph": 35,
+          "title": "Prawo właściwe, rozstrzyganie sporów, doręczenia i postanowienia końcowe",
+          "pdfPage": 143
+        },
+        {
+          "paragraph": 53,
+          "title": "Załącznik nr 17 — wykaz osób kontaktowych",
+          "pdfPage": 268
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-050",
+      "title": "Umowa, aneks, mapa, e-mail — który dokument ma pierwszeństwo?",
+      "path": "/umowa/hierarchia-dokumentow-i-wersji/",
+      "category": "Prawa i dokumenty",
+      "paragraphs": [
+        {
+          "paragraph": 36,
+          "title": "Załączniki, dokumenty wykonawcze i pierwszeństwo dokumentów",
+          "pdfPage": 148
+        },
+        {
+          "paragraph": 52,
+          "title": "Załącznik nr 16 — wzór zgody na określone czynności",
+          "pdfPage": 262
+        },
+        {
+          "paragraph": 64,
+          "title": "Załącznik nr 28 — hierarchia dokumentów i klauzule interpretacyjne",
+          "pdfPage": 352
+        },
+        {
+          "paragraph": 65,
+          "title": "Postanowienia końcowe, kompletność dokumentacji i lista załączników",
+          "pdfPage": 356
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-051",
+      "title": "Jak sprawdzić MPZP dla planowanej turbiny?",
+      "path": "/projekt/jak-sprawdzic-mpzp/",
+      "category": "Projekt i procedury",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-052",
+      "title": "Uchwała o przystąpieniu to jeszcze nie plan — jak sprawdzić etap?",
+      "path": "/projekt/uchwala-o-przystapieniu/",
+      "category": "Projekt i procedury",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-053",
+      "title": "Wnioski, konsultacje i spotkania otwarte przy planie pod wiatraki — jak wygląda procedura?",
+      "path": "/projekt/konsultacje-planu-wiatraki/",
+      "category": "Projekt i procedury",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-054",
+      "title": "Decyzja środowiskowa — co właściwie rozstrzyga?",
+      "path": "/projekt/decyzja-srodowiskowa/",
+      "category": "Projekt i procedury",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-055",
+      "title": "Raport OOŚ — jak go czytać bez 500 stron od deski do deski?",
+      "path": "/projekt/jak-czytac-raport-oos/",
+      "category": "Projekt i procedury",
+      "paragraphs": [
+        {
+          "paragraph": 7,
+          "title": "Etap Projektowo-Administracyjny",
+          "pdfPage": 16
+        },
+        {
+          "paragraph": 28,
+          "title": "Decyzje Administracyjne, Warunki Przyłączenia, pozwolenia i postępowania",
+          "pdfPage": 105
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-056",
+      "title": "Uciążliwości podczas pracy turbiny — hałas, cień, lód i pomiary",
+      "path": "/umowa/uciazliwosci-eksploatacji/",
+      "category": "Eksploatacja i uciążliwości",
+      "paragraphs": [
+        {
+          "paragraph": 9,
+          "title": "Etap Eksploatacji",
+          "pdfPage": 26
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-057",
+      "title": "Inwestor naruszył umowę — co dalej?",
+      "path": "/umowa/inwestor-naruszyl-umowe/",
+      "category": "Naruszenia i odpowiedzialność",
+      "paragraphs": [
+        {
+          "paragraph": 60,
+          "title": "Załącznik nr 24 — usuwanie naruszeń, plan naprawczy i wykonanie zastępcze",
+          "pdfPage": 322
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-058",
+      "title": "Sąsiad, urząd albo wykonawca kieruje roszczenie do właściciela gruntu — co wtedy?",
+      "path": "/umowa/roszczenia-osob-trzecich/",
+      "category": "Naruszenia i odpowiedzialność",
+      "paragraphs": [
+        {
+          "paragraph": 22,
+          "title": "Ubezpieczenia",
+          "pdfPage": 77
+        },
+        {
+          "paragraph": 23,
+          "title": "Odpowiedzialność za Podwykonawców i osoby działające na rzecz Dzierżawcy",
+          "pdfPage": 81
+        },
+        {
+          "paragraph": 62,
+          "title": "Załącznik nr 26 — odpowiedzialność odszkodowawcza, roszczenia osób trzecich i zwolnienie właściciela",
+          "pdfPage": 336
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-059",
+      "title": "Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?",
+      "path": "/umowa/prywatnosc-zdjecia-dron-komunikacja/",
+      "category": "Prywatność i komunikacja",
+      "paragraphs": [
+        {
+          "paragraph": 30,
+          "title": "Poufność, ochrona informacji, dane Nieruchomości i komunikacja zewnętrzna",
+          "pdfPage": 117
+        },
+        {
+          "paragraph": 63,
+          "title": "Załącznik nr 27 — poufność, komunikacja publiczna i ochrona danych",
+          "pdfPage": 345
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-060",
+      "title": "Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?",
+      "path": "/umowa/spor-z-inwestorem/",
+      "category": "Spory i egzekwowanie",
+      "paragraphs": [
+        {
+          "paragraph": 35,
+          "title": "Prawo właściwe, rozstrzyganie sporów, doręczenia i postanowienia końcowe",
+          "pdfPage": 143
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-061",
+      "title": "Podpisuję umowę pod wiatrak — czego NIE oddaję inwestorowi?",
+      "path": "/umowa/czego-wlasciciel-nie-oddaje/",
+      "category": "Prawa właściciela",
+      "paragraphs": [
+        {
+          "paragraph": 5,
+          "title": "Prawa zachowane przez Wydzierżawiającego",
+          "pdfPage": 11
+        }
+      ]
+    }
+  ]
+}
