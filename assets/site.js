@@ -670,18 +670,72 @@
             <span>Szukaj po temacie lub słowie</span>
             <input type="search" data-guide-filter placeholder="np. czynsz, kabel, pełnomocnictwo, demontaż…">
           </label>
+
           <div class="guide-catalog-chips" data-guide-categories>
             <button type="button" class="selected" data-category="">Wszystkie</button>
             ${categories.map(c => `<button type="button" data-category="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join("")}
           </div>
+
+          <div class="guide-catalog-mobilebar">
+            <button type="button" class="guide-mobile-filter-button" data-guide-mobile-open aria-haspopup="dialog" aria-expanded="false">
+              <span>Temat</span>
+              <strong data-guide-mobile-label>Wszystkie tematy</strong>
+              <b>Filtruj</b>
+            </button>
+          </div>
+
           <div class="guide-catalog-count" data-guide-count></div>
         </div>
+
+        <div class="guide-filter-sheet" data-guide-filter-sheet aria-hidden="true">
+          <button class="guide-filter-backdrop" type="button" data-guide-mobile-close aria-label="Zamknij wybór tematów"></button>
+          <div class="guide-filter-panel" role="dialog" aria-modal="true" aria-labelledby="guide-filter-title">
+            <div class="guide-filter-head">
+              <div>
+                <div class="eyebrow">Katalog GUIDE</div>
+                <h2 id="guide-filter-title">Wybierz temat</h2>
+              </div>
+              <button type="button" class="guide-filter-close" data-guide-mobile-close aria-label="Zamknij">×</button>
+            </div>
+            <div class="guide-filter-options" data-guide-mobile-categories>
+              <button type="button" class="selected" data-mobile-category="">Wszystkie tematy</button>
+              ${categories.map(c => `<button type="button" data-mobile-category="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join("")}
+            </div>
+          </div>
+        </div>
+
         <div class="guide-catalog-grid" data-guide-list></div>`;
 
       const input = root.querySelector("[data-guide-filter]");
       const list = root.querySelector("[data-guide-list]");
       const count = root.querySelector("[data-guide-count]");
+      const mobileOpen = root.querySelector("[data-guide-mobile-open]");
+      const mobileLabel = root.querySelector("[data-guide-mobile-label]");
+      const sheet = root.querySelector("[data-guide-filter-sheet]");
       let activeCategory = "";
+
+      const closeMobileFilters = () => {
+        sheet.classList.remove("open");
+        sheet.setAttribute("aria-hidden", "true");
+        mobileOpen.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("guide-filter-open");
+      };
+
+      const openMobileFilters = () => {
+        sheet.classList.add("open");
+        sheet.setAttribute("aria-hidden", "false");
+        mobileOpen.setAttribute("aria-expanded", "true");
+        document.body.classList.add("guide-filter-open");
+        setTimeout(() => sheet.querySelector(".guide-filter-options .selected")?.focus(), 30);
+      };
+
+      const setCategory = category => {
+        activeCategory = category || "";
+        mobileLabel.textContent = activeCategory || "Wszystkie tematy";
+        root.querySelectorAll("[data-category]").forEach(b => b.classList.toggle("selected", (b.dataset.category || "") === activeCategory));
+        root.querySelectorAll("[data-mobile-category]").forEach(b => b.classList.toggle("selected", (b.dataset.mobileCategory || "") === activeCategory));
+        render();
+      };
 
       const normalize = v => String(v || "").toLocaleLowerCase("pl").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       const render = () => {
@@ -703,13 +757,24 @@
       };
 
       input.addEventListener("input", render);
+
       root.querySelectorAll("[data-category]").forEach(button => {
+        button.addEventListener("click", () => setCategory(button.dataset.category || ""));
+      });
+
+      root.querySelectorAll("[data-mobile-category]").forEach(button => {
         button.addEventListener("click", () => {
-          activeCategory = button.dataset.category || "";
-          root.querySelectorAll("[data-category]").forEach(b => b.classList.toggle("selected", b === button));
-          render();
+          setCategory(button.dataset.mobileCategory || "");
+          closeMobileFilters();
         });
       });
+
+      mobileOpen.addEventListener("click", openMobileFilters);
+      root.querySelectorAll("[data-guide-mobile-close]").forEach(button => button.addEventListener("click", closeMobileFilters));
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && sheet.classList.contains("open")) closeMobileFilters();
+      });
+
       render();
     } catch (_) {
       root.innerHTML = '<div class="notice">Nie udało się wczytać katalogu. Skorzystaj z wyszukiwarki w górnym menu.</div>';
