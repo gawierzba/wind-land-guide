@@ -16,13 +16,13 @@ Statusy:
 
 ## Podsumowanie
 
-- POKRYTE: **63**
-- POGŁĘBIĆ: **2**
+- POKRYTE: **65**
+- POGŁĘBIĆ: **0**
 - BRAK: **0**
 - Łącznie: **65/65 paragrafów**
 - Priorytet A: **0** pozycji
-- Priorytet B: **2** pozycji
-- Priorytet C: **63** pozycji
+- Priorytet B: **0** pozycji
+- Priorytet C: **65** pozycji
 
 > Uwaga metodologiczna: status „POKRYTE” oznacza pokrycie **zagadnienia wynikającego ze wzorca umowy**, a nie potwierdzenie, że opisane rozwiązanie jest obowiązkowym standardem prawa. W serwisie nadal rozdzielamy PRAWO od UMOWY/PRAKTYKI.
 
@@ -75,13 +75,13 @@ Statusy:
 | 43 | Załącznik nr 7 — standard ochrony gleby, upraw, melioracji i dróg | 185 | /pl/umowa/ochrona-gleby-upraw-melioracji/ + /pl/umowa/drenarka/ | **POKRYTE** | **C** | Dedykowane materiały są bardzo rozbudowane. |
 | 44 | Załącznik nr 8 — wzór protokołu wejścia | 191 | /pl/umowa/protokol-wejscia/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 45 | Załącznik nr 9 — wzór protokołu szkody | 201 | /pl/umowa/dokumentowanie-szkody/ + /pl/umowa/szkoda-pierwszy-dzien/ | **POKRYTE** | **C** | Pokryte praktycznie i dowodowo. |
-| 46 | Załącznik nr 10 — wzór protokołu Demontażu | 212 | /pl/umowa/co-usunac-po-inwestycji/ + /pl/koniec-inwestycji/ | **POGŁĘBIĆ** | **B** | Dodać gotową checklistę protokołu demontażu: element po elemencie, zakres usunięcia, zdjęcia przed zasypaniem, odpady, mapy powykonawcze. |
+| 46 | Załącznik nr 10 — wzór protokołu Demontażu | 212 | /pl/umowa/co-usunac-po-inwestycji/ | **POKRYTE** | **C** | Dodano pełny audyt protokołu: rozdzielenie Demontażu od Rekultywacji, status każdego elementu, fundament i kable przed zasypaniem, geodezja, odpady, szkody, elementy pozostawione oraz lista obowiązków po Demontażu. |
 | 47 | Załącznik nr 11 — wzór protokołu końcowego Rekultywacji | 223 | /pl/umowa/co-usunac-po-inwestycji/ + /pl/umowa/kto-zaplaci-za-demontaz/ | **POKRYTE** | **C** | Obecne materiały mocno podkreślają funkcję gruntu, szkody ukryte i brak automatycznego zrzeczenia się roszczeń. |
 | 48 | Załącznik nr 12 — wymagania Gwarancji Czynszowej | 234 | /pl/umowa/gwarancja-czynszowa/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 49 | Załącznik nr 13 — wymagania Gwarancji Rekultywacyjnej | 241 | /pl/umowa/gwarancja-rekultywacyjna/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
 | 50 | Załącznik nr 14 — wymagania dotyczące ubezpieczeń | 248 | /pl/umowa/ubezpieczenia/ | **POKRYTE** | **C** | Rozwinięto regres, dodatkowego ubezpieczonego, OC osób trzecich, transport, roboty ziemne, likwidację szkody, odmowę ubezpieczyciela i ochronę do końca ryzyka. |
 | 51 | Załącznik nr 15 — wzór poddania się egzekucji | 256 | /pl/umowa/poddanie-sie-egzekucji/ | **POKRYTE** | **C** | Dedykowany GUIDE. |
-| 52 | Załącznik nr 16 — wzór zgody na określone czynności | 261 | /pl/umowa/pelnomocnictwo/ + /pl/umowa/co-dokladnie-oddaje-inwestorowi/ | **POGŁĘBIĆ** | **B** | Brakuje osobnego rozróżnienia „zgoda incydentalna” vs aneks vs pełnomocnictwo. Warto zrobić sekcję z kartą zgody: czynność, mapa, okres, warunki, brak rozszerzenia umowy. |
+| 52 | Załącznik nr 16 — wzór zgody na określone czynności | 262 | /pl/umowa/pelnomocnictwo/ + /pl/umowa/hierarchia-dokumentow-i-wersji/ | **POKRYTE** | **C** | Dodano porównanie zgoda–aneks–pełnomocnictwo, kartę zgody jednorazowej, granice interpretacji, przykłady czego zgoda nie obejmuje i test dokumentu przed podpisem. |
 | 53 | Załącznik nr 17 — wykaz osób kontaktowych | 268 | /pl/umowa/doreczenia-i-kontakty/ + /pl/umowa/procedura-awaryjna/ | **POKRYTE** | **C** | Bieżący, formalny i awaryjny kanał kontaktu są omówione. |
 | 54 | Załącznik nr 18 — wykaz Podwykonawców i osób działających na rzecz Dzierżawcy | 273 | /pl/umowa/podwykonawcy/ | **POKRYTE** | **C** | Dedykowany GUIDE wraz z kartą ekipy. |
 | 55 | Załącznik nr 19 — wykaz dokumentów, decyzji, zgód, pozwoleń i uzgodnień | 280 | /pl/umowa/dokumenty-ktore-powinien-dostawac-wlasciciel/ + /pl/umowa/dokumenty-do-organow-i-status-wlasciciela/ | **POKRYTE** | **C** | Dobrze pokryte przez teczkę właściciela i obieg dokumentów. |
@@ -104,9 +104,7 @@ Brak. Wszystkie pozycje oznaczone wcześniej jako **BRAK** lub priorytet **A** m
 
 ### B. Najważniejsze dalsze pogłębienia
 
-- **Ubezpieczenia (§22 i §50):** regres, OC osób trzecich, transport, roboty ziemne i demontaż.
-- **Protokół Demontażu (§46):** checklista element po elemencie, odpady, zdjęcia przed zasypaniem i mapy powykonawcze.
-- **Zgody incydentalne (§52):** zgoda vs aneks vs pełnomocnictwo.
+Drugi audyt pokrycia 65 obszarów został domknięty. Dalsza rozbudowa nie powinna polegać na sztucznym dopisywaniu kolejnych GUIDE-ów, lecz na audycie jakościowym, aktualizacji prawa, narzędziach właściciela i powiązaniach między materiałami.
 
 ## Zasada utrzymania macierzy
 
