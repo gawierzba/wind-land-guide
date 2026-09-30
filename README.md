@@ -276,3 +276,10 @@ Rozpoczęto Etap III po domknięciu macierzy 65/65.
 Narzędzie „Sprawdź swoją umowę” zachowuje szybki audyt 30 pytań i otrzymuje opcjonalną kontrolę pogłębioną 8 pytań wynikających z pełnego audytu wzorca. Przy każdym pytaniu można lokalnie zapisać paragraf / załącznik / stronę oraz własną notatkę, które trafiają później do Karty analizy i wydruku.
 
 Dodano także osobny katalog GUIDE pod ścieżką /guide/ — bezpośrednią listę wszystkich materiałów z wyszukiwaniem po temacie i filtrowaniem według kategorii. Wejście „GUIDE-y” jest dostępne z głównej nawigacji, strony startowej, ścieżki „Mam umowę” oraz narzędzia audytowego.
+
+
+### v2.1 — porównywarka ofert
+
+Dodano narzędzie `/porownaj-oferty/` do porównania dwóch ofert lub dwóch wersji umowy według tych samych kryteriów. Narzędzie nie tworzy rankingu ani punktacji. Zestawia fakty w obszarach: podmiot i czas, pieniądze, zakres praw, zabezpieczenia, odpowiedzialność oraz koniec inwestycji.
+
+Dane są zapisywane lokalnie w przeglądarce, dostępny jest filtr różnic / braków oraz wydruk do PDF. Każde kryterium prowadzi do właściwego GUIDE-a. Narzędzie zostało podpięte z GUIDE-012 i strony głównej.
