@@ -1728,7 +1728,7 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
 .owner-tools-section{padding-top:34px}
 .owner-tools-grid{
   display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
   gap:12px;
 }
 .owner-tool-card{
@@ -2008,3 +2008,10 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
     font-size:7pt;
   }
 }
+
+.owner-tool-card-project{
+  background:#edf4eb;
+  border-color:#cfddce;
+}
+.owner-tool-card-project>span,
+.owner-tool-card-project>b{color:#1f5b39}
