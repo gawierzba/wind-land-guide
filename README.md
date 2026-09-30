@@ -296,3 +296,21 @@ Dodano narzędzie `/protokoly/` do dokumentowania zdarzeń terenowych. Obejmuje 
 - końcowy odbiór rekultywacji — oparty na Załączniku nr 11.
 
 Dane są zapisywane lokalnie w przeglądarce. Narzędzie nie przesyła zdjęć; zawiera checklisty zdjęć i pola do zapisu ich numerów / nazw. Każdy formularz ma wydruk do PDF, rozróżnienie źródłowego wzorca od karty praktycznej oraz link do odpowiedniego GUIDE-a.
+
+
+### v2.3 — kalkulator czynszu i waloryzacji
+
+Dodano `/kalkulator-czynszu/` — lokalny kalkulator scenariusza płatności przez cały cykl projektu. Użytkownik wpisuje własne kwoty i okresy; narzędzie nie ustala stawki rynkowej i nie ocenia oferty.
+
+Obsługiwane elementy:
+- czynsz / opłata wejściowa,
+- czynsz rezerwacyjny i jego scenariuszowa waloryzacja,
+- czynsz zasadniczy jako stała kwota lub model zależny od MW,
+- minimum gwarantowane i procentowy udział w pełnym czynszu,
+- opłaty dodatkowe roczne i jednorazowe,
+- waloryzacja z możliwością blokady spadku przy wartości ujemnej,
+- opcjonalny repowering / zwiększenie mocy w trakcie umowy,
+- tabela rok po roku, wykres, suma nominalna i porównanie z tym samym scenariuszem bez waloryzacji,
+- wydruk / PDF i lokalny zapis danych.
+
+Strona główna została uporządkowana do jednego modułu „Narzędzia właściciela” z czterema kartami: audyt, porównywarka, protokoły i kalkulator.

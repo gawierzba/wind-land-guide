@@ -1,5 +1,5 @@
 {
-  "version": "2.2-dev",
+  "version": "2.3-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1242,6 +1242,27 @@
         "drogi",
         "odbiór"
       ]
+    },
+    {
+      "id": "NARZEDZIE-004",
+      "title": "Kalkulator czynszu, MW i waloryzacji",
+      "path": "/kalkulator-czynszu/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "kalkulator czynszu",
+        "waloryzacja",
+        "czynsz wejściowy",
+        "czynsz rezerwacyjny",
+        "czynsz zasadniczy",
+        "MW",
+        "moc referencyjna",
+        "minimum gwarantowane",
+        "repowering",
+        "opłaty dodatkowe",
+        "scenariusz płatności",
+        "30 lat"
+      ]
     }
   ],
   "editorial": {
@@ -1256,6 +1277,7 @@
     "search-index/part-05.json",
     "search-index/part-06.json",
     "search-index/part-07.json",
-    "search-index/part-08.json"
+    "search-index/part-08.json",
+    "search-index/part-09.json"
   ]
 }
