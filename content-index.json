@@ -1,5 +1,5 @@
 {
-  "version": "1.5-dev",
+  "version": "1.6-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -127,7 +127,15 @@
         "budowa",
         "eksploatacja",
         "przedluzenie",
-        "koniec"
+        "koniec",
+        "etap przygotowawczy",
+        "harmonogram",
+        "data graniczna",
+        "kamień milowy",
+        "bezczynność",
+        "warunki przyłączenia",
+        "maksymalny czas",
+        "opóźnienie"
       ],
       "depth": "deep"
     },

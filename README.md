@@ -226,3 +226,17 @@ Pogłębiono dwa kolejne obszary wynikające z macierzy źródłowej:
 - GUIDE-050 — kompletność pakietu przed podpisem, pola „DO UZUPEŁNIENIA”, brakujące załączniki, wersjonowanie i zasada blokady działania do czasu uzupełnienia dokumentu.
 
 Stan macierzy po v1.5: 57 obszarów POKRYTE, 8 POGŁĘBIĆ, 0 BRAK, 0 priorytetu A.
+
+
+### v1.6 — czas projektu i harmonogram
+
+Pogłębiono GUIDE-007 o pełny audyt czasu związania nieruchomości:
+- etap przygotowawczy i jego maksymalny czas jako parametr do świadomego uzupełnienia,
+- warunki przejścia do etapu projektowo-administracyjnego,
+- daty graniczne dla decyzji, budowy, eksploatacji, demontażu i rekultywacji,
+- reakcję na bezczynność inwestora,
+- zasadę dalszych płatności i zabezpieczeń mimo opóźnienia,
+- kalkulację „pesymistycznego maksymalnego czasu związania gruntu”,
+- audyt 10 pytań do harmonogramu.
+
+W materiale jawnie wskazano także wewnętrzną rozbieżność analizowanego wzorca między definicją Etapu Przygotowawczego w §1 a mechanizmem §6, zamiast sztucznie ją ujednolicać. Stan macierzy po v1.6: 59 POKRYTE, 6 POGŁĘBIĆ, 0 BRAK.
