@@ -1,5 +1,5 @@
 {
-  "version": "2.4-dev",
+  "version": "2.5-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1285,6 +1285,25 @@
         "import",
         "warsztat właściciela",
         "backup"
+      ]
+    },
+    {
+      "id": "NARZEDZIE-006",
+      "title": "Mapa § umowy ↔ GUIDE",
+      "path": "/mapa-paragrafow/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "paragrafy umowy",
+        "mapa paragrafów",
+        "§ umowy",
+        "GUIDE a paragraf",
+        "indeks krzyżowy",
+        "wzorzec umowy",
+        "załączniki umowy",
+        "pokrycie umowy",
+        "65 paragrafów",
+        "61 GUIDE"
       ]
     }
   ],
