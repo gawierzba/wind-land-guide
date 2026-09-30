@@ -258,3 +258,12 @@ Pogłębiono dwa kolejne obszary:
 - GUIDE-033 — roszczenia podwykonawców wobec właściciela i nieruchomości, koszty obrony, zakaz tworzenia praw do gruntu oraz procedura po otrzymaniu wezwania od wykonawcy.
 
 Stan macierzy po v1.8: 63 POKRYTE, 2 POGŁĘBIĆ, 0 BRAK.
+
+
+### v1.9 — pełne pokrycie macierzy umowy
+
+Domknięto dwa ostatnie obszary drugiego audytu:
+- GUIDE-030 — Protokół Demontażu: rozdzielenie Demontażu od Rekultywacji, status każdego elementu, dokumentacja fundamentu i kabli przed zasypaniem, geodezja, odpady, szkody i lista obowiązków pozostających po Demontażu,
+- GUIDE-018 — zgoda jednorazowa vs aneks vs pełnomocnictwo, karta zgody, granice jej zakresu, przykłady czynności niewynikających z danej zgody oraz test dokumentu przed podpisem.
+
+Macierz 65 obszarów źródłowego wzorca po v1.9: **65 POKRYTE, 0 POGŁĘBIĆ, 0 BRAK**. Oznacza to domknięcie audytu pokrycia, nie koniec rozwoju serwisu. Następny etap koncentruje się na jakości, narzędziach właściciela, nawigacji między materiałami i praktycznym porównywaniu własnych umów z mapą problemów.
