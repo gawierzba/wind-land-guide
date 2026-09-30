@@ -77,6 +77,15 @@
     } catch {}
   }
 
+  function applyProjectDefaults() {
+    const shared = window.GruntWiatrProject?.defaultsForTools?.();
+    if (!shared) return;
+    if (!String(state.meta.project || "").trim() && String(shared.project || "").trim()) {
+      state.meta.project = shared.project;
+      save();
+    }
+  }
+
   function save() {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {}
   }
@@ -210,5 +219,6 @@
   }
 
   load();
+  applyProjectDefaults();
   render();
 })();
