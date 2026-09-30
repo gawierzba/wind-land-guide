@@ -1,5 +1,5 @@
 {
-  "version": "2.0-dev",
+  "version": "2.1-dev",
   "language": "pl",
   "updated": "2026-09-30",
   "materials": [
@@ -1199,6 +1199,27 @@
         "kontrola pogłębiona",
         "65 obszarów",
         "katalog GUIDE"
+      ]
+    },
+    {
+      "id": "NARZEDZIE-002",
+      "title": "Porównaj dwie oferty albo dwie umowy",
+      "path": "/porownaj-oferty/",
+      "status": "draft-live",
+      "category": "Narzędzia",
+      "keywords": [
+        "porównaj oferty",
+        "porównanie umów",
+        "oferta A oferta B",
+        "czynsz",
+        "waloryzacja",
+        "droga kabel place",
+        "gwarancja",
+        "cesja",
+        "demontaż",
+        "rekultywacja",
+        "różnice",
+        "checklista"
       ]
     }
   ],
