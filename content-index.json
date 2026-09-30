@@ -1045,6 +1045,63 @@
         "ubezpieczenie"
       ],
       "depth": "deep"
+    },
+    {
+      "id": "GUIDE-059",
+      "title": "Dron, zdjęcia gospodarstwa i publikacje inwestora — co warto uregulować?",
+      "path": "/umowa/prywatnosc-zdjecia-dron-komunikacja/",
+      "status": "draft-live",
+      "category": "Prywatność i komunikacja",
+      "keywords": [
+        "poufność",
+        "prywatność",
+        "dron",
+        "zdjęcia",
+        "nagrania",
+        "wizerunek",
+        "media społecznościowe",
+        "komunikacja publiczna",
+        "wizyty inwestorskie",
+        "dane gospodarstwa"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-060",
+      "title": "Spór z inwestorem — czy może przestać płacić albo wstrzymać naprawy?",
+      "path": "/umowa/spor-z-inwestorem/",
+      "status": "draft-live",
+      "category": "Spory i egzekwowanie",
+      "keywords": [
+        "spór",
+        "sąd",
+        "arbitraż",
+        "mediacja",
+        "część bezsporna",
+        "wstrzymanie płatności",
+        "zabezpieczenia",
+        "demontaż",
+        "rekultywacja"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-061",
+      "title": "Podpisuję umowę pod wiatrak — czego NIE oddaję inwestorowi?",
+      "path": "/umowa/czego-wlasciciel-nie-oddaje/",
+      "status": "draft-live",
+      "category": "Prawa właściciela",
+      "keywords": [
+        "prawa właściciela",
+        "własność",
+        "działalność rolnicza",
+        "przejazd",
+        "dopłaty rolne",
+        "kontrola",
+        "rozporządzanie",
+        "część nieruchomości"
+      ],
+      "depth": "deep"
     }
   ],
   "tools": [
