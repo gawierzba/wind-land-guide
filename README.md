@@ -217,3 +217,12 @@ Pogłębiono dwa materiały kluczowe dla długoterminowej ochrony właściciela:
 - GUIDE-037 — raport zerowy, raportowanie zależne od etapu, planowane czynności, raport nadzwyczajny oraz praktyczny wzór raportu właścicielskiego.
 
 Naprawiono również techniczną niespójność macierzy pokrycia po v1.3. Po ponownym przeliczeniu rzeczywistych statusów: 53 obszary są pokryte, 12 pozostaje do pogłębienia, 0 ma status BRAK i 0 pozostaje w priorytecie A.
+
+
+### v1.5 — ubezpieczenia i pakiet podpisu
+
+Pogłębiono dwa kolejne obszary wynikające z macierzy źródłowej:
+- GUIDE-034 — OC osób trzecich i sąsiadów, regres ubezpieczyciela, transport, roboty ziemne, likwidacja szkody, dodatkowy ubezpieczony i ochrona podczas demontażu,
+- GUIDE-050 — kompletność pakietu przed podpisem, pola „DO UZUPEŁNIENIA”, brakujące załączniki, wersjonowanie i zasada blokady działania do czasu uzupełnienia dokumentu.
+
+Stan macierzy po v1.5: 57 obszarów POKRYTE, 8 POGŁĘBIĆ, 0 BRAK, 0 priorytetu A.
