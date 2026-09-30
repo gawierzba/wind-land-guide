@@ -33,7 +33,7 @@
 
   const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
   const parse = value => {
-    const n = Number(String(value ?? "").replace(/s/g,"").replace(",","."));
+    const n = Number(String(value ?? "").replace(/\\s/g,"").replace(",","."));
     return Number.isFinite(n) ? n : 0;
   };
   const clamp = (n,min,max) => Math.min(max,Math.max(min,n));
@@ -45,6 +45,15 @@
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
       if (saved && typeof saved === "object") state = {...defaults,...saved};
     } catch {}
+  }
+
+  function applyProjectDefaults() {
+    const shared = window.GruntWiatrProject?.defaultsForTools?.();
+    if (!shared) return;
+    if (!String(state.project || "").trim() && String(shared.project || "").trim()) {
+      state.project = shared.project;
+      save();
+    }
   }
 
   function save() {
@@ -351,5 +360,6 @@
   }
 
   load();
+  applyProjectDefaults();
   render();
 })();
