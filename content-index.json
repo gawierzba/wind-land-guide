@@ -1,5 +1,5 @@
 {
-  "version": "3.0-dev-consolidated-61",
+  "version": "3.1-dev-depth-audit",
   "language": "pl",
   "updated": "2026-10-02",
   "materials": [
@@ -912,7 +912,15 @@
         "dokumenty",
         "wstrzymanie",
         "prac",
-        "raportowanie"
+        "raportowanie",
+        "kontrola planowa",
+        "kontrola doraźna",
+        "kontrola interwencyjna",
+        "protokół kontroli",
+        "protokół jednostronny",
+        "utrudnianie kontroli",
+        "koszty kontroli",
+        "ponowna kontrola"
       ],
       "depth": "deep"
     },
@@ -928,7 +936,13 @@
         "bankowa",
         "ubezpieczeniowa",
         "płatność",
-        "odnowienie"
+        "odnowienie",
+        "realizacja gwarancji",
+        "wypłata częściowa",
+        "odnowienie gwarancji",
+        "wygaśnięcie gwarancji",
+        "test realizowalności",
+        "bezumowne korzystanie"
       ],
       "depth": "deep"
     },
@@ -966,7 +980,13 @@
         "parent",
         "company",
         "guarantee",
-        "SPV"
+        "SPV",
+        "cykl życia poręczenia",
+        "poręczyciel zagraniczny",
+        "solidarna odpowiedzialność",
+        "pogorszenie sytuacji poręczyciela",
+        "nowe poręczenie",
+        "zmiana poręczyciela"
       ],
       "depth": "deep"
     },
@@ -1003,7 +1023,12 @@
         "inwestora",
         "właściciel",
         "pełnomocnictwo",
-        "dokumenty"
+        "dokumenty",
+        "cykl życia dokumentu",
+        "status dokumentu",
+        "sprostowanie dokumentu",
+        "wycofanie dokumentu",
+        "zaskarżenie decyzji"
       ],
       "depth": "deep"
     },
@@ -1021,7 +1046,13 @@
         "kontakt",
         "zawiadomienie",
         "awaria",
-        "oświadczenie"
+        "oświadczenie",
+        "kanał roboczy",
+        "kanał formalny",
+        "kanał awaryjny",
+        "język komunikacji",
+        "tłumaczenie dokumentów",
+        "kontakt finansującego"
       ],
       "depth": "deep"
     },
@@ -1152,7 +1183,13 @@
         "pomiary",
         "awaria",
         "serwis",
-        "uciążliwości"
+        "uciążliwości",
+        "warunki rozpoczęcia eksploatacji",
+        "mapa powykonawcza",
+        "raport eksploatacyjny",
+        "utrzymanie dróg",
+        "przepusty",
+        "odwodnienie"
       ],
       "depth": "deep"
     },
@@ -1171,7 +1208,11 @@
         "monitoring",
         "kontrola",
         "kara umowna",
-        "odszkodowanie"
+        "odszkodowanie",
+        "rejestr naruszeń",
+        "naruszenie powtarzalne",
+        "kryteria zamknięcia",
+        "monitoring skutków"
       ],
       "depth": "deep"
     },
@@ -1190,7 +1231,11 @@
         "zwolnienie z odpowiedzialności",
         "regres",
         "ugoda",
-        "ubezpieczenie"
+        "ubezpieczenie",
+        "rejestr roszczeń",
+        "utrata wartości nieruchomości",
+        "roszczenia publicznoprawne",
+        "księga wieczysta"
       ],
       "depth": "deep"
     },
@@ -1210,7 +1255,14 @@
         "media społecznościowe",
         "komunikacja publiczna",
         "wizyty inwestorskie",
-        "dane gospodarstwa"
+        "dane gospodarstwa",
+        "rejestr ujawnień",
+        "anonimizacja",
+        "minimalizacja danych",
+        "naruszenie poufności",
+        "fotopułapka",
+        "profilowanie",
+        "usunięcie publikacji"
       ],
       "depth": "deep"
     },
@@ -1229,7 +1281,12 @@
         "wstrzymanie płatności",
         "zabezpieczenia",
         "demontaż",
-        "rekultywacja"
+        "rekultywacja",
+        "prawo właściwe",
+        "sąd powszechny",
+        "negocjacje",
+        "terminy w sporze",
+        "ekspert"
       ],
       "depth": "deep"
     },
@@ -1247,7 +1304,13 @@
         "dopłaty rolne",
         "kontrola",
         "rozporządzanie",
-        "część nieruchomości"
+        "część nieruchomości",
+        "prawa zachowane",
+        "własny specjalista",
+        "udział w oględzinach",
+        "sprzeciw właściciela",
+        "dodatkowe wynagrodzenie",
+        "brak zgody przez milczenie"
       ],
       "depth": "deep"
     },
