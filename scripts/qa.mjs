@@ -99,7 +99,7 @@ for (const file of htmlFiles) {
   }
   if (!isLegacyPolish && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isLegacyPolish && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
-  if (!isLegacyPolish && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
+  if (needsSharedNavigation && !hasSiteScript) errors.push(`${fileRel}: brak assets/site.js — bez niego nie działa wspólne menu`);\n  if (needsSharedNavigation && !hasVersionedSiteScript) errors.push(`${fileRel}: assets/site.js bez wersji ?v= — ryzyko starego menu z cache`);\n  if (needsSharedNavigation && (!hasTopbar || !hasNavlinks)) errors.push(`${fileRel}: brak wspólnego nagłówka .topbar/.navlinks`);
   if (!isLegacyPolish && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
   if (duplicateIds.length) errors.push(`${fileRel}: powtórzone id: ${duplicateIds.join(", ")}`);
 
