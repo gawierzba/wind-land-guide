@@ -1,7 +1,7 @@
 {
-  "version": "2.9-dev",
+  "version": "3.1",
   "language": "pl",
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "materials": [
     {
       "id": "GUIDE-001",
@@ -336,7 +336,16 @@
         "sprzet",
         "trasa",
         "geodeta",
-        "serwis"
+        "serwis",
+        "badania",
+        "odwiert",
+        "geotechnika",
+        "lidar",
+        "sodar",
+        "maszt",
+        "pomiary",
+        "próbki",
+        "urządzenie pomiarowe"
       ],
       "depth": "deep"
     },
@@ -357,7 +366,14 @@
         "zgoda vs pełnomocnictwo",
         "zakres zgody",
         "milczenie",
-        "osoba kontaktowa"
+        "osoba kontaktowa",
+        "małżonek",
+        "współwłaściciel",
+        "wspólność majątkowa",
+        "zgoda",
+        "bank",
+        "wierzyciel hipoteczny",
+        "hipoteka"
       ],
       "depth": "deep"
     },
@@ -411,7 +427,15 @@
         "kabel",
         "prawo",
         "rzeczowe",
-        "dzierzawa"
+        "dzierzawa",
+        "pas roboczy",
+        "pas eksploatacyjny",
+        "głębokość",
+        "światłowód",
+        "uziemienie",
+        "mufa",
+        "dokumentacja powykonawcza",
+        "serwis kabla"
       ],
       "depth": "deep"
     },
@@ -446,7 +470,15 @@
         "poręczenie",
         "zabezpieczenie",
         "niewyplacalnosc",
-        "czynsz"
+        "czynsz",
+        "restrukturyzacja",
+        "upadłość",
+        "likwidacja",
+        "KRZ",
+        "KRS",
+        "utrata finansowania",
+        "dodatkowe zabezpieczenie",
+        "problemy finansowe inwestora"
       ],
       "depth": "deep"
     },
@@ -535,7 +567,14 @@
         "dziedziczenie",
         "spadek",
         "nastepca",
-        "gospodarstwo"
+        "gospodarstwo",
+        "kredyt",
+        "hipoteka",
+        "podział",
+        "scalenie",
+        "aport",
+        "finansowanie gospodarstwa",
+        "zmiana numeru działki"
       ],
       "depth": "deep"
     },
@@ -727,7 +766,14 @@
         "raport okresowy",
         "raport nadzwyczajny",
         "24 godziny",
-        "archiwum właściciela"
+        "archiwum właściciela",
+        "warunki przyłączenia",
+        "umowa przyłączeniowa",
+        "operator sieci",
+        "punkt przyłączenia",
+        "GPO",
+        "GPZ",
+        "przyłączenie"
       ],
       "depth": "deep"
     },
@@ -762,7 +808,12 @@
         "demontaż",
         "obowiązki",
         "po",
-        "umowie"
+        "umowie",
+        "bezumowne korzystanie",
+        "dalsze zajęcie",
+        "korzystanie po umowie",
+        "licznik zajęcia",
+        "obowiązki końcowe"
       ],
       "depth": "deep"
     },
@@ -781,7 +832,16 @@
         "oplacalnosci",
         "curtailment",
         "finansowanie",
-        "ryzyko"
+        "ryzyko",
+        "nakłady",
+        "zwrot kosztów",
+        "koszty przygotowania",
+        "potrącenie",
+        "badania",
+        "mapy",
+        "projekty",
+        "geodezja",
+        "ryzyko inwestora"
       ],
       "depth": "deep"
     },
@@ -799,7 +859,16 @@
         "orna",
         "zagęszczenie",
         "przejazdy",
-        "ochrona"
+        "ochrona",
+        "transport ponadnormatywny",
+        "transport ciężki",
+        "nacisk",
+        "trasa transportu",
+        "przepust",
+        "zjazd",
+        "dźwig",
+        "łopata",
+        "sekcja wieży"
       ],
       "depth": "deep"
     },
@@ -817,7 +886,16 @@
         "wyciek",
         "zdarzenie",
         "niebezpieczne",
-        "raport"
+        "raport",
+        "skażenie",
+        "zanieczyszczenie",
+        "odpady",
+        "olej",
+        "paliwo",
+        "próbki",
+        "badania gleby",
+        "badania wody",
+        "laboratorium"
       ],
       "depth": "deep"
     },
@@ -834,7 +912,15 @@
         "dokumenty",
         "wstrzymanie",
         "prac",
-        "raportowanie"
+        "raportowanie",
+        "kontrola planowa",
+        "kontrola doraźna",
+        "kontrola interwencyjna",
+        "protokół kontroli",
+        "protokół jednostronny",
+        "utrudnianie kontroli",
+        "koszty kontroli",
+        "ponowna kontrola"
       ],
       "depth": "deep"
     },
@@ -850,7 +936,13 @@
         "bankowa",
         "ubezpieczeniowa",
         "płatność",
-        "odnowienie"
+        "odnowienie",
+        "realizacja gwarancji",
+        "wypłata częściowa",
+        "odnowienie gwarancji",
+        "wygaśnięcie gwarancji",
+        "test realizowalności",
+        "bezumowne korzystanie"
       ],
       "depth": "deep"
     },
@@ -888,7 +980,13 @@
         "parent",
         "company",
         "guarantee",
-        "SPV"
+        "SPV",
+        "cykl życia poręczenia",
+        "poręczyciel zagraniczny",
+        "solidarna odpowiedzialność",
+        "pogorszenie sytuacji poręczyciela",
+        "nowe poręczenie",
+        "zmiana poręczyciela"
       ],
       "depth": "deep"
     },
@@ -925,7 +1023,12 @@
         "inwestora",
         "właściciel",
         "pełnomocnictwo",
-        "dokumenty"
+        "dokumenty",
+        "cykl życia dokumentu",
+        "status dokumentu",
+        "sprostowanie dokumentu",
+        "wycofanie dokumentu",
+        "zaskarżenie decyzji"
       ],
       "depth": "deep"
     },
@@ -943,7 +1046,13 @@
         "kontakt",
         "zawiadomienie",
         "awaria",
-        "oświadczenie"
+        "oświadczenie",
+        "kanał roboczy",
+        "kanał formalny",
+        "kanał awaryjny",
+        "język komunikacji",
+        "tłumaczenie dokumentów",
+        "kontakt finansującego"
       ],
       "depth": "deep"
     },
@@ -987,7 +1096,7 @@
         "parametry turbiny",
         "gmina"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-052",
@@ -1003,7 +1112,7 @@
         "procedura planistyczna",
         "gmina"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-053",
@@ -1020,7 +1129,7 @@
         "art. 6a",
         "MPZP"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-054",
@@ -1038,7 +1147,7 @@
         "monitoring",
         "środowisko"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-055",
@@ -1056,7 +1165,7 @@
         "inwentaryzacja",
         "oddziaływania skumulowane"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-056",
@@ -1074,7 +1183,13 @@
         "pomiary",
         "awaria",
         "serwis",
-        "uciążliwości"
+        "uciążliwości",
+        "warunki rozpoczęcia eksploatacji",
+        "mapa powykonawcza",
+        "raport eksploatacyjny",
+        "utrzymanie dróg",
+        "przepusty",
+        "odwodnienie"
       ],
       "depth": "deep"
     },
@@ -1093,7 +1208,11 @@
         "monitoring",
         "kontrola",
         "kara umowna",
-        "odszkodowanie"
+        "odszkodowanie",
+        "rejestr naruszeń",
+        "naruszenie powtarzalne",
+        "kryteria zamknięcia",
+        "monitoring skutków"
       ],
       "depth": "deep"
     },
@@ -1112,7 +1231,11 @@
         "zwolnienie z odpowiedzialności",
         "regres",
         "ugoda",
-        "ubezpieczenie"
+        "ubezpieczenie",
+        "rejestr roszczeń",
+        "utrata wartości nieruchomości",
+        "roszczenia publicznoprawne",
+        "księga wieczysta"
       ],
       "depth": "deep"
     },
@@ -1132,7 +1255,14 @@
         "media społecznościowe",
         "komunikacja publiczna",
         "wizyty inwestorskie",
-        "dane gospodarstwa"
+        "dane gospodarstwa",
+        "rejestr ujawnień",
+        "anonimizacja",
+        "minimalizacja danych",
+        "naruszenie poufności",
+        "fotopułapka",
+        "profilowanie",
+        "usunięcie publikacji"
       ],
       "depth": "deep"
     },
@@ -1151,7 +1281,12 @@
         "wstrzymanie płatności",
         "zabezpieczenia",
         "demontaż",
-        "rekultywacja"
+        "rekultywacja",
+        "prawo właściwe",
+        "sąd powszechny",
+        "negocjacje",
+        "terminy w sporze",
+        "ekspert"
       ],
       "depth": "deep"
     },
@@ -1169,7 +1304,13 @@
         "dopłaty rolne",
         "kontrola",
         "rozporządzanie",
-        "część nieruchomości"
+        "część nieruchomości",
+        "prawa zachowane",
+        "własny specjalista",
+        "udział w oględzinach",
+        "sprzeciw właściciela",
+        "dodatkowe wynagrodzenie",
+        "brak zgody przez milczenie"
       ],
       "depth": "deep"
     },
