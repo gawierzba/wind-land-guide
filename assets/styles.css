@@ -2616,3 +2616,38 @@ html[lang="en"] .brand::after{content:"Guide for landowners in Poland"}
   font-weight:700;
 }
 .footer-copyright a:hover{text-decoration:underline}
+
+
+/* v1.0: pełne menu górne na telefonach */
+.mobile-menu-toggle,.mobile-menu-panel{display:none}
+@media(max-width:720px){
+  .topbar .navlinks{display:none!important}
+  .topbar .nav{gap:12px}
+  .mobile-menu-toggle{
+    display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;
+    border:1px solid #cbd6cc;background:#fff;color:#244b33;
+    border-radius:10px;padding:9px 11px;font:inherit;font-size:.82rem;
+    font-weight:800;cursor:pointer
+  }
+  .mobile-menu-toggle:focus-visible{outline:3px solid rgba(40,91,61,.16);outline-offset:2px}
+  .mobile-menu-icon{display:grid;gap:3px;width:17px}
+  .mobile-menu-icon i{display:block;height:2px;background:currentColor;border-radius:999px}
+  .mobile-menu-panel{
+    position:absolute;left:0;right:0;top:100%;z-index:15;
+    background:rgba(255,255,255,.99);border-top:1px solid #e2e7e1;
+    border-bottom:1px solid #d7dfd7;box-shadow:0 12px 28px rgba(20,35,24,.12);
+    padding:12px 16px 16px
+  }
+  .mobile-menu-panel.open{display:block}
+  .mobile-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .mobile-menu-grid a,.mobile-menu-grid button{
+    display:flex;align-items:center;min-height:46px;border:1px solid #dfe5dc;
+    border-radius:10px;background:#f9faf8;color:#244b33;text-decoration:none;
+    padding:10px 12px;font:inherit;font-size:.86rem;font-weight:750;
+    text-align:left;cursor:pointer
+  }
+  .mobile-menu-grid a:hover,.mobile-menu-grid button:hover{background:#eef3ec;border-color:#aab9ac}
+}
+@media(max-width:420px){
+  .mobile-menu-grid{grid-template-columns:1fr}
+}
