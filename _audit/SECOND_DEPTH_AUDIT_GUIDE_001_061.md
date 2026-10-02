@@ -195,3 +195,35 @@ Każde przyszłe pogłębienie musi dodać co najmniej jeden z elementów:
 - konkretny dokument, termin, rolę albo skutek do sprawdzenia.
 
 Nie dodajemy akapitów, które tylko powtarzają ogólną zasadę innymi słowami.
+
+
+## Wykonanie audytu — 2 października 2026
+
+Audyt został wdrożony na tej samej gałęzi. Pogłębiono wszystkie 9 pozycji kategorii A oraz obie pozycje kategorii B. Pozycje kategorii C pozostawiono bez sztucznego zwiększania objętości.
+
+| GUIDE | przed | po | przyrost | Główna nowa warstwa |
+|---|---:|---:|---:|---|
+| 043 | 977 | 1424 | +447 | tryby kontroli, protokół, koszty, utrudnianie, ponowna kontrola |
+| 044 | 941 | 1284 | +343 | test realizowalności gwarancji, wygaśnięcie, częściowa wypłata |
+| 046 | 952 | 1355 | +403 | cykl życia poręczenia i audyt poręczyciela |
+| 048 | 933 | 1067 | +134 | cykl życia dokumentu i sprostowanie |
+| 049 | 925 | 1101 | +176 | kanał roboczy/formalny/awaryjny, język komunikacji |
+| 056 | 848 | 1296 | +448 | wejście w eksploatację, serwis, drogi, raportowanie |
+| 057 | 953 | 1385 | +432 | klasyfikacja naruszeń, plan naprawczy, rejestr, zamknięcie sprawy |
+| 058 | 935 | 1375 | +440 | prowadzenie roszczeń, koszty obrony, rejestr, skutki KW/wartości |
+| 059 | 906 | 1348 | +442 | minimalizacja danych, rejestr ujawnień, incydent, retencja |
+| 060 | 700 | 1153 | +453 | prawo/sąd/tryb, część bezsporna, negocjacje i terminy |
+| 061 | 784 | 1318 | +534 | prawa zachowane, własny specjalista, sprzeciw, dodatkowe wynagrodzenie |
+
+Łączny przyrost względem bazy Phase 5: **4252 słowa**. Przyrost nie był celem samym w sobie; każda nowa sekcja została przypisana do konkretnego mechanizmu wzorca.
+
+### QA wykonawcze
+- dokładnie 61 GUIDE-ów w content-index.json, ostatni GUIDE-061;
+- wszystkie zmienione artykuły: pojedynczy kontener `article`, parzyste H2, brak wykrytych nowych zerwanych linków wewnętrznych;
+- wszystkie pogłębione materiały zawierają tabelę praktyczną; scenariusze dodawano tam, gdzie wnosiły realną wartość;
+- rozszerzono słowa kluczowe w content-index.json;
+- odświeżono pełnotekstowe search-index/part-07.json, part-08.json i part-09.json;
+- nie utworzono żadnego GUIDE-062 ani kolejnych numerów.
+
+### Ocena końcowa
+Drugi audyt potwierdził zasadność konsolidacji: biblioteka 001–061 może przyjąć kolejne warstwy wiedzy bez mnożenia numerów, o ile nowe treści są przypisane do istniejącego problemu właścicielskiego i spełniają regułę anty-wodolejstwo.
