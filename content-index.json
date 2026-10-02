@@ -1,5 +1,5 @@
 {
-  "version": "2.9-dev",
+  "version": "3.0-dev",
   "language": "pl",
   "updated": "2026-10-02",
   "materials": [
@@ -1196,6 +1196,85 @@
         "księga wieczysta"
       ],
       "depth": "reference"
+    },
+    {
+      "id": "GUIDE-062",
+      "title": "Odwiert, geodeta, lidar i sodar — co inwestor może badać na moim polu?",
+      "path": "/umowa/badania-odwierty-lidar-sodar/",
+      "status": "draft-live",
+      "category": "Wejście na grunt i dokumentacja",
+      "keywords": [
+        "badania",
+        "odwiert",
+        "geotechnika",
+        "geodeta",
+        "lidar",
+        "sodar",
+        "maszt",
+        "pomiary",
+        "urządzenie pomiarowe",
+        "próbki"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-063",
+      "title": "Kabel pod polem — co trzeba ustalić poza samą trasą na mapie?",
+      "path": "/umowa/kabel-pod-polem/",
+      "status": "draft-live",
+      "category": "Zakres gruntu i infrastruktura",
+      "keywords": [
+        "kabel",
+        "korytarz kablowy",
+        "pas roboczy",
+        "pas eksploatacyjny",
+        "głębokość",
+        "światłowód",
+        "uziemienie",
+        "serwis",
+        "demontaż",
+        "melioracja"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-064",
+      "title": "Transport ponadnormatywny przez gospodarstwo — co ustalić przed pierwszym przejazdem?",
+      "path": "/umowa/transport-ponadnormatywny/",
+      "status": "draft-live",
+      "category": "Budowa i podwykonawcy",
+      "keywords": [
+        "transport ponadnormatywny",
+        "transport ciężki",
+        "nacisk",
+        "trasa",
+        "mijanka",
+        "poszerzenie",
+        "przepust",
+        "zjazd",
+        "dźwig",
+        "żuraw"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-065",
+      "title": "Warunki Przyłączenia — co mogą zmienić na Twojej nieruchomości?",
+      "path": "/umowa/warunki-przylaczenia/",
+      "status": "draft-live",
+      "category": "Kontrola i dokumentacja",
+      "keywords": [
+        "warunki przyłączenia",
+        "umowa przyłączeniowa",
+        "operator sieci",
+        "punkt przyłączenia",
+        "GPO",
+        "GPZ",
+        "kabel",
+        "przyłączenie",
+        "aneks"
+      ],
+      "depth": "deep"
     }
   ],
   "tools": [
