@@ -431,22 +431,29 @@
     const grid = document.createElement("div");
     grid.className = "mobile-menu-grid";
 
-    [...source.children].forEach(item => {
-      if (item.matches("a")) {
-        const clone = item.cloneNode(true);
-        clone.classList.remove("nav-guides", "lang");
-        grid.appendChild(clone);
-      } else if (item.matches(".nav-search")) {
-        const search = document.createElement("button");
-        search.type = "button";
-        search.textContent = item.textContent || "Szukaj";
-        search.addEventListener("click", () => {
-          closeMenu();
-          openSearch("", search);
-        });
-        grid.appendChild(search);
-      }
+    const mobileItems = [
+      ["Zanim podpiszesz", "zanim-podpiszesz/"],
+      ["Umowa", "umowa/"],
+      ["Realizacja", "realizacja/"],
+      ["Koniec", "koniec-inwestycji/"],
+      ["GUIDE-y", "guide/"]
+    ];
+
+    mobileItems.forEach(([label, path]) => {
+      const a = document.createElement("a");
+      a.href = new URL(path, siteRoot).href;
+      a.textContent = label;
+      grid.appendChild(a);
     });
+
+    const search = document.createElement("button");
+    search.type = "button";
+    search.textContent = "Szukaj";
+    search.addEventListener("click", () => {
+      closeMenu();
+      openSearch("", search);
+    });
+    grid.appendChild(search);
 
     panel.appendChild(grid);
     header.appendChild(panel);
