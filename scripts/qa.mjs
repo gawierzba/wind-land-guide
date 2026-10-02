@@ -74,7 +74,11 @@ for (const file of htmlFiles) {
   const hasViewport = /<meta[^>]+name=[\"']viewport[\"']/i.test(html);
   const hasNoindex = /<meta[^>]+name=[\"']robots[\"'][^>]+content=[\"'][^\"']*noindex/i.test(html);
   const hasStyles = /<link[^>]+rel=[\"']stylesheet[\"']/i.test(html);
-  const hasSiteScript = /<script[^>]+src=[\"'][^\"']*assets\/site\.js[\"']/i.test(html);
+  const hasSiteScript = /<script[^>]+src=["'][^"']*assets\/site\.js(?:\?[^"']*)?["']/i.test(html);
+  const hasVersionedSiteScript = /<script[^>]+src=["'][^"']*assets\/site\.js\?v=[^"']+["']/i.test(html);
+  const hasTopbar = /class=["'][^"']*\btopbar\b/i.test(html);
+  const hasNavlinks = /class=["'][^"']*\bnavlinks\b/i.test(html);
+  const needsSharedNavigation = !isEnglishDraft && !isLegacyPolish;
   const canonical = (html.match(/<link[^>]+rel=[\"']canonical[\"'][^>]+href=[\"']([^\"']+)[\"']/i) || html.match(/<link[^>]+href=[\"']([^\"']+)[\"'][^>]+rel=[\"']canonical[\"']/i) || [])[1] || "";
   const hasFavicon = /<link[^>]+rel=[\"']icon[\"'][^>]+href=[\"']\/favicon\.svg[\"']/i.test(html);
   const hasOgTitle = /<meta[^>]+property=[\"']og:title[\"']/i.test(html);
@@ -99,7 +103,9 @@ for (const file of htmlFiles) {
   }
   if (!isLegacyPolish && !desc) errors.push(`${fileRel}: brak meta description`);
   if (!isLegacyPolish && !hasStyles) errors.push(`${fileRel}: brak arkusza stylów`);
-  if (!isLegacyPolish && !hasSiteScript) warnings.push(`${fileRel}: brak assets/site.js`);
+  if (needsSharedNavigation && !hasSiteScript) errors.push(`${fileRel}: brak assets/site.js — bez niego nie działa wspólne menu`);
+  if (needsSharedNavigation && !hasVersionedSiteScript) errors.push(`${fileRel}: assets/site.js bez wersji ?v= — ryzyko starego menu z cache`);
+  if (needsSharedNavigation && (!hasTopbar || !hasNavlinks)) errors.push(`${fileRel}: brak wspólnego nagłówka .topbar/.navlinks`);
   if (!isLegacyPolish && h1Count !== 1) errors.push(`${fileRel}: liczba H1 = ${h1Count}, oczekiwano 1`);
   if (duplicateIds.length) errors.push(`${fileRel}: powtórzone id: ${duplicateIds.join(", ")}`);
 

@@ -391,6 +391,43 @@
     }
   }
 
+  function ensureSharedHeader() {
+    if (location.pathname.startsWith("/en/")) return;
+
+    let header = document.querySelector(".topbar");
+    if (!header) {
+      header = document.createElement("header");
+      header.className = "topbar";
+      header.innerHTML = '<div class="shell nav"><a class="brand" href="/">Grunt i wiatr</a><nav class="navlinks" aria-label="Główna nawigacja"></nav></div>';
+      document.body.insertAdjacentElement("afterbegin", header);
+    }
+
+    let nav = header.querySelector(".nav");
+    if (!nav) {
+      nav = document.createElement("div");
+      nav.className = "shell nav";
+      while (header.firstChild) nav.appendChild(header.firstChild);
+      header.appendChild(nav);
+    }
+
+    if (!nav.querySelector(".brand")) {
+      const brand = document.createElement("a");
+      brand.className = "brand";
+      brand.href = "/";
+      brand.textContent = "Grunt i wiatr";
+      nav.prepend(brand);
+    }
+
+    if (!nav.querySelector(".navlinks")) {
+      const links = document.createElement("nav");
+      links.className = "navlinks";
+      links.setAttribute("aria-label", "Główna nawigacja");
+      nav.appendChild(links);
+    }
+  }
+
+  ensureSharedHeader();
+
   document.querySelectorAll(".navlinks").forEach(nav => {
     if (!nav.querySelector(".nav-guides")) {
       const a = document.createElement("a");
