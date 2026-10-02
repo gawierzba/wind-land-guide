@@ -87,3 +87,7 @@ GUIDE-006, 008, 009, 011, 012, 014, 015, 016, 017, 018, 020, 022, 023, 029 i 035
 1. Najpierw audyt treści P1 względem wzorca umowy i standardu redakcyjnego.
 2. Następnie pogłębienie GUIDE-051–055, które mają depth: standard.
 3. Dopiero potem decyzja, czy numerację 062–080 uzupełniamy nowymi materiałami, czy utrzymujemy plan nowych treści od GUIDE-081 z jawną luką historyczną. Numeracji nie zmieniać automatycznie.
+
+## Wersja angielska — stan faktyczny
+
+W drzewie repozytorium istnieje tylko jedna strona HTML pod prefiksem /en/: en/index.html. Nie ma angielskich odpowiedników GUIDE-001–061. Zasada PL+EN jest więc standardem docelowym dalszej rozbudowy, a nie stanem zastanym biblioteki.
