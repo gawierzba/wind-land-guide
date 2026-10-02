@@ -33,7 +33,8 @@ function attr(html, tag, attrName) {
 
 function resolveInternal(from, href) {
   if (!href || /^(https?:|mailto:|tel:|javascript:|data:)/i.test(href)) return null;
-  const [raw, hash = ""] = href.split("#");
+  const [beforeHash, hash = ""] = href.split("#");
+  const raw = beforeHash.split("?")[0];
   if (!raw) return { file: from, hash };
 
   const base = from.split("/");
