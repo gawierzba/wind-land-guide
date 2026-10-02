@@ -74,7 +74,11 @@ for (const file of htmlFiles) {
   const hasViewport = /<meta[^>]+name=[\"']viewport[\"']/i.test(html);
   const hasNoindex = /<meta[^>]+name=[\"']robots[\"'][^>]+content=[\"'][^\"']*noindex/i.test(html);
   const hasStyles = /<link[^>]+rel=[\"']stylesheet[\"']/i.test(html);
-  const hasSiteScript = /<script[^>]+src=[\"'][^\"']*assets\/site\.js[\"']/i.test(html);
+  const hasSiteScript = /<script[^>]+src=["'][^"']*assets\/site\.js(?:\?[^"']*)?["']/i.test(html);
+  const hasVersionedSiteScript = /<script[^>]+src=["'][^"']*assets\/site\.js\?v=[^"']+["']/i.test(html);
+  const hasTopbar = /class=["'][^"']*\btopbar\b/i.test(html);
+  const hasNavlinks = /class=["'][^"']*\bnavlinks\b/i.test(html);
+  const needsSharedNavigation = !isEnglishDraft && !isLegacyPolish;
   const canonical = (html.match(/<link[^>]+rel=[\"']canonical[\"'][^>]+href=[\"']([^\"']+)[\"']/i) || html.match(/<link[^>]+href=[\"']([^\"']+)[\"'][^>]+rel=[\"']canonical[\"']/i) || [])[1] || "";
   const hasFavicon = /<link[^>]+rel=[\"']icon[\"'][^>]+href=[\"']\/favicon\.svg[\"']/i.test(html);
   const hasOgTitle = /<meta[^>]+property=[\"']og:title[\"']/i.test(html);
