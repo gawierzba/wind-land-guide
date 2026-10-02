@@ -156,9 +156,9 @@
         <section class="project-card">
           <div class="project-card-head"><span>01</span><div><h2>Projekt i inwestor</h2><p>Nazwa robocza, etap i podmiot, z którym prowadzisz rozmowy.</p></div></div>
           <div class="project-fields">
-            ${field("projectName","Nazwa projektu / własna nazwa","text","np. Projekt Jaromierz — działki rodzinne")}
+            ${field("projectName","Nazwa projektu / własna nazwa","text","np. Projekt Warszawa — działki rodzinne")}
             ${select("stage","Etap projektu",stageOptions)}
-            ${field("location","Miejscowość / lokalizacja","text","np. Jaromierz")}
+            ${field("location","Miejscowość / lokalizacja","text","np. Warszawa")}
             ${field("municipality","Gmina","text")}
             ${field("investorName","Inwestor / spółka projektowa","text")}
             ${field("investorKrs","KRS / identyfikator spółki","text")}
