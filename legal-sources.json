@@ -69,7 +69,9 @@
       "reference": "Dz.U. 2026 poz. 1161",
       "scope": [
         "ponowna kontrola materiałów po 2026-10-02"
-      ]
+      ],
+      "verified": "2026-10-02",
+      "verificationNote": "Zweryfikowano po wejściu w życie zasadniczej części Dz.U. 2026 poz. 1161: zmiany Prawa budowlanego dotyczą art. 12 ust. 7b, art. 96 ust. 6, art. 99 ust. 1a oraz rozdziału 10a (art. 102a). Nowelizacja nie zmienia definicji prawa do dysponowania nieruchomością na cele budowlane, na której opiera się materiał właścicielski."
     },
     {
       "id": "environment",
@@ -158,12 +160,6 @@
     }
   ],
   "watch": [
-    {
-      "date": "2026-10-02",
-      "id": "building-law-2026-1161",
-      "reason": "Zasadnicza część ustawy z 31 lipca 2026 r. zmieniającej m.in. Prawo budowlane (Dz.U. 2026 poz. 1161) wchodzi w życie.",
-      "action": "Ponownie sprawdzić wszystkie twierdzenia o procesie budowlanym i prawie do dysponowania nieruchomością."
-    },
     {
       "date": "2026-10-20",
       "id": "wind-act-art-6g",
