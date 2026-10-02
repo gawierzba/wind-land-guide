@@ -409,6 +409,70 @@
     }
   });
 
+
+  document.querySelectorAll(".topbar").forEach((header, index) => {
+    const nav = header.querySelector(".nav");
+    const source = nav?.querySelector(".navlinks");
+    if (!nav || !source || header.querySelector(".mobile-menu-toggle")) return;
+
+    const panelId = "mobile-top-menu-" + index;
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "mobile-menu-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", panelId);
+    toggle.setAttribute("aria-label", "Otwórz pełne menu");
+    toggle.innerHTML = '<span class="mobile-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span>';
+
+    const panel = document.createElement("div");
+    panel.id = panelId;
+    panel.className = "mobile-menu-panel";
+    panel.setAttribute("aria-hidden", "true");
+    const grid = document.createElement("div");
+    grid.className = "mobile-menu-grid";
+
+    [...source.children].forEach(item => {
+      if (item.matches("a")) {
+        const clone = item.cloneNode(true);
+        clone.classList.remove("nav-guides", "lang");
+        grid.appendChild(clone);
+      } else if (item.matches(".nav-search")) {
+        const search = document.createElement("button");
+        search.type = "button";
+        search.textContent = item.textContent || "Szukaj";
+        search.addEventListener("click", () => {
+          closeMenu();
+          openSearch("", search);
+        });
+        grid.appendChild(search);
+      }
+    });
+
+    panel.appendChild(grid);
+    header.appendChild(panel);
+    nav.appendChild(toggle);
+
+    function setMenu(open) {
+      panel.classList.toggle("open", open);
+      panel.setAttribute("aria-hidden", open ? "false" : "true");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Zamknij pełne menu" : "Otwórz pełne menu");
+    }
+
+    function closeMenu() {
+      setMenu(false);
+    }
+
+    toggle.addEventListener("click", () => setMenu(toggle.getAttribute("aria-expanded") !== "true"));
+    panel.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+    document.addEventListener("click", event => {
+      if (toggle.getAttribute("aria-expanded") === "true" && !header.contains(event.target)) closeMenu();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeMenu();
+    });
+  });
+
   document.querySelectorAll("[data-search-form]").forEach(form => {
     form.addEventListener("submit", e => {
       e.preventDefault();
