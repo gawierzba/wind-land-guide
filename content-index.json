@@ -1,5 +1,5 @@
 {
-  "version": "2.9-dev",
+  "version": "3.0-dev-consolidated-61",
   "language": "pl",
   "updated": "2026-10-02",
   "materials": [
@@ -336,7 +336,16 @@
         "sprzet",
         "trasa",
         "geodeta",
-        "serwis"
+        "serwis",
+        "badania",
+        "odwiert",
+        "geotechnika",
+        "lidar",
+        "sodar",
+        "maszt",
+        "pomiary",
+        "próbki",
+        "urządzenie pomiarowe"
       ],
       "depth": "deep"
     },
@@ -357,7 +366,14 @@
         "zgoda vs pełnomocnictwo",
         "zakres zgody",
         "milczenie",
-        "osoba kontaktowa"
+        "osoba kontaktowa",
+        "małżonek",
+        "współwłaściciel",
+        "wspólność majątkowa",
+        "zgoda",
+        "bank",
+        "wierzyciel hipoteczny",
+        "hipoteka"
       ],
       "depth": "deep"
     },
@@ -411,7 +427,15 @@
         "kabel",
         "prawo",
         "rzeczowe",
-        "dzierzawa"
+        "dzierzawa",
+        "pas roboczy",
+        "pas eksploatacyjny",
+        "głębokość",
+        "światłowód",
+        "uziemienie",
+        "mufa",
+        "dokumentacja powykonawcza",
+        "serwis kabla"
       ],
       "depth": "deep"
     },
@@ -446,7 +470,15 @@
         "poręczenie",
         "zabezpieczenie",
         "niewyplacalnosc",
-        "czynsz"
+        "czynsz",
+        "restrukturyzacja",
+        "upadłość",
+        "likwidacja",
+        "KRZ",
+        "KRS",
+        "utrata finansowania",
+        "dodatkowe zabezpieczenie",
+        "problemy finansowe inwestora"
       ],
       "depth": "deep"
     },
@@ -535,7 +567,14 @@
         "dziedziczenie",
         "spadek",
         "nastepca",
-        "gospodarstwo"
+        "gospodarstwo",
+        "kredyt",
+        "hipoteka",
+        "podział",
+        "scalenie",
+        "aport",
+        "finansowanie gospodarstwa",
+        "zmiana numeru działki"
       ],
       "depth": "deep"
     },
@@ -727,7 +766,14 @@
         "raport okresowy",
         "raport nadzwyczajny",
         "24 godziny",
-        "archiwum właściciela"
+        "archiwum właściciela",
+        "warunki przyłączenia",
+        "umowa przyłączeniowa",
+        "operator sieci",
+        "punkt przyłączenia",
+        "GPO",
+        "GPZ",
+        "przyłączenie"
       ],
       "depth": "deep"
     },
@@ -762,7 +808,12 @@
         "demontaż",
         "obowiązki",
         "po",
-        "umowie"
+        "umowie",
+        "bezumowne korzystanie",
+        "dalsze zajęcie",
+        "korzystanie po umowie",
+        "licznik zajęcia",
+        "obowiązki końcowe"
       ],
       "depth": "deep"
     },
@@ -781,7 +832,16 @@
         "oplacalnosci",
         "curtailment",
         "finansowanie",
-        "ryzyko"
+        "ryzyko",
+        "nakłady",
+        "zwrot kosztów",
+        "koszty przygotowania",
+        "potrącenie",
+        "badania",
+        "mapy",
+        "projekty",
+        "geodezja",
+        "ryzyko inwestora"
       ],
       "depth": "deep"
     },
@@ -799,7 +859,16 @@
         "orna",
         "zagęszczenie",
         "przejazdy",
-        "ochrona"
+        "ochrona",
+        "transport ponadnormatywny",
+        "transport ciężki",
+        "nacisk",
+        "trasa transportu",
+        "przepust",
+        "zjazd",
+        "dźwig",
+        "łopata",
+        "sekcja wieży"
       ],
       "depth": "deep"
     },
@@ -817,7 +886,16 @@
         "wyciek",
         "zdarzenie",
         "niebezpieczne",
-        "raport"
+        "raport",
+        "skażenie",
+        "zanieczyszczenie",
+        "odpady",
+        "olej",
+        "paliwo",
+        "próbki",
+        "badania gleby",
+        "badania wody",
+        "laboratorium"
       ],
       "depth": "deep"
     },
