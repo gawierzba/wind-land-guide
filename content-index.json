@@ -1,7 +1,7 @@
 {
   "version": "2.9-dev",
   "language": "pl",
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "materials": [
     {
       "id": "GUIDE-001",
@@ -987,7 +987,7 @@
         "parametry turbiny",
         "gmina"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-052",
@@ -1003,7 +1003,7 @@
         "procedura planistyczna",
         "gmina"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-053",
@@ -1020,7 +1020,7 @@
         "art. 6a",
         "MPZP"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-054",
@@ -1038,7 +1038,7 @@
         "monitoring",
         "środowisko"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-055",
@@ -1056,7 +1056,7 @@
         "inwentaryzacja",
         "oddziaływania skumulowane"
       ],
-      "depth": "standard"
+      "depth": "deep"
     },
     {
       "id": "GUIDE-056",
