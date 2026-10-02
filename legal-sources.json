@@ -157,6 +157,19 @@
       "scope": [
         "ZPI jako szczególny rodzaj planu miejscowego dla lokalizacji elektrowni wiatrowej"
       ]
+    },
+    {
+      "id": "pke-privacy",
+      "title": "Prawo komunikacji elektronicznej — art. 399",
+      "url": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+      "reference": "Dz.U. 2024 poz. 1221",
+      "scope": [
+        "przechowywanie informacji w urządzeniu końcowym",
+        "dostęp do informacji zapisanej w urządzeniu końcowym",
+        "zgoda",
+        "wyjątek dla usługi żądanej przez użytkownika"
+      ],
+      "verified": "2026-10-02"
     }
   ],
   "watch": [
