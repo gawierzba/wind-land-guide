@@ -1275,6 +1275,124 @@
         "aneks"
       ],
       "depth": "deep"
+    },
+    {
+      "id": "GUIDE-066",
+      "title": "Inwestor ma problemy finansowe — co właściciel gruntu powinien sprawdzić od razu?",
+      "path": "/umowa/problemy-finansowe-inwestora/",
+      "status": "draft-live",
+      "category": "Zabezpieczenia finansowe",
+      "keywords": [
+        "niewypłacalność",
+        "restrukturyzacja",
+        "upadłość",
+        "likwidacja",
+        "egzekucja",
+        "utrata finansowania",
+        "gwarancja",
+        "poręczenie",
+        "dodatkowe zabezpieczenie",
+        "step-in"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-067",
+      "title": "Wyciek oleju, skażenie gleby albo odpady na polu — co robić?",
+      "path": "/umowa/wyciek-skazenie-odpady/",
+      "status": "draft-live",
+      "category": "Szkody i dowody",
+      "keywords": [
+        "wyciek",
+        "skażenie",
+        "zanieczyszczenie",
+        "odpady",
+        "olej",
+        "paliwo",
+        "substancje chemiczne",
+        "badania gleby",
+        "badania wody",
+        "laboratorium"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-068",
+      "title": "Małżonek, współwłaściciel, bank — kto właściwie musi podpisać umowę lub zgodę?",
+      "path": "/umowa/kto-musi-podpisac/",
+      "status": "draft-live",
+      "category": "Prawa i dokumenty",
+      "keywords": [
+        "małżonek",
+        "współwłaściciel",
+        "wspólność majątkowa",
+        "udział",
+        "bank",
+        "wierzyciel hipoteczny",
+        "hipoteka",
+        "zgoda",
+        "podpis",
+        "reprezentacja"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-069",
+      "title": "Czy umowa pod wiatrak utrudni sprzedaż, kredyt, podział albo scalenie gospodarstwa?",
+      "path": "/umowa/sprzedaz-kredyt-podzial-scalenie/",
+      "status": "draft-live",
+      "category": "Własność i następstwo",
+      "keywords": [
+        "sprzedaż",
+        "kredyt",
+        "hipoteka",
+        "podział",
+        "scalenie",
+        "aport",
+        "darowizna",
+        "finansowanie gospodarstwa",
+        "księga wieczysta",
+        "następstwo"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-070",
+      "title": "Umowa się skończyła, a inwestor nadal korzysta z pola — co wtedy?",
+      "path": "/umowa/bezumowne-korzystanie-po-umowie/",
+      "status": "draft-live",
+      "category": "Koniec inwestycji",
+      "keywords": [
+        "koniec umowy",
+        "bezumowne korzystanie",
+        "dalsze zajęcie",
+        "demontaż",
+        "rekultywacja",
+        "wykonanie zastępcze",
+        "wynagrodzenie",
+        "zabezpieczenia",
+        "ubezpieczenie"
+      ],
+      "depth": "deep"
+    },
+    {
+      "id": "GUIDE-071",
+      "title": "Inwestor wydał pieniądze na projekt — czy właściciel gruntu musi coś zwracać?",
+      "path": "/umowa/naklady-inwestora-kto-placi/",
+      "status": "draft-live",
+      "category": "Pieniądze i rozliczenia",
+      "keywords": [
+        "nakłady",
+        "zwrot kosztów",
+        "koszty przygotowania",
+        "potrącenie",
+        "badania",
+        "mapy",
+        "projekty",
+        "geodezja",
+        "ryzyko inwestora"
+      ],
+      "depth": "deep"
     }
   ],
   "tools": [
