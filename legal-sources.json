@@ -1,0 +1,189 @@
+{
+  "verified": "2026-09-28",
+  "jurisdiction": "PL",
+  "note": "Źródła urzędowe zweryfikowane na potrzeby publicznych twierdzeń oznaczonych jako PRAWO. Tekst jednolity nie wyklucza późniejszych nowelizacji; przy czynności prawnej należy sprawdzić aktualny tekst ujednolicony.",
+  "sources": [
+    {
+      "id": "wind",
+      "title": "Ustawa o inwestycjach w zakresie elektrowni wiatrowych",
+      "url": "https://eli.gov.pl/eli/DU/2016/961/ogl",
+      "reference": "tekst jednolity: Dz.U. 2024 poz. 317; tekst ujednolicony ELI",
+      "scope": [
+        "MPZP",
+        "10H",
+        "700 m",
+        "gminy pobliskie",
+        "konsultacje",
+        "parametry planu"
+      ]
+    },
+    {
+      "id": "planning",
+      "title": "Ustawa o planowaniu i zagospodarowaniu przestrzennym",
+      "url": "https://eli.gov.pl/eli/DU/2026/538/ogl",
+      "reference": "Dz.U. 2026 poz. 538",
+      "scope": [
+        "plan miejscowy",
+        "ZPI",
+        "procedura planistyczna"
+      ]
+    },
+    {
+      "id": "civil",
+      "title": "Kodeks cywilny",
+      "url": "https://eli.gov.pl/eli/DU/2026/795/ogl",
+      "reference": "Dz.U. 2026 poz. 795",
+      "scope": [
+        "dzierżawa",
+        "pełnomocnictwo",
+        "służebność przesyłu",
+        "odszkodowanie",
+        "zbycie rzeczy",
+        "dziedziczenie"
+      ]
+    },
+    {
+      "id": "civil-procedure",
+      "title": "Kodeks postępowania cywilnego",
+      "url": "https://eli.gov.pl/eli/DU/2026/468/ogl",
+      "reference": "Dz.U. 2026 poz. 468",
+      "scope": [
+        "art. 777 k.p.c.",
+        "tytuł egzekucyjny"
+      ]
+    },
+    {
+      "id": "building",
+      "title": "Prawo budowlane",
+      "url": "https://eli.gov.pl/eli/DU/2026/524/ogl",
+      "reference": "Dz.U. 2026 poz. 524",
+      "scope": [
+        "prawo do dysponowania nieruchomością na cele budowlane"
+      ],
+      "watch": "Dz.U. 2026 poz. 1161 — zasadnicze wejście w życie 2026-10-02"
+    },
+    {
+      "id": "building-amendment-2026",
+      "title": "Nowelizacja Prawa budowlanego z 31 lipca 2026 r.",
+      "url": "https://eli.gov.pl/eli/DU/2026/1161/ogl",
+      "reference": "Dz.U. 2026 poz. 1161",
+      "scope": [
+        "ponowna kontrola materiałów po 2026-10-02"
+      ],
+      "verified": "2026-10-02",
+      "verificationNote": "Zweryfikowano po wejściu w życie zasadniczej części Dz.U. 2026 poz. 1161: zmiany Prawa budowlanego dotyczą art. 12 ust. 7b, art. 96 ust. 6, art. 99 ust. 1a oraz rozdziału 10a (art. 102a). Nowelizacja nie zmienia definicji prawa do dysponowania nieruchomością na cele budowlane, na której opiera się materiał właścicielski."
+    },
+    {
+      "id": "environment",
+      "title": "Ustawa OOŚ",
+      "url": "https://eli.gov.pl/eli/DU/2026/670/ogl",
+      "reference": "tekst jednolity: Dz.U. 2026 poz. 670; po tekście jednolitym ogłoszono dalsze nowelizacje — przy cytowaniu sprawdzany jest tekst ujednolicony ELI",
+      "scope": [
+        "decyzja środowiskowa",
+        "raport OOŚ",
+        "art. 66"
+      ]
+    },
+    {
+      "id": "environment-regulation",
+      "title": "Rozporządzenie w sprawie przedsięwzięć mogących znacząco oddziaływać na środowisko",
+      "url": "https://eli.gov.pl/eli/DU/2019/1839/ogl",
+      "reference": "Dz.U. 2019 poz. 1839, z późn. zm.; istotna nowelizacja: Dz.U. 2026 poz. 706 (obowiązuje od 13.06.2026)",
+      "scope": [
+        "wiatr ≥100 MW",
+        "wiatr ≥30 m",
+        "formy ochrony przyrody",
+        "szczególny wyjątek dla części modernizacji/repoweringu od 13.06.2026"
+      ]
+    },
+    {
+      "id": "agri-system",
+      "title": "Ustawa o kształtowaniu ustroju rolnego",
+      "url": "https://eli.gov.pl/eli/DU/2026/941/ogl",
+      "reference": "Dz.U. 2026 poz. 941",
+      "scope": [
+        "obrót nieruchomością rolną",
+        "pierwokup"
+      ]
+    },
+    {
+      "id": "land-register",
+      "title": "Ustawa o księgach wieczystych i hipotece",
+      "url": "https://eli.gov.pl/eli/DU/2026/1066/ogl",
+      "reference": "Dz.U. 2026 poz. 1066",
+      "scope": [
+        "księga wieczysta",
+        "wpisy",
+        "hipoteka"
+      ]
+    },
+    {
+      "id": "pit",
+      "title": "Ustawa o podatku dochodowym od osób fizycznych",
+      "url": "https://eli.gov.pl/eli/DU/2026/592/ogl",
+      "reference": "Dz.U. 2026 poz. 592",
+      "scope": [
+        "PIT",
+        "dzierżawa na cele nierolnicze"
+      ]
+    },
+    {
+      "id": "agri-land-protection",
+      "title": "Ustawa o ochronie gruntów rolnych i leśnych",
+      "url": "https://eli.gov.pl/eli/DU/2024/82/ogl",
+      "reference": "tekst jednolity: Dz.U. 2024 poz. 82; późniejsze nowelizacje m.in. Dz.U. 2026 poz. 781 i 1155; sprawdzono tekst ujednolicony",
+      "scope": [
+        "wyłączenie z produkcji",
+        "należność",
+        "opłaty roczne"
+      ]
+    },
+    {
+      "id": "arimr-2026",
+      "title": "ARiMR — ogólne zasady przyznawania płatności w 2026 r.",
+      "url": "https://www.gov.pl/web/arimr/ogolne-zasady-przyznawania-platnosci-w-roku-2026",
+      "reference": "serwis urzędowy ARiMR / gov.pl",
+      "scope": [
+        "faktyczny użytkownik",
+        "kwalifikujący się hektar",
+        "posiadanie 31 maja 2026"
+      ]
+    },
+    {
+      "id": "nsa-zpi",
+      "title": "NSA, wyrok z 15 kwietnia 2026 r., II OSK 7/26",
+      "url": "https://orzeczenia.nsa.gov.pl/doc/DB53B7A1F7",
+      "reference": "II OSK 7/26",
+      "scope": [
+        "ZPI jako szczególny rodzaj planu miejscowego dla lokalizacji elektrowni wiatrowej"
+      ]
+    },
+    {
+      "id": "pke-privacy",
+      "title": "Prawo komunikacji elektronicznej — art. 399",
+      "url": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+      "reference": "Dz.U. 2024 poz. 1221",
+      "scope": [
+        "przechowywanie informacji w urządzeniu końcowym",
+        "dostęp do informacji zapisanej w urządzeniu końcowym",
+        "zgoda",
+        "wyjątek dla usługi żądanej przez użytkownika"
+      ],
+      "verified": "2026-10-02"
+    }
+  ],
+  "watch": [
+    {
+      "date": "2026-10-20",
+      "id": "wind-act-art-6g",
+      "reason": "Art. 6g ustawy o inwestycjach w zakresie elektrowni wiatrowych ma wejść w życie; aktualny tekst ELI oznacza ten przepis jako przyszły.",
+      "action": "Ponownie sprawdzić materiały o lokalizacji/procesie projektu i zdecydować, czy dodać osobny GUIDE o prosumencie wirtualnym mieszkańców."
+    },
+    {
+      "date": "2027-01-01",
+      "id": "agri-land-2027-875",
+      "reason": "Dz.U. 2026 poz. 875 zmienia m.in. ustawę o ochronie gruntów rolnych i leśnych.",
+      "action": "Ponownie sprawdzić GUIDE o podatkach, wyłączeniu z produkcji, glebie i rekultywacji."
+    }
+  ]
+}

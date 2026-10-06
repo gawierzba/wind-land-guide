@@ -1,0 +1,56 @@
+name: Site QA
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - migration/wind-guide-v0
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Structural audit
+        run: node scripts/qa.mjs
+      - name: SEO integrity audit
+        run: node scripts/seo-audit.mjs
+      - name: Check crawlable GUIDE catalog
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const html = fs.readFileSync('guide/index.html','utf8');
+          const index = JSON.parse(fs.readFileSync('content-index.json','utf8'));
+          const guides = (index.materials || []).filter(x => /^GUIDE-\d+$/i.test(x.id || ''));
+          const missing = guides.filter(g => !html.includes('href="' + g.path + '"'));
+          if (missing.length) {
+            console.error('Static catalog is missing:', missing.map(x => x.id + ' ' + x.path).join('\n'));
+            process.exit(1);
+          }
+          console.log('Static GUIDE links:', guides.length);
+          NODE
+      - name: Check search index freshness
+        run: node scripts/build-search-index.mjs --check
+      - name: Check site.js syntax
+        run: node --check assets/site.js
+      - name: Check audit.js syntax
+        run: node --check assets/audit.js
+      - name: Check compare.js syntax
+        run: node --check assets/compare.js
+      - name: Check protocols.js syntax
+        run: node --check assets/protocols.js
+      - name: Check money-calculator.js syntax
+        run: node --check assets/money-calculator.js
+      - name: Check my-project.js syntax
+        run: node --check assets/my-project.js
+      - name: Check paragraph-map.js syntax
+        run: node --check assets/paragraph-map.js
+      - name: Legal source trace audit
+        run: node scripts/legal-audit.mjs
+      - name: Security audit
+        run: node scripts/security-audit.mjs

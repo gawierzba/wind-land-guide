@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prywatność i cookies — Grunt i wiatr</title>
+<meta name="description" content="Prywatność w Grunt i wiatr: brak cookies reklamowych, Cloudflare Web Analytics bez cookies, lokalny zapis narzędzi w przeglądarce i techniczne zabezpieczenia Cloudflare.">
+<link rel="stylesheet" href="/assets/styles.css?v=20261002-8">
+<script src="/assets/site.js?v=20261002-8" defer></script>
+
+  <link rel="canonical" href="https://gruntiwiatr.pl/prywatnosc/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Grunt i wiatr">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Prywatność i cookies — Grunt i wiatr">
+  <meta property="og:description" content="Brak cookies reklamowych i profilujących, Cloudflare Web Analytics bez cookies, lokalny zapis narzędzi oraz techniczne zabezpieczenia Cloudflare.">
+  <meta property="og:url" content="https://gruntiwiatr.pl/prywatnosc/">
+  <meta name="twitter:card" content="summary">
+
+  <meta property="og:image" content="https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg">
+  <meta property="og:image:secure_url" content="https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Grunt i wiatr — kompendium właściciela gruntu">
+  <meta name="twitter:image" content="https://gruntiwiatr.pl/assets/og-grunt-i-wiatr.jpg">
+  <meta name="twitter:image:alt" content="Grunt i wiatr — kompendium właściciela gruntu">
+</head>
+<body>
+<header class="topbar"><div class="shell nav"><a class="brand" href="/">Grunt i wiatr</a><nav class="navlinks"><a href="/#sciezki">Kompendium</a><a href="/zrodla/">Źródła</a><a class="lang" href="/en/" lang="en">EN</a></nav></div></header>
+<article class="article">
+<div class="eyebrow">Informacja o prywatności</div>
+<h1>Prywatność i cookies</h1>
+<div class="meta">Aktualizacja: 02.10.2026</div>
+
+<div class="notice"><strong>W skrócie:</strong><br>
+Serwis nie używa cookies reklamowych ani profilujących i nie korzysta z Google Analytics. Cloudflare Web Analytics działa bez cookies i bez <code>localStorage</code>. Wybrane narzędzia zapisują stan pracy lokalnie w przeglądarce użytkownika. Cloudflare może użyć technicznego cookie bezpieczeństwa, jeżeli dla danego połączenia zostanie uruchomione zabezpieczenie typu challenge.</div>
+
+<h2>Czy serwis ustawia własne cookies?</h2>
+<p>Nie. Kod „Grunt i wiatr” nie zapisuje własnych plików cookies do celów reklamowych, profilowania ani analityki.</p>
+<p>Obecna analityka Cloudflare Web Analytics jest według dokumentacji Cloudflare bezcookiesowa i nie używa pamięci <code>localStorage</code> do zbierania statystyk użycia.</p>
+
+<h2>Czy Cloudflare może ustawić cookie techniczne?</h2>
+<p>Tak — wyłącznie w określonych sytuacjach związanych z bezpieczeństwem. Ruch do serwisu przechodzi obecnie przez sieć Cloudflare, która filtruje m.in. ataki i podejrzany ruch. Jeżeli Cloudflare wyświetli użytkownikowi challenge bezpieczeństwa, po jego przejściu może zostać zapisane techniczne cookie <code>cf_clearance</code>. Służy ono do zapamiętania, że dana przeglądarka przeszła kontrolę bezpieczeństwa i nie jest używane przez serwis do reklamy ani profilowania marketingowego.</p>
+<p>Cloudflare opisuje swoje cookies związane z ochroną ruchu jako cookies niezbędne do świadczenia odpowiednich usług bezpieczeństwa.</p>
+
+<h2>Czy pojawia się baner „Akceptuję cookies”?</h2>
+<p>Obecnie nie. Nie uruchamiamy mechanizmów reklamowych, profilujących ani analitycznych wymagających zapisu cookies po stronie użytkownika.</p>
+<p>Prawo komunikacji elektronicznej obejmuje nie tylko klasyczne cookies, ale szerzej przechowywanie informacji lub dostęp do informacji zapisanej w urządzeniu końcowym. Art. 399 ust. 3 przewiduje wyjątek od warunków zgody, jeżeli zapis lub odczyt jest konieczny do dostarczenia usługi świadczonej drogą elektroniczną, której użytkownik zażądał.</p>
+<p>W obecnej wersji serwisu <code>localStorage</code> jest używany do funkcji, które użytkownik sam uruchamia i których istotą jest zachowanie stanu pracy, np. „Mój projekt”, audyt umowy, porównanie ofert, protokoły właściciela i kalkulator. Jeżeli w przyszłości pojawi się zapis lub odczyt niewynikający z funkcji żądanej przez użytkownika i wymagający odrębnej zgody, mechanizm zgody zostanie wdrożony przed uruchomieniem tej funkcji.</p>
+
+<h2>Dane narzędzi zapisywane lokalnie</h2>
+<p>Wybrane narzędzia zapisują dane w pamięci <code>localStorage</code> konkretnej przeglądarki, aby można było wrócić do pracy bez rozpoczynania od zera. Dotyczy to m.in. profilu „Mojego projektu”, audytu umowy, porównywarki ofert, protokołów właściciela i kalkulatora czynszu.</p>
+<p><strong>Dane wpisane do tych narzędzi nie są przez nie wysyłane do własnej bazy danych serwisu.</strong> Pozostają lokalnie w przeglądarce do czasu ich usunięcia, wyczyszczenia danych witryny albo nadpisania przez użytkownika.</p>
+<p>„Mój projekt” może umożliwiać eksport lokalnej kopii do pliku JSON i późniejszy import. Taki plik może zawierać informacje o nieruchomości, notatki i inne dane wpisane przez użytkownika, dlatego należy przechowywać go jak prywatny dokument projektu.</p>
+<div class="notice"><strong>Czego eksport nie obejmuje?</strong><br>
+Serwis nie dołącza automatycznie zdjęć ani dokumentów znajdujących się na urządzeniu. W protokołach mogą zostać zapisane jedynie tekstowe oznaczenia zdjęć, jeżeli użytkownik sam je wpisze.</div>
+
+<h2>Wyszukiwarka</h2>
+<p>Wyszukiwarka serwisu działa w przeglądarce na podstawie publicznego indeksu treści. Tekst wpisanego pytania nie jest wysyłany do osobnej wyszukiwarki zewnętrznej ani do własnej bazy zapytań serwisu.</p>
+
+<h2>Statystyki odwiedzin — Cloudflare Web Analytics</h2>
+<p>Do zbiorczych statystyk odwiedzin i pomiaru wydajności używamy Cloudflare Web Analytics. Skrypt analityczny jest ładowany z infrastruktury Cloudflare. Zgodnie z aktualną dokumentacją Cloudflare rozwiązanie to nie używa cookies ani pamięci <code>localStorage</code> do pomiaru użycia i nie śledzi pojedynczych użytkowników między witrynami.</p>
+<p>Cloudflare wskazuje również, że Web Analytics zbiera minimalne dane potrzebne do statystyk i pomiaru wydajności oraz nie zbiera ani nie wykorzystuje danych osobowych odwiedzających w ramach tej usługi analitycznej.</p>
+
+<h2>Cloudflare — bezpieczeństwo i dostarczanie strony</h2>
+<p>Domena <code>gruntiwiatr.pl</code> korzysta z Cloudflare jako reverse proxy. Oznacza to, że żądanie użytkownika trafia najpierw do infrastruktury Cloudflare, gdzie może zostać obsłużone pod kątem bezpieczeństwa, ochrony DDoS, filtrowania ruchu, TLS i cache, a następnie — jeżeli jest to potrzebne — przekazane do hostingu źródłowego.</p>
+<p>W związku ze świadczeniem tych usług Cloudflare może przetwarzać dane techniczne połączenia, w tym adres IP, informacje o routingu i konfiguracji systemu oraz inne metadane ruchu. Zakres i zasady tego przetwarzania określa polityka prywatności Cloudflare.</p>
+
+<h2>Hosting — GitHub Pages</h2>
+<p>Pliki strony są publikowane przez GitHub Pages. GitHub informuje w dokumentacji Pages, że przy odwiedzinach strony adres IP użytkownika jest logowany i przechowywany dla celów bezpieczeństwa. Szczegóły przetwarzania po stronie GitHub określa polityka prywatności GitHub.</p>
+
+<h2>Kontakt</h2>
+<p>Formularz na stronie kontaktowej nie wysyła treści do serwera „Grunt i wiatr”. Przygotowuje wiadomość w programie pocztowym użytkownika. Dopiero wysłanie wiadomości e-mail powoduje przekazanie jej przez używanego przez użytkownika i serwis dostawcę poczty.</p>
+<p>W sprawach prywatności można napisać na <a href="mailto:kontakt@gruntiwiatr.pl">kontakt@gruntiwiatr.pl</a>.</p>
+
+<h2>Jak usunąć lokalne dane?</h2>
+<p>Dane można usuwać z poziomu poszczególnych narzędzi, jeżeli udostępniają funkcję „Wyczyść”, a także przez funkcję czyszczenia danych witryny w ustawieniach przeglądarki. Usunięcie pamięci witryny może bezpowrotnie skasować lokalny warsztat, jeżeli wcześniej nie wykonano eksportu kopii.</p>
+
+<h2>Linki zewnętrzne</h2>
+<p>Serwis prowadzi do źródeł zewnętrznych, np. ELI, gov.pl, orzeczeń i dokumentacji usług technicznych. Po przejściu na inną stronę obowiązują zasady prywatności i cookies jej operatora.</p>
+
+<h2>Co zmieni się później?</h2>
+<p>Przed dodaniem newslettera, zewnętrznych odtwarzaczy filmów, kont użytkownika, reklam, bardziej rozbudowanej analityki albo innych usług podmiotów trzecich sprawdzimy ich wpływ na prywatność i odpowiednio zaktualizujemy tę stronę. Jeżeli dana funkcja będzie wymagała odrębnej zgody, nie zostanie uruchomiona przed jej uzyskaniem.</p>
+
+<div class="related"><strong>Źródła i dokumentacja</strong>
+<p><a href="https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20240001221/O/D20241221.pdf" rel="noopener" target="_blank">Prawo komunikacji elektronicznej — art. 399</a></p>
+<p><a href="https://developers.cloudflare.com/web-analytics/about/" rel="noopener" target="_blank">Cloudflare Web Analytics — dokumentacja</a></p>
+<p><a href="https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/" rel="noopener" target="_blank">Cloudflare — cookies techniczne</a></p>
+<p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" rel="noopener" target="_blank">GitHub Pages — informacje o hostingu i logowaniu IP</a></p>
+</div>
+</article>
+<footer class="footer"><div class="shell"><a href="/">← Wróć do strony głównej</a></div></footer>
+</body></html>
